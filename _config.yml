@@ -8,6 +8,7 @@ menu:
   Books: books  # 豆瓣书单
   Links: links  # 友链
   About: about  # 关于
+#Tools: tools
 
 # Enable/Disable menu icons
 menu_icons:
@@ -20,6 +21,7 @@ menu_icons:
   books: icon-book-fill
   links: icon-friendship
   about: icon-cup-fill
+#	tools: icon-plus
 
 # rss
 rss: /atom.xml
@@ -31,9 +33,9 @@ site:
     width: 40
     height: 40
     url: ../images/logo.png
-  title: Hexo # 页面title
+  title: Imperceptible # 页面title
   favicon: /favicon.png
-  board: <p>欢迎交流与分享经验!</p> # 站点公告
+  board: <p>Never Settle</p> # 站点公告
   copyright: false # 底部版权信息
 
 # config
@@ -41,7 +43,7 @@ config:
   skin: # 主题颜色 theme-black theme-blue theme-green theme-purple
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
-  menu_highlight: false # 是否开启当前菜单高亮显示
+  menu_highlight: true # 是否开启当前菜单高亮显示
   thumbnail: false # enable posts thumbnail, options: true, false
   excerpt_link: Read More
 
@@ -58,7 +60,7 @@ sidebar: right
 widgets:
   - board  
   - category
-  - tag
+#  - tag
   - tagcloud
   - archive
   - recent_posts
@@ -74,7 +76,7 @@ archive_type: 'monthly'
 show_count: true
 
 # Fancybox
-fancybox: false
+fancybox: true
 
 # Search
 search:
@@ -83,7 +85,7 @@ search:
 
 # Donate
 donate:
-  enable: true
+  enable: false
   # 微信打赏
   wechatpay:
     qrcode: images/donate/wechatpayimg.png
@@ -96,13 +98,13 @@ donate:
 # Share
 # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
 share:
-  enable: true  # 是否启用分享
-  sites: weibo,qq,wechat,facebook,twitter  # PC端显示的分享图标
+  enable: false  # 是否启用分享
+  sites: weibo,qq,qzone # ,wechat,facebook,twitter  # PC端显示的分享图标
   mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
 
 # Github
 github: 
-  username: cofess  # github username
+  username: liubei121212  # github username
 
 # Comment
 # Gitment
@@ -127,8 +129,8 @@ comment:
     ClientID:  #必须. GitHub Application Client ID.
     ClientSecret:  #必须. GitHub Application Client Secret.
   valine: # Valine. https://valine.js.org
-    appid:  # your leancloud application appid
-    appkey:  # your leancloud application appkey
+    appid: dUYIOlsqHv5VgCljRF9mTTtv-gzGzoHsz # your leancloud application appid
+    appkey: HRaJc2h4HiPKBHSGP9lyU5tx # your leancloud application appkey
     notify: false # mail notifier , https://github.com/xCss/Valine/wiki
     verify: false # Verification code
     placeholder: Just go go # comment box placeholder
@@ -149,14 +151,14 @@ comment:
   # https://api.douban.com/v2/movie/subject/:id 单个电影信息
   # https://api.douban.com/v2/movie/search?q={text} 电影搜索
 douban:
-  user: # 豆瓣用户名
+  user: 191060364 # 豆瓣用户名
   start: 0 # 从哪一条记录开始
   count: 100 # 获取豆瓣书单数据条数
   
 # PV
 pv:
   busuanzi:
-    enable: false  # 不蒜子统计
+    enable: true  # 不蒜子统计
   leancloud:
     enable: false  # leancloud统计
     app_id: # leancloud <AppID>
@@ -184,53 +186,60 @@ fb_app_id:
 # profile
 profile:
   enabled: true # Whether to show profile bar
-  avatar: images/avatar.jpg
-  gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-  author: 昵称
-  author_title: Web Developer & Designer
-  author_description: 个人简介。
-  location: Shenzhen, China
-  follow: https://github.com/cofess
+#  avatar: images/avatar.png
+  gravatar: 1752862657@qq.com # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
+  author: 不知不觉
+  author_title: Oier & Student
+  author_description: Never Settle
+  location: Chengdu, China
+  follow: https://github.com/liubei121212
   # Social Links
   social:
     links:
-      github: https://github.com/cofess
-      weibo: http://weibo.com/cofess
-      twitter: https://twitter.com/iwebued
+      github: https://github.com/liubei121212
+      weibo:  https://weibo.com/u/3245362780
+			zhihu: https://www.zhihu.com/people/liu-bei-86-84/activities
+			# twitter: https://twitter.com/iwebued
       # facebook: /
       # dribbble: /
-      behance: https://www.behance.net/cofess
+   		# behance: https://www.behance.net/cofess
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
   # My Skills 
   skills:
-    Git: ★★★☆☆
-    Gulp: ★★★☆☆
-    Javascript: ★★★☆☆
-    HTML+CSS: ★★★☆☆
-    Bootstrap: ★★★☆☆
-    ThinkPHP: ★★★☆☆
-    平面设计: ★★★☆☆
+    C++: ★☆☆☆☆
+    Math: ★☆☆☆☆
+    颓废: ★★★★★
   # My Personal Links
   links:
-    Github: https://github.com/cofess
-    Blog: http://blog.cofess.com
-    微博: http://weibo.com/cofess
-    花瓣: http://huaban.com/cofess
-    Behance: https://www.behance.net/cofess
+    Github: https://github.com/liubei121212
+#    Blog: https://buzhibujue.cf
+		知乎: https://www.zhihu.com/people/liu-bei-86-84/activities
+    微博: https://weibo.com/u/3245362780 
+		邮箱: 1752862657@qq.com
+#    花瓣: http://huaban.com/cofess
+#    Behance: https://www.behance.net/cofess
   # My Personal Labels
   labels:
-    - 前端
-    - 前端开发
-    - 前端重构
-    - Web前端
-    - 网页重构
+    - Oier
+    - Student
+		- CDQZ
   # My Personal Works
   works:
-    name:
-      link: http://www.example.com
-      date: 2016
+		Timmy_bird:
+			link: /fun/Timmy%20bird/index.html
+			date: "2016/12"
+		Blog:
+      link: /
+      date: "2018/10"
+
+		Orz Jerome_Wei:
+			link: /fun/mobai.html
+			date: "2019/3"
+
   # My Personal Projects
   projects:
-    cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
-    cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
+    liubei121212/C-: https://github.com/liubei121212/C-
+		akioi/dot-cn: https://github.com/akioi/dot-cn
+		liubei121212.github.io: https://github.com/liubei121212/liubei121212.github.io
+
