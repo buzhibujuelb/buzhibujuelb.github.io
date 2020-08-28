@@ -1,0 +1,79 @@
+---
+layout: false
+---
+
+<head>
+	<meta charset="UTF8">
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<title>膜拜 Jerome_Wei</title>
+	<style>
+		* {
+			color: #191970;
+			transition: all 0.3s ease;
+			text-shadow: 0 0 20px #e1ffff;
+		}
+		body{
+			background-color: #87ceeb;
+			text-align: center;
+		}
+		header{
+			margin: 2cm 0;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Jerome_Wei</h1>
+		<img id="image" alt="Avatar" src="https://s2.ax1x.com/2019/03/04/kOJTb9.jpg" style=" height: 250px; ">
+		<h2>知名Oier&Life winner</h2>
+		<p>膜拜次数越多越有机会获得神秘惊喜.</p>
+		<p>He has AKed IOI <span class="counter">0</span> times.</p>
+		<p>他已经被您膜拜了 <span class="counter">0</span> 次。</p>
+		<button id="mobai" type="button" class="el-button el-button--primary is-plain is-round">点击膜拜</button>
+		<script>
+			var counter = 0;
+			document.getElementById("mobai").onclick = function() {
+				++counter;
+				for(let item of document.getElementsByClassName("counter")) {
+					item.innerText = counter;
+				}
+				if(counter==5)alert("你们啊Naive");
+				if(counter==10){
+					alert("我精通斯特林");
+					document.getElementById("image").src="https://s2.ax1x.com/2019/03/04/kOthm4.jpg";
+				}
+				if(counter==25){
+					alert("恭喜Jerome_wei");
+					document.getElementById("image").src="https://s2.ax1x.com/2019/03/04/kONP9P.png";
+				}
+				if(counter==55){
+					alert("快爆零了");
+					document.getElementById("image").src="https://s2.ax1x.com/2019/03/04/kONcEd.png";
+				}
+				if(counter==115){
+					alert("很显然吧...");
+					document.getElementById("image").src="https://s2.ax1x.com/2019/03/04/kONhgf.png";
+				}
+				if(counter==235){
+					alert("sb题");
+					document.getElementById("image").src="https://s2.ax1x.com/2019/03/04/kONIKS.png";
+				}
+				if(counter==475){
+					alert("他改变了OI！！！");
+					document.getElementById("image").src="https://s2.ax1x.com/2019/03/04/kOUpb4.jpg";
+				}
+				if(counter==955){
+					alert("看不懂题解");
+					document.getElementById("image").src="https://s2.ax1x.com/2019/03/04/kOUBin.png";
+				}
+				if(counter==1915){
+					alert("我要FST了");
+					document.getElementById("image").src="https://s2.ax1x.com/2019/03/04/kOUOdH.png";
+				}
+			}
+		</script>
+	</header>
+	<p>
+		想了解 <b>Jerome_wei</b>？请前往 <a href="https://blog.csdn.net/qq_35923186">jerome_wei的博客</a> 
+	</p>
+</body>

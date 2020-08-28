@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Rand</title>
+<script type="text/javascript">
+function RND(){
+	var a = document.getElementById("a");
+	var b = document.getElementById("b");
+		var mx = parseInt(a.value);
+		var mn = parseInt(b.value);
+	if(mx<mn)document.getElementById("out").innerHTML="Min>Max";
+	else{
+		var res = Math.floor(Math.random()*(mx-mn+1)+mn);
+		var out = document.getElementById("out");
+		out.innerHTML = res;
+	}
+}
+</script>
+</head>
+<body>
+	<center>
+	<div>Min:<input value="0" id="b"/>  Max:<input value="1" id="a"/></div>
+	<br/>
+	<button type="button" onclick="RND()" value="rand">Get</button>
+	<br/>
+	<br/>
+	<p><strong>Rand=</strong></p><p id="out">NaN</p>
+	<br/>
+	<br/>
+	<br/>
+	</center>
+	<a href="/tools">Back</a>
+</body>
+</html>
+
+

@@ -1,0 +1,231 @@
+---
+layout: false
+---
+
+<html><head>
+		<title>mcfx's Paint Board</title>
+		<meta name="viewport" content="width=device-width,height=device-height">
+		</head><body>
+		<div style="position:fixed;opacity:0.7;left:-1000px;top:-1000px;border:1px solid black;pointer-events:none" id="cursor"></div>
+		<div style="overflow:hidden;width:100%;height:100%">
+			<div style="height:100px">
+				Line width:<input value="10" id="lw" type="text"><button id="lw_dec">Decrease</button><button id="lw_inc">Increase</button><br>
+				Color:<input value="rgb(0,0,0)" id="cl" type="text"><button id="cl_b">Black</button><button id="cl_w">White</button><button id="cl_r">Red</button><br>
+				<button id="un">Undo</button><button id="re">Redo</button><button id="cr">Clear</button><button id="sv">Save</button>
+				<a href="/tools">Back</a>
+			</div>
+			<div><canvas width="1920px" height="1080px" style="height:1080px;width:1920px" id="board"></canvas></div>
+		</div>
+		<script>
+			var lstX=-1,lstY=-1,frames=Array(),frameNow=0,frameCnt=0;
+
+			function clear(log){
+				if(typeof(log)=="undefined"){
+					log=1;
+				}
+				board.save();
+				board_dom.width=board_dom.width;
+				board.restore();
+				if(log){
+					frames.push({type:'clearAll'});
+					frameCnt++;
+				}
+			}
+
+			function drawAt(X,Y,color,width){
+				color=color||document.getElementById("cl").value;
+				width=width||drawWidth;
+				board.fillStyle=color;
+				board.strokeStyle=color;
+				board.lineWidth=width;
+				board.beginPath();
+				board.arc(X,Y,width*0.5,0,360,false);
+				board.fill();
+				board.closePath();
+				if(lstX!=-1){
+					board.beginPath();
+					board.moveTo(lstX,lstY);
+					board.lineTo(X,Y);
+					board.stroke();
+					board.closePath();
+				}
+				lstX=X,lstY=Y;
+			}
+
+			function drawEnd(){
+				lstX=-1,lstY=-1;
+			}
+
+			function clickAt(X,Y){
+				if(!frameNow)frameNow=Array();
+				frameNow.push([X,Y]);
+				drawAt(X,Y);
+			}
+
+			function clickEnd(){
+				drawEnd();
+				if(frameNow)
+				{
+					lstX=-1,lstY=-1;
+					while(frames.length>frameCnt)frames.pop();
+					frames.push({type:'brush',color:document.getElementById("cl").value,width:drawWidth,frame:frameNow});
+					frameNow=0;
+					frameCnt++;
+				}
+			}
+
+			function doFrame(x){
+				if(x.type=='brush'){
+					for(var j=0;j<x.frame.length;j++){
+						drawAt(x.frame[j][0],x.frame[j][1],x.color,x.width);
+					}
+					drawEnd();
+					}else if(x.type=='clearAll'){
+					clear(0);
+				}
+			}
+
+			function undo(){
+				if(frameCnt>0){
+					frameCnt--;
+					clear(0);
+					for(var i=0;i<frameCnt;i++){
+						doFrame(frames[i]);
+					}
+				}
+			}
+
+			function redo(){
+				if(frameCnt<frames.length){
+					doFrame(frames[frameCnt]);
+					frameCnt++;
+				}
+			}
+
+			var drawWidth,c=document.getElementById("cursor");
+			board_dom=document.getElementById("board");
+			board=board_dom.getContext("2d");
+
+			function handleDraw(e){
+				e=e||event;
+				if(e.buttons){
+					var X,Y;
+					if(typeof(e.offsetX)!="undefined"){
+						X=e.offsetX,Y=e.offsetY;
+						}else{
+						target=e.target||e.originalTarget;
+						X=e.clientX-target.offsetLeft;
+						Y=e.clientY-target.offsetTop;
+					}
+					clickAt(X,Y);
+					}else{
+					clickEnd();
+				}
+				if(typeof(e.clientX)!="undefined"){
+					c.style.left=e.clientX-drawWidth*0.5+"px";
+					c.style.top=e.clientY-drawWidth*0.5+"px";
+				}
+			}
+
+			function handleTouch(e){
+				e.buttons=1;
+				handleDraw(e);
+			}
+
+			function touch(e){
+				e=e||event;
+				c.style.display="hidden";
+				if(e.targetTouches.length!=1){
+					handleDraw({buttons:0});
+					}else{
+					handleTouch(e.targetTouches[0]);
+				}
+			}
+
+			function touchEnd(e){
+				e=e||event;
+				if(e.targetTouches.length!=1){
+					handleDraw({buttons:0});
+					}else{
+					handleTouch(e.targetTouches[0]);
+				}
+			}
+
+			function handleKeypress(e){
+				e=e||event;
+				if(e.keyCode==26)undo();
+				if(e.keyCode==25)redo();
+			}
+
+			board_dom.onmousedown=handleDraw;
+			board_dom.onmousemove=handleDraw;
+			board_dom.onmouseup=handleDraw;
+			board_dom.addEventListener('touchstart',touch,false);
+			board_dom.addEventListener('touchmove',touch,false);
+			board_dom.addEventListener('touchend',touchEnd,false);
+
+			function updateDrawWidth(x){
+				drawWidth=x;
+				c.style.width=x+"px";
+				c.style.height=x+"px";
+				c.style.borderRadius=x*0.5+"px";
+			}
+
+			c.style.backgroundColor=document.getElementById("cl").value;
+			var lw_val=document.getElementById("lw").value;
+			updateDrawWidth(parseInt(lw_val));
+			document.getElementById("lw").oninput=function(){
+				t=document.getElementById("lw").value;
+				if(parseInt(t).toString()!=t){
+					document.getElementById("lw").value=lw_val;
+					}else{
+					updateDrawWidth(Math.min(Math.max(parseInt(t),1),100));
+					lw_val=drawWidth.toString();
+					document.getElementById("lw").value=lw_val;
+				}
+			}
+			document.getElementById("lw_dec").onclick=function(){
+				if(drawWidth>1){
+					updateDrawWidth(Math.floor(drawWidth*0.9));
+					lw_val=drawWidth.toString();
+					document.getElementById("lw").value=lw_val;
+				}
+			}
+			document.getElementById("lw_inc").onclick=function(){
+				if(drawWidth<100){
+					updateDrawWidth(Math.min(Math.ceil(drawWidth*1.1),100));
+					lw_val=drawWidth.toString();
+					document.getElementById("lw").value=lw_val;
+				}
+			}
+			document.getElementById("cl_b").onclick=function(){
+				c.style.backgroundColor=document.getElementById("cl").value='rgb(0,0,0)';
+			}
+			document.getElementById("cl_w").onclick=function(){
+				c.style.backgroundColor=document.getElementById("cl").value='rgb(255,255,255)';
+			}
+			document.getElementById("cl_r").onclick=function(){
+				c.style.backgroundColor=document.getElementById("cl").value='rgb(255,0,0)';
+			}
+			document.getElementById("cl").oninput=function(){
+				c.style.backgroundColor=document.getElementById("cl").value;
+			}
+			document.getElementById("cr").onclick=clear;
+			document.getElementById("un").onclick=undo;
+			document.getElementById("re").onclick=redo;
+			document.body.onkeypress=handleKeypress;
+			board_dom.onkeypress=handleKeypress;
+			function saveImage() {
+				var image=board_dom.toDataURL("image/png").replace("image/png", "image/octet-stream");
+				var save_link = document.createElement('a');
+				save_link.href = image;
+				save_link.download = "paint.png";
+				var event = document.createEvent('MouseEvents');
+				event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+				save_link.dispatchEvent(event);
+			}
+			document.getElementById("sv").onclick=saveImage;
+		</script>
+</body></html>
+
+
