@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>微积分 第七章 多元向量值函数积分学 | Imperceptible</title>
+  <meta name="description" content="第七章 多元向量值函数积分学 7.1 第二类曲线积分 一、第二类曲线积分的概念与性质 定义 设 \(L\) 为 \(xoy\) 面内从 \(A\) 到 \(B\) 的一条有向光滑曲线弧，函数 \(P(x,y),Q(x,y)\) 在 \(L\) 上有界，用 \(L\) 上的点 \(M_1(x_1,y_1),M_2(x_2,y_2),\cdots,M_{n-1}(x_{n-1},y_{n-1}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微积分 第七章 多元向量值函数积分学">
+<meta property="og:url" content="https://buzhibujue.cf/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%A4%9A%E5%85%83%E5%90%91%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/index.html">
+<meta property="og:site_name" content="Imperceptible">
+<meta property="og:description" content="第七章 多元向量值函数积分学 7.1 第二类曲线积分 一、第二类曲线积分的概念与性质 定义 设 \(L\) 为 \(xoy\) 面内从 \(A\) 到 \(B\) 的一条有向光滑曲线弧，函数 \(P(x,y),Q(x,y)\) 在 \(L\) 上有界，用 \(L\) 上的点 \(M_1(x_1,y_1),M_2(x_2,y_2),\cdots,M_{n-1}(x_{n-1},y_{n-1}">
+<meta property="og:locale">
+<meta property="article:published_time" content="2022-06-20T16:10:07.000Z">
+<meta property="article:modified_time" content="2022-07-12T17:23:26.397Z">
+<meta property="article:author" content="不知不觉">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://buzhibujue.cf/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%A4%9A%E5%85%83%E5%90%91%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Imperceptible" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    <link href="//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" rel="stylesheet">
+  
+  
+  
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/buzhibujuelb" target="_blank">
+          <img class="img-circle img-rotate" src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">不知不觉</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Acmer &amp; Student</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Chengdu, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools">
+            
+            <i class="icon icon-plus"></i>
+            
+            <span class="menu-title">menu.Tools</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>Never Settle</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HDU/">HDU</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/LOJ/">LOJ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SPOJ/">SPOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UOJ/">UOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B4%9B%E8%B0%B7/">洛谷</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/DP/" style="font-size: 13px;">DP</a> <a href="/tags/FFT/" style="font-size: 13.2px;">FFT</a> <a href="/tags/LCT/" style="font-size: 13px;">LCT</a> <a href="/tags/NTT/" style="font-size: 13.2px;">NTT</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 13px;">二分</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 13px;">凸包</a> <a href="/tags/%E5%8A%A8%E6%80%81DP/" style="font-size: 13px;">动态DP</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 13.2px;">图论</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13px;">字符串</a> <a href="/tags/%E5%AE%B9%E6%96%A5/" style="font-size: 13.4px;">容斥</a> <a href="/tags/%E6%80%9D%E7%BB%B4/" style="font-size: 13.6px;">思维</a> <a href="/tags/%E6%89%A9%E5%9F%9F/" style="font-size: 13px;">扩域</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px;">数学</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 13px;">最短路</a> <a href="/tags/%E6%B0%B4%E9%A2%98/" style="font-size: 13px;">水题</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 13.6px;">物理</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 13px;">线性基</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 13px;">组合数学</a> <a href="/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" style="font-size: 13px;">莫比乌斯反演</a> <a href="/tags/%E8%AE%A1%E6%95%B0/" style="font-size: 13.8px;">计数</a> <a href="/tags/%E9%94%99%E6%8E%92/" style="font-size: 13px;">错排</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 13.6px;">随笔</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%8F%98%E5%8C%96%E7%9A%84%E7%94%B5%E7%A3%81%E5%9C%BA/" class="title">大学物理 变化的电磁场</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:22:53.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%94%B5%E5%AD%A6/" class="title">大学物理 静电学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:21:57.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%A3%81%E5%AD%A6/" class="title">大学物理 静磁学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:37.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6/" class="title">大学物理 刚体力学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:30.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="title">线性代数与空间解析几何 第五章 特征值与特征向量</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:16:32.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-微积分-第七章-多元向量值函数积分学" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      微积分 第七章 多元向量值函数积分学
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%A4%9A%E5%85%83%E5%90%91%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/" class="article-date">
+	  <time datetime="2022-06-20T16:10:07.000Z" itemprop="datePublished">2022-06-21</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%A4%9A%E5%85%83%E5%90%91%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/#comments" class="article-comment-link">Comments</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="第七章-多元向量值函数积分学">第七章 多元向量值函数积分学</h1>
+<h2 id="第二类曲线积分">7.1 第二类曲线积分</h2>
+<h3
+id="一第二类曲线积分的概念与性质">一、第二类曲线积分的概念与性质</h3>
+<p><strong>定义</strong> 设 <span class="math inline">\(L\)</span> 为
+<span class="math inline">\(xoy\)</span> 面内从 <span
+class="math inline">\(A\)</span> 到 <span
+class="math inline">\(B\)</span> 的一条有向光滑曲线弧，函数 <span
+class="math inline">\(P(x,y),Q(x,y)\)</span> 在 <span
+class="math inline">\(L\)</span> 上有界，用 <span
+class="math inline">\(L\)</span> 上的点 <span
+class="math inline">\(M_1(x_1,y_1),M_2(x_2,y_2),\cdots,M_{n-1}(x_{n-1},y_{n-1})\)</span>
+把 <span class="math inline">\(L\)</span> 分成 <span
+class="math inline">\(n\)</span> 个有向小弧段，设 <span
+class="math inline">\(\Delta x_i=x_i-x_{i-1},\Delta
+y_i=y_i-y_{i-1}\)</span>，点 <span
+class="math inline">\((\xi_i,\eta_i)\)</span> 为 <span
+class="math inline">\(M_{i-1}M_i\)</span>
+上任意取定的点，若当各小弧段长度的最大值 <span
+class="math inline">\(\lambda\to 0\)</span> 时，<span
+class="math inline">\(\sum_{i=1}^n P(\xi_i,\eta_i)\Delta x_i\)</span>
+的极限存在，则称此极限为函数 <span class="math inline">\(P(x,y)\)</span>
+在有向曲线弧 <span class="math inline">\(L\)</span>
+上对<strong>坐标</strong> <span class="math inline">\(x\)</span>
+的曲线积分（或称第二类曲线积分）</p>
+<p>记作 <span class="math inline">\(\int_L P(x,y)dx\)</span></p>
+<p>记 <span class="math inline">\(\vec F=P\vec i+Q\vec j,\vec{ds}=dx\vec
+i+dy \vec j\)</span>，则 <span class="math inline">\(\int_L
+P(x,y)dx+Q(x,y)dy=\int_L\vec F\cdot \vec{ds}\)</span></p>
+<p>若 <span class="math inline">\(L\)</span> 为闭曲线则记为</p>
+<p><span class="math inline">\(\oint_L P(x,y)dx+Q(x,y)dy=\oint_L\vec
+F\cdot \vec{ds}\)</span></p>
+<p><strong>性质</strong></p>
+<ol type="1">
+<li><p>如果把 <span class="math inline">\(L\)</span> 分为 <span
+class="math inline">\(L_1\)</span> 和 <span
+class="math inline">\(L_2\)</span>，则 <span class="math display">\[
+\int_L Pdx+Qdy=\int_{L_1} Pdx+Qdy+\int_{L_2} Pdx+Qdy
+\]</span></p></li>
+<li><p>设 <span class="math inline">\(L\)</span> 是有向曲线弧，<span
+class="math inline">\(L^-\)</span> 是与 <span
+class="math inline">\(L\)</span> 方向相反的有向曲线弧，则 <span
+class="math display">\[
+\int_L P(x,y)dx+Q(x,y)dy=-\int_{L^-} P(x,y)dx+Q(x,y)dy
+\]</span> <strong>即对坐标的曲线积分与曲线的方向有关</strong></p></li>
+</ol>
+<h3 id="二第二类曲线积分的计算">二、第二类曲线积分的计算</h3>
+<p><strong>定理</strong> 设 <span
+class="math inline">\(P(x,y),Q(x,y)\)</span> 在曲线弧 <span
+class="math inline">\(L\)</span> 上有定义且连续，<span
+class="math inline">\(L\)</span> 的参数方程为 <span
+class="math inline">\(\begin{cases}x=x(t),\\y=y(t),\end{cases}\)</span>
+当参数 <span class="math inline">\(t\)</span> 单调地由 <span
+class="math inline">\(\alpha\)</span> 变到 <span
+class="math inline">\(\beta\)</span> 时，点 <span
+class="math inline">\(M(x,y)\)</span> 从 <span
+class="math inline">\(L\)</span> 的起点 <span
+class="math inline">\(A\)</span> 沿 <span
+class="math inline">\(L\)</span> 运动到终点 <span
+class="math inline">\(B\)</span>，<span
+class="math inline">\(x(t),y(t)\)</span> 在以 <span
+class="math inline">\(\alpha,\beta\)</span>
+为端点的闭区间上具有一份连续导数，且 <span
+class="math inline">\(x&#39;^2(t)+y&#39;^2(t)\neq 0\)</span>，则曲线积分
+<span class="math inline">\(\int_L P(x,y)dx+Q(x,y)dy\)</span> 存在，且
+<span class="math display">\[
+\int_L P(x,y)dx+Q(x,y)dy
+=\int_{\alpha}^\beta \{P[x(t),y(t)]\}x&#39;(t)+Q[x(t),y(t)]y&#39;(t)dt
+\]</span></p>
+<h3 id="三两类曲线积分之间的关系">三、两类曲线积分之间的关系</h3>
+<p>设有向平面曲线弧为 <span
+class="math inline">\(L:x=x(t),y=y(t)\)</span>，<span
+class="math inline">\(L\)</span> 上点 <span
+class="math inline">\((x,y)\)</span> 处的切向量 <span
+class="math inline">\(\vec s\)</span> 的方向角为 <span
+class="math inline">\(\alpha,\beta\)</span>，则 <span
+class="math inline">\(\int_L P(x,y)dx+Q(x,y)dy=\int_L(P\cos
+\alpha+Q\cos\beta)ds\)</span></p>
+<h2 id="第二类曲面积分">7.2 第二类曲面积分</h2>
+<h3 id="一有向曲面">一、有向曲面</h3>
+<p>若点在曲面上任意连续移动，其法向量也随之连续变化，当点再回到原来的位置时，其法向量的指向不变，称这样的曲面为<strong>双侧曲面</strong></p>
+<p>对于一个给定的双侧曲面，曲面的侧可通过曲面上单位法向量的指向来确定，曲面上任一点处的单位法向量有两个方向，选定一个方向，即取定曲面上的法向量都指向同一侧，这样就确定了曲面的侧，这种确定了侧的曲面称为有向曲面，例如，对于曲面
+<span
+class="math inline">\(z=z(x,y)\)</span>，我们可以用单位法向量确定曲面的上策或下册</p>
+<p>曲面 <span class="math inline">\(z=z(x,y)\)</span> 在点 <span
+class="math inline">\(M(x,y,z)\)</span> 处的法向量 <span
+class="math inline">\(\vec n\)</span> 为 <span
+class="math inline">\((-z_x,-z_y,1),(z_x,z_y,-1)\)</span></p>
+<p>因此，曲面的上侧或下侧可用一下单位法向量来确定</p>
+<p>上侧 <span class="math display">\[
+\vec n_0=\cfrac{-z_x\vec i-z_y\vec j+\vec k}{\sqrt{1+z_x^2+z_y^2} }
+\]</span> 下侧 <span class="math display">\[
+\vec n_0=\cfrac{z_x\vec i+z_y\vec j-\vec k}{\sqrt{1+z_x^2+z_y^2} }
+\]</span> 我们规定在曲面上任一点处的<strong>曲面面积微元<span
+class="math inline">\(\vec{dS}\)</span></strong>：其方向与指定一侧的单位法向量
+<span class="math inline">\(\vec n_0\)</span> 一致，其大小为曲面面积微元
+<span class="math inline">\(dS\)</span>，即 <span
+class="math display">\[
+\vec{dS}=\vec{n_0}dS
+\]</span></p>
+<h3
+id="二第二类曲面积分的概念与性质">二、第二类曲面积分的概念与性质</h3>
+<p><strong>定义</strong> 设 <span class="math inline">\(S\)</span>
+为一光滑的有向曲面，指定它的一侧。设向量值函数 <span
+class="math inline">\(\vec F(x,y,z)=P(x,y,z)\vec i+Q(x,y,z)\vec
+j+R(x,y,z)\vec k\)</span> 在曲面上有界，将曲面 <span
+class="math inline">\(S\)</span> 任意划分成 <span
+class="math inline">\(n\)</span> 个有向小曲面 <span
+class="math inline">\(\Delta S_1,\Delta S_2\cdots,\Delta
+S_n\)</span>，在每个有向小曲面 <span class="math inline">\(\Delta
+S_i\)</span> 上任取一点 <span
+class="math inline">\((\xi_i,\eta_i,\zeta_i)\)</span>，作点积 <span
+class="math inline">\(\vec F(\xi_i,\eta_i,\zeta_i)\cdot
+\vec{n_0}(\xi_i,\eta_i,\zeta_i)\Delta S_i\)</span></p>
+<p>其中 <span class="math inline">\(n_0(\xi_i,\eta_i,\zeta_i)\)</span>
+是曲面在点 <span class="math inline">\((\xi_i,\eta_i,\zeta_i)\)</span>
+处指向给定一侧的单位法向量，如果无论曲面 <span
+class="math inline">\(S\)</span> 如何划分，点 <span
+class="math inline">\((\xi_i,\eta_i,\zeta_i)\)</span>
+如何选取，当所有小曲面的直径的最大值 <span
+class="math inline">\(\lambda\to 0\)</span>
+时，上述和式存在且为同一常数，则称此极限值为向量值函数 <span
+class="math inline">\(\vec F(x,y,z)\)</span> 在有向曲面 <span
+class="math inline">\(S\)</span> 上的第二类曲面积分，记为 <span
+class="math display">\[
+\iint_S \vec F(x,y,z)\cdot \vec {n_0}(x,y,z)dS
+=
+\iint_S \vec F(x,y,z)\cdot \vec {dS}
+\\
+=\iint_S[P(x,y,z)\cos \alpha+Q(x,y,z)\cos \beta+R(x,y,z)\cos \gamma]dS
+\\
+=\iint_S[P(x,y,z)\cos \alpha dS+Q(x,y,z)\cos \beta dS+R(x,y,z)\cos
+\gamma dS
+\\
+=\iint_S[P(x,y,z)dydz+Q(x,y,z)dxdz+R(x,y,z)dxdy
+\]</span>
+上式右端就是<strong>第二类曲面积分的坐标形式</strong>，因此第二类曲面积分又被称为<strong>对坐标的曲面积分</strong></p>
+<p>通常将向量值函数 <span class="math inline">\(\vec F(x,y,z)\)</span>
+在有向曲面 <span class="math inline">\(S\)</span>
+上的第二类曲面积分称为函数 <span class="math inline">\(\vec
+F(x,y,z)\)</span> 对曲面 <span class="math inline">\(S\)</span>
+的<strong>通量</strong></p>
+<p><strong>性质</strong></p>
+<ol type="1">
+<li><p>设 <span class="math inline">\(k_1,k_2\)</span> 为两个常数，则
+<span class="math display">\[
+\iint_S[k_1\vec F_1(x,y,z)+k_2\vec F_2(x,y,z)]\cdot \vec{dS}=k_1\iint_S
+\vec F_1(x,y,z)\cdot \vec{dS}+k_2\iint_S \vec F_2(x,y,z)\cdot \vec{dS}
+\]</span></p></li>
+<li><p>若用 <span class="math inline">\(S^-\)</span> 表示有向曲面 <span
+class="math inline">\(S\)</span> 的另一侧，则 <span
+class="math display">\[
+\iint_{S^-}\vec F(x,y,z)\cdot \vec{dS}=-\iint_{S}\vec F(x,y,z)\cdot
+\vec{dS}
+\]</span></p></li>
+<li><p>若将有向曲面 <span class="math inline">\(S\)</span> 分为两块曲面
+<span class="math inline">\(S_1,S_2\)</span>，且 <span
+class="math inline">\(S_1,S_2\)</span> 与 <span
+class="math inline">\(S\)</span> 同侧，则 <span class="math display">\[
+\iint_{S}\vec F(x,y,z)\cdot \vec{dS}=\iint_{S_1}\vec F(x,y,z)\cdot
+\vec{dS}+\iint_{S_2}\vec F(x,y,z)\cdot \vec{dS}
+\]</span></p></li>
+</ol>
+<h3 id="三第二类曲面积分的计算">三、第二类曲面积分的计算</h3>
+<ol type="1">
+<li><p>分面投影法 <span class="math display">\[
+\iint_{S}R(x,y,z)dxdy=\pm\iint_{D_{xy} }R(x,y,z(x,y))dxdy
+\]</span></p></li>
+<li><p>合一投影法</p>
+<p>前面已知在曲面 <span class="math inline">\(S\)</span>
+上任一点处指向上侧的法向量为 <span class="math inline">\(\vec
+n=(-z_x,-z_y,1)\)</span>，单位法向量为</p></li>
+</ol>
+<p><span class="math display">\[
+\vec{n_0}=\cfrac{\vec n}{|\vec n|}=(\cfrac{-z_x}{ {\sqrt{1+z_x^2+z_y^2}
+} },\cfrac{-z_y}{ {\sqrt{1+z_x^2+z_y^2} } },\cfrac{1}{
+{\sqrt{1+z_x^2+z_y^2} } })
+\]</span></p>
+根据两类曲面积分的联系与第一类曲面积分的计算公式，有 $$
+<span class="math display">\[\begin{aligned}
+\iint_{S}\vec F(x,y,z)\cdot \vec{dS}
+&amp;=
+\iint_{S}\vec F(x,y,z(x,y))\cdot \vec{n_0}(x,y)dS
+\\
+&amp;=
+\iint_{S}\vec F(x,y,z(x,y))\cdot \vec{n_0}(x,y)\sqrt{1+z_x^2+z_y^2}dxdy
+\\
+&amp;=
+\iint_{S}\vec F(x,y,z(x,y))\cdot \vec{n}(x,y)dxdy
+
+\end{aligned}\]</span>
+<p>$$
+上下侧方向与正负号的问题只需乘上对应的单位法向量方向即可，无需额外符号</p>
+<h2 id="微积分基本定理的推广">7.3 微积分基本定理的推广</h2>
+<h3 id="一格林公式">一、格林公式</h3>
+<p>设 <span class="math inline">\(D\)</span> 为平面区域，如果 <span
+class="math inline">\(D\)</span> 内任意闭曲线所围成的部分都属于 <span
+class="math inline">\(D\)</span>，则称 <span
+class="math inline">\(D\)</span>
+为<strong>单连通区域</strong>，否则称为<strong>复连通区域</strong></p>
+<p>对平面区域 <span class="math inline">\(D\)</span> 的边界曲线 <span
+class="math inline">\(L\)</span>，我们规定当人沿 <span
+class="math inline">\(L\)</span> 行进时，<span
+class="math inline">\(D\)</span>
+内在他近处的那一部分总在其左边.根据此规定，单连通区域边界曲线 <span
+class="math inline">\(L\)</span> 的正方向为逆时针方向，二内边界曲线
+<span class="math inline">\(L_2\)</span> 的正方向为顺时针方向</p>
+<p><strong>定理1（格林公式）</strong></p>
+<ol type="1">
+<li><p>设 <span class="math inline">\(D\)</span> 是由分段光滑的曲线
+<span class="math inline">\(L\)</span> 围成的平面单连通区域，函数 <span
+class="math inline">\(P(x,y),Q(x,y)\)</span> 在 <span
+class="math inline">\(D\)</span> 上具有一阶连续偏导数，则有 <span
+class="math display">\[
+\iint_D(\cfrac{\partial Q}{\partial x}-\cfrac{\partial P}{\partial
+y})dxdy=\oint_LPdx+Qdy
+\]</span> 其中 <span class="math inline">\(L\)</span> 是 <span
+class="math inline">\(D\)</span> 的取正方向的边界曲线</p></li>
+<li><p>设 <span class="math inline">\(D\)</span> 是由分段光滑的曲线
+<span class="math inline">\(L_1,L_2\)</span> 围成的平面复连通区域，函数
+<span class="math inline">\(P(x,y,),Q(x,y)\)</span> 在 <span
+class="math inline">\(D\)</span>​ 上具有一节连续偏导数，则有 <span
+class="math display">\[
+\iint_D(\cfrac{\partial Q}{\partial x}-\cfrac{\partial P}{\partial
+y})dxdy=\oint_{L_1}Pdx+Qdy+\oint_{L_2}Pdx+Qdy
+\]</span> 其中 <span class="math inline">\(L_1,L_2\)</span> 是 <span
+class="math inline">\(D\)</span> 的取正方向的外（内）边界曲线</p></li>
+</ol>
+<p>格林公式的简单运用</p>
+<p>在格林公式中，令 <span
+class="math inline">\(P=-y,Q=x\)</span>，就可得到一个用第二类曲线积分计算平面闭区域
+<span class="math inline">\(D\)</span> 面积 <span
+class="math inline">\(A\)</span> 的公式 <span class="math display">\[
+A=\iint_D dxdy=\cfrac 12 \oint_L xdy-ydx
+\]</span></p>
+<h3 id="二高斯公式">二、高斯公式</h3>
+<p><strong>定理2（高斯公式）</strong></p>
+<p>设空间区域 <span class="math inline">\(V\)</span>
+是由分片光滑的闭曲面 <span class="math inline">\(S\)</span> 所围成，函数
+<span class="math inline">\(P(x,y,z),Q(x,y,z),R(x,y,z)\)</span> 在 <span
+class="math inline">\(V\)</span> 上具有一节连续偏导数，则有 <span
+class="math display">\[
+\iiint_V(\cfrac{\partial P}{\partial x}+\cfrac{\partial Q}{\partial
+y}+\cfrac{\partial R}{\partial z})dV=\oiint_SPdydz+Qdzdx+Rdxdy
+\]</span> 其中 <span class="math inline">\(S\)</span> 是 <span
+class="math inline">\(V\)</span> 的边界曲面的外侧</p>
+<h3 id="三斯托克斯公式">三、斯托克斯公式</h3>
+<p><strong>定理3（斯托克斯公式）</strong></p>
+<p>设 <span class="math inline">\(L\)</span>
+为分段光滑的空间有向闭曲线，<span class="math inline">\(S\)</span> 为以
+<span class="math inline">\(L\)</span> 为边界的分片光滑的有向曲面.函数
+<span class="math inline">\(P(x,y,z),Q(x,y,z),R(x,y,z)\)</span>
+在包含曲面 <span class="math inline">\(S\)</span>
+在内的一个空间区域内有一节连续偏导数，则 <span class="math display">\[
+\iint_S(\cfrac{\partial R}{\partial y}-\cfrac{\partial Q}{\partial
+z})dydz+(\cfrac{\partial P}{\partial z}-\cfrac{\partial R}{\partial
+x})dzdx+(\cfrac{\partial Q}{\partial x}-\cfrac{\partial P}{\partial
+y})dxdy=\oint_LPdx+Qdy+Rdz
+\]</span> 其中 <span class="math inline">\(L\)</span> 的方向与 <span
+class="math inline">\(S\)</span> 的侧符合右手定则，即用右手四指表示
+<span class="math inline">\(L\)</span> 的方向，大拇指的方向与曲面 <span
+class="math inline">\(S\)</span> 的侧同向</p>
+为了便于记忆，斯托克斯公式又常写为 $$
+<span class="math display">\[\begin{aligned}
+\oint_L Pdx+Qdy+Rdz&amp;=
+
+\iint_S\begin{vmatrix}dydz&amp;dzdx&amp;dxdy\\\cfrac{\partial}{\partial
+x}&amp;\cfrac{\partial}{\partial y}&amp;\cfrac{\partial}{\partial
+z}\\P&amp;Q&amp;R\end{vmatrix}
+\\&amp;=
+\iint_S\begin{vmatrix}\cos\alpha&amp;\cos\beta&amp;\cos\gamma\\\cfrac{\partial}{\partial
+x}&amp;\cfrac{\partial}{\partial y}&amp;\cfrac{\partial}{\partial
+z}\\P&amp;Q&amp;R\end{vmatrix}dS
+\end{aligned}\]</span>
+<p>$$</p>
+<h2 id="曲线积分与路径的无关性">7.4 曲线积分与路径的无关性</h2>
+<h3 id="一曲线积分与路径无关的条件">一、曲线积分与路径无关的条件</h3>
+<p><strong>定理1</strong> 设 <span class="math inline">\(D\)</span>
+为平面上的单连通区域，函数 <span
+class="math inline">\(P(x,y),Q(x,y)\)</span> 在 <span
+class="math inline">\(D\)</span>
+上有一阶连续偏导数，则下列四个命题等价</p>
+<ol type="1">
+<li><p>对于 <span class="math inline">\(D\)</span>
+内任一光滑的简单闭曲线 <span class="math inline">\(L\)</span>，有 <span
+class="math display">\[
+\oint_L P(x,y)dx+Q(x,y)dy=0
+\]</span></p></li>
+<li><p>曲线积分 <span class="math inline">\(\oint_L
+P(x,y)dx+Q(x,y)dy\)</span> 的值在 <span class="math inline">\(D\)</span>
+内与路径无关</p></li>
+<li><p>被积表达式 <span class="math inline">\(P(x,y)dx+Q(x,y)dy\)</span>
+在 <span class="math inline">\(D\)</span> 内是某个二元函数 <span
+class="math inline">\(u(x,y)\)</span> 的全微分，即 <span
+class="math display">\[
+du(x,y)=P(x,y)dx+Q(x,y)dy
+\]</span></p></li>
+<li><p>在 <span class="math inline">\(D\)</span> 内每一点都满足 <span
+class="math inline">\(\cfrac{\partial Q}{\partial x}=\cfrac{\partial
+P}{\partial y}\)</span></p></li>
+</ol>
+<p>如果函数 <span class="math inline">\(P(x,y),Q(x,y)\)</span>
+在单连通区域 <span class="math inline">\(D\)</span>
+内具有一节连续偏导数，且 <span class="math inline">\(\cfrac{\partial
+Q}{\partial x}=\cfrac{\partial P}{\partial y}\)</span>，根据定理1，<span
+class="math inline">\(P(x,y)dx+Q(x,y)dy)\)</span> 是 <span
+class="math inline">\(D\)</span> 内某个函数 <span
+class="math inline">\(u(x,y)\)</span> 的全微分，这时我们称 <span
+class="math display">\[
+u(x,y)=\int_{(x_0,y_0)}^{(x,y)}P(x,y)dx+Q(x,y)dy
+\]</span> 为 <span class="math inline">\(P(x,y)dx+Q(x,y)dy\)</span>
+的<strong>原函数</strong>，与定积分的牛顿-莱布尼茨公式类似，有 <span
+class="math display">\[
+\int_{AB}Pdx+Qdy=u(B)-u(A)
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+u(x,y)&amp;=\int_{x_0}^xP(x,y_0)dx+\int_{y_0}^yQ(x,y)dy\\
+&amp;=\int_{y_0}^yQ(x_0,y)dy+\int_{x_0}^xP(x,y)dx
+\end{aligned}
+\]</span></p>
+<p><strong>空间一维单连通区域的定义</strong></p>
+<p>设 <span class="math inline">\(G\)</span>
+是空间某区域，若对该区域内任意一条闭曲线 <span
+class="math inline">\(L\)</span>，都能作出以 <span
+class="math inline">\(L\)</span>
+为边界且全部位于该区域的曲面，称之为<strong>空间一维单连通区域</strong></p>
+<p><strong>定理2</strong> 设 <span class="math inline">\(G\)</span>
+为空间一维单连通区域，函数 <span
+class="math inline">\(P(x,y,z),Q(x,y,z),R(x,y,z)\)</span> 在 <span
+class="math inline">\(G\)</span>
+内有一节连续偏导数，则下列四个命题等价</p>
+<ol type="1">
+<li><p>对于 <span class="math inline">\(G\)</span>
+内任一光滑的简单闭曲线 <span class="math inline">\(L\)</span>，有 <span
+class="math display">\[
+\oint_L Pdx+Qdy+Rdz=0
+\]</span></p></li>
+<li><p>曲线积分 <span class="math inline">\(\oint_L Pdx+Qdy+Rdz\)</span>
+的值在 <span class="math inline">\(G\)</span> 内与路径无关</p></li>
+<li><p>被积表达式 $ Pdx+Qdy+Rdz$ 在 <span
+class="math inline">\(D\)</span> 内是某个三元函数 <span
+class="math inline">\(u(x,y,z)\)</span> 的全微分，即 <span
+class="math display">\[
+du=Pdx+Qdy+Rdz
+\]</span></p></li>
+<li><p>在 <span class="math inline">\(D\)</span> 内每一点都满足 <span
+class="math inline">\(\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\\\cfrac{\partial}{\partial
+x}&amp;\cfrac{\partial}{\partial y}&amp;\cfrac{\partial}{\partial
+z}\\P&amp;Q&amp;R\end{vmatrix}=0\)</span></p></li>
+</ol>
+<p>即 <span class="math inline">\(\cfrac{\partial R}{\partial
+y}=\cfrac{\partial Q}{\partial z},\cfrac{\partial P}{\partial
+z}=\cfrac{\partial R}{\partial x},\cfrac{\partial Q}{\partial
+x}=\cfrac{\partial P}{\partial y}\)</span></p>
+<p>与平面情况类似，我们称函数 <span class="math display">\[
+u(x,y,z)=\int_{(x_0,y_0,z_0)}^{(x,y,z)}Pdx+Qdy+Rdz
+\]</span> 为 <span class="math inline">\(Pdx+Qdy+Rdz\)</span>
+的<strong>原函数</strong>，其积分路径可选取平行坐标轴的折线，则 <span
+class="math display">\[
+u(x,y,z)=\int_{x_0}^xP(x,y_0,z_0)dx+\int_{y_0}^yP(x,y,z_0)dy+\int_{z_0}^zP(x,y,z)dz
+\]</span></p>
+<h3 id="二全微分方程">二、全微分方程</h3>
+<p>对于一个如下形式的一阶常微分方程 <span class="math display">\[
+P(x,y)dx+Q(x,y)dy=0
+\]</span> 如果存在某个函数 <span class="math inline">\(u(x,y)\)</span>
+使得 <span class="math display">\[
+du(x,y)=P(x,y)dx+Q(x,y)dy
+\]</span> 则称此方程为全微分方程</p>
+<p>如果 <span class="math inline">\(y=y(x)\)</span>
+是微分方程的解，那么有 <span class="math display">\[
+du[x,y(x)]=P[x,y(x)]dx+Q[x,y(x)]dy=0
+\]</span> 所以 <span class="math inline">\(u[x,y(x)]=C\)</span>，这表明
+<span class="math inline">\(y=y(x)\)</span> 是由方程 <span
+class="math inline">\(u(x,y)=C\)</span> 所确定的隐函数</p>
+<p>如果方程式全微分方程，则其通解为 <span
+class="math inline">\(u(x,y)=C\)</span>，其中 <span
+class="math inline">\(C\)</span> 为任意常数</p>
+<p>有时方程 <span class="math inline">\(P(x,y)dx+Q(x,y)dy=0\)</span>
+不是全微分方程，但如果存在连续可微函数 <span
+class="math inline">\(\mu(x,y)\neq 0\)</span>，使 <span
+class="math display">\[
+\mu(x,y)P(x,y)dx+\mu(x,y)Q(x,y)dy=0
+\]</span> 为全微分方程，则称函数 <span
+class="math inline">\(\mu(x,y)\)</span>
+为方程的一个<strong>积分因子</strong></p>
+<h2 id="场论初步">7.5 场论初步</h2>
+<h3 id="一场的概念">一、场的概念</h3>
+<p>如果在全部空间或部分空间的每一点，都对应着某个物理量的一个确定的值，那么就成这空间内确定了该物理量的<strong>场</strong></p>
+<p>如果这物理量是数量，就称此场为<strong>数量场</strong>，如温度场、密度场、电位场</p>
+<p>如果这物理量是向量，就称此场为<strong>向量场</strong>，如力场、速度场</p>
+<p>在空间引入坐标系后，一个与时间无关的数量场可以用一个数量值函数 <span
+class="math inline">\(u(x,y,z)\)</span>
+来表示，一个与时间无关的向量场可以用一个向量值函数函数 <span
+class="math display">\[
+\vec A(x,y,z)=P(x,y,z)\vec i+Q(x,y,z)\vec j+R(x,y,z)\vec k
+\]</span> 来表示</p>
+<p>需要注意的是，场及场论中有关概念的固有含义与坐标系的选取无关，引入坐标只是为了便于用数学方法研究其性质</p>
+<p>函数 <span class="math inline">\(u(x,y,z)\)</span> 的梯度 <span
+class="math display">\[
+\
+abla u=\textbf{
+abla}\ u=(\cfrac{\partial u}{\partial x},\cfrac{\partial u}{\partial
+y},\cfrac{\partial u}{\partial z})
+\]</span> 就是一个向量场，它是由数量场 <span
+class="math inline">\(u(x,y,z)\)</span>
+产生的一个向量场，也称为<strong>梯度场</strong></p>
+<h3 id="二通量与散度">二、通量与散度</h3>
+<p>给定义向量场 <span class="math display">\[
+\vec A(x,y,z)=P(x,y,z)\vec i+Q(x,y,z)\vec j+R(x,y,z)\vec k
+\]</span> <span class="math inline">\(S\)</span> 为场内某有向曲面，<span
+class="math inline">\(S\)</span> 上指定一侧的单位法向量为 <span
+class="math inline">\(\vec{n_0}\)</span>，向量场 <span
+class="math inline">\(\vec A\)</span> 沿曲面 <span
+class="math inline">\(S\)</span> 的第二类曲面积分 <span
+class="math display">\[
+\iint_S\vec A\cdot \vec{dS}=\iint_S \vec A\cdot \vec{n_0}dS
+\]</span> 称为向量场 <span class="math inline">\(\vec A\)</span>
+通过有向曲面 <span class="math inline">\(S\)</span>
+指定一侧的<strong>通量</strong></p>
+<p>如果 <span class="math inline">\(S\)</span>
+是一分片光滑的闭曲面，<span class="math inline">\(\vec{n_0}\)</span>
+为外法向量，<span class="math inline">\(V\)</span> 为 <span
+class="math inline">\(S\)</span> 所包围的空间区域，由高斯公式有 <span
+class="math display">\[
+\begin{aligned}
+\oiint_S \vec A\cdot\vec{dS}&amp;=\oiint_S\vec A\cdot \vec{n_0}dS
+\\&amp;=\oiint_SPdydz+Qdzdx+Rdxdy
+\\&amp;=
+\iiint_V(\cfrac{\partial P}{\partial x}+\cfrac{\partial Q}{\partial
+y}+\cfrac{\partial R}{\partial z})dV
+\end{aligned}
+\]</span> 将 <span class="math inline">\(\cfrac{\partial P}{\partial
+x}+\cfrac{\partial Q}{\partial y}+\cfrac{\partial R}{\partial
+z}\)</span> 称为向量场 <span class="math inline">\(\vec
+A(x,y,z)\)</span> 的<strong>散度</strong>，记为 <span
+class="math inline">\(\mathrm{div}\ A\)</span>，即 <span
+class="math display">\[
+\mathrm {div}\ A=\cfrac{\partial P}{\partial x}+\cfrac{\partial
+Q}{\partial y}+\cfrac{\partial R}{\partial z}
+\]</span> 于是高斯公式可写成如下的向量形式 <span class="math display">\[
+\iiint_V\mathrm {div}\ A=\oiint_S\vec A\cdot \vec{dS}
+\]</span> 散度是一个数量，它是由向量场 <span class="math inline">\(\vec
+A\)</span> 产生的数量场，称为<strong>散度场</strong></p>
+<p>散度 <span class="math inline">\(\mathrm{div}\ A|_M\)</span>
+表示速度场 <span class="math inline">\(\vec A\)</span> 在 <span
+class="math inline">\(M\)</span> 出“源头”的强度，如果 <span
+class="math inline">\(\mathrm{div}\
+A|_M&gt;0\)</span>，称此点为”<strong>源</strong>“；如果 <span
+class="math inline">\(\mathrm{div}\
+A|_M&lt;0\)</span>，称此点为”<strong>汇</strong>“；如果 <span
+class="math inline">\(\mathrm{div}\ A\equiv 0\)</span>，则称向量场 <span
+class="math inline">\(A\)</span> 为<strong>无源场</strong></p>
+<p>由这一共识可看出，散度与坐标轴的选取是无关的.</p>
+<p>由高斯公式可知，在无源场 <span
+class="math inline">\(A(x,y,z)\)</span> 中任一闭曲面的通量为零，即 <span
+class="math display">\[
+\oiint_S\vec A\cdot \vec{dS}=0
+\]</span></p>
+<h3 id="三环量与旋度">三、环量与旋度</h3>
+<p>给定义向量场 <span class="math display">\[
+\vec A(x,y,z)=P(x,y,z)\vec i+Q(x,y,z)\vec j+R(x,y,z)\vec k
+\]</span> 设 <span class="math inline">\(L\)</span>
+为场内一有向闭曲线，<span class="math inline">\(L\)</span>
+上与指定方向一致的单位切向量为 <span
+class="math inline">\(\vec{\tau_0}\)</span>，则曲线积分 <span
+class="math display">\[
+\oint_L\vec A\cdot \vec{ds}=\oint_L\vec A\cdot\vec{\tau _0}ds
+\]</span> 称为向量场 <span class="math inline">\(A\)</span> 沿有向闭曲线
+<span class="math inline">\(L\)</span> 的<strong>环量</strong></p>
+<p>设 <span class="math inline">\(S\)</span> 是以 <span
+class="math inline">\(L\)</span> 为边界的有向曲面，曲线 <span
+class="math inline">\(L\)</span> 的方向与曲面 <span
+class="math inline">\(S\)</span> 的侧符合右手规则，有斯托克斯公式有
+<span class="math display">\[
+\begin{aligned}
+\oint_\vec A\cdot\vec{ds}
+&amp;=\oint_LPdx+Qdy+Rdz
+\\&amp;=
+\iint_S(\cfrac{\partial R}{\partial y}-\cfrac{\partial Q}{\partial
+z})dydz+(\cfrac{\partial P}{\partial z}-\cfrac{\partial R}{\partial
+x})dzdx+(\cfrac{\partial Q}{\partial x}-\cfrac{\partial P}{\partial
+y})dxdy
+\end{aligned}
+\]</span> 向量 <span class="math display">\[
+(\cfrac{\partial R}{\partial y}-\cfrac{\partial Q}{\partial z})\vec
+i+(\cfrac{\partial P}{\partial z}-\cfrac{\partial R}{\partial x})\vec
+j+(\cfrac{\partial Q}{\partial x}-\cfrac{\partial P}{\partial y})\vec k
+\]</span> 称为向量场 <span class="math inline">\(\vec A\)</span>
+的<strong>旋度</strong>，记为 <span class="math inline">\(\mathrm{rot}\
+A\)</span>，即 <span class="math display">\[
+\begin{aligned}
+\mathrm{rot}\ A&amp;=
+(\cfrac{\partial R}{\partial y}-\cfrac{\partial Q}{\partial z})\vec
+i+(\cfrac{\partial P}{\partial z}-\cfrac{\partial R}{\partial x})\vec
+j+(\cfrac{\partial Q}{\partial x}-\cfrac{\partial P}{\partial y})\vec k
+\\&amp;=
+\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\\\cfrac{\partial}{\partial
+x}&amp;\cfrac{\partial}{\partial y}&amp;\cfrac{\partial}{\partial
+z}\\P&amp;Q&amp;R\end{vmatrix}
+\end{aligned}
+\]</span> 于是可将斯托克斯公式写成如下形式 <span class="math display">\[
+\iint_S\mathrm{rot}\ A\cdot \vec{dS}=\oint_L\vec A\cdot \vec{ds}
+\]</span> 旋度是一个向量，它是由向量场 <span class="math inline">\(\vec
+A\)</span> 产生的向量场，称为<strong>旋度场</strong></p>
+<p>当 <span class="math inline">\(\mathrm{rot}\ A\equiv
+0\)</span>，即沿任意闭曲线的环量为零时，称 <span
+class="math inline">\(A\)</span>
+为<strong>无旋场</strong>，此时流体流动时不形成旋涡</p>
+<h3 id="四几种特殊的向量场">四、几种特殊的向量场</h3>
+<p>如果向量场内第二类曲线积分只与起点和终点有关而与积分路径无关，这种场称为<strong>保守场</strong></p>
+<p>一个场为保守场的充要条件是该向量场为无旋场，同时我们还知道必存在函数
+<span class="math inline">\(u(x,y,z)\)</span> 使得 <span
+class="math display">\[
+du=Pdx+Qdy+Rdz
+\]</span> 即 <span class="math display">\[
+\cfrac{\partial u}{\partial x}=P,\cfrac{\partial u}{\partial
+y}=Q,\cfrac{\partial u}{\partial z}=R
+\]</span> 因此有 <span class="math display">\[
+\mathbf{
+abla}\ u=(P,Q,R)=A(x,y,z)
+\]</span> 此时函数 <span class="math inline">\(u(x,y,z)\)</span>
+称为向量场 <span class="math inline">\(\vec A\)</span>
+的<strong>势函数</strong>，向量场 <span
+class="math inline">\(\vec{A}\)</span>
+称为<strong>有势场</strong>，其为函数 <span
+class="math inline">\(u(x,y,z)\)</span> 的梯度场</p>
+<p>向量微分算子 <span class="math inline">\(\
+abla\)</span>，即哈密顿算子</p>
+<p>其运算法则是：对于数量值函数 <span
+class="math inline">\(u(x,y,z)\)</span>，有 <span
+class="math display">\[
+\
+abla\ u=(\cfrac{\partial}{\partial x},\cfrac{\partial}{\partial
+y},\cfrac{\partial}{\partial z})u=(\cfrac{\partial u}{\partial
+x},\cfrac{\partial u}{\partial y},\cfrac{\partial u}{\partial z})
+\]</span> 对于向量值函数 <span class="math display">\[
+\vec A(x,y,z)=P(x,y,z)\vec i+Q(x,y,z)\vec j+R(x,y,z)\vec k
+\\
+\
+abla\cdot \vec A=(\cfrac{\partial}{\partial x},\cfrac{\partial}{\partial
+y},\cfrac{\partial}{\partial z})\cdot(P,Q,R)=(\cfrac{\partial
+P}{\partial x},\cfrac{\partial Q}{\partial y},\cfrac{\partial
+R}{\partial z})
+\\
+\
+abla\times\vec{A}=(\cfrac{\partial}{\partial
+x},\cfrac{\partial}{\partial y},\cfrac{\partial}{\partial
+z})\times(P,Q,R)=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\\\cfrac{\partial}{\partial
+x}&amp;\cfrac{\partial}{\partial y}&amp;\cfrac{\partial}{\partial
+z}\\P&amp;Q&amp;R\end{vmatrix}
+\]</span> 利用算子 <span class="math inline">\(\
+abla\)</span> 可将梯度写成 <span class="math inline">\(\mathbf{ abla}\
+u=\
+abla u\)</span>，散度写成 <span class="math inline">\(\mathrm{div}\ A=\
+abla\cdot\vec A\)</span>，旋度写成 <span
+class="math inline">\(\mathrm{rot}\ A=\
+abla\times \vec
+A\)</span>，从而可将高斯公式与斯托克斯公式表示成更简单的形式，即 <span
+class="math display">\[
+\iiint_V\
+abla\cdot \vec AdV=\oiint_S\vec A\cdot\vec{dS}
+\\
+\iint_S(\
+abla\times\vec A)\cdot\vec{dS}=\oint_L\vec A\cdot\vec{dS}
+\]</span> 若向量场 <span class="math inline">\(\vec
+A(x,y,z)=(P,Q,R)\)</span> 既是无源场又是无旋场，即 <span
+class="math display">\[
+\
+abla\cdot\vec A=0,\
+abla\times\vec A=0
+\]</span> 则称向量场 <span class="math inline">\(\vec A(x,y,z)\)</span>
+为<strong>调和场</strong></p>
+<p>因为调和场 <span class="math inline">\(\vec A(x,y,z)\)</span>
+是无旋场，所以也是有势场，及存在势函数 <span
+class="math inline">\(u(x,y,z)\)</span>，使 <span
+class="math display">\[
+\vec A=\
+abla u=(\cfrac{\partial u}{\partial x},\cfrac{\partial u}{\partial
+y},\cfrac{\partial u}{\partial z})
+\]</span> 又因为 <span class="math inline">\(\vec A(x,y,z)\)</span>
+是无源场，所以有 <span class="math display">\[
+\
+abla\cdot\vec A=\
+abla\cdot(\
+abla u)=0
+\]</span> 即 <span class="math display">\[
+\Delta u=\cfrac{\partial^2 u}{\partial x^2}+\cfrac{\partial^2
+u}{\partial y^2}+\cfrac{\partial^2 u}{\partial z^2}=0
+\]</span> 上式称为<strong>拉普拉斯方程</strong>，<span
+class="math inline">\(\Delta=\cfrac{\partial^2 }{\partial
+x^2}+\cfrac{\partial^2 }{\partial y^2}+\cfrac{\partial^2 }{\partial
+z^2}\)</span>
+称为<strong>拉普拉斯算子</strong>.因此，调和场的势函数必满足拉普拉斯方程</p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://buzhibujue.cf/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%A4%9A%E5%85%83%E5%90%91%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/" title="微积分 第七章 多元向量值函数积分学" target="_blank" rel="external">https://buzhibujue.cf/2022/06/21/微积分-第七章-多元向量值函数积分学/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/buzhibujuelb" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/buzhibujuelb" target="_blank"><span class="text-dark">不知不觉</span><small class="ml-1x">Acmer &amp; Student</small></a></h3>
+        <div>Never Settle</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" title="微积分 第八章 无穷级数"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%A4%9A%E5%85%83%E6%95%B0%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/" title="微积分 第六章 多元数量值函数积分学"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'dUYIOlsqHv5VgCljRF9mTTtv-gzGzoHsz',
+    appKey: 'HRaJc2h4HiPKBHSGP9lyU5tx',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

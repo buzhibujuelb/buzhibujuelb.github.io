@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>微积分 第八章 无穷级数 | Imperceptible</title>
+  <meta name="description" content="第八章 无穷级数 8.1 常数项级数的概念与性质 一、引言 一个数可以由无穷个数相加得到，但无穷个数相加却不一定能等于一个确定的数 但有限个数相加却一定是一个确定的数 即有限时成立的结论在无限时不一定成立，因为从有限到无限发生了质的变化 二、常数项级数的概念 级数的定义：给定数列 \(u_1,u_2,L,u_n,L\) 则有这个数列构成的表达式 \(u_1+u_2+u_3+L+u_">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微积分 第八章 无穷级数">
+<meta property="og:url" content="https://buzhibujue.cf/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/index.html">
+<meta property="og:site_name" content="Imperceptible">
+<meta property="og:description" content="第八章 无穷级数 8.1 常数项级数的概念与性质 一、引言 一个数可以由无穷个数相加得到，但无穷个数相加却不一定能等于一个确定的数 但有限个数相加却一定是一个确定的数 即有限时成立的结论在无限时不一定成立，因为从有限到无限发生了质的变化 二、常数项级数的概念 级数的定义：给定数列 \(u_1,u_2,L,u_n,L\) 则有这个数列构成的表达式 \(u_1+u_2+u_3+L+u_">
+<meta property="og:locale">
+<meta property="article:published_time" content="2022-06-20T16:10:41.000Z">
+<meta property="article:modified_time" content="2022-07-12T17:23:26.378Z">
+<meta property="article:author" content="不知不觉">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://buzhibujue.cf/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Imperceptible" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    <link href="//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" rel="stylesheet">
+  
+  
+  
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/buzhibujuelb" target="_blank">
+          <img class="img-circle img-rotate" src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">不知不觉</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Acmer &amp; Student</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Chengdu, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools">
+            
+            <i class="icon icon-plus"></i>
+            
+            <span class="menu-title">menu.Tools</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>Never Settle</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HDU/">HDU</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/LOJ/">LOJ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SPOJ/">SPOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UOJ/">UOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B4%9B%E8%B0%B7/">洛谷</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/DP/" style="font-size: 13px;">DP</a> <a href="/tags/FFT/" style="font-size: 13.2px;">FFT</a> <a href="/tags/LCT/" style="font-size: 13px;">LCT</a> <a href="/tags/NTT/" style="font-size: 13.2px;">NTT</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 13px;">二分</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 13px;">凸包</a> <a href="/tags/%E5%8A%A8%E6%80%81DP/" style="font-size: 13px;">动态DP</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 13.2px;">图论</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13px;">字符串</a> <a href="/tags/%E5%AE%B9%E6%96%A5/" style="font-size: 13.4px;">容斥</a> <a href="/tags/%E6%80%9D%E7%BB%B4/" style="font-size: 13.6px;">思维</a> <a href="/tags/%E6%89%A9%E5%9F%9F/" style="font-size: 13px;">扩域</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px;">数学</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 13px;">最短路</a> <a href="/tags/%E6%B0%B4%E9%A2%98/" style="font-size: 13px;">水题</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 13.6px;">物理</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 13px;">线性基</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 13px;">组合数学</a> <a href="/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" style="font-size: 13px;">莫比乌斯反演</a> <a href="/tags/%E8%AE%A1%E6%95%B0/" style="font-size: 13.8px;">计数</a> <a href="/tags/%E9%94%99%E6%8E%92/" style="font-size: 13px;">错排</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 13.6px;">随笔</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%8F%98%E5%8C%96%E7%9A%84%E7%94%B5%E7%A3%81%E5%9C%BA/" class="title">大学物理 变化的电磁场</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:22:53.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%94%B5%E5%AD%A6/" class="title">大学物理 静电学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:21:57.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%A3%81%E5%AD%A6/" class="title">大学物理 静磁学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:37.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6/" class="title">大学物理 刚体力学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:30.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="title">线性代数与空间解析几何 第五章 特征值与特征向量</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:16:32.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-微积分-第八章-无穷级数" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      微积分 第八章 无穷级数
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" class="article-date">
+	  <time datetime="2022-06-20T16:10:41.000Z" itemprop="datePublished">2022-06-21</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/#comments" class="article-comment-link">Comments</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="第八章-无穷级数">第八章 无穷级数</h1>
+<h2 id="常数项级数的概念与性质">8.1 常数项级数的概念与性质</h2>
+<h3 id="一引言">一、引言</h3>
+<p>一个数可以由无穷个数相加得到，但无穷个数相加却不一定能等于一个确定的数</p>
+<p>但有限个数相加却一定是一个确定的数</p>
+<p>即有限时成立的结论在无限时不一定成立，因为从有限到无限发生了质的变化</p>
+<h3 id="二常数项级数的概念">二、常数项级数的概念</h3>
+<p>级数的定义：给定数列 <span
+class="math inline">\(u_1,u_2,L,u_n,L\)</span> 则有这个数列构成的表达式
+<span class="math inline">\(u_1+u_2+u_3+L+u_n+L\)</span> 称为
+<strong>无穷级数</strong>，简称 <strong>级数</strong>，记为 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span></p>
+<p>每一项都是常数的级数 <span class="math inline">\(\sum_{n=1}^\infty
+u_n\)</span> 称为 <strong>常数项级数</strong></p>
+<p>每一项都是函数的级数 <span class="math inline">\(\sum_{n=1}^\infty
+u_n\)</span> 称为 <strong>函数项级数</strong></p>
+<p>称级数 <span class="math inline">\(\sum_{n=1}^\infty u_n\)</span>
+的前 <span class="math inline">\(n\)</span> 项和 <span
+class="math inline">\(S_n=u_1+u_2+L+u_n=\sum_{i=1}^nu_i\)</span>
+为级数的 <strong>部分和</strong></p>
+<p><span class="math inline">\(S_1,S_2,L,S_n\)</span> 为 <span
+class="math inline">\(u_n\)</span> 的部分和数列</p>
+<p><strong>定义2</strong> 当 <span class="math inline">\(n\)</span>
+无限增大时，如果级数 <span class="math inline">\(\sum_{n=1}^\infty
+u_n\)</span> 的部分和数列 <span class="math inline">\({S_n}\)</span>
+有极限 <span class="math inline">\(S\)</span>，即 <span
+class="math inline">\(\lim_{n\to \infty}S_n=S\)</span>，则称级数 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span>
+<strong>收敛</strong>，并称 <span class="math inline">\(S\)</span>
+为该级数的 <strong>和</strong>，记为 <span
+class="math inline">\(S=\sum_{n=1}^\infty
+u_n\)</span>，反之称该级数<strong>发散</strong></p>
+<p>当级数 <span class="math inline">\(\sum_{n=1}^\infty u_n\)</span>
+收敛时，则 <span class="math inline">\(S_n\approx S\)</span></p>
+<p>余项 <span
+class="math inline">\(r_n=S-S_n=u_{n+1}+u_{n+2}+L=\sum_{i=1}^\infty
+u_{n+i}\)</span></p>
+<p>显然 <span class="math inline">\(\lim_{n\to infty}r_n=\lim_{n\to
+\infty}(S-S_n)=0\)</span></p>
+<h3 id="三基本性质">三、基本性质</h3>
+<p><strong>性质1</strong> 若级数 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 收敛，则 <span
+class="math inline">\(\sum_{n=1}^\infty ku_n\)</span> 也收敛</p>
+<p>注：级数的每一项同乘一个非零的常数，敛散性不变</p>
+<p><strong>性质2</strong> 设两收敛级数 <span
+class="math inline">\(s=\sum_{n=1}^\infty u_n ,\sigma=\sum_{n=1}^\infty
+v_n\)</span>，则级数 <span
+class="math inline">\(\sum_{n=1}^\infty(u_n\pm v_n)\)</span>
+收敛，其和为 <span class="math inline">\(s\pm \sigma\)</span></p>
+<p>注：<strong>收敛级数</strong> 可以逐项相加与逐项相减</p>
+<p><strong>性质3</strong> 在级数 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span>
+的前面去掉或加上有限项，不改变其敛散性</p>
+<p><strong>性质4</strong> <strong>收敛级数</strong>
+加括弧后形成的级数仍然收敛于原来的和</p>
+<p>注：收敛级数去掉括弧所形成的级数不一定收敛</p>
+<p><strong>性质5</strong> 设级数 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 收敛，则 <span
+class="math inline">\(\lim_{n\to \infty}u_n=0\)</span></p>
+<p>注：</p>
+<ol type="1">
+<li><p>如果级数的一般项不趋于零，则级数发散</p></li>
+<li><p>必要条件不充分，如调和级数发散</p></li>
+</ol>
+<h2 id="常数项级数的判别法">8.2 常数项级数的判别法</h2>
+<h3 id="一正项级数及其审敛法">一、正项级数及其审敛法</h3>
+<p><strong>定义</strong> 如果级数 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 中各项均有 <span
+class="math inline">\(u_n\geq
+0\)</span>，这种级数称为<strong>正项级数</strong></p>
+<p><strong>定义</strong> 正项级数 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 收敛 <span
+class="math inline">\(\Leftrightarrow\)</span> 部分和数列 <span
+class="math inline">\(\{S_n\}\)</span> 有上界</p>
+<h4 id="比较判敛法">1. 比较判敛法</h4>
+<p><strong>定理</strong> 设 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 和 <span
+class="math inline">\(\sum_{n=1}^\infty v_n\)</span> 都是正项级数，且
+<span class="math inline">\(u_n\leq v_n\)</span> ，则</p>
+<ol type="1">
+<li><p>若 <span class="math inline">\(\sum_{n=1}^n v_n\)</span> 收敛，则
+<span class="math inline">\(\sum_{n=1}^n u_n\)</span> 收敛</p></li>
+<li><p>若 <span class="math inline">\(\sum_{n=1}^n u_n\)</span> 发散，则
+<span class="math inline">\(\sum_{n=1}^n v_n\)</span> 发散</p></li>
+</ol>
+<p><strong>推论1</strong> 给定级数 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 和 <span
+class="math inline">\(\sum_{n=1}^\infty v_n\)</span> ，且存在正整数
+<span class="math inline">\(N\)</span> 和正数 <span
+class="math inline">\(k\)</span>，使得 <span class="math inline">\(0\leq
+u_n\leq kv_n(n\geq N)\)</span> ，则</p>
+<ol type="1">
+<li>若 <span class="math inline">\(\sum_{n=1}^n v_n\)</span> 收敛，则
+<span class="math inline">\(\sum_{n=1}^n u_n\)</span> 收敛</li>
+<li>若 <span class="math inline">\(\sum_{n=1}^n u_n\)</span> 发散，则
+<span class="math inline">\(\sum_{n=1}^n v_n\)</span> 发散</li>
+</ol>
+<p><strong>定理3</strong> 设 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 和 <span
+class="math inline">\(\sum_{n=1}^\infty v_n\)</span> 都是正项级数，若
+<span class="math display">\[
+\lim_{n\to \infty}\cfrac{u_n}{v_n}=l(0&lt;l&lt;+\infty)
+\]</span> 则 <span class="math inline">\(u,v\)</span> 同时发散或收敛</p>
+<p>若 <span class="math inline">\(\lim_{n\to
+\infty}\cfrac{u_n}{v_n}=0\)</span> 且 <span
+class="math inline">\(v_n\)</span> 收敛则 <span
+class="math inline">\(u_n\)</span> 收敛；若 <span
+class="math inline">\(\lim_{n\to
+\infty}\cfrac{u_n}{v_n}=+\infty\)</span> 且 <span
+class="math inline">\(v_n\)</span> 发散则 <span
+class="math inline">\(u_n\)</span> 发散</p>
+<h4 id="比值判敛法">2. 比值判敛法</h4>
+<p><strong>定理（达朗贝尔判别法）</strong> 设 <span
+class="math inline">\(\sum_{n=1}^\infty\)</span> 是正项级数，若 <span
+class="math display">\[
+\lim_{n\to \infty}\frac{u_{n+1}}{u_n}=p(0\leq p\leq +\infty)
+\]</span> 则当 <span class="math inline">\(p&lt;1\)</span>
+时级数收敛；<span class="math inline">\(p&gt;1\)</span>
+时级数发散；<span class="math inline">\(p=1\)</span> 时不确定</p>
+<h4 id="根植判敛法">3. 根植判敛法</h4>
+<p><strong>定理（柯西判别法）</strong> 设级数 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 正项级数， <span
+class="math display">\[
+\lim_{n\to \infty}\sqrt[n]{u_n}=p(0\leq p\leq +\infty)
+\]</span> 则当 <span class="math inline">\(p&lt;1\)</span>
+时级数收敛；<span class="math inline">\(p&gt;1\)</span>
+时级数发散；<span class="math inline">\(p=1\)</span> 时不确定</p>
+<h3 id="二交错级数的判敛法">二、交错级数的判敛法</h3>
+<p><strong>定义2</strong> 设 <span
+class="math inline">\(u_n&gt;0\)</span> 则称级数 <span
+class="math display">\[
+\sum_{n=1}^\infty(-1)^{n-1}u_n=u_1-u_2+u_3-\cdots+(-1)^{n-1}u_n+\cdots
+\]</span> 或 <span class="math display">\[
+\sum_{n=1}^\infty(-1)^{n}u_n=-u_1+u_2-u_3+\cdots+(-1)^{n}u_n+\cdots
+\]</span> 是<strong>交错级数</strong></p>
+<p><strong>定理6（莱布尼兹判敛法）</strong> 若交错级数 <span
+class="math inline">\(\sum_{n=1}^\infty (-1)^{n-1}u_n\)</span> 满足</p>
+<ol type="1">
+<li><span class="math inline">\(u_n\geq u_{n+1}\)</span></li>
+<li><span class="math inline">\(\lim_{n\to \infty}u_n=0\)</span></li>
+</ol>
+<p>则该级数收敛，且其和 <span class="math inline">\(S\leq
+u_1\)</span>，其余项 <span class="math inline">\(R_n\)</span> 的绝对值
+<span class="math inline">\(|R_n|\leq u_{n+1}\)</span></p>
+<h3 id="三绝对收敛和条件收敛">三、绝对收敛和条件收敛</h3>
+<p><strong>定义3</strong> 设 <span class="math inline">\(u_n\)</span>
+是任意实数，则级数 <span class="math inline">\(\sum_{n=1}^\infty
+u_n\)</span> 是任意项级数，其中各项绝对值所构成的级数 <span
+class="math inline">\(\sum_{n=1}^\infty |u_n|\)</span> 称为级数 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 的绝对值级数</p>
+<p><strong>定理7</strong> 若级数 <span
+class="math inline">\(\sum_{n=1}^\infty |u_n|\)</span> 收敛，则 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 也收敛</p>
+<p><strong>定义4</strong> 设 <span class="math inline">\(u_n\)</span>
+是任意项级数级数，若级数 <span class="math inline">\(\sum_{n=1}^\infty
+|u_n|\)</span> 收敛，则称级数 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 绝对收敛；若级数
+<span class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 收敛但 <span
+class="math inline">\(\sum_{n=1}^\infty |u_n|\)</span> 发散，则称 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 条件收敛</p>
+<p><strong>定理8（绝对收敛级数的可交换性）</strong>
+绝对收敛级数不因改变想的位置二改变它的和</p>
+<p><strong>定理9（绝对收敛级数的成绩）</strong> 设级数 <span
+class="math inline">\(\sum_{n=1}^\infty u_n\)</span> 与 <span
+class="math inline">\(\sum_{n=1}^\infty v_n\)</span>
+都是绝对收敛的，其和分别为 <span
+class="math inline">\(S,\sigma\)</span>，则它们的柯西乘积 <span
+class="math display">\[
+(\sum_{n=1}^\infty u_n)(\sum_{n=1}^\infty
+v_n)=\sum_{n=1}^\infty(\sum_{l=1}^nu_lv_{n-l+1})
+\]</span> 对于条件收敛来说，定理 <span class="math inline">\(9\)</span>
+并不成立</p>
+<h2 id="幂级数">8.3 幂级数</h2>
+<h3 id="一函数项级数的一般概念">一、函数项级数的一般概念</h3>
+<p><strong>定义1</strong> 给定一个区间上的函数列 <span
+class="math inline">\(u_1(x),u_2(x),\cdots,u_n(x),\cdots,\)</span></p>
+<p>则由该函数列构成的表达式 <span class="math display">\[
+\sum_{n=1}^\infty u_n(x)
+\]</span> 称为定义在区间 <span class="math inline">\(I\)</span>
+上的函数项级数</p>
+<p><strong>定义2</strong> 设 <span class="math inline">\(x_0\in
+I\)</span> 且级数 <span class="math inline">\(\sum_{n=1}^\infty
+u_n(x_0)\)</span> 收敛，则称 <span class="math inline">\(x_0\)</span>
+是函数项级数 <span class="math inline">\(\sum_{n=1}^\infty
+u_n(x)\)</span> 的收敛点；如果级数发散，则称 <span
+class="math inline">\(x_0\)</span> 是函数项级数 <span
+class="math inline">\(\sum_{n=1}^\infty u_n(x)\)</span>
+的发散点。全体收敛点的集合称为函数项级数 <span
+class="math inline">\(\sum_{n=1}^\infty u_n(x)\)</span> 的收敛域</p>
+<h3 id="二幂级数及其收敛半径">二、幂级数及其收敛半径</h3>
+<p><strong>定义3</strong> 形如 <span class="math display">\[
+\sum_{n=0}^\infty a_nx^n=a_0+a_1x+a_2x^2+\cdots+a_nx^n+\cdots
+\]</span> 的函数项级数称为幂级数，其中 $a_0,a_1,a_n,$
+称为幂级数的系数</p>
+<p><strong>定理1（阿贝尔定理）</strong> 若幂级数 <span
+class="math inline">\(\sum_{n=0}^\infty a_n x^n\)</span> 在点 <span
+class="math inline">\(x=x_0\)</span> 收敛，则当 <span
+class="math inline">\(|x|&lt;|x_0|\)</span> 时，幂级数 <span
+class="math inline">\(\sum_{n=0}^\infty a_nx^n\)</span> 绝对收敛；若
+<span class="math inline">\(\sum_{n=0}^\infty a_nx^n\)</span> 在 <span
+class="math inline">\(x=x_0\)</span> 处发散，则 <span
+class="math inline">\(|x|&gt;|x_0|\)</span> 是幂级数 <span
+class="math inline">\(\sum_{n=0}^\infty a_nx^n\)</span> 发散</p>
+<p><strong>推论</strong> 若幂级数 <span
+class="math inline">\(\sum_{n=0}^\infty a_nx^n\)</span> 不是尽在一点
+<span class="math inline">\(x=0\)</span>
+收敛也不是在整个数轴都收敛，则必定有一个完全确定的正数 <span
+class="math inline">\(R\)</span> 存在，使得</p>
+<ol type="1">
+<li>当 <span class="math inline">\(|x|&lt;R\)</span> 时，幂级数 <span
+class="math inline">\(\sum_{n=0}^\infty a_nx^n\)</span> 绝对收敛</li>
+<li>当 <span class="math inline">\(|x|&gt;R\)</span> 时，幂级数 <span
+class="math inline">\(\sum_{n=0}^\infty a_nx^n\)</span> 发散</li>
+<li>当 <span class="math inline">\(|x|=R\)</span> 时，不确定</li>
+</ol>
+<p>满足推论的正数 <span class="math inline">\(R\)</span> 称为幂级数
+<span class="math inline">\(\sum_{n=0}^\infty a_nx^n\)</span>
+的<strong>收敛半径</strong>，对应的开区间 <span
+class="math inline">\((-R,R)\)</span>
+称为幂级数的<strong>收敛区间</strong>。求幂级数的收敛域则还需考虑区间两个端点的收敛性</p>
+<p><strong>定理2</strong> 设幂级数为 <span
+class="math inline">\(\sum_{n=0}^\infty a_nx^n\)</span>，若 <span
+class="math display">\[
+\lim_{n\to \infty} |\cfrac{a_n+1}{a_n}|=p
+\\
+或
+\\
+\lim_{n=to\infty}\sqrt[n]{|a_n|}=p
+\]</span> 则有</p>
+<ol type="1">
+<li>当 <span class="math inline">\(p\neq 0\)</span> 时，<span
+class="math inline">\(R=\cfrac 1p\)</span></li>
+<li>当 <span class="math inline">\(p=0\)</span> 时，<span
+class="math inline">\(R=+\infty\)</span></li>
+<li>当 <span class="math inline">\(p=+\infty\)</span> 时，<span
+class="math inline">\(R=0\)</span></li>
+</ol>
+<h3 id="三幂级数的运算性质">三、幂级数的运算性质</h3>
+<p><strong>性质1</strong> 幂级数的和函数在收敛区间内连续</p>
+<p><strong>性质2</strong> 幂级数的和函数在收敛区间内可积，且对 <span
+class="math inline">\(\forall x\in(-R,R)\)</span> 有逐项积分公式 <span
+class="math display">\[
+\int_0^xS(t)dt=\int_0^x(\sum_{n=0}^\infty a_nt^n)dt=\sum_{n=0}^\infty
+\int_0^xa_nt^ndt=\sum_{n=0}^\infty\cfrac{n+1}{a_n}x^{n+1}
+\]</span> <strong>性质3</strong> 幂级数的和函数内有连续的导数，且对
+<span class="math inline">\(\forall x\in(-R,R)\)</span> 有逐项求导公式
+<span class="math display">\[
+S&#39;(x)=(\sum_{n=0}^\infty
+a_nx^n)&#39;=\sum_{n=0}^\infty(a_nx^n)&#39;=\sum_{n=1}^na_nx^{n-1}
+\]</span></p>
+<h2 id="函数展开成幂级数">8.4 函数展开成幂级数</h2>
+<h3 id="一泰勒级数">一、泰勒级数</h3>
+<p>幂级数 <span class="math display">\[
+\sum_{n=0}^\infty
+\cfrac{f^{(n)}(x_0))}{n!}(x-x_0)^n=f(x_0)+f&#39;(x_0)(x-x_0)+\cfrac{f&#39;&#39;(x_0)}{2!}(x-x_0)^2+\cdots
+\]</span> 称为函数 <span class="math inline">\(f(x)\)</span> 在 <span
+class="math inline">\(x_0\)</span> 的<strong>泰勒级数</strong></p>
+<p>特别地，当 <span class="math inline">\(x_0=0\)</span> 时，幂级数
+<span class="math display">\[
+\sum_{n=0}^\infty\cfrac{f^{(n)}(0)}{n!}x^n=f(0)+f&#39;(0)x+\cfrac{f&#39;&#39;(0)}{2!}x^2+\cdots
+\]</span> 称为函数 <span class="math inline">\(f(x)\)</span>
+的<strong>麦克劳林级数</strong></p>
+<p><strong>定理1</strong> 设函数 <span
+class="math inline">\(f(x)\)</span> 在 <span
+class="math inline">\(x_0\)</span> 的某个邻域 <span
+class="math inline">\(N(x_0,\delta_0)\)</span> 内具有任意阶导数，则函数
+<span class="math inline">\(f(x)\)</span>
+在该邻域内能展开成泰勒级数的充要条件是 <span
+class="math inline">\(f(x)\)</span> 的泰勒公式中的余项 <span
+class="math inline">\(R_n(x)\)</span> 满足 <span class="math display">\[
+\lim_{n\to \infty}R_n(x)=0,\forall x\in N(x_0,\delta_0)
+\]</span> <strong>定理2</strong> 如果函数 <span
+class="math inline">\(f(x)\)</span> 在含 <span
+class="math inline">\(x_0\)</span> 的区间 <span
+class="math inline">\((-R+x_0,R+x_0)\)</span>
+能展开成泰勒级数，则右端的幂级数是唯一的</p>
+<h3 id="二函数展开成幂级数">二、函数展开成幂级数</h3>
+<h4 id="直接展开法">1. 直接展开法</h4>
+<p>直接使用泰勒公式</p>
+<h4 id="间接展开法">2. 间接展开法</h4>
+<ol type="1">
+<li>逐项求导与逐项积分</li>
+<li>变量代换法</li>
+</ol>
+<p>几个基本的幂级数展开式 <span class="math display">\[
+\cfrac 1{1-x}=\sum_{n=0}^\infty x^n=1+x+x^2+\cdots +x^n+\cdots,
+x\in(-1,1)
+\\
+e^x=\sum_{n=0}^\infty
+\cfrac{x^n}{n!}=1+x+\cfrac{x^2}{2!}+\cdots+\cfrac{x^n}{n!}+\cdots
+,x\in(-\infty,+\infty)
+\\
+\sin x=\sum_{n=0}^\infty
+(-1)^n\cfrac{x^{2n+1}}{(2n+1)!},x\in(-\infty,+\infty)
+\\
+\cos x=\sum_{n=0}^\infty
+(-1)^n\cfrac{x^{2n}}{(2n)!},x\in(-\infty,+\infty)
+\\
+\ln(1+x)=\sum_{n=1}^\infty (-1)^{n-1} \cfrac{x^n}{n}, x\in(-1,1]
+\\
+(1+x)^\alpha=1+\sum_{n=1}^\infty\cfrac{\alpha(\alpha-1)\cdots(a-n+1)}{n!}x^n,
+x\in(-1,1)
+\]</span></p>
+<ol start="3" type="1">
+<li>四则运算法</li>
+</ol>
+<h2 id="幂级数的应用">8.5 幂级数的应用</h2>
+<p>不考</p>
+<h2 id="傅里叶级数">8.6 傅里叶级数</h2>
+<h3 id="一三角级数">一、三角级数</h3>
+<p><span class="math display">\[
+f(t)=\cfrac {a_0}{2}+\sum_{n=1}^\infty(a_n\cos nx+b_n\sin nx)
+\]</span></p>
+<h3 id="二三角函数系的正交性">二、三角函数系的正交性</h3>
+<p><span class="math display">\[
+1,\cos x,\sin x,\cos 2x,\sin 2x,\cdots,\cos nx,\sin nx
+\]</span></p>
+<p>称之为<strong>三角函数系</strong></p>
+<p>三角函数系在 <span class="math inline">\([-\pi,\pi]\)</span>
+上正交即三角函数系中任意两个不同的函数乘积在区间 <span
+class="math inline">\([-\pi,\pi]\)</span> 上的积分为零</p>
+<h3 id="三欧拉-傅里叶系数公式">三、欧拉-傅里叶系数公式</h3>
+<p><span class="math display">\[
+a_n=\cfrac 1\pi\int_{-\pi}^\pi f(x)\cos nxdx
+\\
+b_n=\cfrac 1\pi\int_{-\pi}^\pi f(x)\sin nxdx
+\]</span></p>
+<p>如果上述公式的积分都存在，这时就定出了三角级数的系数 <span
+class="math inline">\(a_0,a_n,b_n\)</span>，它们称为 <span
+class="math inline">\(f(x)\)</span>
+的<strong>傅里叶系数</strong>。具有傅里叶系数的三角级数称为函数 <span
+class="math inline">\(f(x)\)</span> 的傅里叶级数，记为 <span
+class="math display">\[
+f(x)\sim \cfrac {a_0}{2}+\sum_{n=1}^\infty(a_n\cos nx+b_n\sin nx)
+\]</span></p>
+<h3 id="四傅里叶级数的收敛问题">四、傅里叶级数的收敛问题</h3>
+<p><strong>定理（狄利克雷收敛定理）</strong></p>
+<p>设 <span class="math inline">\(f(x)\)</span> 是以 <span
+class="math inline">\(2\pi\)</span> 为周期的周期函数，如果其在区间 <span
+class="math inline">\([-\pi,\pi]\)</span>
+上连续或只有有限个第一类间断点，并且只有有限个极值点，则其傅里叶级数收敛，并且有</p>
+<ol type="1">
+<li>当 <span class="math inline">\(x\)</span> 是函数 <span
+class="math inline">\(f(x)\)</span> 的连续点时，有 <span
+class="math inline">\(S(x)=f(x)\)</span></li>
+<li>当 <span class="math inline">\(x\)</span> 是函数 <span
+class="math inline">\(f(x)\)</span> 的间断点时，有 <span
+class="math inline">\(S(x)=\cfrac 12[f(x-0)+f(x+0)]\)</span></li>
+</ol>
+<p>若函数只在 <span class="math inline">\([-\pi,\pi]\)</span>
+上有定义且满足狄利克雷定理的条件，可以在 <span
+class="math inline">\((-\pi,\pi]\)</span> 或 <span
+class="math inline">\([-\pi,\pi]\)</span> 外补充 <span
+class="math inline">\(f(x)\)</span> 的定义使其成为以 <span
+class="math inline">\(2\pi\)</span> 为周期的周期函数 <span
+class="math inline">\(F(x)\)</span>，这种拓广定义域的方法成为<strong>周期延拓</strong></p>
+<h2 id="正弦级数与余弦级数">8.7 正弦级数与余弦级数</h2>
+<h3 id="一奇偶函数的傅里叶级数">一、奇偶函数的傅里叶级数</h3>
+<p>奇函数 <span class="math display">\[
+a_n=0
+\\
+b_n=\cfrac 1\pi\int_{-\pi}^\pi f(x)\sin nxdx
+=\cfrac 2\pi\int_{0}^\pi f(x)\sin nxdx
+\quad(n=1,2,\cdots)
+\]</span></p>
+<p>偶函数</p>
+<p>$$ b_n=0 \</p>
+<p>a_n=<em>{-}^f(x)nxdx =</em>{0}^f(x)nxdx (n=0,1,2,) $$</p>
+<h3
+id="二函数展开成正弦级数与余弦级数">二、函数展开成正弦级数与余弦级数</h3>
+<p>将只在 <span class="math inline">\([0,\pi]\)</span> 上有定义的函数
+<span class="math inline">\(f(x)\)</span> 补充函数在 <span
+class="math inline">\((-\pi,0)\)</span> 上的定义，使其成为奇函数（若
+<span class="math inline">\(f(x)\neq 0\)</span> 规定 <span
+class="math inline">\(f(0)=0\)</span>）或偶函数在做周期延拓，这种方法成为<strong>奇延拓</strong>或<strong>偶延拓</strong></p>
+<h2 id="任意周期函数的傅里叶级数">8.8 任意周期函数的傅里叶级数</h2>
+<h3 id="一周期为-2l-的周期函数的傅里叶级数">一、周期为 <span
+class="math inline">\(2l\)</span> 的周期函数的傅里叶级数</h3>
+<p><strong>定理1</strong> 设周期为 <span
+class="math inline">\(2l\)</span> 的周期函数 <span
+class="math inline">\(f(x)\)</span> 在 <span
+class="math inline">\([-l,l]\)</span>
+上满足地理课类收敛定理的条件，则其傅里叶展开式为 <span
+class="math display">\[
+f(x)=\cfrac{a_0}{2}+\sum_{n=1}^\infty(a_n\cos
+\cfrac{n\pi}{l}x+b_n\sin\cfrac{n\pi}{l}x)
+\\
+a_n=\cfrac 1l\int_{-l}^lf(x)\cos\cfrac{n\pi}{l}xdx\quad(n=0,1,2,\cdots)
+\\
+b_n=\cfrac 1l\int_{-l}^lf(x)\sin\cfrac{n\pi}{l}xdx\quad(n=1,2,\cdots)
+\]</span></p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://buzhibujue.cf/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" title="微积分 第八章 无穷级数" target="_blank" rel="external">https://buzhibujue.cf/2022/06/21/微积分-第八章-无穷级数/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/buzhibujuelb" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/buzhibujuelb" target="_blank"><span class="text-dark">不知不觉</span><small class="ml-1x">Acmer &amp; Student</small></a></h3>
+        <div>Never Settle</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2022/06/21/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/" title="离散数学"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%A4%9A%E5%85%83%E5%90%91%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/" title="微积分 第七章 多元向量值函数积分学"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'dUYIOlsqHv5VgCljRF9mTTtv-gzGzoHsz',
+    appKey: 'HRaJc2h4HiPKBHSGP9lyU5tx',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

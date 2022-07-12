@@ -1,0 +1,2139 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>组合数学 | Imperceptible</title>
+  <meta name="description" content="组合数学 Basic Formula \[ \begin{aligned} &amp;m!{ n \brace m}\\ &#x3D;&amp;n!(e^x-1)^m[x^n]\\ &#x3D;&amp;n!\sum_{i&#x3D;0}^me^{ix}(-1)^{m-i}\binom{m}{i}[x^n]\\ &#x3D;&amp;n!\sum_{i&#x3D;0}^m\binom{m}{i}(-1)^{m-i}\sum_{j&#x3D;0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="组合数学">
+<meta property="og:url" content="https://buzhibujue.cf/2019/08/16/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/index.html">
+<meta property="og:site_name" content="Imperceptible">
+<meta property="og:description" content="组合数学 Basic Formula \[ \begin{aligned} &amp;m!{ n \brace m}\\ &#x3D;&amp;n!(e^x-1)^m[x^n]\\ &#x3D;&amp;n!\sum_{i&#x3D;0}^me^{ix}(-1)^{m-i}\binom{m}{i}[x^n]\\ &#x3D;&amp;n!\sum_{i&#x3D;0}^m\binom{m}{i}(-1)^{m-i}\sum_{j&#x3D;0">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-08-16T15:16:05.000Z">
+<meta property="article:modified_time" content="2022-07-12T17:23:26.466Z">
+<meta property="article:author" content="不知不觉">
+<meta property="article:tag" content="计数">
+<meta property="article:tag" content="组合数学">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://buzhibujue.cf/2019/08/16/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Imperceptible" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    <link href="//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" rel="stylesheet">
+  
+  
+  
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/buzhibujuelb" target="_blank">
+          <img class="img-circle img-rotate" src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">不知不觉</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Acmer &amp; Student</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Chengdu, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools">
+            
+            <i class="icon icon-plus"></i>
+            
+            <span class="menu-title">menu.Tools</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>Never Settle</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HDU/">HDU</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/LOJ/">LOJ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SPOJ/">SPOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UOJ/">UOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B4%9B%E8%B0%B7/">洛谷</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/DP/" style="font-size: 13px;">DP</a> <a href="/tags/FFT/" style="font-size: 13.2px;">FFT</a> <a href="/tags/LCT/" style="font-size: 13px;">LCT</a> <a href="/tags/NTT/" style="font-size: 13.2px;">NTT</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 13px;">二分</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 13px;">凸包</a> <a href="/tags/%E5%8A%A8%E6%80%81DP/" style="font-size: 13px;">动态DP</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 13.2px;">图论</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13px;">字符串</a> <a href="/tags/%E5%AE%B9%E6%96%A5/" style="font-size: 13.4px;">容斥</a> <a href="/tags/%E6%80%9D%E7%BB%B4/" style="font-size: 13.6px;">思维</a> <a href="/tags/%E6%89%A9%E5%9F%9F/" style="font-size: 13px;">扩域</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px;">数学</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 13px;">最短路</a> <a href="/tags/%E6%B0%B4%E9%A2%98/" style="font-size: 13px;">水题</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 13.6px;">物理</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 13px;">线性基</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 13px;">组合数学</a> <a href="/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" style="font-size: 13px;">莫比乌斯反演</a> <a href="/tags/%E8%AE%A1%E6%95%B0/" style="font-size: 13.8px;">计数</a> <a href="/tags/%E9%94%99%E6%8E%92/" style="font-size: 13px;">错排</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 13.6px;">随笔</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%8F%98%E5%8C%96%E7%9A%84%E7%94%B5%E7%A3%81%E5%9C%BA/" class="title">大学物理 变化的电磁场</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:22:53.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%94%B5%E5%AD%A6/" class="title">大学物理 静电学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:21:57.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%A3%81%E5%AD%A6/" class="title">大学物理 静磁学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:37.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6/" class="title">大学物理 刚体力学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:30.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="title">线性代数与空间解析几何 第五章 特征值与特征向量</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:16:32.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-组合数学" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      组合数学
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2019/08/16/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" class="article-date">
+	  <time datetime="2019-08-16T15:16:05.000Z" itemprop="datePublished">2019-08-16</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" rel="tag">组合数学</a>, <a class="article-tag-link-link" href="/tags/%E8%AE%A1%E6%95%B0/" rel="tag">计数</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/08/16/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/#comments" class="article-comment-link">Comments</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="组合数学">组合数学</h1>
+<h2 id="basic-formula">Basic Formula</h2>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;m!{ n \brace m}\\
+=&amp;n!(e^x-1)^m[x^n]\\
+=&amp;n!\sum_{i=0}^me^{ix}(-1)^{m-i}\binom{m}{i}[x^n]\\
+=&amp;n!\sum_{i=0}^m\binom{m}{i}(-1)^{m-i}\sum_{j=0}^{\infty}\frac{i^jx^j}{j!}[x^n]\\
+=&amp;\sum_{i=0}^m\binom{m}{i}(-1)^{m-i}i^n\\
+\end{aligned}
+\\
+\Updownarrow\\
+n^m=\sum_{i=0}^n{m\brace i}n^{\underline i}\\
+\\
+{n\brace m}=\sum_{i=0}^m\frac{(-1)^{m-i}i^n}{i!(m-i)!}\\
+f(S)=\sum_{T\subseteq S}\sum_{p\subseteq T}(-1)^{|T|-|P|}f(P)
+\]</span></p>
+<p><span class="math display">\[
+\begin{array}{}
+m^n=&amp;\sum_{i=1}^m{n\brace i}m^{\underline
+i}&amp;&amp;&amp;&amp;容斥\\
+m^{\underline n}=&amp;\sum_{i=1}^n{n\brack
+i}(-1)^{n-i}m^i&amp;&amp;&amp;&amp;定义\\
+\end{array}
+\]</span></p>
+<p><span class="math display">\[
+x^{\underline n}=(-1)^n(-x)^{\overline n}\\
+x^{\overline n}=(-1)^n(-x)^{\underline n}\\
+\]</span></p>
+<p><span class="math display">\[
+\sum_{i=0}^n(-1)^{n-i}{n\brack i}{i\brace m}=[m=n]\\
+\sum_{i=0}^n(-1)^{n-i}{n\brace i}{i\brack m}=[m=n]
+\]</span></p>
+<p>证明:</p>
+<p><span class="math display">\[
+\begin{aligned}
+m^{n} &amp;=\sum_{i=0}^{n}
+{n\brack i}
+(-1)^{n-i} m^{i}
+\\&amp;=
+\sum_{i=0}^{n}
+{n\brack i}
+(-1)^{n-i} \sum_{j=0}^{i}
+{i\brace j}
+m^{j}
+\\&amp;=
+\sum_{i=0}^{n} m^{i} \sum_{j=i}^{n}(-1)^{n-j}
+{n\brack j}
+{j\brace i}
+\end{aligned}
+\]</span></p>
+<p>另一个证明同理</p>
+<h4 id="斯特林反演">斯特林反演：</h4>
+<p><span class="math display">\[
+f(n)=\sum_{i=0}^n{n\brace i}g(i)
+\Leftrightarrow
+g(n)=\sum_{i=0}^n(-1)^{n-i}{n\brack i}f(i)
+\]</span></p>
+<p>证明：</p>
+<p>已知 <span class="math inline">\(g(n)=\sum_{i=0}^n{n\brace
+i}f(i)\)</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+f(n)&amp;=
+\sum_{i=0}^n[i=n]f(i)
+\\&amp;=
+\sum_{i=0}^nf(i)
+\sum_{j=0}^n(-1)^{n-j}{n\brack j}{j\brace i}\\
+\\&amp;=
+\sum_{j=0}^n(-1)^{n-j}{n\brack j}
+\sum_{i=0}^nf(i){j\brace i}
+\\&amp;=
+\sum_{j=0}^n(-1)^{n-j}{n\brack j}
+g(j)
+\end{aligned}
+\]</span></p>
+<p>另一个证明同理</p>
+<p>应用：</p>
+<p><span class="math display">\[
+f(n)=x^n=\sum_{i=1}^n{n \brace i}x^{\underline i}=\sum_{i=1}^n{n \brace
+i}g(i)\\
+\Updownarrow\\
+g(n)=x^{\underline{n}}=\sum_{i=1}^n(-1)^{n-i}{n \brack
+i}f(i)=\sum_{i=1}^n(-1)^{n-i}{n \brack i}x^i\\
+\]</span></p>
+<p><span class="math display">\[
+f(n)=x^{\overline n}=\sum_{i=1}^n{n \brack i}x^i=\sum_{i=1}^n{n \brack
+i}g(i)\\
+\Updownarrow\\
+g(n)=x^n=\sum_{i=1}^n(-1)^{n-i}{n \brace i}f(i)=\sum_{i=1}^n(-1)^{n-i}{n
+\brace i}x^{\overline i}\\
+\]</span></p>
+<hr />
+<h3
+id="第一类斯特林数求行ogf形式">第一类斯特林数求行(<strong>OGF</strong>形式)</h3>
+<p>已知 <span class="math inline">\(F(x)=\sum_{i=0}f_ix^i\)</span> 求
+<span class="math inline">\(F(x+n)\)</span> <span
+class="math display">\[
+\begin{aligned}
+&amp;F(x+n)
+\\=&amp;
+\sum_{i=0}f_i(x+n)^i
+\\=&amp;
+\sum_{i=0}f_i\sum_{j=0}^i\binom{i}{j}x^jn^{i-j}
+\\=&amp;
+\sum_{i=0}f_i\sum_{j=0}\binom{i}{j}x^jn^{i-j}
+\\=&amp;
+\sum_{i=0}f_i\sum_{j=0}\frac{i!}{j!(i-j)!}x^jn^{i-j}
+\\=&amp;
+\sum_{j=0}f_j\sum_{i=0}\frac{j!}{i!(j-i)!}x^in^{j-i}
+\\=&amp;
+\sum_{i=0}\sum_{j=0}f_j\frac{j!}{(j-i)!}n^{j-i}\frac{x^i}{i!}
+\\=&amp;
+\sum_{i=0}\frac{\left(\sum_{j=0}f_jj!\frac{n^{j-i}}{(j-i)!}\right)}{i!}x^i
+\end{aligned}
+\]</span> 将 <span
+class="math inline">\(A(x)=\sum_{i=0}\frac{n^i}{i!}\)</span>
+翻转一下再卷上 <span class="math inline">\(B(x)=\sum_{i=0}f_ii!\)</span>
+再除以 <span class="math inline">\(i!\)</span> 即可</p>
+<p>对应到第一类斯特林数就是 <span
+class="math inline">\(\sum_{i=0}^n{n\brack i}x^i=x^{\overline
+n}=x^{\overline{n/2}}\cdot (x+n/2)^{\overline{n/2}}\)</span>
+。使用倍增解决</p>
+<hr />
+<h3
+id="第一类斯特林数求列egf形式">第一类斯特林数求列（<strong>EGF</strong>形式）</h3>
+<p>有且仅有一个圆排列的 <span class="math inline">\(EGF\)</span> 为
+<span class="math display">\[
+f(x)=\sum_{i=1}^\infty
+\frac{(i-1)!x^i}{i!}=\sum_{i=1}^\infty\frac{x^i}{i}=\ln(\frac{1}{1-x})
+\]</span> 所以恰好 <span class="math inline">\(k\)</span>
+个有标号圆排列的 <span class="math inline">\(EGF\)</span> 为 <span
+class="math inline">\(f(x)^k=\left(\ln(\frac{1}{1-x})\right)^k\)</span></p>
+<p>第一类斯特林数是无标号的所以其对应的 <span
+class="math inline">\(EGF\)</span> 还要除以 <span
+class="math inline">\(k!\)</span> <span class="math display">\[
+\frac{\left(\ln(\frac{1}{1-x})\right)^k}{k!}=\frac{\left(\ln(1-x)\right)^k(-1)^k}{k!}=\sum_{i=0}^\infty\frac{
+{i\brack k}x^i}{i!}
+\]</span> 尝试从结论倒推能推出什么：把所有 <span
+class="math inline">\(x\)</span> 看作 <span
+class="math inline">\(-x\)</span> 得到 <span class="math display">\[
+\frac{(\ln(1+x))^k}{k!}=(-1)^k\sum_{i=0}^\infty\frac{ {i\brack
+k}(-x)^i}{i!}=\sum_{i=0}^\infty(-1)^{k+i}{i\brack k}\frac{x^i}{i!}
+\]</span> 两边同时取所有项并乘上一个 <span
+class="math inline">\(t^k\)</span> 的系数 <span class="math display">\[
+\sum_{k=0}^\infty t^k\frac{\left(\ln(1+x)\right)^k}{k!}
+=\exp(t\ln(1+x))=(1+x)^t
+\]</span> 右边 <span class="math display">\[
+\begin{aligned}
+&amp;\sum_{k=0}^\infty t^k\sum_{i=0}^\infty(-1)^{k+i}{i\brack
+k}\frac{x^i}{i!}
+\\=&amp;
+\sum_{i=0}^\infty t^i\sum_{k=0}^\infty(-1)^{k+i}{k\brack
+i}\frac{x^k}{k!}
+\\=&amp;
+\sum_{k=0}^\infty\frac{x^k}{k!}\sum_{i=0}^\infty t^i(-1)^{k+i}{k\brack
+i}
+\\=&amp;
+\sum_{k=0}^\infty\frac{x^k}{k!}t^{\underline k}
+\\=&amp;
+\sum_{k=0}^\infty x^k\binom{t}{k}
+\\=&amp;
+(1+x)^t
+\end{aligned}
+\]</span></p>
+<p>于是倒着推也是可以推出答案式子的</p>
+<p>注意<code>ln</code>之后常数项为 <span
+class="math inline">\(0\)</span>
+不能<code>qpow</code>的时候直接<code>return exp(ln(f)*k)</code>，要提前去掉末尾
+<span class="math inline">\(0\)</span></p>
+<hr />
+<h3
+id="第二类斯特林数求行ogf形式">第二类斯特林数求行（<strong>OGF</strong>形式）</h3>
+<p><span class="math display">\[
+{n\brace m}=\frac{1}{m!}\sum_{i=1}^m\binom{m}{i}(-1)^{m-i}i^n=
+\frac{n!}{m!}\sum_{i=1}^m\frac{i^n}{i!}\frac{(-1)^{m-i}}{(m-i)!}
+\]</span></p>
+<hr />
+<h3
+id="第二类斯特林数求列egf形式">第二类斯特林数求列（<strong>EGF</strong>形式）</h3>
+<p><span class="math display">\[
+{ n \brace m}=\frac{n!}{m!}(e^x-1)^m[x^n]\\
+\begin{aligned}
+&amp;\sum_{i=0}^\infty \frac{ {i\brace m}x^i}{i!}
+\\=&amp;
+\sum_{i=0}^\infty \frac{\left(\frac{i!}{m!}(e^x-1)^m[x^i]\right)x^i}{i!}
+\\=&amp;
+\frac{1}{m!}\sum_{i=0}^\infty(e^x-1)^m[x^i]x^i
+\\=&amp;
+\frac{1}{m!}(e^x-1)^m
+\end{aligned}
+\]</span></p>
+<p>也可以用和第一类求列相类似的推导，注意 <span
+class="math inline">\(e^x-1\)</span> 常数项系数为 <span
+class="math inline">\(0\)</span>
+，<code>qpow</code>时同第一类求列都要特殊处理</p>
+<hr />
+<h3 id="cf-932-e">CF 932 E</h3>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\sum_{i=1}^n\binom{n}{i}i^k\\
+=&amp;\sum_{i=1}^n\binom{n}{i}\sum_{j=0}^{i}{k\brace j}i^{\underline
+j}\\
+=&amp;\sum_{i=1}^n\binom{n}{i}\sum_{j=0}^{i}{k\brace j}\binom{i}{j}j!\\
+=&amp;\sum_{j=0}^{n}{k\brace j}j!\sum_{i=j}^n\binom{n}{i}\binom{i}{j}\\
+=&amp;
+\sum_{j=0}^{n}{k\brace j}j!\sum_{i=j}^n\binom{n}{j}\binom{n-j}{n-i}\\
+=&amp;
+\sum_{j=0}^{\min(n,k)}{k\brace
+j}\binom{n}{j}j!\sum_{i=0}^{n-j}\binom{n-j}{n-i-j}\\
+=&amp;
+\sum_{j=0}^{\min(n,k)}{k\brace j}\binom{n}{j}j!2^{n-j}\\
+=&amp;
+\sum_{j=0}^{\min(n,k)}{k\brace j}n^{\underline j}2^{n-j}\\
+\end{aligned}
+\]</span></p>
+<hr />
+<h3 id="heoi2016-求和">HEOI2016 求和</h3>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\sum_{i=0}^n\sum_{j=0}^i{i\brace j}2^jj!\\
+=&amp;
+\sum_{i=0}^n\sum_{j=0}^n{i\brace j}2^jj!\\
+=&amp;
+\sum_{i=0}^n\sum_{j=0}^n2^jj!\sum_{k=0}^j\frac{1}{j!}(-1)^{j-k}\binom{j}{k}k^i\\
+=&amp;
+\sum_{i=0}^n\sum_{j=0}^n2^j\sum_{k=0}^j(-1)^{j-k}\binom{j}{k}k^i\\
+=&amp;
+\sum_{k=0}^n\sum_{j=k}^n2^j(-1)^{j-k}\binom{j}{k}\sum_{i=0}^nk^i\\
+=&amp;
+\sum_{k=0}^n\sum_{j=k}^n2^j(-1)^{j-k}\binom{j}{k}\frac{1-k^{n+1}}{1-k}\\
+=&amp;
+\sum_{k=0}^n\sum_{j=0}^n2^j(-1)^{j-k}\frac{j!}{k!(j-k)!}\frac{1-k^{n+1}}{1-k}\\
+=&amp;
+\sum_{j=0}^n2^jj!\sum_{k=0}^n(-1)^{j-k}\frac{1}{k!(j-k)!}\frac{1-k^{n+1}}{1-k}\\
+=&amp;
+\sum_{j=0}^n2^jj!\sum_{k=0}^n\frac{(-1)^{j-k}}{(j-k)!}k!\frac{1-k^{n+1}}{1-k}\\
+\end{aligned}
+\]</span></p>
+<p>（可优化到线性，见 200415 T3）</p>
+<hr />
+<h3 id="fjoi2016-建筑师">FJOI2016 建筑师</h3>
+<p><span class="math display">\[
+f[i][j]=f[i-1][j-1]+f[i-1][j]\times (i-1)\\
+f[n][0]=[n=0]\\
+f[n][1]=(n-1)!\\
+f[i][j]={i\brack j}\\
+ans=\sum_{i=1}^n{i-1\brack a-1}{n-i\brack b-1}\binom{n-1}{i-1}\\
+n-1个数里选若干个组成 a-1个环，剩下的再组成b-1个环\\
+即一共组成a+b-2个环每种组成a+b-2个环的方式被算了\binom{a+b-2}{a-1}次\\
+={n-1\brack a+b-2}\binom{a+b-2}{a-1}
+\]</span></p>
+<hr />
+<h3 id="p4827-crash-的文明世界">P4827 Crash 的文明世界</h3>
+<p><span class="math display">\[
+\begin{aligned}
+S(i)&amp;=\sum_{j=1}^ndis(i,j)^k\\
+&amp;令d=dis(i,j)\\
+&amp;=
+\sum_{j=1}^n\sum_{l=1}^{k}d^{\underline l}{k\brace l}\\
+&amp;=
+\sum_{j=1}^n\sum_{l=1}^{k}\binom{d}{l}l!{k\brace l}\\
+&amp;=
+\sum_{l=1}^{k}l!{k\brace l}\sum_{j=1}^n\binom{d}{l}\\
+&amp;=
+\sum_{l=1}^kl!{k\brace
+l}\sum_{j=1}^n{\color{red}\binom{d-1}{l}+\binom{d-1}{l-1}}
+\end{aligned}
+\]</span></p>
+<hr />
+<h3 id="bzoj3622-已经没有什么好害怕的了">BZOJ3622
+已经没有什么好害怕的了</h3>
+<p><span class="math inline">\(ans[i]\)</span> 表示恰有 <span
+class="math inline">\(i\)</span> 组 <span
+class="math inline">\(A\)</span> 比 <span
+class="math inline">\(B\)</span> 多的方案数 <span
+class="math inline">\(f[i]\)</span> 表示至少 <span
+class="math inline">\(i\)</span> 组 <span
+class="math inline">\(A\)</span> 比 <span
+class="math inline">\(B\)</span> 多的方案数 <span
+class="math display">\[
+f[i]=\sum_{j=i}^nans[j]\binom{j}{i}\\
+ans[i]=\sum_{j=i}^nf[j](-1)^{j-i}\binom{j}{i}\\
+\]</span> <span class="math inline">\(dp[i][j][0/1]\)</span> 表示前
+<span class="math inline">\(i\)</span> 小的数，已经配了 <span
+class="math inline">\(j\)</span> 对 <span
+class="math inline">\(A&gt;B\)</span> 现在左边是否还有没配对的 <span
+class="math inline">\(B\)</span> 的方案数</p>
+<p>对于 <span class="math inline">\(val[i]\in A\)</span> <span
+class="math inline">\(dp[i-1][j-1][1]\to dp[i][j][0]\)</span></p>
+<p>对于 <span class="math inline">\(val[i]\in B\)</span> <span
+class="math inline">\(dp[i-1][j][0]\to dp[i][j][1]\)</span></p>
+<p>剩下的随便配对即 <span class="math inline">\(f[i]=dp[2n][i][0]\times
+(n-i)!\)</span></p>
+<p><strong>上面的dp是错误的，其并不能算出至少 <span
+class="math inline">\(i\)</span>
+对的方案数因为会有一些时候的”前缀未配对B个数”大于1</strong></p>
+<p>比如配对 <span class="math inline">\(1(B)\ 2(B)\ 3(A)\ 4(A)\)</span>
+时配 <span class="math inline">\(2\)</span> 对时会算出 <span
+class="math inline">\(0\)</span> 实际上是 <span
+class="math inline">\(2\)</span></p>
+<p>应记录对于每个 <span class="math inline">\(a_i\)</span> 有多少个
+<span class="math inline">\(b_j\)</span> 小于它,记为 <span
+class="math inline">\(val[i]\)</span> 则记 <span
+class="math inline">\(f[i][j]\)</span> 为前 <span
+class="math inline">\(i\)</span> 个点，硬点了 <span
+class="math inline">\(j\)</span>
+个连比他小的边，<strong>剩下的不连</strong>，的方案数。转移就是 <span
+class="math display">\[
+dp[i][j]=dp[i-1][j]+dp[i-1][j-1]\times(val[i]-j+1)
+\]</span></p>
+<p>注意到这个转移恰好不重不漏的计算了至少 <span
+class="math inline">\(j\)</span> 个大到小的边的情况，至于剩下的 <span
+class="math inline">\(n-j\)</span> 条边可以任意连，答案就是 <span
+class="math display">\[
+ans_k=\sum_{i=0}^n(-1)^{i-k}\binom{i}{k}dp_{n,i}(n-i)!
+\]</span></p>
+<hr />
+<h3 id="p4002-生成树计数">P4002 生成树计数</h3>
+<p><span class="math display">\[
+\begin{aligned}
+ans&amp;=
+\sum_{d}
+\left(\prod_{i=1}^n(d_i+1)^m\right)
+\left(\sum_{i=1}^n(d_i+1)^m\right)
+\binom{n-2}{d_1,d_2,d_3,\cdots d_n}
+a_i^{d_i+1}
+\\&amp;=
+\sum_{d}
+\frac{(n-2)!}{d_1!d_2!\cdots d_n!}
+\left(\prod_{i=1}^n(d_i+1)^m\right)
+a_i^{d_i+1}
+\left(\sum_{i=1}^n(d_i+1)^m\right)
+\\&amp;=
+(n-2)!
+\left(
+\prod_{i=1}^na_i
+\right)
+\sum_d
+\left(
+\prod_{i=1}^n\frac{ {a_i}^{d_i}}{d_i!}(d_i+1)^m
+\right)
+\left(
+\sum_{i=1}^n(d_i+1)^m
+\right)
+\\&amp;=
+(n-2)!
+\left(
+\prod_{i=1}^na_i
+\right)
+\sum_d
+\sum_{i=1}^n(d_i+1)^m
+\prod_{j=1}^n\frac{ {a_j}^{d_j}}{d_j!}(d_j+1)^m
+\\&amp;=
+(n-2)!
+\left(
+\prod_{i=1}^na_i
+\right)
+\sum_d
+\color{red}
+\sum_{i=1}^n(d_i+1)^{2m}
+\frac{ {a_i}^{d_i}}{d_i!}
+\prod_{j=1,j\neq i}^n\frac{ {a_j}^{d_j}}{d_j!}(d_j+1)^m
+\end{aligned}
+\]</span></p>
+<p>构造 <span class="math display">\[
+\color{red}F(x)=\sum_{d=0}^\infty\frac{x^d(d+1)^{2m}}{d!}\\
+\color{red}G(x)=\sum_{d=0}^\infty\frac{x^d(d+1)^{m}}{d!}\\
+\]</span> 则 <span
+class="math inline">\(F(a_ix)=\sum_{d=0}^\infty\frac{(a_ix)^d(d+1)^{2m}}{d!}=\sum_{d=0}^\infty\frac{a_i^d}{d!}(d+1)^{2m}x^d\)</span></p>
+<p>即得 <span class="math display">\[
+\begin{aligned}
+ans&amp;=\sum_{i=1}^n
+\left(
+F(a_ix)
+\prod_{j=1,j\neq i}^n
+G(a_jx)
+\right)
+[x^{n-2}]
+\\&amp;=\sum_{i=1}^n
+\left(
+\frac{F(a_ix)}{G(a_ix)}
+\prod_{j=1}^n
+G(a_jx)
+\right)
+[x^{n-2}]
+\\&amp;=
+\left(
+\sum_{i=1}^n
+(\frac{F}{G})(a_ix)
+\right)
+\left(
+\prod_{i=1}^nG(a_ix)
+\right)
+[x^{n-2}]
+\\&amp;=
+\left(
+\sum_{i=1}^n
+(\frac{F}{G})(a_ix)
+\right)
+e^{
+\left(
+\sum_{i=1}^n\ln(G(a_ix))
+\right)
+}
+[x^{n-2}]
+\end{aligned}
+\]</span> 已知一个函数各项系数 <span
+class="math inline">\(H(x)=\sum_{i=0}^\infty h(i)x^i\)</span> 求 <span
+class="math inline">\(\sum_{i=1}^n H(a_ix)\)</span> ： <span
+class="math display">\[
+\begin{aligned}
+\sum_{i=1}^nH(a_ix)
+&amp;=
+\sum_{i=1}^n\sum_{j=0}^\infty h_j(a_ix)^j
+\\&amp;=
+\sum_{i=1}^n\sum_{j=0}^\infty h_ja_i^jx^j
+\\&amp;=
+\sum_{j=0}^\infty\left( \sum_{i=1}^n a_i^j\right)h_jx^j
+\end{aligned}
+\]</span> #### 如何快速求 <span class="math inline">\(\sum_{i=1}^n
+a_i^k\)</span> ：</p>
+$$
+<span class="math display">\[\begin{aligned}
+ans(x)
+&amp;=
+\sum_{k=0}^\infty
+\sum_{i=1}^n a_i^k x^k
+\\&amp;=
+\sum_{i=1}^n
+\sum_{k=0}^\infty
+a_i^k x^k
+\\&amp;=
+\sum_{i=1}^n
+\sum_{k=0}^\infty
+(a_ix)^k
+\\&amp;=
+\sum_{i=1}^n
+\frac{1}{1-a_ix}
+
+\\&amp;=
+\sum_{i=1}^n
+f_i(x)
+\end{aligned}\]</span>
+<span class="math display">\[
+然后考虑构造一个函数
+$g_i(x)=\ln(1-a_ix)′=\frac{-a_i}{1-a_ix}=\frac{1}{x}\frac{1-a_ix-1}{1-a_ix}=\frac{1}{x}(1-f_i(x))$
+\]</span>
+<span class="math display">\[\begin{aligned}
+ans(x)&amp;=\sum_{i=1}^nf_i(x)
+\\&amp;=
+\sum_{i=1}^n
+\left(
+1-xg(x)
+\right)
+\\&amp;=
+n-
+\left(\sum_{i=1}^ng_i(x)\right)x
+\\
+\sum_{i=1}^ng_i(x)&amp;=
+\sum_{i=1}^n
+\ln(1-a_ix)′
+\\&amp;=
+\left(
+\sum_{i=1}^n
+\ln(1-a_ix)
+\right)′
+\\&amp;=
+\ln
+\left(
+\prod_{i=1}^n(1-a_ix)
+\right)′
+\end{aligned}\]</span>
+<p>$$</p>
+<p><strong>另解：</strong> <span class="math inline">\(O(nm\log^2
+n)\)</span></p>
+<p>令 <span class="math inline">\(d_i\)</span> 表示 <span
+class="math inline">\(i\)</span> 在<code>prufer</code>序列前 <span
+class="math inline">\(n-2\)</span> 项的出现次数，有 <span
+class="math display">\[
+\begin{aligned}
+ans&amp;=\sum_{d}\left(\sum_{i=1}^nd_i^m\right)\prod_{i=1}^n{a_i}^{d_i+1}\cdot
+d_i^m
+\\&amp;=
+\sum_{d}\sum_{i=1}^nd_i^{2m}a_i^{d_i+1}\prod_{j=1,j\neq
+i}^nd_j^m{a_j}^{d_j+1}
+\end{aligned}
+\]</span></p>
+<p>考虑其组合意义即对于一个<code>prufer</code>序列我们在它后面再添上
+<span class="math inline">\(1\sim n\)</span>
+使得每个数恰好出现其度数次，然后我们可以把 <span
+class="math inline">\(d_i^m\)</span> 看成对 <span
+class="math inline">\(i=1\sim n\)</span> 的每个颜色的 <span
+class="math inline">\(d_i\)</span> 个位置染 <span
+class="math inline">\(m\)</span> 次色，且这 <span
+class="math inline">\(m\)</span>
+次染色可以染到同一位置的方案数。然后上面式子的意思就是一共有且仅有一个数
+<span class="math inline">\(i\)</span> 被染了 <span
+class="math inline">\(2m\)</span> 次，其他的都被染了 <span
+class="math inline">\(m\)</span> 次，问最后的方案乘上改方案对应的权值（
+<span class="math inline">\(a_i^{d_i+1}\)</span> ）的值</p>
+<p>注意到 <span class="math inline">\(m\)</span> 比较小可以枚举这 <span
+class="math inline">\(m/2m\)</span>
+次染色一共染了几个不同的位置，比如染了 <span
+class="math inline">\(k\)</span> 个指定的位置时方案数即为 <span
+class="math inline">\({m\brace k}k!\)</span></p>
+<p>然后 <span class="math inline">\(f[i][j]\)</span> 表示数字 <span
+class="math inline">\(1,i\)</span> 都只染了 <span
+class="math inline">\(m\)</span> 次，一共占了<code>prufer</code>序列的
+<span class="math inline">\(j\)</span>
+个位置时的只考虑染了色的位置时的总权值</p>
+<p><span class="math inline">\(g[i][j]\)</span> 表示数字 <span
+class="math inline">\(1,i\)</span> 中有且仅有一个数染了 <span
+class="math inline">\(2m\)</span> 次（其余都是染 <span
+class="math inline">\(m\)</span> 次）一共占了<code>prufer</code>序列的
+<span class="math inline">\(j\)</span>
+个位置时的只考虑染了色的位置时的总权值</p>
+<p>转移时考虑有没有染到后 <span class="math inline">\(n\)</span>
+个中对应的那个位置得到 <span class="math display">\[
+\begin{array}{c}
+{f_{i,j}=\sum_{k=0}^{m}f_{i-1,j-k}\left(\begin{array}{c}{n-2-(j-k)}\\{k}\end{array}\right)a_{i}^{k+1}({m\brace
+k}k!+{m\brace k+1}(k+1)!)}\\
+{g_{i,j}=s1+s2}\\
+{s1=\sum_{k=0}^{2m}f_{i-1,j-k}\left(\begin{array}{c}{n-2-(j-k)}\\{k}\end{array}\right)a_{i}^{k+1}({2m\brace
+k+1}k!+{2m\brace k+1}(k+1)!)}\\
+{s2=\sum_{k=0}^{m}g_{i-1,j-k}\left(\begin{array}{c}{n-2-(j-k)}\\{k}\end{array}\right)a_{i}^{k+1}({m\brace
+k}k!+{m\brace k+1}(k+1)!)}
+\end{array}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+f_j&amp;=
+\sum_{k=0}^mf&#39;_{j-k}\frac{(n-2-(j-k))!}{k!(n-2-j)!}a_i^{k+1}\left({m\brace
+k}k!+{m \brace k+1}(k+1)!\right)
+\\&amp;=
+\frac{1}{(n-2-j)!}\sum_{k=0}^m\left(a_i^{k+1}\left({n\brace k}+(k+1){m
+\brace k+1}\right)\right)\left(f&#39;_{j-k}\times(n-2-(j-k))!\right)\\
+\end{aligned}
+\]</span> <span class="math display">\[
+\begin{aligned}
+令F_j&amp;=f_j\times(n-2-j)!\\
+F_j&amp;=\sum_{k=0}^m\left(a_i^{k+1}\left({n\brace k}+(k+1){m \brace
+k+1}\right)\right)F&#39;_{j-k}\\
+\end{aligned}
+\]</span></p>
+<p><strong>注意初值是 <span class="math inline">\(f_0=1\to
+F_0=(n-2)!\)</span> </strong></p>
+<p>然后<code>分治ntt</code>的写法可以不管什么看上去是 <span
+class="math inline">\(g_i=g_{i-1}*a_i+f_{i-1}*b_i\)</span>
+这样的东西不知道怎么推导</p>
+<p>直接计算两边两个关于 <span class="math inline">\(j\)</span>
+的多项式，一个 <span class="math inline">\(g\)</span>
+表示有且仅有一个数字染了 <span class="math inline">\(2m\)</span>
+次的方案，一个 <span class="math inline">\(f\)</span> 表示全部都只染了
+<span class="math inline">\(m\)</span> 次，然后直接</p>
+<p><span class="math inline">\(f(l,r)=f(l,mid)*f(mid+1,r) \\
+g(l,r)=g(l,mid)*f(mid+1,r)+f(l,mid)*g(mid+1,r)\)</span></p>
+<p>即可（注意只用最后 <span class="math inline">\(n-1\)</span> 项，最后
+<span class="math inline">\(ans=\sum_{i=0}^{n-2} g[i]\times
+(\sum_{j=1}^na[j])^i\)</span> 即剩下的 <span
+class="math inline">\(n-2-i\)</span> 个空格任意填 <span
+class="math inline">\(1\sim n\)</span>，每填一个 <span
+class="math inline">\(j\)</span> 则权值多乘上一个 <span
+class="math inline">\(a_j\)</span> ）</p>
+<p>（ <span class="math inline">\(1690ms:13615ms\)</span> ）</p>
+<hr />
+<h3 id="p3711-仓鼠的数学题">P3711 仓鼠的数学题</h3>
+<p><span class="math display">\[
+\begin{aligned}
+ans&amp;=\sum_{k=0}^nS&#39;_k(x)a_k
+\\&amp;=
+\sum_{k=0}^n\left(S_k(n)+x^k\right)a_k
+\\&amp;=
+\sum_{k=0}^nS_k(x)+\sum_{k=0}^nx^ka_k
+\\&amp;=
+\sum_{k=0}^na_k\sum_{i=0}^k\frac{1}{i+1}\binom{k}{i}x^{i+1}B_{k-i}+\sum_{k=0}^nx^ka_k
+\\&amp;=
+\sum_{k=0}^na_k\sum_{i=0}^n\frac{1}{i+1}\binom{k}{i}x^{i+1}B_{k-i}+\sum_{k=0}^nx^ka_k
+\\&amp;=
+\sum_{i=0}^nk!a_k!\frac{B_{k-i}}{(k-i)!}\frac{x^{i+1}}{(i+1)!}+\sum_{k=0}^nx^ka_k
+\end{aligned}
+\]</span></p>
+<p>翻转后卷积即可</p>
+<hr />
+<h3 id="cf-932-e严格加强">CF 932 E严格加强</h3>
+<p>求 <span class="math inline">\(\sum_{i=0}^m\binom{m}{i}f(i)\)</span>
+。其中 <span class="math inline">\(f(i)\)</span> 是一个关于 <span
+class="math inline">\(i\)</span> 的 <span
+class="math inline">\(n\)</span> 次多项式</p>
+<p>先把 <span class="math inline">\(f(x)\)</span> 转成下降幂形式 <span
+class="math inline">\(f(x)=\sum_{i=0}^n g_ix^{\underline i}\)</span>
+<span class="math display">\[
+\begin{aligned}
+&amp;\sum_{i=0}^m\binom{m}{i}f(i)
+\\=&amp;
+\sum_{i=0}^m\binom{m}{i}\sum_{j=0}^ng_ji^{\underline j}
+\\=&amp;
+\sum_{i=0}^m\binom{m}{i}\sum_{j=0}^ng_j\binom{i}{j}j!
+\\=&amp;
+\sum_{j=0}^ng_j\sum_{i=0}^m\binom{m}{i}\binom{i}{j}j!
+\\=&amp;
+\sum_{j=0}^ng_j\sum_{i=0}^m\binom{m}{j}\binom{m-j}{m-i}j!
+\\=&amp;
+\sum_{j=0}^ng_j\binom{m}{j}j!\sum_{i=0}^m\binom{m-j}{m-i}
+\\=&amp;
+\sum_{j=0}^ng_j\binom{m}{j}j!2^{m-j}
+\end{aligned}
+\]</span></p>
+<h4 id="如何转次幂为下降幂">如何转次幂为下降幂？</h4>
+<p><span class="math display">\[
+f(x)=\sum_{i=0}^nf_ix^i=\sum_{i=0}^ng_ix^{\underline
+i}=\sum_{i=0}^ng_i\frac{x!}{(x-i)!}=\sum_{i=0}^xg_i\frac{x!}{(x-i)!}\\
+\frac{f(x)}{x!}=\sum_{i=0}^xg_i\frac{1}{(x-i)!}
+\]</span></p>
+<p>令 <span class="math inline">\(F(x)=\sum_{i=0}^\infty
+\frac{f(i)}{i!}\)</span> ，有 <span class="math inline">\(F(x)=G(x)\cdot
+e^x\to G(x)=F(x)\cdot e^{-x}\)</span></p>
+<p>因为 <span class="math inline">\(g\)</span> 也是 <span
+class="math inline">\(n\)</span> 次多项式 只需多点求值求出所有 <span
+class="math inline">\(f(i),i\in[0,n]\)</span> 再除以 <span
+class="math inline">\(i!\)</span> 卷上 <span
+class="math inline">\(e^{-x}\)</span> 即可 （注意顺序）</p>
+<hr />
+<h3 id="江苏省队集训d1t3-魔法咒语">2019 江苏省队集训D1T3 魔法咒语</h3>
+<p>已知 <span class="math inline">\(g\)</span> 且 <span
+class="math inline">\(g_n=\sum_{i=0}^n\dbinom nif_i\iff
+f_n=\sum_{i=0}^n(-1)^{n-i}\dbinom nig_i\)</span> 求 <span
+class="math inline">\(\sum_{i=1}^n f_i\)</span> 要求线性 <span
+class="math display">\[
+\begin{aligned}
+&amp;
+\sum_{i=1}^nf_i
+\\=&amp;
+\sum_{i=1}^n\sum_{j=0}^n(-1)^{i-j}\binom{i}{j}g_j
+\\=&amp;
+\sum_{i=0}^ng_i\sum_{j=0}^n(-1)^{j-i}\binom{j}{i}
+\\=&amp;
+\sum_{i=0}^ng_iw_i
+\end{aligned}
+\]</span></p>
+<p>这个 <span class="math inline">\(w_i\)</span> 只和 <span
+class="math inline">\(i\)</span> 有关 <span class="math display">\[
+\begin{aligned}
+w_m=&amp;\sum_{i=0}^n(-1)^{i-m}\binom{i}{m}
+\\=&amp;
+\sum_{i=0}^n(-1)^{i-m}\left(\binom{i-1}{m}+\binom{i-1}{m-1}\right)
+\\=&amp;
+\sum_{i=0}^n(-1)^{i-m}\binom{i-1}{m}+\sum_{i=0}^n(-1)^{i-m}\binom{i-1}{m-1}
+\\=&amp;
+\sum_{i=0}^n(-1)^{i-m}\binom{i-1}{m}+\sum_{i=0}^{n-1}(-1)^{i-m+1}\binom{i}{m-1}
+\\=&amp;
+\sum_{i=0}^{n-1}(-1)^{i+1-m}\binom{i}{m}+\sum_{i=0}^{n-1}(-1)^{i-(m-1)}\binom{i}{m-1}
+\\=&amp;
+-(\sum_{i=0}^{n}(-1)^{i-m}\binom{i}{m}-(-1)^{n-m}\binom{n}{m})+w_{m-1}-(-1)^{n-(m-1)}\binom{n}{m-1}
+\\=&amp;
+-w_m+w_{m-1}+(-1)^{n-m}\binom{n}{m}+(-1)^{n-m}\binom{n}{m-1}
+\end{aligned}
+\\
+\]</span></p>
+<p><span class="math display">\[
+\therefore
+w_m=\frac{w_{m-1}+(-1)^{n-m}\binom{n+1}{m}}{2}
+\]</span></p>
+<hr />
+<h3 id="下降幂多项式乘法">下降幂多项式乘法</h3>
+<p><span
+class="math inline">\(F(x)=\sum_{i=0}^nf_ix^{\underline{i}}\)</span>
+其点值的 <span class="math inline">\(EGF\)</span> 为</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;
+\sum_{i=0}^\infty \frac{F(i)}{i!}x^i
+\\=&amp;
+\sum_{i=0}^\infty \frac{\sum_{j=0}^nf_ji^{\underline j}}{i!}x^i
+\\=&amp;
+\sum_{i=0}^\infty \sum_{j=0}^nf_j\frac{1}{(i-j)!}x^i
+\end{aligned}
+\]</span></p>
+<p>即直接把 <span class="math inline">\(f\)</span> 卷上 <span
+class="math inline">\(\sum_{i=0}^\infty \frac{1}{i!}=e^x\)</span>
+即可得到点值的 <span class="math inline">\(EGF\)</span></p>
+<p>两个下降幂的点值的 <span class="math inline">\(EGF\)</span>
+对应项相乘再乘上多余的一个 <span class="math inline">\(i!\)</span>
+以去掉两个同时作为 <span class="math inline">\(EGF\)</span> 的分母上的
+<span class="math inline">\(i!\)</span> 即可得到答案的点值的 <span
+class="math inline">\(EGF\)</span></p>
+<p>从点值 <span class="math inline">\(EGF\)</span>
+求原下降幂多项式直接除以 <span class="math inline">\(e^x\)</span> 即乘上
+<span class="math inline">\(e^{-x}\)</span> 即可</p>
+<hr />
+<h3 id="p4389-付公主的背包">P4389 付公主的背包</h3>
+<p><span class="math display">\[
+\large
+\begin{aligned}
+&amp;\prod_{i=1}^n\frac{1}{1-x^{a_i}}
+\\=&amp;
+\exp\left(\sum_{i=1}^n\ln(\frac{1}{1-x^{a_i}})\right)
+\\=&amp;
+\exp\left(\sum_{i=1}^n\sum_{j=1}^\infty\frac{1}{j}(x^{a_i})^j\right)
+\end{aligned}
+\]</span></p>
+<p>直接调和级数一样做即可</p>
+<hr />
+<h3 id="下降幂转次幂">下降幂转次幂</h3>
+<p>下降幂转点值的 <span class="math inline">\(EGF\)</span> 直接乘上
+<span class="math inline">\(e^x\)</span></p>
+<p>再上个快速插值</p>
+<h4 id="快速插值">快速插值</h4>
+<p><span class="math display">\[
+\begin{aligned}
+f(x)&amp;=\sum_{i=1}^n\frac{\prod_{j=1,j\neq i}^nx-x_j}{\prod_{j=1,j\neq
+i}^nx_i-x_j}y_i
+\\&amp;=
+\sum_{i=1}^ny_i\frac{1}{\prod_{j=1,j\neq i}^nx_i-x_j}\prod_{j=1,j\neq
+i}^nx-x_j
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\prod_{j=1,j\neq i}^nx-x_j=\frac{\prod_{j=1}^nx-x_j}{x-x_i}\\
+\lim_{x\to x_i}\frac{\prod_{j=1}^nx-x_j}{x-x_i}
+=\frac{(\prod_{j=1}^nx-x_j)&#39;}{(x-x_i)&#39;}=(\prod_{j=1}^nx-x_j)&#39;\mid
+_{x=x_i}
+\]</span></p>
+<p>使用多点求值得到每个 <span class="math inline">\(i\)</span> 的 <span
+class="math inline">\((\prod_{j=1}^nx-x_j)&#39;\mid
+_{x=x_i}\)</span></p>
+<p>然后每一项的常数项即为 <span
+class="math inline">\(\frac{y_i}{val_i}\)</span> 再乘上 <span
+class="math inline">\(\sum_{j=1,j\neq i}^nx-x_j\)</span>
+即<code>return tr[lk]*solve(l,mid)+tr[rk]*solve(mid+1,r);</code></p>
+<p>但这题可能会 <span class="math inline">\(T\)</span> 。。。
+跑了36s</p>
+<p>注意到 <span class="math inline">\(x_i=i-1\)</span> 所以 <span
+class="math inline">\(\prod_{j=1,j\neq
+i}^nx_i-x_j=(i-n)(i-n+1)\cdots(-1)(1)(2)\cdots(i-1)=(-1)^{n-i}(n-i)!(i-1)!\)</span></p>
+<hr />
+<h3 id="wc2019-数树">WC2019 数树</h3>
+<p>首先有 <span class="math inline">\(ans=y^{|n-T1\bigcap
+T2|}\)</span></p>
+<h4 id="type0">type=0</h4>
+<p>直接求并大小</p>
+<h4 id="type1">type=1</h4>
+<p>注意到有一个容斥式子 <span
+class="math inline">\(\color{red}f(S)=\sum_{T\subseteq
+S}\sum_{P\subseteq T}(-1)^{|T|-|P|}f(P)\)</span></p>
+<p>证明： <span class="math display">\[
+\begin{aligned}
+右式=&amp;
+\sum_{P\subseteq S}f(P)\sum_{T&#39;\subseteq S\oplus P}(-1)^{|T&#39;|}
+\\=&amp;
+\sum_{P\subseteq S}f(P)\sum_{szt=0}^{|S\oplus P|}\binom{|S\oplus
+P|}{szt}(-1)^{szt}
+\\=&amp;
+\sum_{P\subseteq S}f(P)(1-1)^{|S\oplus P|}
+\\=&amp;
+f(S)
+\end{aligned}
+\]</span></p>
+然后带入 <span class="math inline">\(f(S)=y^{n-|S|}\)</span> 无脑推式子
+$$
+<span class="math display">\[\begin{aligned}
+
+ans
+=&amp;
+\sum_{T2}y^{n-|T1\bigcap T2|}
+
+\\=&amp;
+
+\sum_{T2}\sum_{T\subseteq \left(T1\bigcap T2\right)}\sum_{P\subseteq
+T}(-1)^{|T|-|P|}y^{n-|P|}
+
+\\=&amp;
+
+\sum_{T\subseteq T1}g(T)\sum_{P\subseteq T}(-1)^{|T|-|P|}y^{n-|P|}
+\end{aligned}\]</span>
+<p>$$</p>
+<p>其中 <span class="math inline">\(g(S)\)</span> 表示含有边集 <span
+class="math inline">\(S\)</span> 的树有多少种</p>
+<p>若 <span class="math inline">\(S\)</span> 形成 <span
+class="math inline">\(k\)</span> 个连通块 <span
+class="math inline">\(a_1,a_2,\cdots a_k\)</span> 则 <span
+class="math inline">\(g(S)=n^{k-2}\prod_{i=1}^ka_i\)</span></p>
+<p>证明可以直接用行列式，这里写另一种</p>
+<p>把每个已经确定的连通块看成一个点，然后直接用<code>prufer</code>序列，但是每一个连出去的边都有
+<span class="math inline">\(a_i\)</span>
+种连法,令<code>prufer</code>序列第 <span
+class="math inline">\(i\)</span> 个点为 <span
+class="math inline">\(p_i\)</span> ,令第 <span
+class="math inline">\(i\)</span> 个点在<code>prufer</code>序列里出现
+<span class="math inline">\(q_i\)</span> 次，那么其度数为 <span
+class="math inline">\(q_i+1\)</span>，得到</p>
+$$
+<span class="math display">\[\begin{aligned}
+
+g(S)=&amp;
+\sum_{p_1,p_2,\cdots p_{k-2}}\prod_{i=1}^k a_i^{q_i+1}
+\\=&amp;
+\left(\prod_{i=1}^k a_i\right)
+\sum_{p_1,p_2,\cdots p_{k-2}}\prod_{i=1}^k a_i^{q_i}
+\\=&amp;
+\left(\prod_{i=1}^k a_i\right)
+\sum_{p_1,p_2,\cdots p_{k-2}}\prod_{i=1}^{k-2} a_{p_i}
+\\=&amp;
+\left(\prod_{i=1}^k a_i\right)
+\prod_{i=1}^{k-2}
+\sum_{p_i=1,2,\cdots k}
+a_{p_i}
+\\=&amp;
+\left(\prod_{i=1}^k a_i\right)
+n^{k-2}
+\end{aligned}\]</span>
+<p>$$</p>
+若有 <span class="math inline">\(|S|\)</span> 条边，则连通块个数 <span
+class="math inline">\(k=n-|S|\)</span> $$
+<span class="math display">\[\begin{aligned}
+
+ans
+&amp;=
+\sum_{T\subseteq T1}g(T)\sum_{P\subseteq T}(-1)^{|T|-|P|}y^{n-|P|}
+\\&amp;=
+\sum_{T\subseteq T1}n^{k-2}\prod_{i=1}^ka_i\sum_{P\subseteq
+T}(-1)^{|T|-|P|}y^{n-|P|}
+\\&amp;=
+\sum_{T\subseteq
+T1}n^{k-2}\prod_{i=1}^ka_i\sum_{szp=0}^{|T|}\binom{|T|}{szp}(-1)^{|T|-szp}y^{n-szp}
+\\&amp;=
+\sum_{T\subseteq
+T1}n^{k-2}\prod_{i=1}^ka_iy^{n-|T|}\sum_{szp=0}^{|T|}\binom{|T|}{szp}(-1)^{|T|-szp}y^{|T|-szp}
+\\&amp;=
+\sum_{T\subseteq
+T1}n^{k-2}\left(\prod_{i=1}^ka_i\right)y^{n-|T|}(1-y)^|T|
+\\&amp;=
+\sum_{T\subseteq
+T1}n^{k-2}\left(\prod_{i=1}^ka_i\right)y^{n-(n-k)}(1-y)^{n-k}
+\\&amp;=
+\frac{(1-y)^n}{n^2}\sum_{T\subseteq
+T1}\left(\prod_{i=1}^ka_i\right)\left(\frac{ny}{1-y}\right)^k
+\\&amp;=
+\frac{(1-y)^n}{n^2}\sum_{T\subseteq T1}\prod_{i=1}^k\frac{ny}{1-y}a_i
+\end{aligned}\]</span>
+<p>$$</p>
+<p>令 <span class="math inline">\(K=\frac{ny}{1-y}\)</span>
+相当于每个大小为 <span class="math inline">\(a_i\)</span>
+的连通块对答案有 <span class="math inline">\(Ka_i\)</span> 的贡献</p>
+<p>设 <span class="math inline">\(f_{i,j}\)</span> 表示以 <span
+class="math inline">\(i\)</span> 为根，包含 <span
+class="math inline">\(i\)</span> 的连通块大小为 <span
+class="math inline">\(j\)</span>
+时，子树内所有情况下的答案（且不包含本身所在的连通块）</p>
+<p>得到 <span class="math inline">\(ans=\sum_{i}f_{rt,i}\times
+ki\)</span></p>
+<p>转移是</p>
+<p><span class="math display">\[
+f_{u,i}\times \left(\sum_{j=1}^{sz_v}f_{v,j}\times K\times j\right)\to
+f_{u,i}\\
+f_{u,i}\times f_{v,j}\to f_{u,i+j}\\
+初值f_{u,1}=1
+\]</span></p>
+<p>现在已经可以 <span class="math inline">\(O(n^2)\)</span>
+求解，考虑再优化</p>
+<p>把 <span class="math inline">\(f_u\)</span> 看成是一个集合幂级数，则
+<span class="math inline">\(\sum_{i}f_{u,i}\times
+i=f&#39;_u(1)\)</span></p>
+<p>令 <span
+class="math inline">\(g_u=Kf&#39;_u(1)=K\sum_{i}f_{u,i}\times
+i\)</span></p>
+<p>则</p>
+$$
+<span class="math display">\[\begin{aligned}
+f_u(x)&amp;=x\prod_{v\in son_u}f_v(x)+g_v\\
+
+g_u
+&amp;=Kf&#39;_u(1)
+\\&amp;=
+K\left(x\prod_{v\in son_u}f_v(x)+g_v\right)&#39;{\Large |}_{x=1}
+\\&amp;=
+K\left(\prod_{v\in son_u}f_v(x)+g_v\right){\Large |}_{x=1}
++Kx
+\left(
+\prod_{v\in son_u}f_v(x)+g_v
+\right)&#39;{\Large |}_{x=1}
+\\&amp;=
+K\left(\prod_{v\in son_u}f_v(1)+g_v\right)
++Kx
+\left(
+\sum_{w\in son_u}\left(
+f_w(x)+g_w\right)&#39;
+\prod_{v\in son_u,v\neq w}f_v(x)+g_v
+\right){\Large |}_{x=1}
+\\&amp;=
+K\left(\prod_{v\in son_u}f_v(1)+g_v\right)
++Kx
+\left(
+\sum_{w\in son_u}
+f_w&#39;(x)
+\prod_{v\in son_u,v\neq w}f_v(x)+g_v
+\right){\Large |}_{x=1}
+\\&amp;=
+K\left(\prod_{v\in son_u}f_v(1)+g_v\right)
++Kx
+\left(
+\left(\prod_{v\in son_u}
+f_v(x)+g_v
+\right)
+\sum_{w\in son_u}
+\frac{f_w&#39;(x)}{f_w(x)+g_w}
+\right){\Large |}_{x=1}
+\\&amp;=
+K\left(\prod_{v\in son_u}f_v(1)+g_v\right)
++x
+\left(
+\left(\prod_{v\in son_u}
+f_v(x)+g_v
+\right)
+\sum_{w\in son_u}
+\frac{Kf_w&#39;(x)}{f_w(x)+g_w}
+\right){\Large |}_{x=1}
+\left(\right)
+
+\\&amp;=
+K\left(\prod_{v\in son_u}f_v(1)+g_v\right)
++
+\left(
+\left(\prod_{v\in son_u}f_v(1)+g_v
+\right)
+\sum_{w\in son_u}
+\frac{Kf_w&#39;(1)}{f_w(1)+g_w}
+\right)
+\\&amp;=
+\left(\prod_{v\in son_u}f_v(1)+g_v\right)
+\left(
+K+
+\sum_{w\in son_u}
+\frac{Kf_w&#39;(1)}{f_w(1)+g_w}
+\right)
+\\&amp;=
+\left(\prod_{v\in son_u}f_v(1)+g_v\right)
+\left(
+K+
+\sum_{w\in son_u}
+\frac{g_w}{f_w(1)+g_w}
+\right)
+\end{aligned}\]</span>
+<p>$$</p>
+<p>再令 <span class="math inline">\(t_u=f_u(1)\)</span> 即可得到</p>
+<p><span class="math display">\[
+\begin{aligned}
+g_u&amp;=
+\left(\prod_{v\in son_u}f_v(1)+g_v\right)
+\left(
+K+
+\sum_{w\in son_u}
+\frac{g_w}{f_w(1)+g_w}
+\right)
+\\&amp;=
+\left(\prod_{v\in son_u}t_v+g_v\right)
+\sum_{w\in son_u}
+\frac{g_w}{t_w+g_w}
+\\
+t_u=f_u(1)&amp;=
+\left(x\prod_{v\in son_u}f_v(x)+g_v
+\right){\Large |}_{x=1}\\
+&amp;=\prod_{v\in son_u}f_v(1)+g_v\\
+&amp;=\prod_{v\in son_u}t_v+g_v\\
+\end{aligned}
+\]</span></p>
+<p>即可 <span class="math inline">\(O(n)\)</span> <code>dp</code>了</p>
+<h4 id="type2">type=2</h4>
+<p><span class="math display">\[
+\begin{aligned}
+ans&amp;=
+\sum_{T1}\sum_{T2}y^{n-|T1\bigcap T2|}
+\\&amp;=
+\sum_{T1}\sum_{T2}\sum_{T\subseteq{(T1\cap T2)}}\sum_{P\subseteq
+T}(-1)^{|T|-|P|}y^{n-|P|}
+\\&amp;=
+\sum_{T}h(T)\sum_{P\subseteq T}(-1)^{|T|-|P|}y^{n-|P|}
+\\&amp;=
+\sum_{T}h(T)\sum_{szp=0}^{|T|}\binom{|T|}{szp}(-1)^{|T|-szp}y^{n-szp}
+\end{aligned}
+\]</span></p>
+<p>其中 <span class="math inline">\(h(T)\)</span> 是两个树都包含 <span
+class="math inline">\(T\)</span> 这个边集的方案数，且 <span
+class="math inline">\(h(T)=g^2(T)=\left(n^{k-2}\prod_{i=1}^k
+a_i\right)^2=n^{2k-4}\prod_{i=1}^k a_i^2\)</span>
+（因为两棵树不等价，第一棵可以任选 <span
+class="math inline">\(g(T)\)</span> 中的一棵，第二棵也是）</p>
+<p>所以带入得到</p>
+$$
+<span class="math display">\[\begin{aligned}
+
+ans&amp;=
+\sum_{T}h(T)\sum_{szp=0}^{|T|}\binom{|T|}{szp}(-1)^{|T|-szp}y^{n-szp}
+
+\\&amp;=
+\sum_{T}h(T)y^{n-|T|}\sum_{szp=0}^{|T|}\binom{|T|}{szp}(-1)^{|T|-szp}y^{|T|-szp}
+\\&amp;=
+\sum_{T}h(T)y^{n-|T|}
+(1-y)^|T|
+\\&amp;=
+\sum_{T}
+\left(
+n^{2k-4}\prod_{i=1}^k a_i^2
+\right)
+y^{n-|T|}(1-y)^{|T|}
+\\&amp;=
+\frac{1}{n^4}
+\sum_{T}
+n^{2k}
+\left(
+\prod_{i=1}^k a_i^2
+\right)
+y^{n-(n-k)}(1-y)^{n-k}
+\\&amp;=
+\frac{(1-y)^n}{n^4}
+\sum_{T}
+\left(
+\prod_{i=1}^k a_i^2
+\right)
+\left(
+\frac{n^2y}{1-y}
+\right)^{k}
+\\&amp;=
+\frac{(1-y)^n}{n^4}
+\sum_{T}
+\prod_{i=1}^k
+\frac{n^2y}{1-y}
+a_i^2
+\\
+\end{aligned}\]</span>
+<p>$$</p>
+<blockquote>
+<p>对于一个确定点数为 <span class="math inline">\(a_i\)</span>
+的树，共有 <span class="math inline">\(a_i^{a_i-2}\)</span> 种形式</p>
+<p>把 <span class="math inline">\(n\)</span> 个点分成 <span
+class="math inline">\(k\)</span> 个有标号且大小分别为 <span
+class="math inline">\(a_1,a_2,\cdots a_k\)</span> 的连通块的方案是 <span
+class="math inline">\(\binom{n}{a_1,a_2\cdots a_k}\)</span></p>
+</blockquote>
+<p>则把 <span class="math inline">\(n\)</span> 个点分成 <span
+class="math inline">\(k\)</span> 个无标号且大小分别为 <span
+class="math inline">\(a_1,a_2,\cdots a_k\)</span> 的连通块的方案是 <span
+class="math inline">\(\frac{1}{k!}\binom{n}{a_1,a_2\cdots
+a_k}\)</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\\&amp;=
+\frac{(1-y)^nn!}{n^4}
+\sum_{\tiny\begin{aligned}&amp;a_1,a_2,\cdots a_k\\&amp;a_1+a_2+\cdots
+a_k=n\end{aligned}}
+\frac 1{k!}
+\prod_{i=1}^k
+\frac 1{a_i!}
+a_i^{a_i-2}
+\times
+\frac{n^2y}{1-y}
+a_i^2
+\\&amp;=
+\frac{(1-y)^nn!}{n^4}
+\sum_{\tiny\begin{aligned}&amp;a_1,a_2,\cdots a_k\\&amp;a_1+a_2+\cdots
+a_k=n\end{aligned}}
+\frac{1}{k!}
+\prod_{i=1}^k
+\frac{1}{a_i!}
+\frac{n^2y}{1-y}
+a_i^{a_i}
+\\&amp;=
+\frac{(1-y)^nn!}{n^4}
+\sum_{\tiny\begin{aligned}&amp;a_1,a_2,\cdots a_k\\&amp;a_1+a_2+\cdots
+a_k=n\end{aligned}}
+\frac{1}{k!}
+\prod_{i=1}^k
+\frac{1}{a_i!}
+\frac{n^2y}{1-y}
+a_i^{a_i}
+\\&amp;=
+\frac{(1-y)^nn!}{n^4}
+\sum_{k=0}^\infty
+\frac{1}{k!}
+\left(
+\sum_{i=0}^\infty
+\frac{1}{i!} \frac{n^2}{1-y}i^i x^i
+\right)^k
+[x^n]
+\\&amp;=
+\frac{(1-y)^nn!}{n^4}
+\exp
+\left(
+\sum_{i=0}^\infty
+\frac{1}{i!} \frac{n^2}{1-y}i^i x^i
+\right)
+[x^n]
+\end{aligned}
+\]</span></p>
+<p>令一种理解上式的方法：</p>
+<blockquote>
+<p>一个大小为 <span class="math inline">\(a\)</span> 的树的权值为 <span
+class="math inline">\(\frac{n^y}{1-y}a^a\)</span></p>
+<p>一个森林的权值为里面所有树的权值之积</p>
+<p>求所有森林的权值之和</p>
+</blockquote>
+<p>所以直接 <code>exp</code> 就行了</p>
+<hr />
+<h3 id="codechef-psum">CodeChef PSUM</h3>
+<p><span class="math display">\[
+(A+B)^k=\sum_{i=0}^k \binom{k}{i}A^iB^{k-i}\\
+\sum_{A\in S}(A+B)^k=\sum_{A\in S}\sum_{i=0}^k \binom{k}{i}A^iB^{k-i}
+=\sum_{i=0}^k \binom{k}{i}(\sum_{A\in S}A^i)B^{k-i}
+\\
+\]</span></p>
+<p>$$ f[i][j][x]=f[i-1][j][x]+</p>
+<p><em>{k=0}<sup>xf[i-1][j-C_i][k](C_i)</sup>{x-k}\
+f</em>{i,j}[x^k]=f_{i-1,j}+k!_{t=0}^k $$</p>
+<p><code>NTT</code>卷积优化<code>dp</code>即可</p>
+<hr />
+<h3 id="bzoj5093-图的价值">BZOJ5093 图的价值</h3>
+$$
+<span class="math display">\[\begin{aligned}
+ans
+&amp;=\sum_{E}\sum _{u=1}^n deg[u]^k\\
+&amp;=n\sum_{E}deg[1]^k\\
+&amp;=n\sum_{E}\sum_{d=1}^{n-1}d^k[deg[1]=k]\\
+&amp;=n\sum_{d=1}^{n-1}d^k\binom{n-1}{d}2^{\binom{n}{2}-(n-1)}\\
+&amp;=n2^{\binom{n}{2}-(n-1)}
+\sum_{d=1}^{n-1}d^{n-1}\binom{n-1}{d}\\
+
+&amp;=n2^{\binom{n}{2}-(n-1)}\sum_{d=1}^k
+\binom{n-1}{d}\sum_{i=1}^{d}{k\brace i}\binom{d}{i}i!
+\\
+
+&amp;=n2^{\binom{n}{2}-(n-1)}\sum_{i=1}^{n-1}
+{k\brace i}i!\sum_{d=1}^{n-1}\binom{n-1}{d}\binom{d}{i}
+\\
+&amp;=n2^{\binom{n}{2}-(n-1)}\sum_{i=1}^{n-1}
+{k\brace i}i!\sum_{d=1}^{n-1}\binom{n-1}{i}\binom{n-1-i}{n-1-d}
+\\
+&amp;=n2^{\binom{n}{2}-(n-1)}\sum_{i=1}^{n-1}
+{k\brace i}i!\binom{n-1}{i}\sum_{d=1}^{n-1}\binom{n-1-i}{n-1-d}
+\\
+&amp;=n2^{\binom{n}{2}-(n-1)}\sum_{i=1}^{n-1}
+{k\brace i}i!\binom{n-1}{i}2^{n-1-i}
+\\
+&amp;=2^{\binom{n}{2}-(n-1)}\sum_{i=1}^{n-1}{k\brace
+i}\frac{2^{n-1-i}\times n!}{(n-1-i)!}
+\\
+&amp;=2^{\binom{n}{2}-(n-1)}\sum_{i=1}^{n-1}{k\brace i}2^{n-1-i}\times
+n^{\underline{i+1}}
+\end{aligned}\]</span>
+<p>$$</p>
+<p>算出第二类斯特林数后直接<code>for</code>一遍即可</p>
+<hr />
+<h3 id="分布">分布</h3>
+<p>方差 <span class="math inline">\(Var(X)\)</span> 和 <span
+class="math inline">\(E(X^2)\)</span> 的关系</p>
+<p><span class="math display">\[
+\begin{aligned}
+Var(X)&amp;=E((X-E(X))^2)
+\\&amp;=
+E(X^2+E^2(X)-2xE(X))
+\\&amp;=
+E(X^2)+E(E^2(X))-E(2xE(X))
+\\&amp;=
+E(X^2)+E^2(X)-2E(X)E(X)
+\\&amp;=
+E(X^2)-E^2(X);
+\end{aligned}
+\]</span></p>
+<h4 id="伯努利分布">伯努利分布</h4>
+<p>一个变量 <span class="math inline">\(X\)</span> 有 <span
+class="math inline">\(p\)</span> 的概率为 <span
+class="math inline">\(1\)</span> ， <span
+class="math inline">\(1-p\)</span> 的概率为 <span
+class="math inline">\(0\)</span></p>
+<p>则 <span class="math display">\[
+E(X)=1*p+0*(1-p)=p\\
+E(X^2)=1^2p+0^2(1-p)=p\\
+Var(X)=E(X^2)-E^2(X)=p-p^2=p(1-p)\\
+\]</span></p>
+<h4 id="二项式分布">二项式分布</h4>
+<p>二项分布是 <span class="math inline">\(n\)</span>
+个独立的是/非试验中成功的次数的离散概率分布，其中每次试验的成功概率为
+<span class="math inline">\(p\)</span></p>
+<blockquote>
+<p>注：以下记 <span class="math inline">\(q=1-p\)</span></p>
+</blockquote>
+<p>由定义可得每次成功与否是独立的，可得 <span
+class="math inline">\(E(X)=E(1)+E(2)+\cdots E(n)=p+p+\cdots
+p=np\)</span></p>
+<p>或者组合意义下证明</p>
+<p><span class="math display">\[
+\begin{aligned}
+E(X)&amp;=\sum_{i=0}^ni\binom{n}{i}p^iq^{n-i}
+\\&amp;=
+\sum_{i=0}^ni\times \frac{n}{i}\times p\binom{n-1}{i-1}p^{i-1}q^{n-i}
+\\&amp;=
+np\sum_{i=0}^n\binom{n-1}{i-1}p^{i-1}q^{n-i}
+\\&amp;=
+np\sum_{i=0}^{n-1}\binom{n-1}{i}p^iq^{n-1-i}
+\\&amp;=
+np(p+q)^{n-1}
+\\&amp;=
+np
+\end{aligned}
+\]</span></p>
+<p><span class="math inline">\(E(x)^2\)</span> 有点难搞，因为 <span
+class="math inline">\(E(X^2)=E(X^2-X+X)=E(X(X-1)+X)=E(X(X-1))+E(X)\)</span>
+根据上面的类似推一下 <span class="math inline">\(E(X(X-1))\)</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+E(X(X-1))&amp;=\sum_{i=0}^ni(i-1)\binom{n}{i}p^iq^{n-i}
+\\&amp;=
+\sum_{i=0}^ni(i-1)\times\frac{n(n-1)}{i(i-1)}\times
+p^2\binom{n-2}{i-2}p^{i-2}q^{n-i}
+\\&amp;=
+n(n-1)p^2\sum_{i=0}^n\binom{n-2}{i-2}p^{i-2}q^{n-i}
+\\&amp;=
+n(n-1)p^2\sum_{i=0}^{n-2}\binom{n-2}{i}p^iq^{n-2-i}
+\\&amp;=
+n(n-1)p^2(p+q)^{n-2}
+\\&amp;=
+n(n-1)p^2
+\end{aligned}
+\]</span></p>
+<p>所以 <span
+class="math inline">\(Var(X)=E(X^2)-E^2(X)=n(n-1)p^2+np-(np)^2=np-np^2=npq\)</span></p>
+<p>同时类似的可以得到 <span class="math inline">\(E(x^{\underline
+a})=n^{\underline a}\times p^a\)</span></p>
+<hr />
+<h3 id="uoj269-如何优雅地求和">UOJ269 如何优雅地求和</h3>
+<p><strong>这道16年的题给了点值，现在看上去很明显，实际上应该要能自己想出来最重要的一步即转成下降幂</strong></p>
+<p>设 <span class="math inline">\(f(x)=\sum_{i=0}^{m}g_ix^{\underline
+i}\)</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+ans&amp;=
+\sum_{k=0}^nf(k)\binom{n}{k}x^k(1-x)^{n-k}
+\\&amp;=
+\sum_{k=0}^n\sum_{j=0}^mg_jk^{\underline j}\binom{n}{k}x^k(1-x)^{n-k}
+\\&amp;=
+\sum_{j=0}^mg_j\sum_{k=0}^nk^{\underline j}\binom{n}{k}x^k(1-x)^{n-k}
+\\&amp;=
+\sum_{j=0}^mg_j\sum_{k=0}^nk^{\underline j}\frac{n^{\underline
+j}}{k^{\underline j}}x^j\binom{n-j}{k-j}x^{k-j}(1-x)^{n-k}
+\\&amp;=
+\sum_{j=0}^mg_jx^jn^{\underline
+j}\sum_{k=0}^n\binom{n-j}{k-j}x^{k-j}(1-x)^{n-k}
+\\&amp;=
+\sum_{j=0}^mg_jx^jn^{\underline j}(x+(1-x))^{n-j}
+\\&amp;=
+\sum_{j=0}^mg_jx^jn^{\underline j}
+\end{aligned}
+\]</span></p>
+<p>注意点值转下降幂的公式中，哪里要除以阶乘哪里乘阶乘要想清楚!</p>
+<hr />
+<h3 id="cf961g-partitions">cf961G Partitions</h3>
+<p><span class="math inline">\(ans=\left(\sum w\right)Sum\)</span></p>
+$$
+<span class="math display">\[\begin{aligned}
+Sum
+&amp;=
+{\color{red}
+\sum_{i=0}^{n-1}(i+1)\binom{n-1}{i}{n-1-i\brace k-1}}
+\\&amp;=
+\sum_{i=0}^{n-1}(i+1)\binom{n-1}{i}\frac{1}{(k-1)!}\sum_{j=0}^{k-1}(-1)^{k-1-j}j^{n-1-i}\binom{k-1}{j}
+\\&amp;=
+\frac{1}{(k-1)!}\sum_{j=0}^{k-1}(-1)^{k-1-j}\binom{k-1}{j}\sum_{i=0}^{n-1}(i+1)\binom{n-1}{i}j^{n-1-i}
+
+
+\\&amp;=
+
+\frac{1}{(k-1)!}\sum_{j=0}^{k-1}(-1)^{k-1-j}\binom{k-1}{j}\left(
+\sum_{i=0}^{n-1}i\binom{n-1}{i}j^{n-1-i}
++
+\sum_{i=0}^{n-1}\binom{n-1}{i}j^{n-1-i}
+\right)
+\\&amp;=
+
+\frac{1}{(k-1)!}\sum_{j=0}^{k-1}(-1)^{k-1-j}\binom{k-1}{j}\left(\left(
+(n-1)\sum_{i=0}^{n-1}\binom{n-2}{i-1}j^{n-1-i}\right)
++
+(1+j)^{n-1}
+\right)
+\\&amp;=
+\frac{1}{(k-1)!}\sum_{j=0}^{k-1}(-1)^{k-1-j}\binom{k-1}{j}\left(
+(n-1)\left(
+\sum_{i=0}^{n-2}\binom{n-2}{i}j^{n-2-i}\right)
++
+(1+j)^{n-1}
+\right)
+\\&amp;=
+\frac{1}{(k-1)!}\sum_{j=0}^{k-1}(-1)^{k-1-j}\binom{k-1}{j}\left(
+(n-1)
+(1+j)^{n-2}
++
+(1+j)^{n-1}
+\right)
+\\&amp;=
+\frac{1}{(k-1)!}\sum_{j=0}^{k-1}(-1)^{k-1-j}\binom{k-1}{j}
+(1+j)^{n-2}\left((n-1)+(1+j)\right)
+\\&amp;=
+\frac{1}{(k-1)!}\sum_{j=0}^{k-1}(-1)^{k-1-j}\binom{k-1}{j}
+(1+j)^{n-2}\left(n+j\right)
+\\&amp;=
+\sum_{j=0}^{k-1}(-1)^{k-1-j}\frac 1{j!}\frac 1{(k-1-j)!}
+(1+j)^{n-2}\left(n+j\right)
+\end{aligned}\]</span>
+<p>$$</p>
+<p>然后直接做即可，也可以用线性筛去掉快速幂的 <span
+class="math inline">\(\log\)</span> （注意 <span
+class="math inline">\(j\)</span>
+是<code>0 base</code>的）（实际上第一行的式子已经可以直接做了，只是模数比较恶心…）</p>
+<p>或者从组合意义上考虑：</p>
+<p>一个点被算进 <span class="math inline">\(Sum\)</span> ，只可能是</p>
+<ol type="1">
+<li><p>自己对自己的贡献，这个的方案数是 <span
+class="math inline">\(n\brace k\)</span></p></li>
+<li><p>加入了其他已经分成 <span class="math inline">\(k\)</span>
+份中的一份集合时同集合的点对其的贡献，考虑 <span
+class="math inline">\(n-1\)</span> 个点分成 <span
+class="math inline">\(k\)</span>
+份的所有划分，每一种划分中当前点都可以加入划分出的 <span
+class="math inline">\(k\)</span>
+个集合的任意一个，加入的集合中的每一个别的点都对 <span
+class="math inline">\(Sum\)</span> 有 <span
+class="math inline">\(1\)</span> 的贡献，当前点一共有 <span
+class="math inline">\(k\)</span>
+种选取集合的方法，每个集合的点数加起来是 <span
+class="math inline">\(n-1\)</span></p></li>
+</ol>
+<p>于是有</p>
+<p><span class="math inline">\(Sum={n\brace k}+(n-1){n-1\brace
+k}\)</span></p>
+<p>求第二类斯特林数的一项还是要更简单一些 <span
+class="math inline">\({n\brace m}=\frac
+1{m!}\sum_{i=0}^m(-1)^{m-i}\binom{m}{i}i^n\)</span>
+同样扫一遍即可（同样可用线筛去掉快速幂的 <span
+class="math inline">\(\log\)</span>）</p>
+<table style="width:6%;">
+<colgroup>
+<col style="width: 5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>### HDU6042 Journey with Knapsack</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(ans=\sum_{i=0}^nf_{2n-b_i}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[
+\begin{aligned}
+f(x)&amp;=(1+x+x^2+\cdots +x^{a_1})(1+x^2+x^4+\cdots
++x^{a_2})\cdots(1+x^n+x^{2n}+\cdots +x^{a_n})
+\\&amp;=
+\prod_{i=1}^n(1+x^i+x^{2i}+\cdots x^{a_ii})
+\\&amp;=
+\prod_{i=1}^n\frac{1-x^{(a_i+1)i}}{1-x^i}
+\\&amp;=
+\prod_{i=1}^n(1-x^{(a_i+1)i})\prod_{i=1}^n\frac{1}{1-x^i}
+\end{aligned}
+\]</span></td>
+</tr>
+<tr class="even">
+<td>因为我们最终需要 <span class="math inline">\(f\)</span> 的 <span
+class="math inline">\(0\sim 2n\)</span> 项的系数，上式的后半部分在 <span
+class="math inline">\(0\sim n\)</span> 次项的系数是拆分数 <span
+class="math inline">\(p\)</span> 可以在 <span
+class="math inline">\(O(n\sqrt n)\)</span> 算出，但在 <span
+class="math inline">\(n+1\sim 2n\)</span> 次项的系数就是只用 <span
+class="math inline">\(1\sim n\)</span>
+组合的方案不好搞，<strong>因此我们尝试把边界扩大到</strong> <span
+class="math inline">\(2n\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[
+\begin{aligned}
+&amp;\prod_{i=1}^n1-x^{(a_i+1)i}\prod_{i=1}^n\frac{1}{1-x^i}
+\\=&amp;
+\prod_{i=1}^{2n}\frac{1}{1-x^i}\prod_{i=1}^n(1-x^{(a_i+1)i})\prod_{i=n+1}^{2n}(1-x^i)
+\\=&amp;
+\sum_{i=0}^{2n}p_ix^i\prod_{i=1}^n(1-x^{(a_i+1)i})\prod_{i=n+1}^{2n}(1-x^i)
+\end{aligned}
+\]</span></td>
+</tr>
+<tr class="even">
+<td>注意到题目中的特殊条件 <span class="math inline">\(0\leq
+a_1&lt;a_2&lt;\cdots&lt;a_n\)</span> 所以 <span
+class="math inline">\(i\leq a_i+1\)</span></td>
+</tr>
+<tr class="odd">
+<td>所以 <span class="math inline">\((a_i+1)i\geq i^2\)</span>
+。对于一个确定的 <span class="math inline">\(d\)</span> 一共只有 <span
+class="math inline">\(\sqrt d\)</span> 种 <span
+class="math inline">\(i\)</span> 对其有影响，直接暴力算 <span
+class="math inline">\(p_ix^i\)</span> 对卷积到的位置的贡献</td>
+</tr>
+<tr class="even">
+<td>然后 <span class="math inline">\(\prod_{i=n+1}^{2n}(1-x^i)\)</span>
+只取前 <span class="math inline">\(2n\)</span> 项系数的时候任意两个选了
+<span class="math inline">\(x^i\)</span> 卷起来都超过范围了</td>
+</tr>
+<tr class="odd">
+<td>可以得到 <span
+class="math inline">\(\prod_{i=n+1}^{2n}(1-x^i)=1-\sum_{i=n+1}^{2n}x^i\)</span></td>
+</tr>
+<tr class="even">
+<td>然后可以卷积这个的时候处理个前缀和直接线性</td>
+</tr>
+<tr class="odd">
+<td>总复杂度 <span class="math inline">\(O(2n\sqrt{2n}+n\sqrt
+n+n)=O(n\sqrt n)\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="bzoj4772-显而易见的数论">BZOJ4772 显而易见的数论</h3>
+<p><span class="math display">\[
+cnt_{a,b}=
+\begin{cases}
+&amp;
+\sum_{E}\limits\binom{cnt_{a\in E}}{2},&amp;a=b\\
+&amp;
+\sum_{E}\limits
+cnt_a\times cnt_b
+,&amp;a\neq b\\
+\end{cases}
+\]</span></p>
+<p>直接求所有分配方案下每个部分大小为定值的有多少个不好求，<strong>可以转换一下：</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\sum_E\limits f(cnt_a)=\sum_E\limits \sum_{i=1}^n f(i)[cnt_a\geq i]
+\\
+&amp;\sum_E\limits f(cnt_a,cnt_b)=\sum_E\limits \sum_{i=1}^n\sum_{j=1}^n
+f(i,j)[cnt_a\geq i][cnt_b\geq j]
+\end{aligned}
+\]</span></p>
+<p>求一个至少有 <span class="math inline">\(i\)</span> 个 <span
+class="math inline">\(a\)</span> 的划分直接就是 <span
+class="math inline">\(p(n-ai)\)</span></p>
+<p><strong>搞错了！！！</strong></p>
+<p>上面两个式子都不成立！！！</p>
+<p>正确的是</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\sum_E\limits f(cnt_a)=\sum_E\limits \sum_{i=1}^n
+f(i)[cnt_a=i]=\sum_E\limits \sum_{i=1}^n f(i)[cnt_a\geq i]-\sum_E\limits
+\sum_{i=1}^n f(i)[cnt_a\geq (i+1)]
+\\
+&amp;\sum_E\limits cnt_a\times cnt_b=\sum_E\limits
+\sum_{i=1}^n\sum_{j=1}^n [cnt_a\geq i][cnt_b\geq j]
+\end{aligned}
+\]</span></p>
+<p>然后求 <span class="math inline">\(g\)</span> 函数</p>
+<p><span class="math display">\[
+\begin{aligned}
+g(p^a)=&amp;\sum_{i=1}^{p^k}[\gcd(i,p^k)=1]\gcd(i-1,p^k)
+\\=&amp;
+\left(
+\sum_{i=1}^{p^k}\gcd(i-1,p^k)
+\right)
+-
+\sum_{i=1}^{p^k}[\gcd(i,p^k)&gt;1]\gcd(i-1,p^k)
+\\=&amp;
+\left(\sum_{d=0}^{k}p^d\times \varphi(p^{k-d})\right)-p^{k-1}
+\\=&amp;
+\left(\sum_{d=0}^{k-1}p^d\times (p^{k-d}\times \frac{p-1}{p})\right)
++p^k
+-
+p^{k-1}
+\\=&amp;
+k\times p^k\times \frac{p-1}{p}
++p^k
+-p^{k-1}
+\\=&amp;
+k\times p^k-
+(k+1)\times p^{k-1}
++p^k
+-
+p^{k-1}
+\\=&amp;
+(k+1)\times(p^k-p^{k-1})
+\end{aligned}
+\]</span></p>
+<p>（注意那个 <span class="math inline">\(\gcd=p^k\)</span> 的项来自于
+<span class="math inline">\(\gcd(1-1,p^k)=\gcd(0,p^k)=p^k\)</span>
+）</p>
+<p>考虑两个互质的数的 <span class="math inline">\(g\)</span> 之积</p>
+<p><span
+class="math inline">\(\gcd(ab,c)=\gcd(a,c)\gcd(b,c)\)</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+g(ab)=&amp;
+\sum_{i=1}^{ab}[\gcd(i,ab)=1]\gcd(i-1,ab)
+\\=&amp;
+\sum_{i=1}^{ab}[\gcd(i,a)=1][\gcd(i,b)=1]\gcd(i-1,a)\gcd(i-1,b)
+\\=&amp;
+\sum_{i=1}^{ab}[\gcd(i\%a,a)=1][\gcd(i\%b,b)=1]\gcd(i\%a-1,a)\gcd(i\%b-1,b)
+\end{aligned}
+\]</span></p>
+<p>令 <span class="math inline">\(i\equiv x\pmod a,i\equiv y\pmod
+b\)</span> 因为 <span class="math inline">\(i,j\)</span>
+互质，所以每一对不同的 <span class="math inline">\(x,y\)</span>
+对应一个唯一的 <span class="math inline">\(1\sim ab\)</span> 的 <span
+class="math inline">\(i\)</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\sum_{i=1}^{ab}[\gcd(x,a)=1][\gcd(y,b)=1]\gcd(x-1,a)\gcd(y-1,b)
+\\=&amp;
+\sum_{x=1}^{a}\sum_{y=1}^{b}[\gcd(x,a)=1][\gcd(y,b)=1]\gcd(x-1,a)\gcd(y-1,b)
+\\=&amp;
+\sum_{x=1}^{a}[\gcd(x,a)=1]\gcd(x-1,a)\sum_{y=1}^{b}[\gcd(y,b)=1]\gcd(y-1,b)
+\\=&amp;
+g(a)g(b)
+\end{aligned}
+\]</span></p>
+<p>然而在 <span
+class="math inline">\(g(p^k)=(k+1)\times(p^k-p^{k-1})\)</span>
+中可以注意到 <span
+class="math inline">\(\varphi(p^k)=p^k-p^{k-1}\)</span> 和 <span
+class="math inline">\(\sigma_0(p^k)=k+1\)</span> 所以 <span
+class="math inline">\(g(n)=\varphi(n)\times \sigma_0(n)\)</span>
+一定是积性函数可以直接证明了</p>
+<p>复杂度经过<code>Wolfram Mathematica</code> 算出来是个 <span
+class="math inline">\(O(n^2PolyLogn)\)</span> 的东西</p>
+<p>bzoj 讨论中出题人的写法是枚举 <span
+class="math inline">\(i,j,x\)</span> 的时候符合要求的 <span
+class="math inline">\(g[n-i*x-j*y]\)</span>
+是一堆等差数列，可以预处理出来，这部分复杂度有保证是 <span
+class="math inline">\(O(n\log n)\)</span> 的</p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://buzhibujue.cf/2019/08/16/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" title="组合数学" target="_blank" rel="external">https://buzhibujue.cf/2019/08/16/组合数学/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/buzhibujuelb" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/buzhibujuelb" target="_blank"><span class="text-dark">不知不觉</span><small class="ml-1x">Acmer &amp; Student</small></a></h3>
+        <div>Never Settle</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2019/09/10/cf1214F/" title="cf1214F"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2019/08/15/HDU4997/" title="HDU4997"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'dUYIOlsqHv5VgCljRF9mTTtv-gzGzoHsz',
+    appKey: 'HRaJc2h4HiPKBHSGP9lyU5tx',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

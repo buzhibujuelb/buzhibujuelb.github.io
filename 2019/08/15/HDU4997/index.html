@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>HDU4997 | Imperceptible</title>
+  <meta name="description" content="HDU4997  Description People are weak. Relationship between people like friendship or love is weak too. But a group of persons can have strong relationship, umm, 2-edge-connected relationship. Su">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HDU4997">
+<meta property="og:url" content="https://buzhibujue.cf/2019/08/15/HDU4997/index.html">
+<meta property="og:site_name" content="Imperceptible">
+<meta property="og:description" content="HDU4997  Description People are weak. Relationship between people like friendship or love is weak too. But a group of persons can have strong relationship, umm, 2-edge-connected relationship. Su">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-08-15T12:07:34.000Z">
+<meta property="article:modified_time" content="2022-07-12T17:23:26.305Z">
+<meta property="article:author" content="不知不觉">
+<meta property="article:tag" content="计数">
+<meta property="article:tag" content="容斥">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://buzhibujue.cf/2019/08/15/HDU4997/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Imperceptible" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/buzhibujuelb" target="_blank">
+          <img class="img-circle img-rotate" src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">不知不觉</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Acmer &amp; Student</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Chengdu, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools">
+            
+            <i class="icon icon-plus"></i>
+            
+            <span class="menu-title">menu.Tools</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>Never Settle</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HDU/">HDU</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/LOJ/">LOJ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SPOJ/">SPOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UOJ/">UOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B4%9B%E8%B0%B7/">洛谷</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/DP/" style="font-size: 13px;">DP</a> <a href="/tags/FFT/" style="font-size: 13.2px;">FFT</a> <a href="/tags/LCT/" style="font-size: 13px;">LCT</a> <a href="/tags/NTT/" style="font-size: 13.2px;">NTT</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 13px;">二分</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 13px;">凸包</a> <a href="/tags/%E5%8A%A8%E6%80%81DP/" style="font-size: 13px;">动态DP</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 13.2px;">图论</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13px;">字符串</a> <a href="/tags/%E5%AE%B9%E6%96%A5/" style="font-size: 13.4px;">容斥</a> <a href="/tags/%E6%80%9D%E7%BB%B4/" style="font-size: 13.6px;">思维</a> <a href="/tags/%E6%89%A9%E5%9F%9F/" style="font-size: 13px;">扩域</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px;">数学</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 13px;">最短路</a> <a href="/tags/%E6%B0%B4%E9%A2%98/" style="font-size: 13px;">水题</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 13.6px;">物理</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 13px;">线性基</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 13px;">组合数学</a> <a href="/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" style="font-size: 13px;">莫比乌斯反演</a> <a href="/tags/%E8%AE%A1%E6%95%B0/" style="font-size: 13.8px;">计数</a> <a href="/tags/%E9%94%99%E6%8E%92/" style="font-size: 13px;">错排</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 13.6px;">随笔</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%8F%98%E5%8C%96%E7%9A%84%E7%94%B5%E7%A3%81%E5%9C%BA/" class="title">大学物理 变化的电磁场</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:22:53.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%94%B5%E5%AD%A6/" class="title">大学物理 静电学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:21:57.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%A3%81%E5%AD%A6/" class="title">大学物理 静磁学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:37.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6/" class="title">大学物理 刚体力学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:30.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="title">线性代数与空间解析几何 第五章 特征值与特征向量</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:16:32.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-HDU4997" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      HDU4997
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2019/08/15/HDU4997/" class="article-date">
+	  <time datetime="2019-08-15T12:07:34.000Z" itemprop="datePublished">2019-08-15</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/HDU/">HDU</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E5%AE%B9%E6%96%A5/" rel="tag">容斥</a>, <a class="article-tag-link-link" href="/tags/%E8%AE%A1%E6%95%B0/" rel="tag">计数</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/08/15/HDU4997/#comments" class="article-comment-link">Comments</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="hdu4997"><a
+target="_blank" rel="noopener" href="http://acm.hdu.edu.cn/showproblem.php?pid=4997">HDU4997</a></h1>
+<blockquote>
+<h3 id="description">Description</h3>
+<p>People are weak. Relationship between people like friendship or love
+is weak too. But a group of persons can have strong relationship, umm,
+2-edge-connected relationship.</p>
+<p>Suppose there are n persons. If two persons, A and B, are in a
+relationship, then we add an un-directional edge between them. In this
+way we can have a relationship graph, which is an un-directional graph
+without self-loops or multiple edges. If this graph is 2-edge-connected,
+then we say these persons have a strong relationship.</p>
+<p>Now we have a group of persons without relationship between any two
+of them. And some pair of persons even hate each other. You will
+introduce some pairs of persons to know each other and set up a
+relationship between them to make the group of persons have a strong
+relationship. But notice that you can't set up a relationship between a
+pair of persons who hate each other. How many ways you can do that? (Two
+ways are different if there exists a pair of persons which have
+relationship in one way but not in another way).</p>
+<p><strong>output the answer modulo 1e9+7</strong></p>
+<h3 id="input">Input</h3>
+<p>The first line contains an integer <span
+class="math inline">\(T\)</span> , denoting the number of the test
+cases.</p>
+<p>For each test case, the first line contains 2 integers n and m,
+denoting the number of persons in the group and the number of pairs of
+persons who hate each other. Then m lines follow, each line containing 2
+integers <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span>, denoting that <span
+class="math inline">\(A\)</span> and B hate each other.</p>
+<p><span class="math inline">\(T\leq5, 2\leq n\leq 10, 0\leq m\leq
+n*(n-1)/2.\)</span> The persons are indexed from <span
+class="math inline">\(1\)</span> .</p>
+<h3 id="output">Output</h3>
+<p>For each test case, output the answer in a line.</p>
+<h3 id="sample-input">Sample Input</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">5 0</span><br><span class="line">10 0</span><br><span class="line">5 2</span><br><span class="line">1 2</span><br><span class="line">2 3</span><br></pre></td></tr></table></figure>
+<h3 id="sample-output">Sample Output</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">253</span><br><span class="line">466997276</span><br><span class="line">18</span><br></pre></td></tr></table></figure>
+<h3 id="hint">Hint</h3>
+<p>A 2-edge-connected graph is a graph which is connected and if you
+remove an edge from it, it is still connected.</p>
+<p>Note that <span class="math inline">\(n\geq 2\)</span>, so we can
+ignore the issue that whether a single vertex is 2-edge-connected or not
+:).</p>
+</blockquote>
+<h3 id="solution">Solution</h3>
+<p><strong>1.计算集合 <span class="math inline">\(S\)</span>
+形成的连通图的方案数 </strong></p>
+<p>直接做是 <span class="math inline">\(3^n\)</span> 这里说一下 <span
+class="math inline">\(n^22^n\)</span>
+做法：定义集合幂级数的乘法为子集卷积，<span
+class="math inline">\(f\)</span> 为形成连通图的方案的集合幂级数，<span
+class="math inline">\(g\)</span> 为形成任意子图的方案的集合幂级数( <span
+class="math inline">\(\varnothing\)</span> 项的系数是 <span
+class="math inline">\(0\)</span> ) <span class="math display">\[
+g+1=\exp(f)\\
+f=\ln(g+1)\\
+\begin{align}
+f&#39;&amp;=\frac{g&#39;}{g+1}\\
+f&#39;+f&#39;g&amp;=g&#39;\\
+f&#39;_n+\sum_{i=0}^nf&#39;_ig_{n-i}&amp;=g&#39;_n\\
+(n+1)f_{n+1}+\sum_{i=0}^n(i+1)f_{i+1}g_{n-i}&amp;=(n+1)g_{n+1}\\
+f_{n+1}&amp;=
+g_{n+1}-\frac{1}{n+1}\sum_{i=0}^n(i+1)f_{i+1}g_{n-i}
+\end{align}
+\]</span></p>
+<p><strong>2. 计算集合 <span class="math inline">\(S\)</span>
+形成的双连通图的方案数</strong></p>
+<p>为计算双连通子图的方案 <span
+class="math inline">\(ans\)</span>，再记录一个<code>h[S][T]</code>表示将
+<span class="math inline">\(S\)</span> 划分为若干不相互连通的连通子集
+<span class="math inline">\(S_0,S_1\dots\)</span> 使得所有子集 <span
+class="math inline">\(S_0,S_1\dots\)</span> 都有且仅有一条连向 <span
+class="math inline">\(T\)</span> 的边 （两条就双连通了） <span
+class="math display">\[
+ans[S]=f[S]-\sum_{\min S\in S_0\subseteq S}ans[S_0]\times h[S\backslash
+S_0][S_0]\\
+h[S][T]=
+\begin{cases}
+1,&amp;S=\varnothing
+\\
+\sum_{\min S\in S_0\subsetneq S}h[S_0][T]\times f[S_0]\times
+edge(S_0,T),&amp;\text{otherwise}
+\end{cases}
+\]</span></p>
+<p>一开始特别菜的不知道怎么预处理这个 <span
+class="math inline">\(edge(S,T)\)</span> 以为只能 <span
+class="math inline">\(4^n\)</span> 一看其他人写的直接 <span
+class="math inline">\(E(S\oplus
+T)-E(S)-E(T)\)</span>即可，<del>我容斥不过关</del></p>
+<h3 id="code">Code</h3>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> FIO <span class="string">&quot;hdu4997&quot;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">10</span>,SN=<span class="number">1</span>&lt;&lt;N,MOD=<span class="number">1e9</span>+<span class="number">7</span>,N2=N*N;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">add</span><span class="params">(<span class="type">int</span> a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> (a+=b)&gt;=MOD?a-MOD:a;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">sub</span><span class="params">(<span class="type">int</span> a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> (a-=b)&lt;   <span class="number">0</span>?a+MOD:a;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">mul</span><span class="params">(<span class="type">const</span> <span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> <span class="number">1ll</span>*a*b%MOD;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span>&amp; <span class="title">inc</span><span class="params">(<span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> a=<span class="built_in">add</span>(a,b);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span>&amp; <span class="title">dec</span><span class="params">(<span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> a=<span class="built_in">sub</span>(a,b);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span>&amp; <span class="title">pro</span><span class="params">(<span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> a=<span class="built_in">mul</span>(a,b);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">qpow</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b)</span></span>&#123;<span class="type">int</span> c=<span class="number">1</span>;<span class="keyword">for</span>(;b;b&gt;&gt;=<span class="number">1</span>,<span class="built_in">pro</span>(a,a))<span class="keyword">if</span>(b&amp;<span class="number">1</span>)<span class="built_in">pro</span>(c,a);<span class="keyword">return</span> c;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">inv</span><span class="params">(<span class="type">const</span> <span class="type">int</span> &amp;a)</span></span>&#123;<span class="keyword">return</span> <span class="built_in">qpow</span>(a,MOD<span class="number">-2</span>);&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n,T,m,d[N][N],E[SN],f[SN],g[SN][N+<span class="number">1</span>],h[SN][SN],up,ans[SN],bin[N2];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">clear</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="built_in">memset</span>(d,<span class="number">0</span>,<span class="keyword">sizeof</span> d);</span><br><span class="line">  <span class="built_in">memset</span>(E,<span class="number">0</span>,<span class="keyword">sizeof</span> E);</span><br><span class="line">  <span class="built_in">memset</span>(f,<span class="number">0</span>,<span class="keyword">sizeof</span> f);</span><br><span class="line">  <span class="built_in">memset</span>(g,<span class="number">0</span>,<span class="keyword">sizeof</span> g);</span><br><span class="line">  <span class="built_in">memset</span>(h,<span class="number">0</span>,<span class="keyword">sizeof</span> h);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> *a,<span class="type">int</span> *b)</span></span>&#123;<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=n;i++)<span class="built_in">inc</span>(a[i],b[i]);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">sub</span><span class="params">(<span class="type">int</span> *a,<span class="type">int</span> *b)</span></span>&#123;<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=n;i++)<span class="built_in">dec</span>(a[i],b[i]);&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">getln</span><span class="params">(<span class="type">int</span> *f)</span></span>&#123;</span><br><span class="line">  <span class="type">static</span> <span class="type">int</span> tmp[N+<span class="number">1</span>];</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=n;i++)tmp[i]=f[i];</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;n;i++)&#123;</span><br><span class="line">    <span class="type">int</span> cur=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;i;j++)<span class="built_in">inc</span>(cur,<span class="built_in">mul</span>(<span class="built_in">mul</span>(j+<span class="number">1</span>,f[j+<span class="number">1</span>]),tmp[i-j]));</span><br><span class="line">    <span class="built_in">dec</span>(f[i+<span class="number">1</span>],<span class="built_in">mul</span>(<span class="built_in">inv</span>(i+<span class="number">1</span>),cur));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">edge</span><span class="params">(<span class="type">int</span> S,<span class="type">int</span> T)</span></span>&#123;<span class="keyword">return</span> <span class="built_in">sub</span>(E[S^T],<span class="built_in">add</span>(E[S],E[T]));&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">getf</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> S=<span class="number">1</span>;S&lt;up;S++)g[S][__builtin_popcount(S)]=bin[E[S]];</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> S=<span class="number">1</span>;S&lt;up;S&lt;&lt;=<span class="number">1</span>)<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;up;i++)<span class="keyword">if</span>(i&amp;S)<span class="built_in">add</span>(g[i],g[i^S]);</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> S=<span class="number">1</span>;S&lt;up;S++)<span class="built_in">getln</span>(g[S]);</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> S=<span class="number">1</span>;S&lt;up;S&lt;&lt;=<span class="number">1</span>)<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;up;i++)<span class="keyword">if</span>(i&amp;S)<span class="built_in">sub</span>(g[i],g[i^S]);</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> S=<span class="number">1</span>;S&lt;up;S++)f[S]=g[S][__builtin_popcount(S)];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">getans</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> S=<span class="number">0</span>;S&lt;up;S++)h[<span class="number">0</span>][S]=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> S=<span class="number">1</span>;S&lt;up;S++)&#123;</span><br><span class="line">    <span class="type">int</span> lst=S&amp;-S;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> T=up<span class="number">-1</span>^S;T;T=(T<span class="number">-1</span>)&amp;(up<span class="number">-1</span>^S))</span><br><span class="line">      <span class="keyword">for</span>(<span class="type">int</span> s=S^lst;~s;s=s?(s<span class="number">-1</span>)&amp;(S^lst):<span class="number">-1</span>)</span><br><span class="line">        <span class="built_in">inc</span>(h[S][T],<span class="built_in">mul</span>(<span class="built_in">mul</span>(h[S^s^lst][T],f[s^lst]),<span class="built_in">edge</span>(s^lst,T)));</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> S=<span class="number">0</span>;S&lt;up;S++)&#123;</span><br><span class="line">    <span class="type">int</span> lst=S&amp;-S;</span><br><span class="line">    ans[S]=f[S];</span><br><span class="line">    <span class="keyword">if</span>(S^lst)</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> s=(S^lst)&amp;((S^lst)<span class="number">-1</span>);~s;s=s?(s<span class="number">-1</span>)&amp;(S^lst):<span class="number">-1</span>)</span><br><span class="line">      <span class="built_in">dec</span>(ans[S],<span class="built_in">mul</span>(ans[s^lst],h[S^s^lst][s^lst]));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="built_in">freopen</span>(FIO<span class="string">&quot;.in&quot;</span>,<span class="string">&quot;r&quot;</span>,stdin);</span><br><span class="line">  <span class="comment">//freopen(FIO&quot;.out&quot;,&quot;w&quot;,stdout);</span></span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;T);</span><br><span class="line">  bin[<span class="number">0</span>]=<span class="number">1</span>;<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;N2;i++)bin[i]=<span class="built_in">add</span>(bin[i<span class="number">-1</span>],bin[i<span class="number">-1</span>]);</span><br><span class="line">  <span class="keyword">while</span>(T--)&#123;</span><br><span class="line">    <span class="built_in">clear</span>();</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;n,&amp;m);</span><br><span class="line">    up=<span class="number">1</span>&lt;&lt;n;</span><br><span class="line">    <span class="keyword">while</span>(m--)&#123;</span><br><span class="line">      <span class="type">int</span> u,v;</span><br><span class="line">      <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;u,&amp;v);</span><br><span class="line">      u--;v--;</span><br><span class="line">      d[u][v]++;</span><br><span class="line">      d[v][u]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> S=<span class="number">0</span>;S&lt;up;S++)</span><br><span class="line">      <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)<span class="keyword">if</span>(S&gt;&gt;i&amp;<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=i+<span class="number">1</span>;j&lt;n;j++)<span class="keyword">if</span>(S&gt;&gt;j&amp;<span class="number">1</span>)E[S]+=!d[i][j];</span><br><span class="line"></span><br><span class="line">    <span class="built_in">getf</span>();<span class="built_in">getans</span>();</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,ans[up<span class="number">-1</span>]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://buzhibujue.cf/2019/08/15/HDU4997/" title="HDU4997" target="_blank" rel="external">https://buzhibujue.cf/2019/08/15/HDU4997/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/buzhibujuelb" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/buzhibujuelb" target="_blank"><span class="text-dark">不知不觉</span><small class="ml-1x">Acmer &amp; Student</small></a></h3>
+        <div>Never Settle</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2019/08/16/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" title="组合数学"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2019/08/12/UOJ37/" title="UOJ37"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'dUYIOlsqHv5VgCljRF9mTTtv-gzGzoHsz',
+    appKey: 'HRaJc2h4HiPKBHSGP9lyU5tx',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>微积分 第六章 多元数量值函数积分学 | Imperceptible</title>
+  <meta name="description" content="第六章 多元数量值函数积分学 6.1 多元数量值函数积分的概念和性质 一、物体的质量  平面薄片的质量 计算面密度为连续函数 \(\mu(x,y)\) 的平面薄片 \(D\) 的质量 \(m\) 分割 \(\Delta\sigma_i,i&#x3D;1,\cdots n\) 近似 \(m_i\sim\mu(\xi_i,\eta_i)\Delta\sigma_i\) 作极限 \(m&#x3D;\lim">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微积分 第六章 多元数量值函数积分学">
+<meta property="og:url" content="https://buzhibujue.cf/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%A4%9A%E5%85%83%E6%95%B0%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/index.html">
+<meta property="og:site_name" content="Imperceptible">
+<meta property="og:description" content="第六章 多元数量值函数积分学 6.1 多元数量值函数积分的概念和性质 一、物体的质量  平面薄片的质量 计算面密度为连续函数 \(\mu(x,y)\) 的平面薄片 \(D\) 的质量 \(m\) 分割 \(\Delta\sigma_i,i&#x3D;1,\cdots n\) 近似 \(m_i\sim\mu(\xi_i,\eta_i)\Delta\sigma_i\) 作极限 \(m&#x3D;\lim">
+<meta property="og:locale">
+<meta property="article:published_time" content="2022-06-20T16:09:35.000Z">
+<meta property="article:modified_time" content="2022-07-12T17:23:26.391Z">
+<meta property="article:author" content="不知不觉">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://buzhibujue.cf/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%A4%9A%E5%85%83%E6%95%B0%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Imperceptible" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    <link href="//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" rel="stylesheet">
+  
+  
+  
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/buzhibujuelb" target="_blank">
+          <img class="img-circle img-rotate" src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">不知不觉</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Acmer &amp; Student</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Chengdu, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools">
+            
+            <i class="icon icon-plus"></i>
+            
+            <span class="menu-title">menu.Tools</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>Never Settle</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HDU/">HDU</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/LOJ/">LOJ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SPOJ/">SPOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UOJ/">UOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B4%9B%E8%B0%B7/">洛谷</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/DP/" style="font-size: 13px;">DP</a> <a href="/tags/FFT/" style="font-size: 13.2px;">FFT</a> <a href="/tags/LCT/" style="font-size: 13px;">LCT</a> <a href="/tags/NTT/" style="font-size: 13.2px;">NTT</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 13px;">二分</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 13px;">凸包</a> <a href="/tags/%E5%8A%A8%E6%80%81DP/" style="font-size: 13px;">动态DP</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 13.2px;">图论</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13px;">字符串</a> <a href="/tags/%E5%AE%B9%E6%96%A5/" style="font-size: 13.4px;">容斥</a> <a href="/tags/%E6%80%9D%E7%BB%B4/" style="font-size: 13.6px;">思维</a> <a href="/tags/%E6%89%A9%E5%9F%9F/" style="font-size: 13px;">扩域</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px;">数学</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 13px;">最短路</a> <a href="/tags/%E6%B0%B4%E9%A2%98/" style="font-size: 13px;">水题</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 13.6px;">物理</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 13px;">线性基</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 13px;">组合数学</a> <a href="/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" style="font-size: 13px;">莫比乌斯反演</a> <a href="/tags/%E8%AE%A1%E6%95%B0/" style="font-size: 13.8px;">计数</a> <a href="/tags/%E9%94%99%E6%8E%92/" style="font-size: 13px;">错排</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 13.6px;">随笔</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%8F%98%E5%8C%96%E7%9A%84%E7%94%B5%E7%A3%81%E5%9C%BA/" class="title">大学物理 变化的电磁场</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:22:53.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%94%B5%E5%AD%A6/" class="title">大学物理 静电学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:21:57.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%A3%81%E5%AD%A6/" class="title">大学物理 静磁学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:37.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6/" class="title">大学物理 刚体力学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:30.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="title">线性代数与空间解析几何 第五章 特征值与特征向量</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:16:32.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-微积分-第六章-多元数量值函数积分学" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      微积分 第六章 多元数量值函数积分学
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%A4%9A%E5%85%83%E6%95%B0%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/" class="article-date">
+	  <time datetime="2022-06-20T16:09:35.000Z" itemprop="datePublished">2022-06-21</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%A4%9A%E5%85%83%E6%95%B0%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/#comments" class="article-comment-link">Comments</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="第六章-多元数量值函数积分学">第六章 多元数量值函数积分学</h1>
+<h2 id="多元数量值函数积分的概念和性质">6.1
+多元数量值函数积分的概念和性质</h2>
+<h3 id="一物体的质量">一、物体的质量</h3>
+<ol type="1">
+<li><p>平面薄片的质量 计算面密度为连续函数 <span
+class="math inline">\(\mu(x,y)\)</span> 的平面薄片 <span
+class="math inline">\(D\)</span> 的质量 <span
+class="math inline">\(m\)</span></p></li>
+<li><p>分割 <span class="math inline">\(\Delta\sigma_i,i=1,\cdots
+n\)</span></p></li>
+<li><p>近似 <span
+class="math inline">\(m_i\sim\mu(\xi_i,\eta_i)\Delta\sigma_i\)</span></p></li>
+<li><p>作极限 <span class="math inline">\(m=\lim_{\lambda\to
+0}\sum_{i=1}^n\mu(\xi_i,\eta_i)\Delta\sigma_i\)</span></p></li>
+</ol>
+<p>其中 <span class="math inline">\(\lambda\)</span>
+为所有小区域的最大直径</p>
+<ol start="2" type="1">
+<li>空间物体的质量</li>
+</ol>
+<p>计算体密度为连续函数 <span class="math inline">\(\mu(x,y,z)\)</span>
+的空间区域 <span class="math inline">\(V\)</span> 的质量 <span
+class="math inline">\(m\)</span></p>
+<ol start="3" type="1">
+<li>空间曲线的质量</li>
+</ol>
+<p>计算线密度为连续函数 <span class="math inline">\(\mu(x,y,z)\)</span>
+的曲线 <span class="math inline">\(l\)</span> 的质量 <span
+class="math inline">\(m\)</span></p>
+<ol start="4" type="1">
+<li>物体的质量分布在一块曲面 <span class="math inline">\(S\)</span>
+上</li>
+</ol>
+<p>设面密度为 <span
+class="math inline">\(\mu(M))=\mu(x,y,z)&gt;0\)</span>，在 <span
+class="math inline">\(S\)</span> 上连续且点 <span
+class="math inline">\(M\in S\)</span></p>
+<h3 id="二多元数量值函数积分的概念">二、多元数量值函数积分的概念</h3>
+<p><strong>定义</strong> 设 <span class="math inline">\(\Omega\)</span>
+为有界闭区域的几何形体且 <span class="math inline">\(\Omega\)</span>
+可以度量，设有界函数 <span class="math inline">\(f(M),\forall M\in
+\Omega\)</span>，将 <span class="math inline">\(\Omega\)</span>
+<strong>任意</strong>分割成 <span class="math inline">\(n\)</span>
+个小块 <span class="math inline">\(\Delta\Omega_i,i=1,\cdots
+n\)</span>，<span class="math inline">\(\Delta \Omega_i\)</span>
+也表示每块的度量，<strong>任取</strong>一点 <span
+class="math inline">\(M_i\)</span>，作 <span
+class="math inline">\(f(M_i)\cdot \Delta\Omega_i\)</span>，令 <span
+class="math inline">\(\lambda\)</span> 为 <span
+class="math inline">\(n\)</span> 个小块的最大直径，当 <span
+class="math inline">\(\lambda\to 0\)</span> 时，若 <span
+class="math inline">\(\lim_{\lambda\to
+0}\sum_{i=1}^nf(M_i)\cdot\Delta\Omega_i\)</span> 存在，<strong>称函数
+<span class="math inline">\(f(M)\)</span> 在 <span
+class="math inline">\(\Omega\)</span> 上可积，记为</strong> <span
+class="math display">\[
+\int_\Omega f(M)d\Omega=\lim_{\lambda\to
+0}\sum_{i=1}^nf(M_i)\Delta\Omega_i
+\]</span> <span class="math inline">\(\Omega\)</span>：称为积分区域</p>
+<p><span
+class="math inline">\(f(\Omega)d\Omega\)</span>：称为被积表达式或积分微元</p>
+<p><strong>注</strong></p>
+<ol type="1">
+<li>当 <span class="math inline">\(f(M)\)</span> 为几何形体 <span
+class="math inline">\(\Omega\)</span> 的密度函数时，其质量是</li>
+</ol>
+<p><span class="math display">\[
+m=\int_\Omega f(M)d\Omega
+\]</span></p>
+<ol start="2" type="1">
+<li>当被积函数 <span class="math inline">\(f(M)=1\)</span>时，<span
+class="math inline">\(\int_\Omega d\Omega\)</span> 就是几何形体 <span
+class="math inline">\(\Omega\)</span> 的度量</li>
+<li>当 <span class="math inline">\(f(M)\)</span> 在 <span
+class="math inline">\(\Omega\)</span> 上连续时，函数 <span
+class="math inline">\(f(M)\)</span> 在 <span
+class="math inline">\(\Omega\)</span> 上必可积</li>
+</ol>
+<h3 id="三不同几何形体-omega-上积分的表达式">三、不同几何形体 <span
+class="math inline">\(\Omega\)</span> 上积分的表达式</h3>
+<ol type="1">
+<li>设几何形体 <span class="math inline">\(\Omega\)</span> 是一平面区域
+<span class="math inline">\(D\)</span>，在 <span
+class="math inline">\(D\)</span>
+上的积分称为<strong>二重积分</strong>，记为 <span
+class="math inline">\(\iint_Df(x,y)d\sigma\)</span>
+在直角坐标系下用平行于坐标轴的直线来划分区域 <span
+class="math inline">\(D\)</span>，面积元素为 <span
+class="math inline">\(d\sigma=dxdy\)</span></li>
+</ol>
+<p><span class="math display">\[
+\iint_D f(x,y)d\sigma=\iint_D f(x,y)dxdy
+\]</span></p>
+<ol start="2" type="1">
+<li>设几何形体 <span class="math inline">\(\Omega\)</span> 是一空间区域
+<span class="math inline">\(V\)</span>，那么在 <span
+class="math inline">\(V\)</span>
+上的积分就称为<strong>三重积分</strong>，记为 <span
+class="math inline">\(\iiint_V f(x,y,z)dV\)</span>
+在直角坐标系中，如果用平行于坐标面的平面来划分 <span
+class="math inline">\(\Omega\)</span>，体积元素为 <span
+class="math inline">\(dV=dxdydz\)</span></li>
+</ol>
+<p><span class="math display">\[
+\iiint_V f(x,y,z)dV=\iiint_V f(x,y,z)dxdydz
+\]</span></p>
+<ol start="3" type="1">
+<li>设几何形体 <span class="math inline">\(\Omega\)</span>
+为第一条平面或空间曲线 <span class="math inline">\(L\)</span>，那么在
+<span class="math inline">\(L\)</span>
+上的积分就称为<strong>第一类曲线积分</strong>或<strong>对弧长的曲线积分</strong></li>
+</ol>
+<p>记为 <span class="math inline">\(\int_L f(x,y)ds=\lim_{\lambda\to
+0}\sum_{i=1}^nf(\xi_i,\eta_i)\cdot\Delta s_i\)</span> 或 <span
+class="math inline">\(\int_L f(x,y,z)ds=\lim_{\lambda\to
+0}\sum_{i=1}^nf(\xi_i,\eta_i,\epsilon_i)\cdot\Delta s_i\)</span></p>
+<p>如果 <span class="math inline">\(L\)</span> 是闭曲线，常记为</p>
+<p><span class="math inline">\(\oint_Lf(x,y)dx\)</span> 或 <span
+class="math inline">\(\oint_Lf(x,y,z)ds\)</span></p>
+<ol start="4" type="1">
+<li>设几何形体 <span class="math inline">\(\Omega\)</span> 为一曲面
+<span class="math inline">\(S\)</span>，那么在 <span
+class="math inline">\(S\)</span>
+上的积分就称为<strong>第一类曲面积分</strong>或<strong>对面积的曲面积分</strong></li>
+</ol>
+<p>记为 <span class="math inline">\(\iint_s f(x,y,z)dS=\lim_{\lambda\to
+0}\sum_{i=1}^nf(\xi_i,\eta_i,\epsilon_i)\Delta S_i\)</span></p>
+<p>如果 <span class="math inline">\(S\)</span> 是闭曲面，常记为 <span
+class="math inline">\(\oiint_sf(x,y,z)dS\)</span></p>
+<h3 id="四积分的性质">四、积分的性质</h3>
+<p>注：以下性质的证明于定积分的证明完全类似</p>
+<p><strong>性质1</strong>
+函数的和（或差）的积分等于各个函数积分的和（或茶），即 <span
+class="math inline">\(\int_\Omega[f(M)\pm g(M)]d\Omega=\int_\Omega
+f(M)d\Omega\pm\int_\Omega g(M)d\Omega\)</span></p>
+<p><strong>性质2</strong> 或闭区域 <span
+class="math inline">\(\Omega\)</span> 可分为两个闭区域 <span
+class="math inline">\(\Omega_1,\Omega_2\)</span> 且 <span
+class="math inline">\(\Omega_1,\Omega_2\)</span> 无公共内点则 <span
+class="math inline">\(\int_\Omega
+f(M)d\Omega=\int_{\Omega_1}f(M)d\Omega+\int_{\Omega_2}f(M)d\Omega\)</span></p>
+<p><strong>性质3</strong> 如果在 <span
+class="math inline">\(\Omega\)</span> 上满足 <span
+class="math inline">\(f(M)\leq g(M)\)</span>，则 <span
+class="math inline">\(\int_\Omega f(M)d\Omega\leq \int_\Omega
+g(M)d\Omega\)</span></p>
+<p>特别地，由于 <span class="math inline">\(-|f(M)\leq f(M)\leq
+|f(M)|\)</span> 故有不等式 <span class="math inline">\(|\int_\Omega
+f(M)d\Omega|\leq \int_\Omega|f(M)|d\Omega\)</span></p>
+<p><strong>性质4</strong> 设 <span class="math inline">\(m,M\)</span> 是
+<span class="math inline">\(f(M)\)</span> 在闭几何形体 <span
+class="math inline">\(\Omega\)</span> 上的最小最大值，则 <span
+class="math inline">\(m\cdot(\Omega 的度量)\leq \int_\Omega
+f(M)d\Omega\leq M\cdot(\Omega 的度量)\)</span></p>
+<p><strong>性质5</strong> 设 <span class="math inline">\(f(M)\)</span>
+在闭几何形体 <span class="math inline">\(\Omega\)</span> 上连续，则存在
+<span class="math inline">\(M_0\in\Omega\)</span> 使得 <span
+class="math inline">\(\int_\Omega f(M)d\Omega=f(M_0)\cdot (\Omega
+的度量)\)</span></p>
+<h2 id="二重积分的计算">6.2 二重积分的计算</h2>
+<h3 id="一二重积分的几何意义">一、二重积分的几何意义</h3>
+<p>以 <span class="math inline">\(xoy\)</span> 面上的闭区域 <span
+class="math inline">\(D\)</span> 为底面，以 <span
+class="math inline">\(D\)</span> 的边界曲线为准线，母线平行于 <span
+class="math inline">\(z\)</span> 轴的柱面为侧面，以曲面 <span
+class="math inline">\(z=f(x,y)\)</span> 为顶的以空间立体的体积</p>
+<h3 id="二直角坐标系下计算二重积分">二、直角坐标系下计算二重积分</h3>
+<p>如果区域 <span class="math inline">\(D\)</span> 可以表示为 <span
+class="math inline">\(D=\{(x,y)|y_1(x)\leq y\leq y_2(x),a\leq x \leq
+b\}\)</span>，其中 <span class="math inline">\(y_1(x),y_2(x)\)</span> 在
+<span class="math inline">\([a,b]\)</span> 上连续</p>
+<p>先对 <span class="math inline">\(y\)</span> 后对 <span
+class="math inline">\(x\)</span> 的二次积分通常记为</p>
+<p><span class="math inline">\(\iint_D f(x,y)d\sigma=\iint_D
+f(x,y)dxdy=\int_a^b dx\int_{y_1(x)}^{y_2(x)}f(x,y)dy\)</span></p>
+<p>确定积分顺序时，应注意积分区域 <span class="math inline">\(D\)</span>
+为<strong>X-型</strong>的特点</p>
+<p>结论：对于二重积分 <span class="math inline">\(\iint_D
+f(x,y)dxdy\)</span>，积分区域 <span class="math inline">\(D\)</span>
+关于 <span class="math inline">\(x\)</span> 轴对称</p>
+<ol type="1">
+<li>若 <span class="math inline">\(f(x,y)\)</span> 是关于 <span
+class="math inline">\(y\)</span> 的奇函数，则 <span
+class="math inline">\(\iint_D f(x,y)dxdy=0\)</span></li>
+<li>若 <span class="math inline">\(f(x,y)\)</span> 是关于 <span
+class="math inline">\(y\)</span> 的偶函数，则 <span
+class="math inline">\(\iint_D
+f(x,y)dxdy=2\iint_{D_上}f(x,y)dxdy\)</span></li>
+</ol>
+<h3 id="三在极坐标中的计算">三、在极坐标中的计算</h3>
+<p>由二重积分的定义可知</p>
+<p><span class="math inline">\(\iint_D f(x,y)d\sigma=\lim_{\lambda\to
+0}\sum_{i=1}^n f(\xi_i,\eta_i)\Delta\sigma_i\)</span></p>
+<p>现在用一族同心圆 <span class="math inline">\(r=c\)</span>
+以及从极点出发的一族射线，<span
+class="math inline">\(\theta=\alpha\)</span> 将 <span
+class="math inline">\(D\)</span> 划分为任意的 <span
+class="math inline">\(n\)</span> 个小闭区域</p>
+<p><span class="math inline">\(\Delta\sigma_i=\cfrac 12 (r_i+\Delta
+r_i)^2\cdot \Delta\theta_i-\cfrac 12 r_i^2\cdot \Delta \theta_i=r_i\cdot
+\Delta r_i\cdot \Delta \theta _i +\cfrac 12 (\Delta r_i)^2\Delta
+\theta_i\)</span></p>
+<p>当 <span class="math inline">\(\Delta r_i\)</span> 与 <span
+class="math inline">\(\Delta\theta _i\)</span>
+充分小时，忽略高阶无穷小量 <span class="math inline">\(\cfrac 12
+(\Delta_i)^2\Delta \theta_i\)</span> 有 <span
+class="math inline">\(\Delta\sigma_i\approx r_i\Delta r_i\Delta
+\theta_i\)</span></p>
+<p>又因为 <span class="math inline">\(\begin{cases}x=r\cos
+\theta\\y=r\sin\theta\end{cases}\)</span></p>
+<p>得 <span
+class="math inline">\(\sum_{i=1}^nf(\xi_i,\eta_i)\Delta\sigma_i\approx\sum_i^nf(r_i\cos\theta_i,r_i\sin\theta_i)r_i\Delta
+r_i\Delta\theta_i\)</span></p>
+<p>令 <span class="math inline">\(\lambda\to 0\)</span>，得</p>
+<p><span class="math inline">\(\iint_D f(x,y)dxdy=\iint_D f(r\cos
+\theta,r\sin\theta)rdrd\theta\)</span></p>
+<p>注：面积元素 <span
+class="math inline">\(d\sigma=dxdy=rdrd\theta\)</span></p>
+<h3 id="四二重积分换元法">四、二重积分换元法</h3>
+<p>设 <span class="math inline">\(f(x,y)\)</span> 在 <span
+class="math inline">\(xOy\)</span> 上闭区域 <span
+class="math inline">\(D\)</span> 内连续，变换 <span
+class="math inline">\(x=x(u,v),y=y(u,v)\)</span>，且雅可比行列式 <span
+class="math display">\[
+J=\cfrac{\partial(x,y)}{\partial(u,v)}=\begin{vmatrix}
+\cfrac{\partial x}{\partial u}&amp;\cfrac{\partial x}{\partial v}
+\\
+\cfrac{\partial y}{\partial u}&amp;\cfrac{\partial y}{\partial v}
+\end{vmatrix}
+\neq 0
+\]</span> 则有 <span class="math inline">\(\iint_D
+f(x,y)d\sigma=\iint_D&#39;
+f[x(u,v),y(u,v)]|\cfrac{\partial(x,y)}{\partial(u,v)}|dudv\)</span></p>
+<p>在极坐标变换 <span class="math inline">\(x=r\cos
+\theta,y=r\sin\theta\)</span> 下 <span class="math display">\[
+J=\cfrac{\partial(x,y)}{\partial(r,\theta)}=\begin{vmatrix}
+\cos\theta&amp;-r\sin\theta
+\\
+\sin\theta&amp;r\cos\theta
+\end{vmatrix}
+=r
+\]</span></p>
+<h3 id="五无界区域上的反常二重积分">五、无界区域上的反常二重积分</h3>
+<p>设 <span class="math inline">\(D\)</span> 是 <span
+class="math inline">\(xOy\)</span> 平面上的无界区域，<span
+class="math inline">\(D_L\)</span> 是 <span
+class="math inline">\(D\)</span> 内任一有界子区域，函数 <span
+class="math inline">\(f(x,y)\)</span> 在 <span
+class="math inline">\(D\)</span> 上有界，在 <span
+class="math inline">\(D_L\)</span> 上的二重积分存在；让 <span
+class="math inline">\(D_L\)</span> 以任一方式无限扩展为 <span
+class="math inline">\(D\)</span>，如果极限 <span class="math display">\[
+\lim_{D_L\to D}\iint_{D_L}f(x,y)d\sigma
+\]</span> 存在，则称函数 <span class="math inline">\(f(x,y)\)</span>
+在无界区域 <span class="math inline">\(D\)</span> 上的反常二重积分 <span
+class="math inline">\(\iint_D
+f(x,y)d\sigma\)</span>收敛，并称该极限值为反常二重积分的值，即 <span
+class="math display">\[
+\iint_{D}f(x,y)d\sigma=\lim_{D_L\to D}\iint_{D_L}f(x,y)d\sigma
+\]</span> 反之则发散</p>
+<p><strong>定理2</strong> 设函数 <span
+class="math inline">\(f(x,y)\)</span> 在无界区域 <span
+class="math inline">\(D\subset R^2\)</span> 上有定义且 <span
+class="math inline">\(f(x,y)\geq 0\)</span>，则反常二重积分 <span
+class="math inline">\(\iint_D f(x,y)d\sigma\)</span> 收敛的充要条件是
+<span class="math inline">\(D\)</span> 内存在有界子区域 <span
+class="math inline">\(D_L\)</span>，当 <span
+class="math inline">\(D_L\to D\)</span> 时有 <span
+class="math display">\[
+\lim_{D_L\to D}\iint_{D_L}f(x,y)d\sigma=K
+\]</span> 其中 <span class="math inline">\(K\)</span>
+为常数，此时成无且区域上的反常二重积分 <span
+class="math inline">\(\iint_D f(x,y)d\sigma\)</span> 收敛于 <span
+class="math inline">\(K\)</span></p>
+<h2 id="三重积分的计算">6.3 三重积分的计算</h2>
+<h2 id="第一类曲线积分的计算">6.4 第一类曲线积分的计算</h2>
+<h3 id="一曲线的弧长">一、曲线的弧长</h3>
+<ol type="1">
+<li><p>直角坐标系下曲线弧微分与弧长的计算</p>
+<p>设曲线弧 <span class="math inline">\(y=f(x),a\leq x\leq
+b\)</span>，其中 <span class="math inline">\(y=f(x)\)</span> 在 <span
+class="math inline">\([a,b]\)</span> 上有一阶连续导数，取积分变量为
+<span class="math inline">\(x\)</span>，在 <span
+class="math inline">\([a,b]\)</span> 上人去小区间 <span
+class="math inline">\([x,x+dx]\)</span>
+以对应小切线段的长代替小弧段的长</p>
+<p>小切线段的长 <span
+class="math inline">\(\sqrt{(dx)^2+(dy)^2}=\sqrt{1+y&#39;^2}dx\)</span></p>
+<p><strong>弧长元素</strong> <span
+class="math inline">\(ds=\sqrt{1+y&#39;^2}dx\)</span></p></li>
+</ol>
+<p>推广：空间曲线弧长的计算公式</p>
+<p>设其参数方程为 <span
+class="math inline">\(L:x(t),y(t),z(t)\quad(\alpha\leq t\leq
+\beta)\)</span></p>
+<p>其中 <span class="math inline">\(x(t),y(t),z(t)\)</span> 在 <span
+class="math inline">\([\alpha,\beta]\)</span> 上有连续导数</p>
+<p>则空间曲线的弧长公式为 <span
+class="math inline">\(s=\int_\alpha^\beta
+\sqrt{x&#39;^2(t)+y&#39;^2(t)+z&#39;^2(t)}dt\)</span></p>
+<h3 id="二第一类曲线积分的计算">二、第一类曲线积分的计算</h3>
+<p><strong>定理</strong> 设 <span class="math inline">\(f(x,y)\)</span>
+在曲线弧上连续</p>
+<p><span class="math inline">\(L\)</span> 的参数方程为 <span
+class="math inline">\(\begin{cases}x=x(t)\\y=y(t)\end{cases}(\alpha\leq
+t\leq \beta)\)</span></p>
+<p>其中 <span class="math inline">\(x(t),y(t)\)</span> 在<span
+class="math inline">\([\alpha,\beta]\)</span> 上有一阶连续导数，则 <span
+class="math inline">\(\int_Lf(x,y)ds=\int_\alpha^beta
+f[x(t),y(t)]\sqrt{x&#39;^2(t)+y&#39;^2(t)}dt\quad
+(\alpha&lt;\beta)\)</span></p>
+<h2 id="第一类曲面积分的计算">6.5 第一类曲面积分的计算</h2>
+<h2 id="积分在物理上的应用">6.6 积分在物理上的应用</h2>
+<h3 id="一质心">一、质心</h3>
+<p><span class="math display">\[
+\bar{x}=\cfrac{\int_\Omega x\mu(M)d\Omega}{\int_\Omega\mu(M)d\Omega},
+\bar{y}=\cfrac{\int_\Omega y\mu(M)d\Omega}{\int_\Omega\mu(M)d\Omega},
+\bar{z}=\cfrac{\int_\Omega z\mu(M)d\Omega}{\int_\Omega\mu(M)d\Omega}.
+\]</span></p>
+<h3 id="二转动惯量">二、转动惯量</h3>
+<p><span class="math display">\[
+I_x=\int_\Omega(y^2+z^2)\mu(M)d\Omega
+\\
+I_y=\int_\Omega(z^2+x^2)\mu(M)d\Omega
+\\
+I_z=\int_\Omega(x^2+y^2)\mu(M)d\Omega
+\]</span></p>
+<h3 id="三引力">三、引力</h3>
+<p><span class="math display">\[
+dF=G\cfrac{\mu(M)}{r^2}md\Omega
+\]</span></p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://buzhibujue.cf/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%A4%9A%E5%85%83%E6%95%B0%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/" title="微积分 第六章 多元数量值函数积分学" target="_blank" rel="external">https://buzhibujue.cf/2022/06/21/微积分-第六章-多元数量值函数积分学/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/buzhibujuelb" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/buzhibujuelb" target="_blank"><span class="text-dark">不知不觉</span><small class="ml-1x">Acmer &amp; Student</small></a></h3>
+        <div>Never Settle</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%A4%9A%E5%85%83%E5%90%91%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/" title="微积分 第七章 多元向量值函数积分学"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/" title="微积分 第五章 多元函数微分学"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'dUYIOlsqHv5VgCljRF9mTTtv-gzGzoHsz',
+    appKey: 'HRaJc2h4HiPKBHSGP9lyU5tx',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

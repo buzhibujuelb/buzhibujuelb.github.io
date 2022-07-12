@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>线性基 | Imperceptible</title>
+  <meta name="description" content="线性基  求最大值 暴力从高到低位枚举，如果加入这一位的基答案会更大则加入  求异或值第 \(k\) 小 算出所有线性基后再对于每一个有基的位消元使得没有其他的基这一位为 \(1\) 。最后找出所有这样的基从小到大依次标号为 \(a_0,a_1,a_2\cdots a_r\) 。问第 \(k\) 小的时候就for一遍 \(i\) 当 \(k\) 第 \(i\) 项为 \(1\) 时">
+<meta property="og:type" content="article">
+<meta property="og:title" content="线性基">
+<meta property="og:url" content="https://buzhibujue.cf/2019/10/21/%E7%BA%BF%E6%80%A7%E5%9F%BA/index.html">
+<meta property="og:site_name" content="Imperceptible">
+<meta property="og:description" content="线性基  求最大值 暴力从高到低位枚举，如果加入这一位的基答案会更大则加入  求异或值第 \(k\) 小 算出所有线性基后再对于每一个有基的位消元使得没有其他的基这一位为 \(1\) 。最后找出所有这样的基从小到大依次标号为 \(a_0,a_1,a_2\cdots a_r\) 。问第 \(k\) 小的时候就for一遍 \(i\) 当 \(k\) 第 \(i\) 项为 \(1\) 时">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-10-21T12:58:01.000Z">
+<meta property="article:modified_time" content="2022-07-12T17:23:26.454Z">
+<meta property="article:author" content="不知不觉">
+<meta property="article:tag" content="线性基">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://buzhibujue.cf/2019/10/21/%E7%BA%BF%E6%80%A7%E5%9F%BA/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Imperceptible" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    <link href="//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" rel="stylesheet">
+  
+  
+  
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/buzhibujuelb" target="_blank">
+          <img class="img-circle img-rotate" src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">不知不觉</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Acmer &amp; Student</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Chengdu, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools">
+            
+            <i class="icon icon-plus"></i>
+            
+            <span class="menu-title">menu.Tools</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>Never Settle</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HDU/">HDU</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/LOJ/">LOJ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SPOJ/">SPOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UOJ/">UOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B4%9B%E8%B0%B7/">洛谷</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/DP/" style="font-size: 13px;">DP</a> <a href="/tags/FFT/" style="font-size: 13.2px;">FFT</a> <a href="/tags/LCT/" style="font-size: 13px;">LCT</a> <a href="/tags/NTT/" style="font-size: 13.2px;">NTT</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 13px;">二分</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 13px;">凸包</a> <a href="/tags/%E5%8A%A8%E6%80%81DP/" style="font-size: 13px;">动态DP</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 13.2px;">图论</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13px;">字符串</a> <a href="/tags/%E5%AE%B9%E6%96%A5/" style="font-size: 13.4px;">容斥</a> <a href="/tags/%E6%80%9D%E7%BB%B4/" style="font-size: 13.6px;">思维</a> <a href="/tags/%E6%89%A9%E5%9F%9F/" style="font-size: 13px;">扩域</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px;">数学</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 13px;">最短路</a> <a href="/tags/%E6%B0%B4%E9%A2%98/" style="font-size: 13px;">水题</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 13.6px;">物理</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 13px;">线性基</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 13px;">组合数学</a> <a href="/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" style="font-size: 13px;">莫比乌斯反演</a> <a href="/tags/%E8%AE%A1%E6%95%B0/" style="font-size: 13.8px;">计数</a> <a href="/tags/%E9%94%99%E6%8E%92/" style="font-size: 13px;">错排</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 13.6px;">随笔</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%8F%98%E5%8C%96%E7%9A%84%E7%94%B5%E7%A3%81%E5%9C%BA/" class="title">大学物理 变化的电磁场</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:22:53.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%94%B5%E5%AD%A6/" class="title">大学物理 静电学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:21:57.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%A3%81%E5%AD%A6/" class="title">大学物理 静磁学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:37.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6/" class="title">大学物理 刚体力学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:30.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="title">线性代数与空间解析几何 第五章 特征值与特征向量</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:16:32.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-线性基" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      线性基
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2019/10/21/%E7%BA%BF%E6%80%A7%E5%9F%BA/" class="article-date">
+	  <time datetime="2019-10-21T12:58:01.000Z" itemprop="datePublished">2019-10-21</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" rel="tag">线性基</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/10/21/%E7%BA%BF%E6%80%A7%E5%9F%BA/#comments" class="article-comment-link">Comments</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="线性基">线性基</h1>
+<hr />
+<h3 id="求最大值">求最大值</h3>
+<p>暴力从高到低位枚举，如果加入这一位的基答案会更大则加入</p>
+<hr />
+<h3 id="求异或值第-k-小">求异或值第 <span
+class="math inline">\(k\)</span> 小</h3>
+<p>算出所有线性基后再对于每一个有基的位消元使得没有其他的基这一位为
+<span class="math inline">\(1\)</span>
+。最后找出所有这样的基从小到大依次标号为 <span
+class="math inline">\(a_0,a_1,a_2\cdots a_r\)</span> 。问第 <span
+class="math inline">\(k\)</span> 小的时候就<code>for</code>一遍 <span
+class="math inline">\(i\)</span> 当 <span
+class="math inline">\(k\)</span> 第 <span
+class="math inline">\(i\)</span> 项为 <span
+class="math inline">\(1\)</span> 时就异或上 <span
+class="math inline">\(a_i\)</span></p>
+<p>Q：为什么多了对每一位有基的位消元这一步？</p>
+<p>A：因为这样就能保证对于所有 <span
+class="math inline">\(i&gt;j\)</span> ， <span
+class="math inline">\(a_i\oplus a_j&gt;a_i\)</span> 且一旦异或上一个
+<span class="math inline">\(a_i\)</span> 那么前面的 <span
+class="math inline">\(a_0,a_1,\cdots a_{i-1}\)</span> 的一共 <span
+class="math inline">\(2^{i}\)</span>
+种选/不选方式的值都不如这里选了，当前的排名自然就 <span
+class="math inline">\(+=2^{i}\)</span> ，于是这样做就是可行的</p>
+<p><strong>注意特判 <span class="math inline">\(0\)</span>
+如果能表示出来则 <span class="math inline">\(k\)</span>
+要减一</strong></p>
+<hr />
+<h3 id="求交">求交</h3>
+<p>首先两个线性基的交也是个线性基，因为比如 <span
+class="math inline">\(X=a_1\oplus a_2=b_1\oplus b_3\)</span> 且 <span
+class="math inline">\(Y=a_2\oplus a_3=b_2\oplus b_4\)</span> 那么一定有
+<span class="math inline">\(X\oplus Y=(a_1\oplus a_2) \oplus (a_2\oplus
+a_3)=(b_1\oplus b_3)\oplus(b_2\oplus b_4)\)</span>
+（即如果两个线性基都能表示出 <span class="math inline">\(X\)</span> 和
+<span class="math inline">\(Y\)</span> 那么它们也一定都能表示出 <span
+class="math inline">\(X\oplus Y\)</span> ）</p>
+<p>然后有个引理就是：线性基 <span class="math inline">\(C\)</span>
+是线性基 <span class="math inline">\(A\)</span> 和 <span
+class="math inline">\(B\)</span> 的交当且仅当 <span
+class="math inline">\(A\)</span> 和 <span
+class="math inline">\(B\backslash C\)</span> 也可组成一个线性基（即
+<span class="math inline">\(A\)</span> 和 <span
+class="math inline">\(B\backslash C\)</span> 线性无关）</p>
+<p><strong>充分性：</strong></p>
+<p>即如果 <span class="math inline">\(C\)</span> 是 <span
+class="math inline">\(A\)</span> 和 <span
+class="math inline">\(B\)</span> 的交那么 <span
+class="math inline">\(A\)</span> 和 <span
+class="math inline">\(B\backslash C\)</span> 线性无关。考虑如果 <span
+class="math inline">\(A\)</span> 和 <span
+class="math inline">\(B\backslash C\)</span> 线性相关的话就相当于 <span
+class="math inline">\(A\)</span> 和 <span
+class="math inline">\(B\backslash C\)</span> 还有交，与条件矛盾。</p>
+<p><strong>必要性：</strong></p>
+<p>即如果 <span class="math inline">\(A\)</span> 和 <span
+class="math inline">\(B\backslash C\)</span> 线性无关则 <span
+class="math inline">\(C\)</span> 是 <span
+class="math inline">\(A\)</span> 与 <span
+class="math inline">\(B\)</span> 的交。考虑一个 <span
+class="math inline">\(c\)</span> 如果是 <span
+class="math inline">\(A\)</span> 和 <span
+class="math inline">\(B\)</span> 的交且不能用 <span
+class="math inline">\(C\)</span> 表示，那么即 <span
+class="math inline">\(C\)</span> 和 <span
+class="math inline">\(c\)</span> 线性相关，又因为 <span
+class="math inline">\(B\)</span> 能表示 <span
+class="math inline">\(C\)</span> 那么一定是由 <span
+class="math inline">\(B\backslash C\)</span> 那部分表示的 <span
+class="math inline">\(c\)</span> ，并且 <span
+class="math inline">\(A\)</span> 也可以表示出 <span
+class="math inline">\(c\)</span> 那么 <span
+class="math inline">\(A\)</span> 与 <span
+class="math inline">\(B\backslash C\)</span> 都能表示出 <span
+class="math inline">\(c\)</span> ，所以两者不是线性无关与条件矛盾。</p>
+<p>然后考虑依次加入 <span class="math inline">\(B\)</span> 中每个基
+<span class="math inline">\(B_i\)</span> 且保证加入前 <span
+class="math inline">\(A\)</span> 和 <span
+class="math inline">\(B_{1,2,\cdots i-1}\backslash C\)</span>
+线性无关：</p>
+<ul>
+<li>如果它不能能够被 <span class="math inline">\(A\)</span> 和 <span
+class="math inline">\(B_{1,2,\cdots i-1}\)</span>
+表示则它<strong>一定不是</strong> <span class="math inline">\(A\)</span>
+和 <span class="math inline">\(B\)</span> 的交可以不管。（它属于 <span
+class="math inline">\(B\backslash C\)</span> ）</li>
+<li>如果它可以被 <span class="math inline">\(A\)</span> 和 <span
+class="math inline">\(B_{1,2,\cdots i-1}\)</span> 表示则我们考虑换基。把
+<span class="math inline">\(B_i\)</span> 用 <span
+class="math inline">\(A\bigcup (B\backslash C)\)</span> 表示，比如 <span
+class="math inline">\(B_4=A_1\oplus A_2\oplus B_0\oplus B_2\)</span>
+（这时候有交出现了： <span class="math inline">\(A_1\oplus A_2=B_4\oplus
+B_0\oplus B_2\)</span> 且不能在 <span class="math inline">\(C\)</span>
+中直接加入 <span class="math inline">\(B_4\)</span> 因为单凭 <span
+class="math inline">\(A\)</span> 无法表示 <span
+class="math inline">\(B_4\)</span> ）我们把 <span
+class="math inline">\(B_4\)</span> 换成 <span
+class="math inline">\(B_4\oplus B_0\oplus B_2\)</span> 再加入 <span
+class="math inline">\(C\)</span> 中，那么可以发现 <span
+class="math inline">\(B\)</span> 能表示的东西不变，且此时 <span
+class="math inline">\(A\)</span> 与 <span
+class="math inline">\(B\backslash (C\cup (B_4\oplus B_0\oplus
+B_2))\)</span> 又线性无关了</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">Base</span>&#123;</span><br><span class="line">  ll r[N];</span><br><span class="line">  <span class="function"><span class="keyword">inline</span> <span class="title">base</span><span class="params">()</span></span>&#123;<span class="built_in">memset</span>(r,<span class="number">0</span>,<span class="keyword">sizeof</span> r);&#125;</span><br><span class="line">  <span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">ins</span><span class="params">(ll x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=N<span class="number">-1</span>;~i;i--)<span class="keyword">if</span>(x&gt;&gt;i&amp;<span class="number">1</span>)&#123;</span><br><span class="line">      <span class="keyword">if</span>(!r[i])&#123;</span><br><span class="line">        r[i]=x;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">      &#125;<span class="keyword">else</span> x^=r[i];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">inline</span> <span class="type">const</span> <span class="type">int</span>&amp; <span class="keyword">operator</span> [] (<span class="type">const</span> <span class="type">int</span> &amp;x)<span class="type">const</span>&#123;<span class="keyword">return</span> r[x];&#125;</span><br><span class="line">  <span class="keyword">inline</span> <span class="type">int</span>&amp; <span class="keyword">operator</span> [](<span class="type">int</span> x)&#123;<span class="keyword">return</span> r[x];&#125;</span><br><span class="line">  <span class="keyword">inline</span> base <span class="keyword">operator</span> +(<span class="type">const</span> base &amp;t)<span class="type">const</span>&#123;</span><br><span class="line">    base b,c=*<span class="keyword">this</span>,ans;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;N;i++)<span class="keyword">if</span>(t[i])&#123;</span><br><span class="line">      ll v=t[i],vb=t[i],flag=<span class="number">1</span>;</span><br><span class="line">      <span class="keyword">for</span>(<span class="type">int</span> j=N<span class="number">-1</span>;~j;j--)<span class="keyword">if</span>(v&gt;&gt;j&amp;<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(c[j])&#123;</span><br><span class="line">          v^=c[j];</span><br><span class="line">          vb^=b[j];</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">          c[j]=v;</span><br><span class="line">          b[j]=vb;</span><br><span class="line">          flag=<span class="number">0</span>;</span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span>(flag) ans.<span class="built_in">ins</span>(vb);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<hr />
+<h3 id="删除">删除</h3>
+<p>（保证删除的向量一定之前插入过）</p>
+<h4 id="方法一">方法一</h4>
+<p>离线，以时间为下标线段树分治，但要事先知道每个向量的出现时间段</p>
+<h4 id="方法二"><del>方法二</del></h4>
+<p><del>离线，对每个向量记录他还有多久被删去，插入时如果比这一位的基后删则交换一下，把的这个作为基并继续插入之前这一位的基，删除时看一下剩下的是不是它，是的话直接删就行</del>
+<del>这玩意想半天觉得很假发现确实是假的（比如先插一个 <span
+class="math inline">\(10\)</span> 和 <span
+class="math inline">\(11\)</span> 现在就剩个 <span
+class="math inline">\(10\)</span> 和 <span
+class="math inline">\(01\)</span> ，再把 <span
+class="math inline">\(10\)</span> 删了应该剩下 <span
+class="math inline">\(11\)</span> 实际上剩下 <span
+class="math inline">\(01\)</span> ）怪不得 http://uoj.ac/problem/91
+只有两个人的题解写这个还写的基本上一模一样……都 <span
+class="math inline">\(97\)</span> 了</del></p>
+<p>实际上挂是那两个人写假了正确性是没问题的比如插入 <span
+class="math inline">\(11\)</span> 和 <span
+class="math inline">\(10\)</span> 先删除 <span
+class="math inline">\(10\)</span> 那么插入 <span
+class="math inline">\(10\)</span> 时会把 <span
+class="math inline">\(11\)</span> 换成 <span
+class="math inline">\(10\)</span> 再插入 <span
+class="math inline">\(10\oplus 11=01\)</span>
+。删除时实际上是什么也不做，查询时只考虑删除时间大于当前时间的基向量。</p>
+<p>然后有个问题就是这样做的正确性：大概是考虑一个被删除的向量，考虑它出现的最低的
+<span class="math inline">\(1\)</span>
+个基向量（也即是它最后插入的位置）比它低的位一定不含它（因为已经在这里插入了），比它高的位中</p>
+<ul>
+<li>不包含它的，删不删除它 不影响</li>
+<li>包含他，意味着之前存在某个时间当前这一位 <span
+class="math inline">\(x\)</span> 的被删除时间晚于包含它的那一位 <span
+class="math inline">\(y\)</span>
+包含的某个向量，那之后被删除的这一位跑下来肯定是因为有比其更晚被删除的加入，那么
+<span class="math inline">\(x\)</span>　被换后往下走时一定会经过 <span
+class="math inline">\(y\)</span>　且被删除时间晚于 <span
+class="math inline">\(y\)</span> 那么就应该是换成 <span
+class="math inline">\(y\)</span> 往下走，这与 <span
+class="math inline">\(y\)</span>　最终位置比 <span
+class="math inline">\(x\)</span>　位置高矛盾，所以得到不存在比当前这一位高的含有这个被删除的向量</li>
+</ul>
+<p>（只是当前这一位基可能是由以前的向量和这一个要被删除的向量构成，但还是只有它这一位基含有这个向量，只删除这一个基就行）</p>
+<p>例题：<a target="_blank" rel="noopener" href="http://uoj.ac/problem/91">UOJ91</a></p>
+<blockquote>
+<h3 id="description">Description</h3>
+<p>我有一个数列 <span class="math inline">\(a_1,a_2,…,a_n\)</span> 每个
+<span class="math inline">\(a_i\)</span> 都是小于 <span
+class="math inline">\(2^m\)</span> 的非负整数。
+现在请您实现三种操作，格式说明如下： <span
+class="math inline">\(1\)</span> <span class="math inline">\(x\)</span>
+<span class="math inline">\(y\)</span> <span
+class="math inline">\(w\)</span> ：对于所有 <span
+class="math inline">\(x≤i≤y\)</span> ，将 <span
+class="math inline">\(a_i\)</span> 修改为 <span
+class="math inline">\(a_i\ xor\ w\)</span> 。其中 <span
+class="math inline">\(w\)</span> 是一个小于 <span
+class="math inline">\(2^m\)</span> 的非负整数。 <span
+class="math inline">\(2\)</span> <span class="math inline">\(x\)</span>
+<span class="math inline">\(y\)</span> <span
+class="math inline">\(w\)</span> ：对于所有 <span
+class="math inline">\(x≤i≤y\)</span> ，将 <span
+class="math inline">\(a_i\)</span> 修改为 <span
+class="math inline">\(w\)</span>。其中 <span
+class="math inline">\(w\)</span> 是一个小于 <span
+class="math inline">\(2^m\)</span> 的非负整数。 33：从 <span
+class="math inline">\(a_1,a_2,…,a_n\)</span>
+中选出若干个数，使得选出的数异或和最大。请输出这个最大值。 这里 <span
+class="math inline">\(xor\)</span> 表示按位异或运算，<span
+class="math inline">\(x_1,x_2,…,x_l\)</span> 的异或和是指 <span
+class="math inline">\(x_1\ xor\ x_2\ xor\ …\ xor\ x_l\)</span> 。</p>
+<h3 id="constraints">Constraints</h3>
+<p><span class="math inline">\(n,m,q\leq 2000\)</span></p>
+</blockquote>
+<h3 id="solution">Solution</h3>
+<p>首先原序列差分后的线性基和原序列的线性基等价</p>
+<p>那么每次操作就只有修改两个位置或者删除一段区间的向量</p>
+<p>把修改看成删除再插入，即把上一个当前位置的向量的出现时间右端点改成当前
+<span class="math inline">\(tim-1\)</span> ，把插入新的值的出现时间设为
+<span class="math inline">\(tim\sim q\)</span></p>
+<p>离线后按照上面的做即可，复杂度　<span
+class="math inline">\(O(\frac{nmq}{\omega})\)</span></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> FIO <span class="string">&quot;uoj91&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">2e3</span>+<span class="number">5</span>,M=N&lt;&lt;<span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> bs bitset<span class="string">&lt;N&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n,m,q;</span><br><span class="line">bs a[N],b[N];</span><br><span class="line"><span class="type">char</span> s[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> bs <span class="title">rd</span><span class="params">()</span></span>&#123;</span><br><span class="line">  bs a;</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>,s);</span><br><span class="line">  <span class="built_in">reverse</span>(s,s+m);</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;m;i++)a[i]=s[i]-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">  <span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> l[M],r[M],h[N],cnt;</span><br><span class="line">bs w[M];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> id,<span class="type">int</span> tim)</span></span>&#123;</span><br><span class="line">  ++cnt;</span><br><span class="line">  w[cnt]=b[id];</span><br><span class="line">  l[cnt]=tim;</span><br><span class="line">  r[cnt]=q;</span><br><span class="line">  r[h[id]]=tim<span class="number">-1</span>;</span><br><span class="line">  h[id]=cnt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> id[M],rig[N];</span><br><span class="line"><span class="comment">//!!! id -&gt; M</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">bool</span> <span class="title">cmp</span><span class="params">(<span class="type">const</span> <span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;</span><br><span class="line">  <span class="keyword">return</span> l[a]&lt;l[b];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">bs bas[N];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">ins</span><span class="params">(bs v,<span class="type">int</span> r,<span class="type">int</span> l)</span></span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=m<span class="number">-1</span>;~i;i--)<span class="keyword">if</span>(v[i])&#123;</span><br><span class="line">    <span class="keyword">if</span>(rig[i]&lt;l)&#123;rig[i]=r;bas[i]=v;<span class="keyword">return</span>;&#125;</span><br><span class="line">    <span class="keyword">if</span>(rig[i]&lt;r)<span class="built_in">swap</span>(rig[i],r),<span class="built_in">swap</span>(v,bas[i]);</span><br><span class="line">    v^=bas[i];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> bs <span class="title">qry</span><span class="params">(<span class="type">int</span> tim)</span></span>&#123;</span><br><span class="line">  bs ret;</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=m<span class="number">-1</span>;~i;i--)<span class="keyword">if</span>(rig[i]&gt;=tim&amp;&amp;!ret[i])</span><br><span class="line">    ret^=bas[i];</span><br><span class="line">  <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">bool</span> isq[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="built_in">freopen</span>(FIO<span class="string">&quot;.in&quot;</span>,<span class="string">&quot;r&quot;</span>,stdin);</span><br><span class="line">  <span class="built_in">freopen</span>(FIO<span class="string">&quot;.out&quot;</span>,<span class="string">&quot;w&quot;</span>,stdout);</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>,&amp;n,&amp;m,&amp;q);</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">    a[i]=<span class="built_in">rd</span>();</span><br><span class="line">    b[i]=a[i]^a[i<span class="number">-1</span>];</span><br><span class="line">    <span class="built_in">add</span>(i,<span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=q;i++)&#123;</span><br><span class="line">    <span class="type">int</span> opt,x,y;</span><br><span class="line">    bs w;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;opt);</span><br><span class="line">    <span class="keyword">switch</span>(opt)&#123;</span><br><span class="line">      <span class="keyword">case</span> <span class="number">1</span>:&#123;</span><br><span class="line">               <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;x,&amp;y);w=<span class="built_in">rd</span>();</span><br><span class="line">               <span class="keyword">for</span>(<span class="type">int</span> j=x;j&lt;=y;j++)</span><br><span class="line">                 a[j]^=w;</span><br><span class="line">               b[x]^=w;</span><br><span class="line">               <span class="built_in">add</span>(x,i);</span><br><span class="line">               <span class="keyword">if</span>(y^n)&#123;</span><br><span class="line">                b[y+<span class="number">1</span>]^=w;</span><br><span class="line">                <span class="built_in">add</span>(y+<span class="number">1</span>,i);</span><br><span class="line">               &#125;</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">             &#125;</span><br><span class="line">      <span class="keyword">case</span> <span class="number">2</span>:&#123;</span><br><span class="line">               <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;x,&amp;y);w=<span class="built_in">rd</span>();</span><br><span class="line">               <span class="keyword">for</span>(<span class="type">int</span> j=x;j&lt;=y;j++)&#123;</span><br><span class="line">                 a[j]=w;</span><br><span class="line">                 <span class="comment">//!!! = not ^=</span></span><br><span class="line">                 <span class="keyword">if</span>(j&gt;x&amp;&amp;h[j])&#123;</span><br><span class="line">                   r[h[j]]=i<span class="number">-1</span>;</span><br><span class="line">                   b[j].<span class="built_in">reset</span>();</span><br><span class="line">                   h[j]=<span class="number">0</span>;</span><br><span class="line">                 &#125;</span><br><span class="line">                &#125;</span><br><span class="line">               b[x]=w^a[x<span class="number">-1</span>];</span><br><span class="line">               <span class="built_in">add</span>(x,i);</span><br><span class="line">               <span class="keyword">if</span>(y^n)&#123;</span><br><span class="line">                b[y+<span class="number">1</span>]=w^a[y+<span class="number">1</span>];</span><br><span class="line">                <span class="built_in">add</span>(y+<span class="number">1</span>,i);</span><br><span class="line">               &#125;</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">             &#125;</span><br><span class="line">      <span class="keyword">case</span> <span class="number">3</span>:&#123;</span><br><span class="line">               isq[i]=<span class="number">1</span>;</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">             &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=cnt;i++)id[i]=i;</span><br><span class="line">  <span class="built_in">sort</span>(id+<span class="number">1</span>,id+cnt+<span class="number">1</span>,cmp);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>,j=<span class="number">1</span>;i&lt;=q;i++)&#123;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;=cnt&amp;&amp;l[id[j]]&lt;=i)<span class="built_in">ins</span>(w[id[j]],r[id[j]],i),j++;</span><br><span class="line">    <span class="keyword">if</span>(isq[i])&#123;</span><br><span class="line">      bs ans=<span class="built_in">qry</span>(i);</span><br><span class="line">      <span class="keyword">for</span>(<span class="type">int</span> i=m<span class="number">-1</span>;~i;i--)<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,(<span class="type">int</span>)ans[i]);</span><br><span class="line">      <span class="built_in">puts</span>(<span class="string">&quot;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="方法三">方法三</h3>
+<p>以上两种方法都需要离线，我们考虑一个在线做法：
+对于每个<strong>基向量</strong>，维护其是由那些<strong>向量</strong>构成的（如果插入失败即这个向量能用之前的一些向量表示同样记录它是由那些表示的，即记录哪些之前的向量异或当前的可以得到
+<span class="math inline">\(0\)</span> ）</p>
+<p>每次删除向量 <span class="math inline">\(v_i\)</span>
+时考虑分类讨论</p>
+<ul>
+<li>如果存在之前的某个 <span class="math inline">\(0\)</span> 的构成包含
+<span class="math inline">\(v_i\)</span> ，则用构成那个 <span
+class="math inline">\(0\)</span>
+的其他的向量代替出现在其他<strong>基</strong>或其他 <span
+class="math inline">\(0\)</span> 向量中的 <span
+class="math inline">\(v_i\)</span> 比如之前有 <span
+class="math inline">\(b_1\oplus a_2\oplus a_4=0\)</span> （其中 <span
+class="math inline">\(a\)</span> 是某个基的向量， <span
+class="math inline">\(b\)</span> 是某个插入失败的向量）那么比如要删除
+<span class="math inline">\(a_2\)</span> ，由左式得到 <span
+class="math inline">\(a_2=b_1\oplus a_4\)</span> ，把所有 <span
+class="math inline">\(a_2\)</span> 出现的地方换成 <span
+class="math inline">\(a_4\oplus b_1\)</span> 再删掉这个 <span
+class="math inline">\(0\)</span> 即可（这个 <span
+class="math inline">\(b_1\)</span> 就相当于代替了 <span
+class="math inline">\(a_2\)</span> 的作用，并且由于 <span
+class="math inline">\(a_2\)</span>
+被删除，这个式子不能再用来把其他项换回来）（比如把 <span
+class="math inline">\(a_4\)</span> 换成 <span
+class="math inline">\(a_4\oplus b_1\)</span> ）</li>
+<li>如果不存在某个包含 <span class="math inline">\(v_i\)</span> 的 <span
+class="math inline">\(0\)</span> 可以被 <span
+class="math inline">\(a\)</span> 和 <span
+class="math inline">\(b\)</span> 表示出来，那么 <span
+class="math inline">\(v_i\)</span>
+被删除后一定会降秩。找到<strong>最低</strong>的包含 <span
+class="math inline">\(v_i\)</span> 的基向量，把其他高于它也包含 <span
+class="math inline">\(v_i\)</span>
+的异或上这一个基向量（它们对应的向量的构成也要异或），这样其他的基所表示的东西不变（一个基向量异或另一个基向量前后总的线性空间大小肯定不变），且只有这一个基向量含有
+<span class="math inline">\(v_i\)</span>
+了，那么就只删除这一个基就行。（这里不用考虑 <span
+class="math inline">\(0\)</span> 向量因为到了这一步就说明没有包含 <span
+class="math inline">\(v_i\)</span> 的 <span
+class="math inline">\(0\)</span> ）</li>
+</ul>
+<p>刚才那题的用这个写法实现在线，可以见　https://www.cnblogs.com/daklqw/p/11545965.html</p>
+<p>然后有道强制在线的题：<a
+target="_blank" rel="noopener" href="http://uoj.ac/problem/453">UOJ453</a></p>
+<blockquote>
+<h3 id="description-1">Description</h3>
+<p>给定 <span class="math inline">\(p\times s\)</span> 的 <span
+class="math inline">\(01\)</span> 矩阵 <span
+class="math inline">\(C\)</span> ，求有多少对分别是 <span
+class="math inline">\(p\times q\)</span> 和 <span
+class="math inline">\(q\times s\)</span> 的 <span
+class="math inline">\(01\)</span> 矩阵 <span
+class="math inline">\(A\)</span> 、 <span
+class="math inline">\(B\)</span> 满足 <span
+class="math inline">\(AB=C\)</span></p>
+<p>有 <span class="math inline">\(m\)</span> 组询问， 每个询问会对 <span
+class="math inline">\(C\)</span> 的一行进行修改并求答案，强制在线</p>
+<h3 id="constraints-1">Constraints</h3>
+<p><span class="math inline">\(p,q,s,m\leq 1000\)</span></p>
+</blockquote>
+<h3 id="solution-1">Solution</h3>
+<p>左乘一个矩阵相当于对矩阵进行行线性变换，右乘一个矩阵相当于对矩阵进行列线性变换</p>
+<p>发现答案只与 <span class="math inline">\(C\)</span>
+的秩有关，两个秩相同的 <span class="math inline">\(C\)</span>
+的答案可以相互转换一一对应，算出所有 <span
+class="math inline">\(C\)</span> 的秩为 <span
+class="math inline">\(r\)</span> 的答案之和再除以秩为 <span
+class="math inline">\(r\)</span> 的矩阵个数就是答案</p>
+<p>对于一特定的秩为 <span class="math inline">\(r\)</span> 的矩阵 <span
+class="math inline">\(A\)</span> 和特定的矩阵 <span
+class="math inline">\(C\)</span> ，矩阵 <span
+class="math inline">\(B\)</span> 的每一列就对应一个 <span
+class="math inline">\(A\)</span> 线性变换到 <span
+class="math inline">\(C\)</span> 的那一列的方法，对于特定的 <span
+class="math inline">\(A\)</span> 和 <span
+class="math inline">\(C\)</span> 的这一列， <span
+class="math inline">\(B\)</span> 这一列的方案数是 <span
+class="math inline">\(2^{q-r}\)</span> 。 <span
+class="math inline">\(B\)</span> 每一列都是这样，一共有 <span
+class="math inline">\(s\)</span> 列，得到对于特定的矩阵 <span
+class="math inline">\(A\)</span> 和 <span
+class="math inline">\(C\)</span> ， <span
+class="math inline">\(B\)</span> 的方案数是 <span
+class="math inline">\(2^{(q-r)s}\)</span></p>
+<p>设 <span class="math inline">\(n\)</span> 行 <span
+class="math inline">\(m\)</span> 列秩为 <span
+class="math inline">\(r\)</span> 的矩阵数为 <span
+class="math inline">\(f_{n,m,r}\)</span></p>
+<p>转移大概是 <span class="math inline">\(f_{n,m,r}=f_{n,m-1,r}\times
+2^{r}+f_{n,m-1,r-1}\times (2^{n}-2^{r-1})\)</span></p>
+<p>但我们知道对于 <span class="math inline">\(p\times q\)</span> 秩为
+<span class="math inline">\(r\)</span> 的矩阵 <span
+class="math inline">\(A\)</span> ，进行列线性变换后变成 <span
+class="math inline">\(p\times s\)</span> 的矩阵时秩不一定还等于 <span
+class="math inline">\(r\)</span></p>
+<p>考虑计算 <span class="math inline">\(A\)</span> 的秩是 <span
+class="math inline">\(x\)</span> 时有多少种秩为 <span
+class="math inline">\(r\)</span> 的 <span
+class="math inline">\(C\)</span> 可以由 <span
+class="math inline">\(A\)</span> 经过列线性变换得到</p>
+<p>有个不会证的定理</p>
+<blockquote>
+<p><span class="math inline">\(m\times n\)</span> 的列满秩（秩为 <span
+class="math inline">\(n\)</span> ）矩阵乘上 <span
+class="math inline">\(n\times k\)</span> 的矩阵得到的 <span
+class="math inline">\(m\times k\)</span> 的矩阵的秩等于这个 <span
+class="math inline">\(n\times k\)</span> 的矩阵的秩</p>
+</blockquote>
+<p>把左边列满秩的 <span class="math inline">\(p\)</span> 行 <span
+class="math inline">\(x\)</span> 列矩阵看成是 <span
+class="math inline">\(p\)</span> 行 <span
+class="math inline">\(s\)</span> 列（只是最后有 <span
+class="math inline">\(s-x\)</span> 列全是 <span
+class="math inline">\(0\)</span>
+），那么考虑所有列的线性变换就是一个任意的 <span
+class="math inline">\(s\)</span> 行 <span
+class="math inline">\(s\)</span> 列的矩阵。但是（线性变换矩阵的）最后的
+<span class="math inline">\(s-x\)</span> 行没有意义因为左边只有前 <span
+class="math inline">\(x\)</span> 列有值，最后 <span
+class="math inline">\(s-x\)</span> 列全是 <span
+class="math inline">\(0\)</span> 。所以线性变换矩阵只有前 <span
+class="math inline">\(x\)</span> 行有用相当于一个 <span
+class="math inline">\(x\)</span> 行 <span
+class="math inline">\(s\)</span> 列的矩阵。由于我们要算乘出来 <span
+class="math inline">\(p\)</span> 行 <span
+class="math inline">\(s\)</span> 列秩为 <span
+class="math inline">\(r\)</span>
+的矩阵有多少种情况，由之前的定理得到就是这个 <span
+class="math inline">\(x\)</span> 行 <span
+class="math inline">\(s\)</span> 列的秩为 <span
+class="math inline">\(r\)</span> 的情况数。</p>
+<p>所以答案就是 <span
+class="math inline">\(\sum_{x=r}^{\min(p,q)}\frac{f_{p,q,x}\times
+2^{(q-x)s}\times f_{x,s,r}}{f_{p,s,r}}\)</span></p>
+<p><span class="math inline">\(C\)</span>
+带修改就是动态维护线性基的秩，照着上面的搞法做就行</p>
+<p>可以记录一个 <span class="math inline">\(pos_x=i,rnk_i=x\)</span>
+表示第 <span class="math inline">\(x\)</span> 个基向量（这个 <span
+class="math inline">\(x\)</span> 只是从前往后的第 <span
+class="math inline">\(x\)</span> 个，是个标号跟它是哪一位的基无关）在第
+<span class="math inline">\(i\)</span> 位和第 <span
+class="math inline">\(i\)</span> 位的基向量放在了第 <span
+class="math inline">\(x\)</span> 个。</p>
+<p>如果 <span class="math inline">\(pos_x=0\)</span> 就代表第 <span
+class="math inline">\(x\)</span>
+个基向量没有插入任何一位，用它来替换其他的位置就行（相当于不用分类讨论，每次只要找含有
+<span class="math inline">\(j\)</span> 的 <span
+class="math inline">\(pos\)</span> 最小的 <span
+class="math inline">\(x\)</span>
+把它删了就行，如果它是个基再把秩数减一即可）</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> FIO <span class="string">&quot;uoj453&quot;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">1e3</span>+<span class="number">5</span>,MOD=<span class="number">1000000007</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">add</span><span class="params">(<span class="type">int</span> a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> (a+=b)&gt;=MOD?a-MOD:a;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">sub</span><span class="params">(<span class="type">int</span> a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> (a-=b)&lt;   <span class="number">0</span>?a+MOD:a;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">mul</span><span class="params">(<span class="type">const</span> <span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> <span class="number">1ll</span>*a*b%MOD;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span>&amp; <span class="title">inc</span><span class="params">(<span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> a=<span class="built_in">add</span>(a,b);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span>&amp; <span class="title">dec</span><span class="params">(<span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> a=<span class="built_in">sub</span>(a,b);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span>&amp; <span class="title">pro</span><span class="params">(<span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> a=<span class="built_in">mul</span>(a,b);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">qpow</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b)</span></span>&#123;<span class="type">int</span> c=<span class="number">1</span>;<span class="keyword">for</span>(;b;b&gt;&gt;=<span class="number">1</span>,<span class="built_in">pro</span>(a,a))<span class="keyword">if</span>(b&amp;<span class="number">1</span>)<span class="built_in">pro</span>(c,a);<span class="keyword">return</span> c;&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> bs bitset<span class="string">&lt;N&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> p,q,s,m,k;</span><br><span class="line"><span class="type">int</span> bin[N];</span><br><span class="line"><span class="type">int</span> ans[N],fp[N][N],fs[N][N];</span><br><span class="line">bs C[N];</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> rk;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> bs <span class="title">rd</span><span class="params">()</span></span>&#123;</span><br><span class="line">  bs ret;</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>,x;i&lt;=s;i++)&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x);</span><br><span class="line">    ret[i]=x;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">bs id[N];</span><br><span class="line"><span class="type">int</span> pos[N],rnk[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">ins</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">  pos[x]=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=s;i;i--)<span class="keyword">if</span>(C[x][i])&#123;</span><br><span class="line">    <span class="keyword">if</span>(!rnk[i])&#123;</span><br><span class="line">      rnk[i]=x;</span><br><span class="line">      rk++;</span><br><span class="line">      pos[x]=i;</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    id[x]^=id[rnk[i]];</span><br><span class="line">    C[x]^=C[rnk[i]];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">erase</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">  <span class="type">int</span> mn=s+<span class="number">1</span>,now=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=p;i++)<span class="keyword">if</span>(id[i][x]&amp;&amp;pos[i]&lt;mn)now=i,mn=pos[i];</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=p;i++)<span class="keyword">if</span>(id[i][x]&amp;&amp;i^now)C[i]^=C[now],id[i]^=id[now];</span><br><span class="line">  <span class="keyword">if</span>(pos[now])rk--,rnk[pos[now]]=<span class="number">0</span>,pos[now]=<span class="number">0</span>;</span><br><span class="line">  C[now].<span class="built_in">reset</span>();id[now].<span class="built_in">reset</span>();</span><br><span class="line">  <span class="keyword">return</span> now;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="built_in">freopen</span>(FIO<span class="string">&quot;.in&quot;</span>,<span class="string">&quot;r&quot;</span>,stdin);</span><br><span class="line">  <span class="built_in">freopen</span>(FIO<span class="string">&quot;.out&quot;</span>,<span class="string">&quot;w&quot;</span>,stdout);</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d%d%d&quot;</span>,&amp;p,&amp;q,&amp;s,&amp;m,&amp;k);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=p;i++)</span><br><span class="line">    C[i]=<span class="built_in">rd</span>(),id[i][i]=<span class="number">1</span>,<span class="built_in">ins</span>(i);</span><br><span class="line"></span><br><span class="line">  bin[<span class="number">0</span>]=<span class="number">1</span>;<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;N;i++)bin[i]=<span class="built_in">mul</span>(bin[i<span class="number">-1</span>],<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">  fp[<span class="number">0</span>][<span class="number">0</span>]=fs[<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;N;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;=<span class="built_in">min</span>(i,p);j++)&#123;</span><br><span class="line">      fp[i][j]=<span class="built_in">mul</span>(fp[i<span class="number">-1</span>][j],bin[j]);</span><br><span class="line">      <span class="keyword">if</span>(j)<span class="built_in">inc</span>(fp[i][j],<span class="built_in">mul</span>(fp[i<span class="number">-1</span>][j<span class="number">-1</span>],<span class="built_in">sub</span>(bin[p],bin[j<span class="number">-1</span>])));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;=<span class="built_in">min</span>(i,s);j++)&#123;</span><br><span class="line">      fs[i][j]=<span class="built_in">mul</span>(fs[i<span class="number">-1</span>][j],bin[j]);</span><br><span class="line">      <span class="keyword">if</span>(j)<span class="built_in">inc</span>(fs[i][j],<span class="built_in">mul</span>(fs[i<span class="number">-1</span>][j<span class="number">-1</span>],<span class="built_in">sub</span>(bin[s],bin[j<span class="number">-1</span>])));</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> r=<span class="number">1</span>;r&lt;=<span class="built_in">min</span>(p,q);r++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> x=r;x&lt;=<span class="built_in">min</span>(p,q);x++)</span><br><span class="line">      <span class="built_in">inc</span>(ans[r],<span class="built_in">mul</span>(fp[q][x],<span class="built_in">mul</span>(fs[x][r],<span class="built_in">qpow</span>(<span class="number">2</span>,(q-x)*s))));</span><br><span class="line">    <span class="built_in">pro</span>(ans[r],<span class="built_in">qpow</span>(fp[s][r],MOD<span class="number">-2</span>));</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="type">int</span> lst;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,lst=ans[rk]);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span>(m--)&#123;</span><br><span class="line">    <span class="type">int</span> j,x;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;j);</span><br><span class="line">    j=j^(k*lst);</span><br><span class="line">    x=<span class="built_in">erase</span>(j);</span><br><span class="line">    C[x]=<span class="built_in">rd</span>();</span><br><span class="line">    id[x][j]=<span class="number">1</span>;</span><br><span class="line">    <span class="built_in">ins</span>(x);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,lst=ans[rk]);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h3 id="只选偶数的线性基">只选偶数的线性基</h3>
+<p>比如一个矩阵只能选偶数个位置可以将所有横着或者竖着相邻的位置对插入这样一定异或出来是有偶数个有值。如果要选奇数个就最开始加入一个只有一个格子的。</p>
+<hr />
+<h3
+id="对于有特殊性质的线性基的奇怪写法">对于有特殊性质的线性基的奇怪写法</h3>
+<p>比如一列最多只有两个 <span class="math inline">\(1\)</span>
+的情况每个向量只能选或不选，求最后异或出来为 <span
+class="math inline">\(0\)</span> 的方案数</p>
+<p>把有两个 <span class="math inline">\(1\)</span>
+的看成是两个对应列连的一条边，把只有一个 <span
+class="math inline">\(1\)</span> 的看成是对应点上的权值 <span
+class="math inline">\(+1\)</span></p>
+<p>最后会形成若干个连通块使用并查集维护每个连通块的点数、边数和权值。</p>
+<p>假设现在有一个 <span class="math inline">\(n\)</span> 个点 <span
+class="math inline">\(m\)</span> 条边点上的权值和是 <span
+class="math inline">\(k\)</span> 的连通块，分类讨论：</p>
+<ul>
+<li><p><span class="math inline">\(k=0\)</span>
+：那么这个连通块的矩阵就不满秩，只能像上面所说的表示出所有选偶数的情况。这时我们取
+<span class="math inline">\(m\)</span> 条边的 <span
+class="math inline">\(n-1\)</span>
+条形成一个树（必定能找到不然就不是一个连通块），其他任意的边的加入都可以由这
+<span class="math inline">\(n-1\)</span>
+条树边对应的向量异或出来，所以答案就是除了 <span
+class="math inline">\(n-1\)</span> 条边的其他任选的方案： <span
+class="math inline">\(2^{m-(n-1)}\)</span></p></li>
+<li><p><span class="math inline">\(k\neq 0\)</span> ：除了那 <span
+class="math inline">\(n-1\)</span> 条可以任意表示剩余 <span
+class="math inline">\(m-(n-1)\)</span> 条边的情况外还有 <span
+class="math inline">\(k\)</span>
+个可以单点翻转的，但是不能翻转奇数个否则无法消成 <span
+class="math inline">\(0\)</span> ，而任意偶数次都可以。我们可以任选前
+<span class="math inline">\(k-1\)</span>
+个单点的情况最后一个根据前面的奇偶性来选/不选，所以答案是 <span
+class="math inline">\(2^{m-(n-1)}\times 2^{k-1}\)</span></p></li>
+</ul>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://buzhibujue.cf/2019/10/21/%E7%BA%BF%E6%80%A7%E5%9F%BA/" title="线性基" target="_blank" rel="external">https://buzhibujue.cf/2019/10/21/线性基/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/buzhibujuelb" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/buzhibujuelb" target="_blank"><span class="text-dark">不知不觉</span><small class="ml-1x">Acmer &amp; Student</small></a></h3>
+        <div>Never Settle</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2019/11/08/%E6%B4%9B%E8%B0%B75577/" title="洛谷5577"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2019/09/10/cf1214F/" title="cf1214F"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'dUYIOlsqHv5VgCljRF9mTTtv-gzGzoHsz',
+    appKey: 'HRaJc2h4HiPKBHSGP9lyU5tx',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>微积分 第一章 函数 连续与极限 | Imperceptible</title>
+  <meta name="description" content="第一章 函数 连续与极限 1.1 集合与函数 一、概念 集合：特定性质，彼此区别的总体 元素：集合内的事物 二、集合的表示法 1.列举法：按任意顺序列出，花括号 2.描述法：\(A&#x3D;\{a|P(a)\}\) 三、全集与空集 全集：所有对象的集合 \(\mathrm U\) 空集：不含任何元素的集合 \(\emptyset\) 四、子集 集合 \(A\) 的任一元素都是 \">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微积分 第一章 函数 连续与极限">
+<meta property="og:url" content="https://buzhibujue.cf/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%87%BD%E6%95%B0-%E8%BF%9E%E7%BB%AD%E4%B8%8E%E6%9E%81%E9%99%90/index.html">
+<meta property="og:site_name" content="Imperceptible">
+<meta property="og:description" content="第一章 函数 连续与极限 1.1 集合与函数 一、概念 集合：特定性质，彼此区别的总体 元素：集合内的事物 二、集合的表示法 1.列举法：按任意顺序列出，花括号 2.描述法：\(A&#x3D;\{a|P(a)\}\) 三、全集与空集 全集：所有对象的集合 \(\mathrm U\) 空集：不含任何元素的集合 \(\emptyset\) 四、子集 集合 \(A\) 的任一元素都是 \">
+<meta property="og:locale">
+<meta property="article:published_time" content="2022-06-20T16:04:13.000Z">
+<meta property="article:modified_time" content="2022-07-12T17:23:26.420Z">
+<meta property="article:author" content="不知不觉">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://buzhibujue.cf/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%87%BD%E6%95%B0-%E8%BF%9E%E7%BB%AD%E4%B8%8E%E6%9E%81%E9%99%90/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Imperceptible" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    <link href="//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" rel="stylesheet">
+  
+  
+  
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/buzhibujuelb" target="_blank">
+          <img class="img-circle img-rotate" src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">不知不觉</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Acmer &amp; Student</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Chengdu, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools">
+            
+            <i class="icon icon-plus"></i>
+            
+            <span class="menu-title">menu.Tools</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>Never Settle</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HDU/">HDU</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/LOJ/">LOJ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SPOJ/">SPOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UOJ/">UOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B4%9B%E8%B0%B7/">洛谷</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/DP/" style="font-size: 13px;">DP</a> <a href="/tags/FFT/" style="font-size: 13.2px;">FFT</a> <a href="/tags/LCT/" style="font-size: 13px;">LCT</a> <a href="/tags/NTT/" style="font-size: 13.2px;">NTT</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 13px;">二分</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 13px;">凸包</a> <a href="/tags/%E5%8A%A8%E6%80%81DP/" style="font-size: 13px;">动态DP</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 13.2px;">图论</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13px;">字符串</a> <a href="/tags/%E5%AE%B9%E6%96%A5/" style="font-size: 13.4px;">容斥</a> <a href="/tags/%E6%80%9D%E7%BB%B4/" style="font-size: 13.6px;">思维</a> <a href="/tags/%E6%89%A9%E5%9F%9F/" style="font-size: 13px;">扩域</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px;">数学</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 13px;">最短路</a> <a href="/tags/%E6%B0%B4%E9%A2%98/" style="font-size: 13px;">水题</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 13.6px;">物理</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 13px;">线性基</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 13px;">组合数学</a> <a href="/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" style="font-size: 13px;">莫比乌斯反演</a> <a href="/tags/%E8%AE%A1%E6%95%B0/" style="font-size: 13.8px;">计数</a> <a href="/tags/%E9%94%99%E6%8E%92/" style="font-size: 13px;">错排</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 13.6px;">随笔</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%8F%98%E5%8C%96%E7%9A%84%E7%94%B5%E7%A3%81%E5%9C%BA/" class="title">大学物理 变化的电磁场</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:22:53.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%94%B5%E5%AD%A6/" class="title">大学物理 静电学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:21:57.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%A3%81%E5%AD%A6/" class="title">大学物理 静磁学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:37.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6/" class="title">大学物理 刚体力学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:30.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="title">线性代数与空间解析几何 第五章 特征值与特征向量</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:16:32.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-微积分-第一章-函数-连续与极限" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      微积分 第一章 函数 连续与极限
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%87%BD%E6%95%B0-%E8%BF%9E%E7%BB%AD%E4%B8%8E%E6%9E%81%E9%99%90/" class="article-date">
+	  <time datetime="2022-06-20T16:04:13.000Z" itemprop="datePublished">2022-06-21</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%87%BD%E6%95%B0-%E8%BF%9E%E7%BB%AD%E4%B8%8E%E6%9E%81%E9%99%90/#comments" class="article-comment-link">Comments</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="第一章-函数-连续与极限">第一章 函数 连续与极限</h1>
+<h2 id="集合与函数">1.1 集合与函数</h2>
+<h3 id="一概念">一、概念</h3>
+<p>集合：特定性质，彼此区别的总体</p>
+<p>元素：集合内的事物</p>
+<h3 id="二集合的表示法">二、集合的表示法</h3>
+<p>1.列举法：按任意顺序列出，花括号</p>
+<p>2.描述法：<span class="math inline">\(A=\{a|P(a)\}\)</span></p>
+<h3 id="三全集与空集">三、全集与空集</h3>
+<p>全集：所有对象的集合 <span class="math inline">\(\mathrm
+U\)</span></p>
+<p>空集：不含任何元素的集合 <span
+class="math inline">\(\emptyset\)</span></p>
+<h3 id="四子集">四、子集</h3>
+<p>集合 <span class="math inline">\(A\)</span> 的任一元素都是 <span
+class="math inline">\(B\)</span> 的元素称 <span
+class="math inline">\(A\)</span> 为 <span
+class="math inline">\(B\)</span> 的子集 <span
+class="math inline">\(A\subseteq B\)</span></p>
+<p>空集是任意集合的子集 <span class="math inline">\(\emptyset \subseteq
+A\)</span></p>
+<p>互为子集则相等 <span class="math inline">\(A\subseteq B\and
+B\subseteq A\to A=B\)</span></p>
+<h3 id="五集合的运算">五、集合的运算</h3>
+<p>交集：<span class="math inline">\(A\cap B=\{x|x\in A \and x\in
+B\}\)</span></p>
+<p>并集：<span class="math inline">\(A\cup B=\{x|x\in A \or x\in
+B\}\)</span></p>
+<p>补集：<span class="math inline">\(A&#39;=\{x|x\in U \and x\notin
+B\}\)</span></p>
+<p><strong>差集</strong>：<span class="math inline">\(A-B=\{x|x\in A
+\and x \notin B\}\)</span></p>
+<h3 id="函数的几种简单性质">函数的几种简单性质</h3>
+<h4 id="一函数的有界性">一、函数的有界性</h4>
+<p>若 <span class="math inline">\(\exists M&gt;0,\forall
+x\in(a,b)\subset D(f)\)</span> 有 <span class="math inline">\(|f(x)|\leq
+M\)</span> 成立，则称函数 <span class="math inline">\(f(x)\)</span> 在
+<span class="math inline">\((a,b)\)</span> 上有界，否则称无界</p>
+<h4 id="二函数的单调性">二、函数的单调性</h4>
+<p>若 <span class="math inline">\(\forall x_1,x_2 \in (a,b)\subset
+D(f)\)</span> 当 <span class="math inline">\(x_1&lt;x_2\)</span> 时恒有
+<span class="math inline">\(f(x_1)&gt;f(x_2)\)</span> 成立，则称函数
+<span class="math inline">\(f(x)\)</span> 在区间 <span
+class="math inline">\((a,b)\)</span> 是单调减少的</p>
+<h4 id="三函数的奇偶性">三、函数的奇偶性</h4>
+<p>设 <span class="math inline">\(D(f)\)</span> 关于原点对称，若 <span
+class="math inline">\(\forall x\in D(f)\)</span>， 有 <span
+class="math inline">\(f(-x)=f(x)\)</span> 则称 <span
+class="math inline">\(f(x)\)</span> 为偶函数</p>
+<p>设 <span class="math inline">\(D(f)\)</span> 关于原点对称，若 <span
+class="math inline">\(\forall x\in D(f)\)</span>， 有 <span
+class="math inline">\(f(-x)=-f(x)\)</span> 则称 <span
+class="math inline">\(f(x)\)</span> 为奇函数</p>
+<p><strong>任意定义域关于原点对称的函数均可拆成一个奇函数与一个偶函数的和</strong>
+<span class="math display">\[
+f(x)+f(-x)=g(x)+h(x)+g(-x)+h(-x)=2g(x)
+\\
+f(x)-f(-x)=g(x)+h(x)-g(-x)-h(-x)=2h(x)
+\\
+g(x)=\frac{f(x)+f(-x)}{2}\quad
+h(x)=\frac{f(x)-f(-x)}{2}
+\]</span></p>
+<h4 id="四函数的周期性">四、函数的周期性</h4>
+<p>设 <span class="math inline">\(y=f(x)\)</span>，若 <span
+class="math inline">\(\exists a&gt;0\)</span>，使得 <span
+class="math inline">\(f(x)=f(x+a)\)</span> 恒成立，则称 <span
+class="math inline">\(y=f(x)\)</span> 为周期函数</p>
+<p>满足这个等式的最小正数 <span
+class="math inline">\(a\)</span>，称为函数的周期</p>
+<p><strong>狄利克雷函数</strong> <span
+class="math inline">\(D(x)=\begin{cases}1,&amp;x\in Q\\0,&amp;x\notin
+Q\end{cases}\)</span> 周期为任意有理数故无最小正周期</p>
+<h3 id="反函数与复合函数">反函数与复合函数</h3>
+<h4 id="一反函数">一、反函数</h4>
+<p>设 <span class="math inline">\(y=f(x)\)</span>，若 <span
+class="math inline">\(\forall y\in Z(f)\)</span> 有一个确定的且满足
+<span class="math inline">\(y=f(x)\)</span> 的 <span
+class="math inline">\(x\in D(f)\)</span> 与之对应，其对应规则记作 <span
+class="math inline">\(f^{-1}\)</span>，这个定义在 <span
+class="math inline">\(Z(f)\)</span> 上的函数 <span
+class="math inline">\(x=f^{-1}(y)\)</span> 称为 <span
+class="math inline">\(y=f(x)\)</span> 的反函数，或称它们互为反函数</p>
+<p>直接函数与反函数的图形关于直线 <span
+class="math inline">\(y=x\)</span> 对称</p>
+<p><span class="math inline">\(y=cotx\quad x\in(0,\pi)\)</span></p>
+<h4 id="二复合函数">二、复合函数</h4>
+<p>设 <span class="math inline">\(y=f(u),u=\phi(x)\)</span>，称 <span
+class="math inline">\(y=f|\phi(x)|\)</span> 是由 <span
+class="math inline">\(y=f(u)\)</span>，<span
+class="math inline">\(u=\phi(x)\)</span> 复合而成的函数，<span
+class="math inline">\(u\)</span> 称为中间变量，<span
+class="math inline">\(x\)</span> 为自变量</p>
+<h3 id="初等函数">初等函数</h3>
+<h4 id="一基本初等函数">一、基本初等函数</h4>
+<p><span class="math inline">\(y=x^a,y=a^x,y=log_ax(a\neq
+1,a&gt;0)\)</span></p>
+<p>三角函数和反三角函数</p>
+<h4 id="二初等函数">二、初等函数</h4>
+<p>由基本初等函数经过有限次四则运算和有限次的函数复合步骤构成可用一个式子表示的函数，称为初等函数</p>
+<p><span class="math inline">\(|x|=\sqrt{x^2}\)</span> 是初等函数</p>
+<p><strong>双曲函数常用公式</strong> <span class="math display">\[
+sh(x\pm y)=shxchy\pm chxshy
+\\
+ch(x\pm y)=chxchy\pm shxshy
+\\
+ch^2x-sh^2x=1
+\\
+sh2x=2shxchx
+\\
+ch2x=ch^2x+sh^2x
+\]</span></p>
+<p><strong>和差化积</strong></p>
+<p><span class="math display">\[
+\sin a+ \sin b=2\sin\frac{a+b}2\cos\frac{a-b}2
+\\
+\sin a- \sin b=2\cos\frac{a+b}2\sin\frac{a-b}2
+\\
+\cos a+ \cos b=2\cos\frac{a+b}2\cos\frac{a-b}2
+\\
+\cos a- \cos b=-2\sin\frac{a+b}2\sin\frac{a-b}2
+\]</span> <strong>积化和差</strong> <span class="math display">\[
+\sin a\cos b=\frac12[\sin(a+b)+\sin(a-b)]
+\\
+\cos a\sin b=\frac12[\sin(a+b)-\sin(a-b)]
+\\
+\cos a\cos b=\frac12[\cos(a+b)+\cos(a-b)]
+\\
+\sin a\sin b=-\frac12[\cos(a+b)-\cos(a-b)]
+\\
+\]</span></p>
+<h2 id="极限的概念">1.2 极限的概念</h2>
+<h3 id="一数列的定义">一、数列的定义</h3>
+<p>按照一定顺序一次排成的无穷多个数 <span
+class="math inline">\(x_1,x_2,\cdots,x_n,\cdots\)</span>
+称为无穷数列，简称数列，其中每个数称为数列的项，<span
+class="math inline">\(x_n\)</span> 称为通项，数列记作 <span
+class="math inline">\(\{x_n\}\)</span></p>
+<h3 id="二数列的简单性质">二、数列的简单性质</h3>
+<h4 id="单调数列">单调数列</h4>
+<p>对数列 <span class="math inline">\(\{x_n\}\)</span>，若对 <span
+class="math inline">\(\forall n\)</span>，都有 <span
+class="math inline">\(x_n&lt;x_{n+1}(x_x&gt;x_{n+1})\)</span> 则称 <span
+class="math inline">\(\{x_n\}\)</span>
+为（严格）单调增加（减少）数列</p>
+<p>若对 <span class="math inline">\(\forall n\)</span>，都有 <span
+class="math inline">\(x_n\leq x_{n+1}(x_x\geq x_{n+1})\)</span> 则称
+<span class="math inline">\(\{x_n\}\)</span> 为单调不减（不增）数列</p>
+<h4 id="有界性">有界性</h4>
+<p>对于数列 <span class="math inline">\(\{x_n\}\)</span>，若 <span
+class="math inline">\(\exists M&gt;0\)</span>，使 <span
+class="math inline">\(\forall n\)</span>，具有 <span
+class="math inline">\(|x_n|\leq M\)</span>，则称 <span
+class="math inline">\(\{x_n\}\)</span>
+为有界数列，否则称为无界数列，即对 <span class="math inline">\(\forall
+M&gt;0\)</span>，总 <span class="math inline">\(\exists n\)</span> 使
+<span class="math inline">\(|x_n|&gt;M\)</span></p>
+<p>既有上界也下界的数列必有界</p>
+<h3 id="三数列的极限">三、数列的极限</h3>
+<p>当 <span class="math inline">\(n\)</span> 无限增大时，<span
+class="math inline">\(x_n=1+\frac{(-1)^{n-1}}{n}\)</span> 无限接近 <span
+class="math inline">\(1\)</span>，等价于 <span
+class="math inline">\(|x_n-1|\)</span> 可以任意小</p>
+<p>给定 <span class="math inline">\(\epsilon &gt;0\)</span>，只要 <span
+class="math inline">\(n&gt;N(=[\cfrac{1}\epsilon])\)</span> 时，有 <span
+class="math inline">\(|x_n-1|&lt;\epsilon\)</span> 成立</p>
+<p>如果对于 <span class="math inline">\(\forall
+\epsilon&gt;0\)</span>，总存在一个正整数 <span
+class="math inline">\(N\)</span>，当 <span
+class="math inline">\(n&gt;N\)</span> 时，<span
+class="math inline">\(|x_n-a|&lt;\epsilon\)</span> 恒成立，则称当 <span
+class="math inline">\(n\)</span> 趋于无穷大时，数列 <span
+class="math inline">\(x_n\)</span> 以常数 <span
+class="math inline">\(a\)</span> 为极限</p>
+<p>记作 <span class="math inline">\(\lim\limits_{n\to
+\infty}x_n=a\)</span> 或 <span class="math inline">\(x_n\to a(n\to
+\infty)\)</span></p>
+<p><strong>如果数列没有极限，就说数列是发散的</strong></p>
+<h4 id="epsilon---n-定义"><span class="math inline">\(\epsilon -
+N\)</span> 定义：</h4>
+<p><span class="math display">\[
+\lim_{n\to \infty} x=a\Leftrightarrow \forall \epsilon&gt;0,\exists
+N,\forall n&gt;N, |x_n-a|&lt;\epsilon
+\]</span></p>
+<ol type="1">
+<li><p><span class="math inline">\(\epsilon\)</span>
+任意性，固定性</p></li>
+<li><p><span class="math inline">\(N(\epsilon)\)</span>
+但不唯一</p></li>
+<li><p><span class="math inline">\(n\to
+\infty\)</span>，去掉或增加有限项不改变数列极限</p></li>
+<li><p>等价于 <span
+class="math inline">\(a-\epsilon&lt;x_n&lt;a+\epsilon\)</span>
+几何解释：当 <span class="math inline">\(n&gt;N\)</span> 时，所有的点
+<span class="math inline">\(x_n\)</span> 都落在 <span
+class="math inline">\((a-\epsilon,a+\epsilon)\)</span>
+内，只有有限个（至多 <span class="math inline">\(N\)</span>
+个）落在其外</p></li>
+<li><p><span class="math inline">\(a\)</span> 是一个确定的常数</p></li>
+<li><p><span class="math inline">\(|x_n-a|&lt;k\epsilon\quad
+(k&gt;0)\)</span></p></li>
+<li><p>定义只能用来验证极限，不能计算极限</p></li>
+</ol>
+<h4 id="计算-n-的方法">计算 <span class="math inline">\(N\)</span>
+的方法</h4>
+<ol type="1">
+<li><p>利用不等式直接反解 <span
+class="math inline">\(n\)</span>，然后取整</p></li>
+<li><p>利用题目中给出的已知极限的 <span class="math inline">\(N\)</span>
+找到 <span class="math inline">\(N\)</span></p></li>
+<li><p>对不等式进行合理的放缩再反解 <span
+class="math inline">\(n\)</span>，找到 <span
+class="math inline">\(N\)</span></p></li>
+</ol>
+<h4 id="定理一-有界性">定理一 有界性</h4>
+<p>收敛的数列必定有界</p>
+<p><strong>推论：无界数列必定发散</strong></p>
+<h4 id="定理二-唯一性">定理二 唯一性</h4>
+<p>每个收敛的数列只有一个极限</p>
+<p><strong>证明</strong>：同一法；反证法</p>
+<h4 id="定理三-保号性">定理三 保号性</h4>
+<p><span class="math display">\[
+\lim_{n\to \infty}x_n=a&gt;0, \exists N&gt;0, n&gt;N,x_n&gt;0
+\\
+\lim_{n\to \infty}x_n=a&lt;0, \exists N&gt;0, n&gt;N,x_n&lt;0
+\]</span></p>
+<h4 id="定理四">定理四</h4>
+<p><span class="math display">\[
+设 x_n\geq 0 (x_n\leq 0)(n=1,2,3,\cdots)且 \lim_{n\to \infty}x_n存在，则
+\lim_{x\to \infty}x_n\geq 0
+\]</span></p>
+<p><strong>注</strong> <span class="math inline">\(x_n&gt;0\)</span> 且
+<span class="math inline">\(\lim_{n\to \infty}x_n\)</span> 存在 <span
+class="math inline">\(\nrightarrow\)</span> <span
+class="math inline">\(\lim_{n\to \infty}x_n&gt;0\)</span></p>
+<h4 id="定理五-海涅定理">定理五 海涅定理</h4>
+<p><span class="math display">\[
+设 \{x_n\} 极限存在则 \{x_n\}
+的所有子数列\{x_{n_k}\}\subset\{x_n\}极限均存在，且
+\lim_{n\to\infty}x_{n_k}=\lim_{x\to\infty}x_n
+\]</span></p>
+<p>（一般用于判定极限不存在）</p>
+<h4 id="极限的运算性质">极限的运算性质</h4>
+<p><strong>定理</strong> 设<span
+class="math inline">\(\lim_{x\to\infty}x_n,\lim_{n\to\infty}y_n\)</span>
+均存在，则</p>
+<p><span class="math inline">\(\lim_{n\to\infty}(x_n\pm y_n)=\lim_{n\to
+\infty}x_n\pm\lim_{n\to \infty}{y_n}\)</span></p>
+<p><span class="math inline">\(\lim_{n\to\infty}(x_n\cdot
+y_n)=\lim_{n\to \infty}x_n\cdot\lim_{n\to \infty}{y_n}\)</span></p>
+<p><span
+class="math inline">\(\lim_{n\to\infty}(x_n/y_n)=\frac{\lim_{n\to
+\infty}x_n}{\lim_{n\to \infty}{y_n}}\)</span></p>
+<p><strong>注意</strong></p>
+<ul>
+<li><p>极限必须存在</p></li>
+<li><p>分母不为零</p></li>
+<li><p>只能求有限项的极限</p></li>
+</ul>
+<h3 id="函数的极限">函数的极限</h3>
+<h4
+id="一当自变量趋于无穷大时函数的极限">一、当自变量趋于无穷大时函数的极限</h4>
+<h5 id="xto-infty-时的情形"><span class="math inline">\(x\to
++\infty\)</span> 时的情形</h5>
+<p><strong>定义</strong> 设 <span class="math inline">\(f(x)\)</span>
+时定义在 <span class="math inline">\([a,+\infty)\)</span> 上的函数，
+<span class="math inline">\(A\)</span> 是常数，对于任意正数 <span
+class="math inline">\(\epsilon\)</span> 总存在正数 <span
+class="math inline">\(X\)</span>，使对于任何 <span
+class="math inline">\(x&gt;X\)</span> 都有 <span
+class="math inline">\(|f(x)-A|&lt;\epsilon\)</span>，则称 <span
+class="math inline">\(A\)</span> 为 <span
+class="math inline">\(x\)</span> 趋于正无穷大时 <span
+class="math inline">\(f(x)\)</span> 的极限，记为 <span
+class="math inline">\(\lim_{x\to +\infty}f(x)=A\)</span></p>
+<p><span class="math inline">\(\lim_{x\to +\infty}f(x)=A\Leftrightarrow
+\forall \epsilon&gt;0,\exists X&gt;0,
+x&gt;X,|f(x)-A|&lt;\epsilon\)</span></p>
+<h5 id="xto--infty-时的情形"><span class="math inline">\(x\to
+-\infty\)</span> 时的情形</h5>
+<p><span class="math inline">\(\lim_{x\to -\infty}f(x)=A\Leftrightarrow
+\forall \epsilon&gt;0,\exists X&lt;0,
+x&lt;X,|f(x)-A|&lt;\epsilon\)</span></p>
+<h5 id="xto-infty-时的情形-1"><span class="math inline">\(x\to
+\infty\)</span> 时的情形</h5>
+<p><span class="math inline">\(\lim_{x\to \infty}f(x)=A\Leftrightarrow
+\forall \epsilon&gt;0,\exists X,
+|x|&gt;X,|f(x)-A|&lt;\epsilon\)</span></p>
+<h5 id="几何解释">几何解释</h5>
+<p>当 <span class="math inline">\(x&lt;-X\)</span> 或 <span
+class="math inline">\(x&gt;X\)</span> 时，函数 <span
+class="math inline">\(y=f(x)\)</span> 的图形完全落在以 <span
+class="math inline">\(y=A\)</span> 为中心线，宽为 <span
+class="math inline">\(2\epsilon\)</span> 的带型区域时</p>
+<h4
+id="二自变量趋向有限值时函数的极限">二、自变量趋向有限值时函数的极限</h4>
+<p><span class="math inline">\(|f(x)-A|&lt;\epsilon\)</span> 表示 <span
+class="math inline">\(|f(x)-A|\)</span> 任意小</p>
+<p><span class="math inline">\(0&lt;|x-x_0|&lt;\delta\)</span> 表示
+<span class="math inline">\(x\to x_0\)</span> 过程中的某一时刻之后</p>
+<p><span class="math inline">\(\delta\)</span> 体现 <span
+class="math inline">\(x\)</span> 接近 <span
+class="math inline">\(x_0\)</span> 程度</p>
+<h5 id="定义">1. 定义</h5>
+<p>设函数 <span class="math inline">\(f(x)\)</span> 在 <span
+class="math inline">\(\mathring{U}(x,\delta)\)</span>
+有定义，若对于任意给定的正数 <span
+class="math inline">\(\epsilon\)</span> 总存在正数 <span
+class="math inline">\(\delta\)</span> 使得对于适合不等式 <span
+class="math inline">\(0&lt;|x-x_0|&lt;\delta\)</span> 的一切 <span
+class="math inline">\(x\)</span>，对应的函数值 <span
+class="math inline">\(f(x)\)</span> 都满足不等式 <span
+class="math inline">\(|f(x)-A|&lt;\epsilon\)</span>，则称常数 <span
+class="math inline">\(A\)</span> 为函数 <span
+class="math inline">\(f(x)\)</span> 当 <span class="math inline">\(x\to
+x_0\)</span> 时的极限，记作 <span class="math inline">\(\lim_{x\to
+x_0}f(x)=A\)</span> 或 <span class="math inline">\(f(x)\to
+A\)</span>（当 <span class="math inline">\(x\to x_0\)</span> 时）</p>
+<h5 id="几何解释-1">2. 几何解释</h5>
+<p>当 <span class="math inline">\(x\)</span> 在 <span
+class="math inline">\(x_0\)</span> 的去心 <span
+class="math inline">\(\delta\)</span> 邻域时，函数 <span
+class="math inline">\(y=f(x)\)</span> 的图形完全落在以 <span
+class="math inline">\(y=A\)</span> 为中心线，宽为 <span
+class="math inline">\(2\epsilon\)</span> 的带型区域时</p>
+<h5 id="左右极限">3. 左右极限</h5>
+<p>例如 <span
+class="math inline">\(f(x)=\begin{cases}1-x,x&lt;0\\x^2+1,x\geq
+0\end{cases}\)</span> 证明 <span class="math inline">\(\lim_{x\to
+0}f(x)=1\)</span></p>
+<p><span class="math inline">\(x\)</span> 从左侧无限趋近 <span
+class="math inline">\(x_0\)</span>，记作 <span
+class="math inline">\(x\to x_0-\delta\)</span> 或 <span
+class="math inline">\(x\to x_0^-\)</span></p>
+<p><span class="math inline">\(x\)</span> 从右侧无限趋近 <span
+class="math inline">\(x_0\)</span>，记作 <span
+class="math inline">\(x\to x_0+\delta\)</span> 或 <span
+class="math inline">\(x\to x_0^+\)</span></p>
+<p>左极限 <span class="math inline">\(\forall \epsilon &gt;0 \exists
+\delta&gt;0\)</span> 使当 <span
+class="math inline">\(x_0-\delta&lt;x&lt;x_0\)</span> 时恒有 <span
+class="math inline">\(|f(x)-A|&lt;\epsilon\)</span> 记作 <span
+class="math inline">\(\lim_{x\to x_o^-}f(x)=A\)</span> 或 <span
+class="math inline">\(f(x_0-0)=A\)</span></p>
+<p>右极限 <span class="math inline">\(\forall \epsilon &gt;0 \exists
+\delta&gt;0\)</span> 使当 <span
+class="math inline">\(x_0&lt;x&lt;x_0+\delta\)</span> 时恒有 <span
+class="math inline">\(|f(x)-A|&lt;\epsilon\)</span> 记作 <span
+class="math inline">\(\lim_{x\to x_o^+}f(x)=A\)</span> 或 <span
+class="math inline">\(f(x_0+0)=A\)</span></p>
+<p><strong>定理</strong>：<span class="math inline">\(\lim_{x\to
+x_0}=A\Leftrightarrow\lim_{x\to x_0^-}f(x)=\lim_{x\to
+x_0^+}f(x)=A\)</span></p>
+<h4 id="三函数极限的性质">三、函数极限的性质</h4>
+<h5 id="有界性-1">1. 有界性</h5>
+<p>若在某个过程中 <span class="math inline">\(f(x)\)</span>
+有极限，则存在过程的一个时刻，在此时刻以后 <span
+class="math inline">\(f(x)\)</span> 有界</p>
+<h5 id="惟一性">2. 惟一性</h5>
+<p>若在 <span class="math inline">\(x\)</span> 的变化过程中 <span
+class="math inline">\(f(x)\)</span> 的极限存在，则极限惟一</p>
+<h5 id="不等式性质">3. 不等式性质</h5>
+<p><strong>局部保号性</strong></p>
+<p>若 <span class="math inline">\(\lim_{x\to x_0}f(x)=A\)</span>，且
+<span class="math inline">\(A&gt;0\)</span>（或 <span
+class="math inline">\(A&lt;0\)</span>）则 <span
+class="math inline">\(\exists \delta&gt;0\)</span>，当 <span
+class="math inline">\(x\in \mathring{U}(x_0,\delta)\)</span> 时，<span
+class="math inline">\(f(x)&gt;0\)</span>（或 <span
+class="math inline">\(f(x)&lt;0\)</span>）</p>
+<p><strong>保序性</strong></p>
+<p>设 <span class="math inline">\(\lim_{x\to x_0}f(x)=A, \lim_{x\to
+x_0}g(x)=B\)</span> 若 <span class="math inline">\(\exists
+\delta&gt;0\)</span>，<span class="math inline">\(\forall x\in
+\mathring{U}(x_0,\delta)\)</span>，有 <span
+class="math inline">\(f(x)\leq g(x)\)</span>，则 <span
+class="math inline">\(A\leq B\)</span></p>
+<h5 id="函数极限与数列极限的关系">4. 函数极限与数列极限的关系</h5>
+<p>设 <span class="math inline">\(f(x)\)</span> 在 <span
+class="math inline">\(x_0\)</span> 的某去心邻域 <span
+class="math inline">\(\mathring{U}(x_0,\delta)\)</span> 有定义，则 <span
+class="math inline">\(\lim_{x\to x_0}f(x)=A\)</span> 的充要条件是</p>
+<p>对任何以 <span class="math inline">\(x_0\)</span>
+为极限且含于此空心邻域的数列 <span
+class="math inline">\(\{x_n\}\)</span> 都有 <span
+class="math display">\[
+\lim_{n\to \infty}f(x_n)=A
+\\
+(1)x_n\in \mathring{U}(x_0,\delta);(2)\lim_{n\to \infty}x_n=x_0
+\]</span></p>
+<h2 id="无穷小无穷大量">1.3 无穷小&amp;无穷大量</h2>
+<h3 id="一无穷小">一、无穷小</h3>
+<h4 id="定义-1">1. 定义</h4>
+<p>极限为零的变量称为无穷小</p>
+<p><strong>零是无穷小</strong></p>
+<h4 id="无穷小与函数极限的关系">2. 无穷小与函数极限的关系</h4>
+<p>定理 <span class="math inline">\(\lim_{x\to x_0}
+f(x)=A\Leftrightarrow f(x)=A+a(x)\)</span></p>
+<p>其中 <span class="math inline">\(a(x)\)</span> 是当 <span
+class="math inline">\(x\to x_0\)</span> 时的无穷小</p>
+<h4 id="无穷小的运算性质">3. 无穷小的运算性质</h4>
+<p><strong>定理2</strong> 有限个无穷小的代数和还是无穷小</p>
+<p><strong>定理3</strong> 有界函数与无穷小的乘积还是无穷小</p>
+<ul>
+<li>在同一过程中，有极限的变量与无限小的乘积时无穷小</li>
+<li>常数与无穷小的乘积时无穷小</li>
+<li>有限个无穷小的乘积也是无穷小</li>
+</ul>
+<h3 id="二无穷大">二、无穷大</h3>
+<p><strong>定义2</strong></p>
+<p><span class="math inline">\(\forall M&gt;0,\exists
+\delta&gt;0\)</span> 当 <span
+class="math inline">\(0&lt;|x-x_0|&lt;\delta\)</span> 时有 <span
+class="math inline">\(|f(x)|&gt;M\)</span> 成立，则称 <span
+class="math inline">\(f(x)\)</span> 当 <span class="math inline">\(x\to
+x_0\)</span> 时为无穷大，记为 <span class="math inline">\(\lim_{x\to
+x_0}f(x)=\infty\)</span></p>
+<p><span class="math inline">\(\lim_{x\to +\infty}f(x)=-\infty\)</span>
+<span class="math inline">\(\forall M, \exists X, x&gt;X,
+f(x)&lt;M\)</span></p>
+<p><span class="math inline">\(\lim_{x\to -\infty}f(x)=-\infty\)</span>
+<span class="math inline">\(\forall M, \exists X, x&lt;-X,
+f(x)&lt;-M\)</span></p>
+<p><span class="math inline">\(\lim_{x\to -\infty}f(x)=\infty\)</span>
+<span class="math inline">\(\forall M, \exists X, x&lt;-X,
+|f(x)|&gt;M\)</span></p>
+<h3 id="三无穷小与无穷大的关系">三、无穷小与无穷大的关系</h3>
+<p><strong>定理4</strong></p>
+<p>在同一过程中，无穷大的倒数为无穷小；恒不为零的无穷小的倒数为无穷大
+### 四、无穷小的比较</p>
+<p>极限不同，反映了无穷小趋向于零的“快慢“程度不同</p>
+<p><strong>定义</strong>：设 <span
+class="math inline">\(\alpha,\beta\)</span> 是同一过程中的两个无穷小，且
+<span class="math inline">\(\alpha\neq 0\)</span></p>
+<ol type="1">
+<li>如果 <span class="math inline">\(\lim\frac{\beta}{\alpha}=0\)</span>
+就说 <span class="math inline">\(\beta\)</span> 是比 <span
+class="math inline">\(\alpha\)</span>
+<strong>高阶的无穷小</strong>，记作 <span
+class="math inline">\(\beta=o(\alpha)\)</span>；</li>
+<li>如果 <span class="math inline">\(\lim\frac{\beta}{\alpha}=C(C\neq
+0)\)</span> 就说 <span class="math inline">\(\beta\)</span> 是比 <span
+class="math inline">\(\alpha\)</span>
+<strong>同阶的无穷小</strong>；特殊地 如果 <span
+class="math inline">\(\lim\frac\beta\alpha=1\)</span>，则称 <span
+class="math inline">\(\beta\)</span> 与 <span
+class="math inline">\(\alpha\)</span>
+是<strong>等价的无穷小</strong>，记作 <span
+class="math inline">\(\beta\sim\alpha\)</span>；</li>
+</ol>
+<p>常用等价无穷小</p>
+<p><span class="math display">\[
+\sin x\sim x, \arcsin x\sim x
+\\
+\tan x\sim x, \arctan x\sim x
+\\
+a^x-1\sim x\ln a,e^x-1\sim x
+\\
+\log_a(1+x)\sim \frac x{\ln a},\ln(1+x)\sim x
+\\
+1-\cos x\sim \frac12x^2,\sqrt[n]{1+x}-1\sim \frac xn,\tan x-\sin
+x\sim\frac 12 x^3
+\]</span></p>
+<h3 id="五等价无穷小的替换">五、等价无穷小的替换</h3>
+<p><strong>定理</strong>（等价无穷小替换定理）</p>
+<p>设 <span class="math inline">\(\alpha\sim \alpha&#39;,\beta\sim
+\beta&#39;(\alpha&#39;\neq 0,\beta&#39;\neq 0)\)</span> 且 <span
+class="math inline">\(\lim \frac{\beta&#39;}{\alpha&#39;}=A\)</span> 或
+<span class="math inline">\(\infty\)</span>，则 <span
+class="math inline">\(\lim\frac{\beta}{\alpha}=\lim\frac{\beta&#39;}{\alpha&#39;}\)</span></p>
+<p><strong>推论 </strong></p>
+<p>若 <span class="math inline">\(x\to x_0\)</span> 时 <span
+class="math inline">\(\alpha(x)\)</span> 与 <span
+class="math inline">\(\beta(x)\)</span> 是等价无穷小，且 <span
+class="math inline">\(\lim_{x\to x_0}[\alpha(x)\cdot
+f(x)]=A\)</span>（或 <span class="math inline">\(\infty\)</span>），则
+<span class="math inline">\(\lim_{x\to x_0}[\alpha(x)\cdot
+f(x)]=\lim_{x\to x_0}[\beta(x)\cdot f(x)]=A\)</span>（或 <span
+class="math inline">\(\infty\)</span>）</p>
+<p><strong>用等价无穷小可给出函数的近似表达式</strong></p>
+<p><span class="math inline">\(\because
+\lim\frac\alpha\beta=1,\therefore(\frac\alpha\beta-1)=\lim\frac{\alpha-\beta}{\beta}=0\)</span></p>
+<p>即 <span class="math inline">\(\alpha-\beta=o(\beta)\)</span> 于是有
+<span
+class="math inline">\(\alpha=\beta+o(\beta)\)</span>，<strong>等量代换</strong></p>
+<p>例如：<span class="math inline">\(\sin x=x+o(x),1-\cos(x)=\frac12
+x^2+o(x^2)\)</span></p>
+<h2 id="极限与运算法则">1.4 极限与运算法则</h2>
+<h3 id="一极限运算法则">一、极限运算法则</h3>
+<p><strong>定理</strong> 设 <span class="math inline">\(\lim f(x)=A,\lim
+g(x)=B\)</span> 则</p>
+<ul>
+<li>（1）<span class="math inline">\(\lim[f(x)\pm
+g(x)]=A+B\)</span></li>
+<li>（2）<span class="math inline">\(\lim[f(x)\cdot g(x)]=A\cdot
+B\)</span></li>
+<li>（3）<span class="math inline">\(\lim\frac{f(x)}{g(x)}=\frac
+AB\)</span>，其中 <span class="math inline">\(B\neq 0\)</span></li>
+</ul>
+<p>常数因子可以提到极限记号外面</p>
+<h3 id="二求极限方法举例">二、求极限方法举例</h3>
+<p>注意：<span
+class="math inline">\(\frac{b}{\sqrt{a}}=\cfrac{1}{\sqrt{\frac{a}{b^2}}}\Leftrightarrow
+b&gt;0\)</span></p>
+<p>但 <span class="math inline">\(b&lt;0\)</span> 时 <span
+class="math inline">\(\frac{b}{\sqrt{a}}=-\cfrac{1}{\sqrt{\frac{a}{b^2}}}\Leftrightarrow
+b&lt;0\)</span></p>
+<h2 id="极限存在准则-两个重要极限">1.5 极限存在准则 两个重要极限</h2>
+<h3 id="一极限存在准则">一、极限存在准则</h3>
+<h4 id="夹逼准则迫敛性法则">1. 夹逼准则（迫敛性法则）</h4>
+<p><strong>准则Ⅰ</strong> 如果当 <span class="math inline">\(x\in
+\mathring{U}(x_0,\delta)\)</span> 时，有</p>
+<ol type="1">
+<li><p><span class="math inline">\(g(x)\leq f(x)\leq
+h(x)\)</span></p></li>
+<li><p><span class="math inline">\(\lim g(x)=A, \lim
+h(x)=A\)</span></p></li>
+</ol>
+<p>那么 <span class="math inline">\(\lim f(x)\)</span> 存在且等于 <span
+class="math inline">\(A\)</span></p>
+<h4 id="单调有界准则">2. 单调有界准则</h4>
+<p><strong>准则Ⅱ</strong> 单调有界数列必有极限</p>
+<p>如果数列 <span class="math inline">\(\{x_n\}\)</span> 满足条件</p>
+<p><span class="math inline">\(x_1\leq x_2\leq \cdots x_n\leq
+x_{n+1}\leq \cdots\)</span> 单调增加有上界 <span
+class="math inline">\(x_1\leq x_2\leq \cdots x_n\leq x_{n+1}\leq
+\cdots\)</span> 单调减少有下界</p>
+<p>则有极限</p>
+<h3 id="二两个重要极限">二、两个重要极限</h3>
+<ol type="1">
+<li><p><span class="math inline">\(\lim_{x\to 0}\cfrac{\sin
+x}{x}=1\)</span></p></li>
+<li><p><span class="math inline">\(\lim_{x\to 0}(1+x)^{\cfrac
+1x}=e\)</span></p></li>
+</ol>
+<h2 id="连续函数">1.6 连续函数</h2>
+<h3 id="一函数的连续性">一、函数的连续性</h3>
+<h4 id="函数的增量">1. 函数的增量</h4>
+<p>设函数 <span class="math inline">\(f(x)\)</span> 在 <span
+class="math inline">\(U(x_0,\delta)\)</span> 内有定义，<span
+class="math inline">\(\forall x\in U(x_0,\delta)\)</span>，<span
+class="math inline">\(\Delta x=x-x_0(x=x_0+\Delta x)\)</span>
+称为自变量在点 <span class="math inline">\(x_0\)</span> 的增量，<span
+class="math inline">\(\Delta y=f(x_0+\Delta x)-f(x_0)\)</span> 称为函数
+<span class="math inline">\(f(x)\)</span> 相应与 <span
+class="math inline">\(\Delta x\)</span> 的增量</p>
+<h4 id="连续的定义">2. 连续的定义</h4>
+<p><strong>定义1</strong> 设函数 <span
+class="math inline">\(f(x)\)</span> 在 <span
+class="math inline">\(U(x_0,\delta)\)</span>
+内有定义，如果当自变量的增量 <span class="math inline">\(\Delta
+x\)</span> 趋向于零时，对应的函数增量 <span class="math inline">\(\Delta
+y\)</span> 也趋向于零，即 <span class="math inline">\(\lim_{\Delta x\to
+0}\Delta y=0\)</span> 或 <span class="math inline">\(\lim_{\Delta x\to
+0}[f(x_0+\Delta x)-f(x_0)]=0\)</span> 那么就称函数 <span
+class="math inline">\(f(x)\)</span> 在点 <span
+class="math inline">\(x_0\)</span> 连续，<span
+class="math inline">\(x_0\)</span> 称为 <span
+class="math inline">\(f(x)\)</span> 的连续点</p>
+<p><strong>定义2</strong> 设函数 <span
+class="math inline">\(f(x)\)</span> 在 <span
+class="math inline">\(U(x_0,\delta)\)</span> 内有定义，如果函数 <span
+class="math inline">\(f(x)\)</span> 当 <span class="math inline">\(x\to
+x_0\)</span> 时的极限存在，且等于它在点 <span
+class="math inline">\(x_0\)</span> 处对应的函数值 <span
+class="math inline">\(f(x_0)\)</span> 即 <span
+class="math inline">\(\lim_{x\to x_0}f(x)=f(x_0)\)</span> 那么就称函数
+<span class="math inline">\(f(x)\)</span> 在点 <span
+class="math inline">\(x_0\)</span> 连续</p>
+<p><strong>定义3</strong> <span class="math inline">\(\forall
+\epsilon&gt;0,\exists \delta&gt;0\)</span>，使当 <span
+class="math inline">\(|x-x_0|&lt;\delta\)</span> 时，恒有 <span
+class="math inline">\(|f(x)-f(x_0)|&lt;\epsilon\)</span></p>
+<h4 id="左右连续">3. 左、右连续</h4>
+<p>若函数 <span class="math inline">\(f(x)\)</span> 在<span
+class="math inline">\((a,x_0]\)</span> 内有定义，且 <span
+class="math inline">\(f(x_0-0)=f(x_0)\)</span> 即 <span
+class="math inline">\(\lim_{x\to x_0^-}f(x)=f(x_0)\)</span>，则称 <span
+class="math inline">\(f(x)\)</span> 在点 <span
+class="math inline">\(x_0\)</span> 处左连续 若函数 <span
+class="math inline">\(f(x)\)</span> 在<span
+class="math inline">\([x_0,b)\)</span> 内有定义，且 <span
+class="math inline">\(f(x_0+0)=f(x_0)\)</span> 即 <span
+class="math inline">\(\lim_{x\to x_0^+}f(x)=f(x_0)\)</span>，则称 <span
+class="math inline">\(f(x)\)</span> 在点 <span
+class="math inline">\(x_0\)</span> 处右连续</p>
+<p><strong>定理</strong> 函数 <span class="math inline">\(f(x)\)</span>
+在 <span class="math inline">\(x_0\)</span> 处连续等价于函数 <span
+class="math inline">\(f(x)\)</span> 在 <span
+class="math inline">\(x_0\)</span> 处同时左连续又右连续</p>
+<h4 id="连续函数与连续区间">4. 连续函数与连续区间</h4>
+<ul>
+<li><p>在 <span class="math inline">\((a,b)\)</span>
+上每一点都连续的函数，叫做 <span class="math inline">\((a,b)\)</span>
+上的连续函数，或者说函数在 <span class="math inline">\((a,b)\)</span>
+上连续</p></li>
+<li><p>如果函数在开区间 <span class="math inline">\((a,b)\)</span>
+连续，并在在左端点 <span class="math inline">\(x=a\)</span>
+处右连续，在右端点 <span class="math inline">\(x=b\)</span>
+处左连续，则称函数 <span class="math inline">\(f(x)\)</span> 在闭区间
+<span class="math inline">\([a,b]\)</span> 连续</p></li>
+<li><p><span class="math inline">\(C(a,b)\)</span> 表示在开区间 <span
+class="math inline">\((a,b)\)</span> 内全体连续函数构成的集合</p>
+<p>如果函数 <span class="math inline">\(f(x)\)</span> 在开区间 <span
+class="math inline">\((a,b)\)</span> 内连续，记为 <span
+class="math inline">\(f(x)\in C(a,b)\)</span></p></li>
+<li><p><span class="math inline">\(C[a,b]\)</span> 表示在闭区间 <span
+class="math inline">\([a,b]\)</span> 内全体连续函数构成的集合</p>
+<p>如果函数 <span class="math inline">\(f(x)\)</span> 在闭区间 <span
+class="math inline">\([a,b]\)</span> 内连续，记为 <span
+class="math inline">\(f(x)\in C[a,b]\)</span></p></li>
+<li><p>连续函数的图像是一条连续而不间断的曲线</p></li>
+</ul>
+<h3 id="二函数的间断点">二、函数的间断点</h3>
+<p>函数 <span class="math inline">\(f(x)\)</span> 在点 <span
+class="math inline">\(x_0\)</span> 连续必须满足的三个条件</p>
+<ol type="1">
+<li><p><span class="math inline">\(f(x)\)</span> 在点 <span
+class="math inline">\(x_0\)</span> 处有定义</p></li>
+<li><p><span class="math inline">\(\lim_{x\to x_0}f(x)\)</span>
+存在</p></li>
+<li><p><span class="math inline">\(\lim_{x\to
+x_0}f(x)=f(x_0)\)</span></p></li>
+</ol>
+<p>如果上述三个条件中只要有一个不满足，则称函数 <span
+class="math inline">\(f(x)\)</span> 在点 <span
+class="math inline">\(x_0\)</span> 处不连续（间断），并称点 <span
+class="math inline">\(x_0\)</span> 是 <span
+class="math inline">\(f(x)\)</span> 的不连续点（间断点）</p>
+<h4 id="间断点的分类">间断点的分类</h4>
+<p><strong>定义</strong> 若点 <span class="math inline">\(x_0\)</span>
+为 <span class="math inline">\(f(x)\)</span> 的间断点，但 <span
+class="math inline">\(f(x)\)</span> 在点 <span
+class="math inline">\(x_0\)</span> 的左右极限均存在则称点 <span
+class="math inline">\(x_0\)</span> 为 <span
+class="math inline">\(f(x)\)</span>
+的第一类间断点，凡不是第一类间断点的间断点称为第二类间断点</p>
+<p>第一类间断点又可以分为</p>
+<ul>
+<li><p>可去型间断点：如果 <span class="math inline">\(f(x)\)</span> 在点
+<span class="math inline">\(x_0\)</span> 处的极限存在（<span
+class="math inline">\(f(x_0+0)=f(x_0-0)\)</span>），但 <span
+class="math inline">\(\lim_{x\to x_0}f(x)=A\neq f(x_0)\)</span> 或 <span
+class="math inline">\(f(x)\)</span> 在点 <span
+class="math inline">\(x_0\)</span> 处无定义，则称点 <span
+class="math inline">\(x_0\)</span> 为函数 <span
+class="math inline">\(f(x)\)</span>
+的<strong>第一类可去型间断点</strong></p></li>
+<li><p>跳跃型间断点：如果 <span class="math inline">\(f(x)\)</span> 在点
+<span class="math inline">\(x_0\)</span>
+处的左、右都存在且不相等，则称点 <span
+class="math inline">\(x_0\)</span> 为函数 <span
+class="math inline">\(f(x)\)</span>
+的<strong>第一类跳跃型间断点</strong></p></li>
+</ul>
+<p><strong>注意</strong>
+可去间断点只要改变或者补充间断处函数的定义，即可将其改成连续点</p>
+<p>第二类间断点：<span class="math inline">\(f(x)\)</span> 在点 <span
+class="math inline">\(x_0\)</span> 处的左右极限至少有一个不存在</p>
+<ul>
+<li>有一侧极限为无穷大，称为<strong>第二类无穷型间断点</strong></li>
+<li>形如 <span class="math inline">\(\lim_{x\to 0^+}\sin\frac
+1x\)</span> 称为<strong>第二类震荡型间断点</strong></li>
+</ul>
+<h3 id="三连续函数的四则运算">三、连续函数的四则运算</h3>
+<p><strong>定理1</strong> 若函数 <span
+class="math inline">\(f(x),g(x)\)</span> 在点 <span
+class="math inline">\(x_0\)</span> 处连续，则 <span
+class="math inline">\(f(x)\pm g(x)\)</span>，<span
+class="math inline">\(f(x)\cdot g(x)\)</span>，<span
+class="math inline">\(\frac{f(x)}{g(x)}(g(x)\neq 0)\)</span> 在点 <span
+class="math inline">\(x_0\)</span> 处也连续</p>
+<p>例如 <span class="math inline">\(\sin x,\cos x\)</span> 在 <span
+class="math inline">\(\mathrm R\)</span> 上连续，故 <span
+class="math inline">\(\tan x,\cot x,\sec x,\csc x\)</span>
+在其定义域连续</p>
+<h3 id="四反函数与复合函数的连续性">四、反函数与复合函数的连续性</h3>
+<p><strong>定理2</strong> 单调连续函数的反函数必单调连续</p>
+<p><strong>定理3</strong> 若 <span class="math inline">\(\lim_{x\to
+x_0}\phi(x)=a\)</span>，函数 <span class="math inline">\(f(u)\)</span>
+在点 <span class="math inline">\(a\)</span> 连续，则有 <span
+class="math inline">\(\lim_{x\to x_0}f[\phi(x)]=f(a)=f[\lim_{x\to
+x_0}\phi(x)]\)</span></p>
+<p><strong>定理4</strong> 设函数 <span
+class="math inline">\(u=\phi(x)\)</span> 在点 <span
+class="math inline">\(x=x_0\)</span> 连续，且 <span
+class="math inline">\(\phi(x_0)=u_0\)</span>，而函数 <span
+class="math inline">\(y=f(u)\)</span> 在点 <span
+class="math inline">\(u=u_0\)</span> 连续，则复合函数 <span
+class="math inline">\(y=f[\phi(x)]\)</span> 在点 <span
+class="math inline">\(x=x_0\)</span> 也连续</p>
+<h3 id="五闭区间上连续函数的的性质">五、闭区间上连续函数的的性质</h3>
+<h4 id="一最大值和最小值定理">一、最大值和最小值定理</h4>
+<p><strong>定义</strong> 对于在遇见 <span
+class="math inline">\(I\)</span> 上有定义的函数 <span
+class="math inline">\(f(x)\)</span> 如果有<span
+class="math inline">\(x_0\in I\)</span>，使得对于任一 <span
+class="math inline">\(x\in I\)</span> 都有 <span
+class="math inline">\(f(x)\leq f(x_0)(f(x)\geq f(x_0))\)</span>，则称
+<span class="math inline">\(f(x_0)\)</span> 是函数 <span
+class="math inline">\(f(x)\)</span> 在区间 <span
+class="math inline">\(I\)</span> 上的最大（小）值</p>
+<p><strong>定理1（最大值和最小值定理）</strong>
+在闭区间上连续的函数一定存在最大值和最小值</p>
+<p>若 <span class="math inline">\(f(x)\in C[a,b]\)</span> 则 <span
+class="math inline">\(\exists \xi_1,\xi_2\in [a,b]\)</span>，使得 <span
+class="math inline">\(\forall x\in [a,b]\)</span> 有 <span
+class="math inline">\(f(\xi_1)\geq f(x)\)</span>，<span
+class="math inline">\(f(\xi_2)\leq f(x)\)</span></p>
+<p><strong>注意</strong> 若区间是开区间或区间内有间断点则不一定成立</p>
+<p><strong>定理2（有界型定理）</strong>
+在闭区间上连续的函数一定在该区间上有界</p>
+<h4 id="二介值定理">二、介值定理</h4>
+<p><strong>定理3（介值定理）</strong> 若 <span
+class="math inline">\(f(x)\in C[a,b]\)</span> 且 <span
+class="math inline">\(f(a)\neq f(b)\)</span>，则 <span
+class="math inline">\(\forall \mu \in (f(a),f(b))\)</span>，都 <span
+class="math inline">\(\exists \xi \in (a,b)\)</span> 使得 <span
+class="math inline">\(f(\xi)=\mu\)</span></p>
+<p><strong>推论1</strong> 若 <span class="math inline">\(f(x)\in
+C[a,b]\)</span>，最大值、最小值分别为 <span
+class="math inline">\(M,m\)</span>，且 <span
+class="math inline">\(m&lt;M\)</span>，则 <span
+class="math inline">\(\forall \mu \in (m,M)\)</span>，<span
+class="math inline">\(\exists \xi \in (a,b)\)</span> 使 <span
+class="math inline">\(f(\xi)=\mu\)</span></p>
+<p><strong>推论2（零点存在定理）</strong> 设函数 <span
+class="math inline">\(f(x)\)</span> 在闭区间 <span
+class="math inline">\([a,b]\)</span> 上连续，且 <span
+class="math inline">\(f(a)\)</span> 与 <span
+class="math inline">\(f(b)\)</span> 异号，那么在开区间 <span
+class="math inline">\((a,b)\)</span> 内有函数 <span
+class="math inline">\(f(x)\)</span> 的一个零点，即至少有一点 <span
+class="math inline">\(\xi(a&lt;\xi&lt;b)\)</span> 使得 <span
+class="math inline">\(f(\xi)=0\)</span>，即方程 <span
+class="math inline">\(f(x)=0\)</span> 在 <span
+class="math inline">\((a,b)\)</span> 内至少存在一个实根</p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://buzhibujue.cf/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%87%BD%E6%95%B0-%E8%BF%9E%E7%BB%AD%E4%B8%8E%E6%9E%81%E9%99%90/" title="微积分 第一章 函数 连续与极限" target="_blank" rel="external">https://buzhibujue.cf/2022/06/21/微积分-第一章-函数-连续与极限/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/buzhibujuelb" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/buzhibujuelb" target="_blank"><span class="text-dark">不知不觉</span><small class="ml-1x">Acmer &amp; Student</small></a></h3>
+        <div>Never Settle</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2022/06/21/%E5%BE%AE%E7%A7%AF%E5%88%86-%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/" title="微积分 第二章 一元函数微分学"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2020/04/26/loj2474/" title="LOJ2474"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'dUYIOlsqHv5VgCljRF9mTTtv-gzGzoHsz',
+    appKey: 'HRaJc2h4HiPKBHSGP9lyU5tx',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>线性代数与空间解析几何 第三章 几何空间 | Imperceptible</title>
+  <meta name="description" content="第三章 几何空间 3.1 空间直角坐标系与向量 一、空间直角坐标系 三个坐标轴的正方向符合右手系 二、向量 （一）向量的概念 （二）向量的线性运算  向量的分量 向量的线性运算 线性运算满足的运算规律 基向量与线性表出  （三）向量在轴上的投影  空间两向量的夹角的概念 特殊地，当两个向量中有一个零向量，规定它们的夹角可在 \(0\) 到 \(\pi\) 中任意取值">
+<meta property="og:type" content="article">
+<meta property="og:title" content="线性代数与空间解析几何 第三章 几何空间">
+<meta property="og:url" content="https://buzhibujue.cf/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%87%A0%E4%BD%95%E7%A9%BA%E9%97%B4/index.html">
+<meta property="og:site_name" content="Imperceptible">
+<meta property="og:description" content="第三章 几何空间 3.1 空间直角坐标系与向量 一、空间直角坐标系 三个坐标轴的正方向符合右手系 二、向量 （一）向量的概念 （二）向量的线性运算  向量的分量 向量的线性运算 线性运算满足的运算规律 基向量与线性表出  （三）向量在轴上的投影  空间两向量的夹角的概念 特殊地，当两个向量中有一个零向量，规定它们的夹角可在 \(0\) 到 \(\pi\) 中任意取值">
+<meta property="og:locale">
+<meta property="article:published_time" content="2022-06-20T16:14:13.000Z">
+<meta property="article:modified_time" content="2022-07-12T17:23:26.433Z">
+<meta property="article:author" content="不知不觉">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://buzhibujue.cf/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%87%A0%E4%BD%95%E7%A9%BA%E9%97%B4/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Imperceptible" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    <link href="//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" rel="stylesheet">
+  
+  
+  
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/buzhibujuelb" target="_blank">
+          <img class="img-circle img-rotate" src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">不知不觉</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Acmer &amp; Student</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Chengdu, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools">
+            
+            <i class="icon icon-plus"></i>
+            
+            <span class="menu-title">menu.Tools</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>Never Settle</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HDU/">HDU</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/LOJ/">LOJ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SPOJ/">SPOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UOJ/">UOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B4%9B%E8%B0%B7/">洛谷</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/DP/" style="font-size: 13px;">DP</a> <a href="/tags/FFT/" style="font-size: 13.2px;">FFT</a> <a href="/tags/LCT/" style="font-size: 13px;">LCT</a> <a href="/tags/NTT/" style="font-size: 13.2px;">NTT</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 13px;">二分</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 13px;">凸包</a> <a href="/tags/%E5%8A%A8%E6%80%81DP/" style="font-size: 13px;">动态DP</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 13.2px;">图论</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13px;">字符串</a> <a href="/tags/%E5%AE%B9%E6%96%A5/" style="font-size: 13.4px;">容斥</a> <a href="/tags/%E6%80%9D%E7%BB%B4/" style="font-size: 13.6px;">思维</a> <a href="/tags/%E6%89%A9%E5%9F%9F/" style="font-size: 13px;">扩域</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px;">数学</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 13px;">最短路</a> <a href="/tags/%E6%B0%B4%E9%A2%98/" style="font-size: 13px;">水题</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 13.6px;">物理</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 13px;">线性基</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 13px;">组合数学</a> <a href="/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" style="font-size: 13px;">莫比乌斯反演</a> <a href="/tags/%E8%AE%A1%E6%95%B0/" style="font-size: 13.8px;">计数</a> <a href="/tags/%E9%94%99%E6%8E%92/" style="font-size: 13px;">错排</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 13.6px;">随笔</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%8F%98%E5%8C%96%E7%9A%84%E7%94%B5%E7%A3%81%E5%9C%BA/" class="title">大学物理 变化的电磁场</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:22:53.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%94%B5%E5%AD%A6/" class="title">大学物理 静电学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:21:57.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%A3%81%E5%AD%A6/" class="title">大学物理 静磁学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:37.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6/" class="title">大学物理 刚体力学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:30.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="title">线性代数与空间解析几何 第五章 特征值与特征向量</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:16:32.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-线性代数与空间解析几何-第三章-几何空间" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      线性代数与空间解析几何 第三章 几何空间
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%87%A0%E4%BD%95%E7%A9%BA%E9%97%B4/" class="article-date">
+	  <time datetime="2022-06-20T16:14:13.000Z" itemprop="datePublished">2022-06-21</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%87%A0%E4%BD%95%E7%A9%BA%E9%97%B4/#comments" class="article-comment-link">Comments</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="第三章-几何空间">第三章 几何空间</h1>
+<h2 id="空间直角坐标系与向量">3.1 空间直角坐标系与向量</h2>
+<h3 id="一空间直角坐标系">一、空间直角坐标系</h3>
+<p>三个坐标轴的正方向符合<strong>右手系</strong></p>
+<h3 id="二向量">二、向量</h3>
+<h4 id="一向量的概念">（一）向量的概念</h4>
+<h4 id="二向量的线性运算">（二）向量的线性运算</h4>
+<ol type="1">
+<li><p>向量的分量</p></li>
+<li><p>向量的线性运算</p></li>
+<li><p>线性运算满足的运算规律</p></li>
+<li><p>基向量与线性表出</p></li>
+</ol>
+<h4 id="三向量在轴上的投影">（三）向量在轴上的投影</h4>
+<ol type="1">
+<li>空间两向量的夹角的概念
+特殊地，当两个向量中有一个零向量，规定它们的夹角可在 <span
+class="math inline">\(0\)</span> 到 <span
+class="math inline">\(\pi\)</span> 中任意取值</li>
+<li>空间一点在轴上的投影</li>
+<li>向量在轴上的投影</li>
+</ol>
+<p>向量在轴上的投影的性质</p>
+<ol type="1">
+<li><p>向量 <span class="math inline">\(AB\)</span> 在轴 <span
+class="math inline">\(u\)</span>
+上的投影等于向量的模乘以轴与向量夹角的余弦 <span
+class="math inline">\(\Pr j_u\vec{AB}=\|\vec{AB}\|\cos
+\phi\)</span></p></li>
+<li><p>两个向量的和在轴上的投影等于两个向量在该轴上的投影之和</p></li>
+</ol>
+<h4 id="四线性运算的几何意义">（四）线性运算的几何意义</h4>
+<ol type="1">
+<li><p>平行四边形法则</p></li>
+<li><p>伸缩变换</p></li>
+</ol>
+<h4 id="五方向角与方向余弦">（五）方向角与方向余弦</h4>
+<p>非零向量 <span class="math inline">\(\vec a\)</span>
+与三条坐标轴的夹角称为<strong>方向角</strong> <span
+class="math display">\[
+\cos \alpha=\cfrac{a_1}{\sqrt{a_1^2+a_2^2+a_3^2}}
+\\
+\cos \beta=\cfrac{a_3}{\sqrt{a_1^2+a_2^2+a_3^2}}
+\\
+\cos \gamma=\cfrac{a_3}{\sqrt{a_1^2+a_2^2+a_3^2}}
+\\
+\]</span></p>
+<p><span class="math inline">\(\cos \alpha,\cos \beta,\cos
+\gamma\)</span> 称为向量 <span class="math inline">\(\vec a\)</span>
+的方向余弦</p>
+<h2 id="向量的乘法">3.2 向量的乘法</h2>
+<h3 id="一内积">一、内积</h3>
+<p><strong>定义</strong> 设向量 <span
+class="math inline">\(\vec{a}=(a_1,a_2,a_3),\vec{b}=(b_1,b_2,b_3)\\\vec{a}\cdot\vec{b}=a_1b_1+a_2b_2+a_3b_3\)</span>
+称为 <span class="math inline">\(\vec{a}\)</span> 与 <span
+class="math inline">\(\vec{b}\)</span> 的内积（或数量积）</p>
+<p><span class="math inline">\(\vec{a}\cdot\vec{a}\)</span> 记为 <span
+class="math inline">\(\vec a^2\)</span></p>
+<p>由定义可知，基向量 <span class="math inline">\(\vec i=(1,0,0),\vec
+j=(0,1,0),\vec k=(0,0,1)\)</span> 的内积为 <span
+class="math inline">\(\vec i^2=\vec j^2=\vec k^2=1\\\vec i\cdot \vec
+j=\vec i\cdot \vec k=\vec j\cdot\vec k=0\)</span></p>
+<p><strong>向量内积的另一种描述</strong></p>
+<p><span class="math inline">\(\vec a\cdot \vec b=\|\vec a\|\|\vec
+b\|\cos \theta=\|\vec a\|\Pr j \vec b=\|\vec b\|\Pr j \vec
+a\)</span></p>
+<p><strong>内积的物理意义</strong>：力所做的功</p>
+<h3 id="二外积">二、外积</h3>
+<p><strong>定义</strong> 向量 <span class="math inline">\(\vec
+a\)</span> 与 <span class="math inline">\(\vec b\)</span> 的外积 <span
+class="math inline">\(a\times b\)</span> 是一个向量</p>
+<ol type="1">
+<li><span class="math inline">\(\| \vec a\times \vec b\|=\|\vec
+a\|\|\vec b\|\sin&lt;\vec a,\vec b&gt;\)</span></li>
+<li><span class="math inline">\(\vec{a}\times \vec{b}\)</span> 与 <span
+class="math inline">\(\vec a,\vec b\)</span> 所确定的平面垂直，且 <span
+class="math inline">\(\vec a,\vec b,\vec a\times \vec b\)</span>
+符合右手系</li>
+</ol>
+<p><strong>外积的性质</strong></p>
+<ol type="1">
+<li><span class="math inline">\(\vec{a}\perp \vec{a}\times \vec{b},
+\vec{b}\perp \vec{a}\times \vec{b}\)</span></li>
+<li><span class="math inline">\(\vec{a}\times \vec{a}=\vec
+0\)</span>，<span class="math inline">\(0\times \vec{a}=0\)</span></li>
+<li><span class="math inline">\(\vec{a} // \vec{b} \Leftrightarrow
+\vec{a}\times \vec{b}=0\)</span></li>
+<li><span class="math inline">\(\vec{a}\times \vec{b}=-\vec{b}\times
+\vec{a}\)</span></li>
+<li><span class="math inline">\((\lambda \vec{a})\times \vec{b}=\lambda
+(\vec{a}\times \vec{b})\)</span></li>
+<li><span class="math inline">\((\vec{a}+\vec{b})\times
+\vec{c}=\vec{a}\times \vec{c}+\vec{b}\times \vec{c}\)</span></li>
+</ol>
+<p><strong>外积的几何意义</strong> <span class="math display">\[
+\begin{aligned}
+&amp;\|\vec{a}\times
+\vec{b}\|=\|\vec{a}\|\|\vec{b}\|\sin&lt;\vec{a},\vec{b}&gt;
+\\
+=&amp;\|\vec{a}\|h
+\\
+=&amp;以 \vec{a},\vec{b} 为邻边的平行四边形面积
+\end{aligned}
+\]</span></p>
+<p><strong>基向量的外积</strong> <span class="math display">\[
+\vec{i}\times \vec j=\vec k,\vec j\times \vec k=\vec{i},\vec k\times
+\vec{i}=\vec j
+\\
+\vec j\times \vec{i}=-\vec k,\vec k\times \vec j=-\vec{i},\vec{i}\times
+\vec k=-\vec j
+\]</span></p>
+<p><strong>利用坐标计算外积</strong></p>
+<p>设 <span
+class="math inline">\(\vec{a}=(a_1,a_2,a_3),\vec{b}=(b_1,b_2,b_3)\)</span>
+则 <span class="math display">\[
+\begin{aligned}
+\vec a\times \vec b
+&amp;=(a_1\vec i+a_2\vec j+a_3\vec k)\times (b_1\vec i+b_2\vec j+b_3\vec
+k)
+\\&amp;=
+(a_2b_3-a_3b_2)\vec i+(a_3b_1-a_1b_3)\vec j+(a_1b_2-a_2b_1)\vec k
+\\&amp;=
+\begin{vmatrix}
+\vec i&amp;\vec j&amp;\vec k\\
+a_1   &amp;a_2   &amp; a_3\\
+b_1  &amp;b_2  &amp;b_3
+\end{vmatrix}
+\end{aligned}
+\]</span></p>
+<h3 id="三混合积">三、混合积</h3>
+<strong>定义</strong> 设已知三个向量 <span class="math inline">\(\vec
+a,\vec b,\vec c\)</span> 数量 <span class="math inline">\((\vec a\times
+\vec b)\cdot \vec c\)</span> 称为这三个向量的混合积，记为 <span
+class="math inline">\([\vec a\vec b\vec c]\)</span> $$
+<span class="math display">\[\begin{aligned}
+\vec a\times \vec b
+&amp;=
+\begin{vmatrix}
+\vec i&amp;\vec j&amp;\vec k\\
+a_1   &amp;a_2   &amp; a_3\\
+b_1  &amp;b_2  &amp;b_3
+\end{vmatrix}
+\\
+&amp;=(a_2b_3-a_3b_2)\vec i+(a_3b_1-a_1b_3)\vec j+(a_1b_2-a_2b_1)\vec k
+
+\\
+[\vec a\vec b\vec c]&amp;=(\vec a\times \vec b)\cdot \vec c
+\\&amp;=(a_2b_3-a_3b_2)c_1+(a_3b_1-a_1b_3)c_2+(a_1b_2-a_2b_1)c_3
+\\&amp;=
+\begin{vmatrix}
+a_1  &amp;a_2 &amp;a_3\\
+b_1  &amp;b_2 &amp;b_3\\
+a_1  &amp;c_2 &amp;c_3
+\end{vmatrix}
+
+
+\end{aligned}\]</span>
+<p>$$</p>
+<p><strong>混合积的几何意义与性质</strong></p>
+<ol type="1">
+<li>向量的混合积 <span class="math inline">\([\vec a\vec b\vec c]=(\vec
+a\times \vec b)\cdot \vec c\)</span>
+是这样的一个数，它的绝对值表示以向量 <span class="math inline">\(\vec
+a,\vec b,\vec c\)</span> 为棱的平行六面体的体积 <span
+class="math inline">\((\vec a\times \vec b)\cdot c=\|\vec a\times \vec
+b\|\|\vec c\|\cos(\vec a\times \vec b,\vec c)\)</span></li>
+<li><span class="math inline">\([\vec a\vec b\vec c]=(\vec a\times \vec
+b)\cdot \vec c=(\vec b\times \vec c)\cdot \vec a=(\vec c\times \vec
+a)\cdot \vec b\)</span></li>
+<li>三向量 <span class="math inline">\(\vec a,\vec b,\vec c\)</span>
+共面 <span class="math inline">\(\Leftrightarrow\)</span> <span
+class="math inline">\([\vec a\vec b\vec c]=0\)</span></li>
+</ol>
+<h2 id="平面">3.3 平面</h2>
+<h3 id="一点法式方程">一、点法式方程</h3>
+<p>平面 <span class="math inline">\(\pi\)</span> 可由 <span
+class="math inline">\(\pi\)</span> 上任意一点和垂直于 <span
+class="math inline">\(\pi\)</span> 的任一向量完全确定，垂直于 <span
+class="math inline">\(\pi\)</span> 的任一向量称为 <span
+class="math inline">\(\pi\)</span> 的<strong>法线向量</strong></p>
+<p>法线向量的<strong>特征</strong>：垂直于平面内任一向量</p>
+<p>设 <span
+class="math inline">\(\vec{n}=(A,B,C),M_0(x_0,y_0,z_0),M(x,y,z)\)</span>
+位平面 <span class="math inline">\(\pi\)</span> 上任一点</p>
+<p>必有 <span class="math inline">\(\vec{M_0M}\perp \vec{n}\Rightarrow
+\vec{M_0M}\cdot \vec n=0\)</span> <span class="math display">\[
+\because M_0M=(x-x_0,y-y_0,z-z_0)
+\\
+\therefore A(x-x_0)+B(y-y_0)+C(z-z_0)=0
+\]</span> 称为平面的<strong>点法式方程</strong></p>
+<p>其中法向量 <span
+class="math inline">\(\vec{n}=(A,B,C)\)</span>，已知点 <span
+class="math inline">\((x_0,y_0,z_0)\)</span></p>
+<h3 id="二一般式方程">二、一般式方程</h3>
+<p>由平面的点法式方程 <span class="math display">\[
+A(x-x_0)+B(y-y_0)+C(z-z_0)=0
+\\\Rightarrow
+Ax+By+Cz-(Ax_0+By_0+z_0)=0
+\]</span> <span class="math inline">\(Ax+By+Cz+D=0\)</span>
+称为<strong>平面的一般方程</strong></p>
+<p>法向量 <span class="math inline">\(\vec{n}=(A,B,C)\)</span></p>
+<p><strong>平面一般方程的几种特殊情况</strong></p>
+<ol type="1">
+<li><span class="math inline">\(D=0\)</span>，平面通过坐标远点</li>
+<li><span class="math inline">\(A=0\)</span>，<span
+class="math inline">\(\begin{cases}D=0,&amp;平面通过\ x\
+轴\\D\neq0,&amp;平面平行于\ x\ 轴\end{cases}\)</span></li>
+<li><span class="math inline">\(A=B=0\)</span>，平面平行于 <span
+class="math inline">\(xoy\)</span> 坐标面</li>
+</ol>
+<h3 id="三截距式方程">三、截距式方程</h3>
+<blockquote>
+<p>例：设平面与 <span class="math inline">\(x,y,z\)</span> 分别交于
+<span
+class="math inline">\(P(a,0,0),Q(0,b,0),R(0,0,c)\)</span>，求此平面方程</p>
+<p>解：设平面为 <span class="math inline">\(Ax+By+Cz=0\)</span></p>
+<p>得 <span
+class="math inline">\(A=-\cfrac{D}{a},B=-\cfrac{D}b,C=-\cfrac
+Dc\)</span></p>
+</blockquote>
+<h3 id="四平面与平面的位置关系">四、平面与平面的位置关系</h3>
+<h4 id="两平面的夹角">两平面的夹角</h4>
+<p><strong>定义</strong>
+两平面法向量之间的夹角称为两平面的夹角（通常取锐角） &gt; 例点 <span
+class="math inline">\(P_0(x_0,y_0,z_0)\)</span> 到平面 <span
+class="math inline">\(Ax+By+Cz+D=0\)</span> 的距离 &gt; &gt; 解 <span
+class="math inline">\(\forall P_1(x_1,y_1,z_1)\in \prod\)</span> &gt;
+&gt; <span class="math inline">\(d=|\Pr
+j_n\vec{P_1P_0}|=\cfrac{|\vec{n}\cdot\vec{P_1P_0}|}{|\vec{n}|}=\cfrac{|Ax_0+By_0+Cz_0-(Ax_1+By_1+Cz_1)|}{\sqrt{A^2+B^2+C^2}}\)</span>
+&gt; &gt; 故 &gt; &gt; <strong>点到平面距离公式</strong> &gt; <span
+class="math display">\[
+&gt; d=\cfrac{|Ax_0+By_0+Cz_0+D|}{\sqrt{A^2+B^2+C^2}}
+&gt; \]</span> &gt;</p>
+<h2 id="空间直线">3.4 空间直线</h2>
+<h3 id="一点向式方程">一、点向式方程</h3>
+<p><strong>方向向量的定义</strong></p>
+<p>如果一非零向量 <span class="math inline">\(\vec{s}\)</span>
+平行与一条已知直线 <span class="math inline">\(L\)</span>，向量 <span
+class="math inline">\(\vec{S}\)</span> 称为直线 <span
+class="math inline">\(L\)</span> 的<strong>方向向量</strong> <span
+class="math display">\[
+M_0(x_0,y_0,z_0),M(x,y,z),
+\\
+\forall M\in L,\vec{M_0M}//\vec s\\
+\vec s=(m,n,p),\vec{M_0M}=(x-x0,y-y_0,z-z_0)
+\\
+\cfrac{x-x_0}m=\cfrac{y-y_0}n=\cfrac{z-z_0}p
+\]</span> 称为<strong>直线的点向式方程</strong></p>
+<p><span class="math inline">\(m,n,p\)</span>
+称为直线的一组<strong>方向数</strong></p>
+<h3 id="二参数式方程">二、参数式方程</h3>
+<p>由点向式方程可得</p>
+<p><span class="math display">\[
+\begin{cases}
+x=\lambda m+x_0\\
+y=\lambda n+y_0\\
+z=\lambda p+z_0\\
+\end{cases}
+\]</span></p>
+<p>称为直线 <span class="math inline">\(l\)</span> 的参数式方程，<span
+class="math inline">\(\lambda\)</span> 称为参数</p>
+<p><strong>直线的两点式方程</strong> <span
+class="math inline">\(l:\cfrac{x-x_1}{x_2-x_1}=\cfrac{y-y_1}{y_2-y_1}=\cfrac{z-z_1}{z_2-z_1}\)</span></p>
+<blockquote>
+<p>例：<span
+class="math inline">\(l:\cfrac{x+3}2=\cfrac{y-2}{0}=z-1\)</span></p>
+<p>说明：</p>
+<ol type="1">
+<li><span class="math inline">\(\vec{s}=(2,0,1)\)</span></li>
+<li><span class="math inline">\(y-2=0\)</span>，即 <span
+class="math inline">\(l\)</span> 在平面 <span
+class="math inline">\(y=2\)</span> 上</li>
+</ol>
+</blockquote>
+<h3 id="三一般式方程">三、一般式方程</h3>
+<p>空间直线可看成两平面的交线 <span class="math display">\[
+\prod_1:A_1x+B_1y+C_1z+D_1=0
+\\
+\prod_2:A_2x+B_2y+C_2z+D_2=0
+\\
+\begin{cases}
+A_1x+B_1y+C_1z+D_1=0
+\\
+A_2x+B_2y+C_2z+D_2=0
+\end{cases}
+\]</span> 称为<strong>空间直线的一般式方程</strong></p>
+<blockquote>
+<p>例：确定直线 <span class="math inline">\(l\)</span> 外一点 <span
+class="math inline">\(M_0(x_0,y_0,z_0)\)</span> 到 <span
+class="math inline">\(l\)</span> 的距离</p>
+<p>解</p>
+<p>设 <span class="math inline">\(M_1(x_1,y_1,z_1)\)</span> 是直线 <span
+class="math inline">\(l\)</span> 上任意一确定的点，<span
+class="math inline">\(M\)</span> 是 <span
+class="math inline">\(l\)</span> 上另一点，且 <span
+class="math inline">\(\vec{M_1M}=\vec{s}=(m,n,p)\)</span></p>
+<p>则直线 <span class="math inline">\(l\)</span> 的方程为 <span
+class="math inline">\(\cfrac{x-x_1}{m}=\cfrac{y-y_1}{n}=\cfrac{z-z_1}{p}\)</span></p>
+<p>平行四边形面积 <span class="math display">\[
+S=\|\vec{M_1M}\times \vec{M_1M_0}\|=\|\vec{s}\times
+\vec{M_1M_0}\|=d\|\vec{s}\|
+\\
+d=\cfrac{\|\vec{s}\times\vec{M_1M_0}\|}{\|\vec{s}\|}
+\]</span></p>
+</blockquote>
+<h3 id="四直线与直线的位置关系">四、直线与直线的位置关系</h3>
+<ol type="1">
+<li><p>两直线的夹角</p>
+<p>两直线 <span class="math inline">\(L_1\)</span> 与 <span
+class="math inline">\(L_2\)</span> 的<strong>方向向量</strong> <span
+class="math inline">\(\vec{S_1}\)</span> 与 <span
+class="math inline">\(\vec{S_2}\)</span> 的夹角（通常指锐角）称为 <span
+class="math inline">\(L_1\)</span> 与 <span
+class="math inline">\(L_2\)</span> 的夹角，记为 <span
+class="math inline">\(&lt;L_1,L_2&gt;\)</span></p>
+<p>直线 <span
+class="math inline">\(L_1:\cfrac{x-x_1}{m_1}=\cfrac{y-y_1}{n_1}=\cfrac{z-z_1}{p_1}\)</span></p>
+<p>直线 <span
+class="math inline">\(L_2:\cfrac{x-x_2}{m_2}=\cfrac{y-y_2}{n_2}=\cfrac{z-z_2}{p_2}\)</span></p></li>
+</ol>
+<p><span class="math display">\[
+\cos&lt;L_1,L_2&gt;=\cfrac{|m_1m_2+n_1n_2+p_1p_2|}{\sqrt{m_1^2+n_1^2+p_1^2}\cdot\sqrt{m_2^2+n_2^2+p_2^2}}
+\]</span></p>
+<ol start="2" type="1">
+<li><p>两直线的位置关系</p>
+<p>直线 <span
+class="math inline">\(L_1:\cfrac{x-x_1}{m_1}=\cfrac{y-y_1}{n_1}=\cfrac{z-z_1}{p_1}\)</span></p>
+<p>直线 <span
+class="math inline">\(L_2:\cfrac{x-x_2}{m_2}=\cfrac{y-y_2}{n_2}=\cfrac{z-z_2}{p_2}\)</span></p>
+<p>它们的方向向量为 <span
+class="math inline">\(\vec{s_1}=(m_1,n_1,p_1),\vec{s_2}=(m_2,n_2,p_2)\)</span>
+设点 <span class="math inline">\(M_1(x_1,y_1,z_1)\)</span> 在直线 <span
+class="math inline">\(L_1\)</span> 上，点 <span
+class="math inline">\(M_2(x_2,y_2,z_2)\)</span> 在直线 <span
+class="math inline">\(L_2\)</span> 上，则有</p>
+<ol type="1">
+<li><span class="math inline">\(L_1\parallel L_2\Leftrightarrow
+\vec{s_1}\parallel \vec{s_2}\nparallel \vec{M_1M_2}\)</span></li>
+<li><span class="math inline">\(L_1\)</span> 与 <span
+class="math inline">\(L_2\)</span> 重合 <span
+class="math inline">\(\Leftrightarrow \vec{s_1}\parallel
+\vec{s_2}\parallel \vec{M_1M_2}\)</span></li>
+<li><span class="math inline">\(L_1\)</span> 与 <span
+class="math inline">\(L_2\)</span> 相交 <span
+class="math inline">\(\Leftrightarrow \vec{s_1}\nparallel \vec{s_2}\and
+[\vec{s_1} \vec{s_2} \vec{M_1M_2}]=0\)</span></li>
+<li><span class="math inline">\(L_1\)</span> 与 <span
+class="math inline">\(L_2\)</span> 异面 <span
+class="math inline">\(\Leftrightarrow \vec{s_1}\nparallel \vec{s_2}\and
+[\vec{s_1} \vec{s_2} \vec{M_1M_2}]\neq 0\)</span></li>
+<li><span class="math inline">\(L_1\perp L_2\Leftrightarrow
+\vec{s_1}\cdot \vec{s_2}=0\)</span></li>
+</ol></li>
+</ol>
+<h3 id="五直线与平面的位置关系">五、直线与平面的位置关系</h3>
+<ol type="1">
+<li><p>直线与平面的夹角</p>
+<p>直线和它在平面上的投影直线的夹角 <span
+class="math inline">\(\phi\)</span> 称为直线与平面的夹角 <span
+class="math display">\[
+0\leq \phi \leq \cfrac{\pi}{2}
+\\
+L:\cfrac{x-x_0}{m}=\cfrac{y-y_0}{n}=\cfrac{z-z_0}{p},\vec{s}=(m,n,p)
+\\
+\prod:Ax+By+Cz+D=0,\vec{n}=(A,B,C)
+\\
+&lt;\vec{s},\vec{n}&gt;=\cfrac{\pi}{2}-\phi\ 或\ \cfrac{\pi}{2}+\phi
+\]</span></p>
+<p><strong>直线与平面的夹角公式</strong> <span class="math display">\[
+\begin{aligned}
+\sin\phi&amp;=\cos(\cfrac{\pi}{2}-\phi)=\cos(\cfrac{\pi}{2}+\phi)
+\\&amp;=\cfrac{|Am+Bn+Cp|}{\sqrt{A^2+B^2+C^2}\cdot\sqrt{m^2+n^2+p^2}}
+\end{aligned}
+\]</span></p></li>
+</ol>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://buzhibujue.cf/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%87%A0%E4%BD%95%E7%A9%BA%E9%97%B4/" title="线性代数与空间解析几何 第三章 几何空间" target="_blank" rel="external">https://buzhibujue.cf/2022/06/21/线性代数与空间解析几何-第三章-几何空间/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/buzhibujuelb" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/buzhibujuelb" target="_blank"><span class="text-dark">不知不觉</span><small class="ml-1x">Acmer &amp; Student</small></a></h3>
+        <div>Never Settle</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E5%9B%9B%E7%AB%A0-n-%E7%BB%B4%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4/" title="线性代数与空间解析几何 第四章 n 维向量空间"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E8%A1%8C%E5%88%97%E5%BC%8F/" title="线性代数与空间解析几何 第二章 行列式"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'dUYIOlsqHv5VgCljRF9mTTtv-gzGzoHsz',
+    appKey: 'HRaJc2h4HiPKBHSGP9lyU5tx',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

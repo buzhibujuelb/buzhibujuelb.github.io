@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>线性代数与空间解析几何 第四章 n 维向量空间 | Imperceptible</title>
+  <meta name="description" content="第四章 \(n\) 维向量空间 4.1 \(n\) 维向量空间的概念 一、\(n\) 维向量空间的概念 \(n\) 个数 \(a_1,a_2,\cdots a_n\) 组成的有序数组称为 \(n\) 维向量，记为 \({\alpha}&#x3D;(a_1,a_2,\cdots a_n)\)，也叫 \(n\) 维行向量，\(a_i\) 称为向量 \(\alpha\) 的第 \(i\) 个分量；称">
+<meta property="og:type" content="article">
+<meta property="og:title" content="线性代数与空间解析几何 第四章 n 维向量空间">
+<meta property="og:url" content="https://buzhibujue.cf/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E5%9B%9B%E7%AB%A0-n-%E7%BB%B4%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4/index.html">
+<meta property="og:site_name" content="Imperceptible">
+<meta property="og:description" content="第四章 \(n\) 维向量空间 4.1 \(n\) 维向量空间的概念 一、\(n\) 维向量空间的概念 \(n\) 个数 \(a_1,a_2,\cdots a_n\) 组成的有序数组称为 \(n\) 维向量，记为 \({\alpha}&#x3D;(a_1,a_2,\cdots a_n)\)，也叫 \(n\) 维行向量，\(a_i\) 称为向量 \(\alpha\) 的第 \(i\) 个分量；称">
+<meta property="og:locale">
+<meta property="article:published_time" content="2022-06-20T16:15:47.000Z">
+<meta property="article:modified_time" content="2022-07-12T17:23:26.439Z">
+<meta property="article:author" content="不知不觉">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://buzhibujue.cf/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E5%9B%9B%E7%AB%A0-n-%E7%BB%B4%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Imperceptible" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    <link href="//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" rel="stylesheet">
+  
+  
+  
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/buzhibujuelb" target="_blank">
+          <img class="img-circle img-rotate" src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">不知不觉</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Acmer &amp; Student</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Chengdu, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools">
+            
+            <i class="icon icon-plus"></i>
+            
+            <span class="menu-title">menu.Tools</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>Never Settle</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HDU/">HDU</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/LOJ/">LOJ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SPOJ/">SPOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UOJ/">UOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B4%9B%E8%B0%B7/">洛谷</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/DP/" style="font-size: 13px;">DP</a> <a href="/tags/FFT/" style="font-size: 13.2px;">FFT</a> <a href="/tags/LCT/" style="font-size: 13px;">LCT</a> <a href="/tags/NTT/" style="font-size: 13.2px;">NTT</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 13px;">二分</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 13px;">凸包</a> <a href="/tags/%E5%8A%A8%E6%80%81DP/" style="font-size: 13px;">动态DP</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 13.2px;">图论</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13px;">字符串</a> <a href="/tags/%E5%AE%B9%E6%96%A5/" style="font-size: 13.4px;">容斥</a> <a href="/tags/%E6%80%9D%E7%BB%B4/" style="font-size: 13.6px;">思维</a> <a href="/tags/%E6%89%A9%E5%9F%9F/" style="font-size: 13px;">扩域</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px;">数学</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 13px;">最短路</a> <a href="/tags/%E6%B0%B4%E9%A2%98/" style="font-size: 13px;">水题</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 13.6px;">物理</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 13px;">线性基</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 13px;">组合数学</a> <a href="/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" style="font-size: 13px;">莫比乌斯反演</a> <a href="/tags/%E8%AE%A1%E6%95%B0/" style="font-size: 13.8px;">计数</a> <a href="/tags/%E9%94%99%E6%8E%92/" style="font-size: 13px;">错排</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 13.6px;">随笔</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%8F%98%E5%8C%96%E7%9A%84%E7%94%B5%E7%A3%81%E5%9C%BA/" class="title">大学物理 变化的电磁场</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:22:53.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%94%B5%E5%AD%A6/" class="title">大学物理 静电学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:21:57.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%A3%81%E5%AD%A6/" class="title">大学物理 静磁学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:37.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6/" class="title">大学物理 刚体力学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:30.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="title">线性代数与空间解析几何 第五章 特征值与特征向量</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:16:32.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-线性代数与空间解析几何-第四章-n-维向量空间" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      线性代数与空间解析几何 第四章 n 维向量空间
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E5%9B%9B%E7%AB%A0-n-%E7%BB%B4%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4/" class="article-date">
+	  <time datetime="2022-06-20T16:15:47.000Z" itemprop="datePublished">2022-06-21</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E5%9B%9B%E7%AB%A0-n-%E7%BB%B4%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4/#comments" class="article-comment-link">Comments</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="第四章-n-维向量空间">第四章 <span
+class="math inline">\(n\)</span> 维向量空间</h1>
+<h2 id="n-维向量空间的概念">4.1 <span class="math inline">\(n\)</span>
+维向量空间的概念</h2>
+<h3 id="一n-维向量空间的概念">一、<span class="math inline">\(n\)</span>
+维向量空间的概念</h3>
+<p><span class="math inline">\(n\)</span> 个数 <span
+class="math inline">\(a_1,a_2,\cdots a_n\)</span> 组成的有序数组称为
+<span class="math inline">\(n\)</span> 维向量，记为 <span
+class="math inline">\({\alpha}=(a_1,a_2,\cdots a_n)\)</span>，也叫 <span
+class="math inline">\(n\)</span> 维行向量，<span
+class="math inline">\(a_i\)</span> 称为向量 <span
+class="math inline">\(\alpha\)</span> 的第 <span
+class="math inline">\(i\)</span> 个分量；称 <span
+class="math inline">\(\beta=\begin{pmatrix}b_1\\b_2\\\vdots\\b_n\end{pmatrix}\)</span>
+为 <span class="math inline">\(n\)</span> 维列向量，<span
+class="math inline">\(b_i\)</span> 称为向量 <span
+class="math inline">\(\beta\)</span> 的第 <span
+class="math inline">\(i\)</span>
+个分量，分量为实数的向量称为实向量，分量为复数的向量称为复向量</p>
+<p><span class="math inline">\(\R^n\)</span> 称为 <span
+class="math inline">\(n\)</span> 维实向量空间</p>
+<p><strong>向量的线性运算</strong> <span class="math display">\[
+\alpha+\beta=(a_1+b_1,a_2+b_2,a_3+b_3)
+\\
+k\cdot \alpha=(k\alpha_1,k\alpha_2,k\alpha_3)
+\]</span></p>
+<h3 id="二rn-的子空间">二、<span class="math inline">\(\R^n\)</span>
+的子空间</h3>
+<p><strong>定义</strong> 设 <span class="math inline">\(\varnothing\neq
+V\subset \R^n\)</span>，如果 <span class="math inline">\(V\)</span> 对于
+<span class="math inline">\(\R^n\)</span>
+的线性运算也构成一个向量空间，那么称 <span
+class="math inline">\(V\)</span> 为 <span
+class="math inline">\(\R^n\)</span> 的一个子空间</p>
+<p><strong>定理1</strong> 设 <span class="math inline">\(V\)</span> 为
+<span class="math inline">\(\R^n\)</span> 的非空子集合，<span
+class="math inline">\(V\)</span> 是 <span
+class="math inline">\(\R^n\)</span> 的一个子空间的充要条件为 <span
+class="math inline">\(V\)</span> 对于 <span
+class="math inline">\(\R^n\)</span> 的加法和数乘运算是封闭的</p>
+<h2 id="向量组合矩阵">4.2 向量组合矩阵</h2>
+<h3 id="一向量组的线性组合">一、向量组的线性组合</h3>
+<h4 id="向量组线性组合的定义">1. 向量组线性组合的定义</h4>
+<p><strong>定义1</strong> 若存在数 <span
+class="math inline">\(k_1,k_2,\cdots k_m\)</span> 使得 <span
+class="math inline">\(\beta=k_1a_1+k_2a+2+\cdots k_ma_m\)</span></p>
+<p>则称向量 <span class="math inline">\(\beta\)</span> 为向量组 <span
+class="math inline">\(a_1,a_2,c\dots a_m\)</span>
+的<strong>线性组合</strong></p>
+<p>或称 <span class="math inline">\(\beta\)</span> 可由 <span
+class="math inline">\(a_1,a_2,c\dots a_m\)</span>
+<strong>线性表出</strong></p>
+<p><span class="math inline">\(L(a_1,a_2,\cdots,a_m):a_1,a_2,\cdots
+a_m\)</span> 线性组合的全体</p>
+<p>若记 <span class="math inline">\(\epsilon_1=(1,0,0,\cdots 0)^{\mathrm
+T},\epsilon_2=(0,1,0,\cdots 0)^{\mathrm T},\epsilon_n=(0,0,\cdots
+1)^{\mathrm T},\)</span></p>
+<p>则 <span class="math inline">\(\R^n=L(\epsilon_1,\epsilon_2,\cdots
+\epsilon_n)\)</span></p>
+<p>即，任一 <span class="math inline">\(n\)</span> 维向量均可由 <span
+class="math inline">\(\epsilon_1,\epsilon_2,\cdots \epsilon_n\)</span>
+线性表出</p>
+<p><span class="math inline">\((x_1,x_2,\cdots
+x_n)=x_1\epsilon_1+x_2\epsilon_2+\cdots +x_n\epsilon_n\)</span></p>
+<p>设 <span class="math inline">\(a_1,a_2,\cdots a_n\in
+\R^n\)</span>，则 <span class="math inline">\(L(a_1,a_2,\cdots
+a_n)\)</span> 为 <span class="math inline">\(R^n\)</span> 的子空间——有
+<span class="math inline">\(a_1,a_2,\cdots a_m\)</span>
+<strong>生成的子空间</strong></p>
+<h4 id="向量组线性组合与非齐次线性方程组的关系">2.
+向量组线性组合与非齐次线性方程组的关系</h4>
+<p><strong>定理1</strong> 设 <span
+class="math inline">\(A=(a_1,a_2,\cdots a_n)\)</span> 则下列命题等价</p>
+<ol type="1">
+<li><span class="math inline">\(b\in L(a_1,a_2,\cdots a_n)\)</span></li>
+<li><span class="math inline">\(AX=b\)</span> 有解</li>
+<li><span class="math inline">\(R(\bar A)=R(A)\)</span></li>
+</ol>
+<p><strong>定义2</strong> 设有两个向量组</p>
+<p>（I）<span class="math inline">\(a_1,a_2,\cdots a_r\)</span></p>
+<p>（II）：<span
+class="math inline">\(\beta_1,\beta_2,\cdots,\beta_s\)</span></p>
+<p>若组（I）中每一个向量都可由组（II）中的向量线性表出，则称组（I）可由组（II）线性表出。若组（I）与组（II）可以互相线性表处，则称组（I）与组（II）等价</p>
+<p>若 <span class="math inline">\(C_{m\times n}=A_{m\times s}B_{s\times
+n}\)</span> 则 <span class="math inline">\(C\)</span> 的列向量组能由矩阵
+<span class="math inline">\(A\)</span> 的列向量组线性表示，<span
+class="math inline">\(B\)</span> 为这一表示但系数矩阵 <span
+class="math display">\[
+(c_1,c_2,\cdots c_n)=(a_1,a_2,\cdots a_s)
+\begin{pmatrix}
+b_{11}&amp;b_{12}&amp;\cdots&amp;b_{1n}\\
+b_{21}&amp;b_{22}&amp;\cdots&amp;b_{2n}\\
+\vdots&amp;\vdots&amp;\cdots&amp;\vdots\\
+b_{s1}&amp;b_{s2}&amp;\cdots&amp;b_{sn}\\
+\end{pmatrix}
+\]</span> 同时 <span class="math inline">\(C\)</span> 的行向量组能由
+<span class="math inline">\(B\)</span> 的行向量组线性表示，<span
+class="math inline">\(A\)</span> 为这一表示的系数矩阵 <span
+class="math display">\[
+\begin{pmatrix}
+\gamma_1^{\mathrm{T}}\\
+\gamma_2^{\mathrm{T}}\\
+\vdots\\
+\gamma_m^{\mathrm{T}}\\
+\end{pmatrix}
+=
+\begin{pmatrix}
+a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1s}\\
+a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2s}\\
+\vdots&amp;\vdots&amp;\cdots&amp;\vdots\\
+a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{ms}\\
+\end{pmatrix}
+\begin{pmatrix}
+\beta_1^{\mathrm{T}}\\
+\beta_2^{\mathrm{T}}\\
+\vdots\\
+\beta_m^{\mathrm{T}}\\
+\end{pmatrix}
+\]</span></p>
+<h3 id="二向量组的线性相关性">二、向量组的线性相关性</h3>
+<h4 id="向量组线性相关性的定义">1.向量组线性相关性的定义</h4>
+<p><strong>定义</strong> 若存在不全为零的数 <span
+class="math inline">\(x_1,x_2,\cdots x_m\)</span> 使得</p>
+<p><span class="math inline">\(x_1a_x+x_2a_x\cdots x_ma_m=0\)</span></p>
+<p>则称 <span class="math inline">\(a_1,a_2,\cdots a_m\)</span>
+线性相关；否则，称 <span class="math inline">\(a_1,a_2,\cdots
+a_m\)</span> 线性无关</p>
+<p><strong>说明</strong></p>
+<ol type="1">
+<li><p>若 <span class="math inline">\(a_1,a_2,\cdots a_m\)</span>
+线性无关，则只有当 <span class="math inline">\(x_1=x_2=\cdots
+x_m=0\)</span> 时，才有 <span class="math inline">\(x_1a_1+x_2a_2+\cdots
+x_ma_m=0\)</span> 成立</p></li>
+<li><p>对于任意向量组，不是线性无关就是线性相关</p></li>
+<li><p>向量组只包含一个向量 <span class="math inline">\(\alpha\)</span>
+时，若 <span class="math inline">\(\alpha=0\)</span> 则说 <span
+class="math inline">\(\alpha\)</span> 线性相关，若 <span
+class="math inline">\(\alpha\neq 0\)</span> 则说 <span
+class="math inline">\(\alpha\)</span> 线性无关</p></li>
+<li><p>包含零向量的任何向量组是线性相关的</p>
+<p><span class="math inline">\(1\times 0+0a_1+\cdots
++0a_m=0\)</span></p></li>
+<li><p>对于含有两个向量的向量组，它线性相关的充要条件是两向量的分量对应成比例，几何意义是两向量共线；三个向量线性相关的几何意义是三向量共勉</p>
+<p>在 <span class="math inline">\(\R^2\)</span> 中，<span
+class="math inline">\(\alpha_1,\alpha_2\)</span> 线性相关 <span
+class="math inline">\(\Leftrightarrow\)</span> <span
+class="math inline">\(\alpha_1\parallel \alpha_2\)</span>（或共线）</p>
+<p>在 <span class="math inline">\(\R^3\)</span> 中，<span
+class="math inline">\(\alpha_1,\alpha_2,\alpha_3\)</span> 线性相关 <span
+class="math inline">\(\Leftrightarrow\)</span> <span
+class="math inline">\(\alpha_1,\alpha_2,\alpha_3\)</span> 共面</p></li>
+</ol>
+<h4 id="线性相关性与齐次线性方程组的关系">2.
+线性相关性与齐次线性方程组的关系</h4>
+<p><strong>定理2</strong> 设有 <span class="math inline">\(m\)</span>
+维向量组 <span class="math inline">\(a_1,a_2,\cdots a_n\)</span>，<span
+class="math inline">\(A=(a_1,a_2,\cdots a_n)\)</span> 则下列命题等价</p>
+<ol type="1">
+<li><span class="math inline">\(a_1,a_2,\cdots a_n\)</span>
+线性相关</li>
+<li><span class="math inline">\(AX=0\)</span> 有非零解</li>
+<li><span class="math inline">\(R(A)&lt;n\)</span></li>
+</ol>
+<p><strong>推论1</strong> 设有 <span class="math inline">\(n\)</span>
+维向量组 <span class="math inline">\(a_1,a_2,\cdots a_n\)</span>，<span
+class="math inline">\(A=(a_1,a_2,\cdots a_n)\)</span> 则下列命题等价</p>
+<ol type="1">
+<li><span class="math inline">\(a_1,a_2,\cdots a_n\)</span>
+线性相关</li>
+<li><span class="math inline">\(AX=0\)</span> 有非零解</li>
+<li><span class="math inline">\(\det A=0\)</span></li>
+</ol>
+<p><strong>推论2</strong> 向量个数&gt;向量维数的向量组必线性相关</p>
+<p>在 <span class="math inline">\(R^n\)</span> 中，任意 <span
+class="math inline">\(n+1\)</span> 个向量必线性相关</p>
+<p><strong>线性相关性的基本定理</strong></p>
+<p><strong>定理3</strong> 若 <span class="math inline">\(a_1,a_2,\cdots
+a_m\)</span> 线性相关，则 <span class="math inline">\(a_1,a_2,\cdots
+a_m,a_{m+1},\cdots a_n\)</span> 线性相关</p>
+<pre><code>**部分相关，则整体相关**</code></pre>
+<p><strong>定理4</strong> <span class="math inline">\(a_1,a_2,\cdots
+a_m(m\geq 2)\)</span> 线性相关的充要条件是其中至少有一个向量可由其余
+<span class="math inline">\(m-1\)</span> 个向量线性表出</p>
+<p><strong>定理5</strong> 若 <span class="math inline">\(a_1,a_2,\cdots
+a_m\)</span> 线性无关，<span class="math inline">\(a_1,a_2,\cdots
+a_m\)</span>，<span class="math inline">\(\beta\)</span> 线性相关，则
+<span class="math inline">\(\beta\)</span> 可由 <span
+class="math inline">\(a_1,a_2\cdots a_m\)</span>
+线性表出，且表示式唯一</p>
+<h2 id="向量的秩与极大无关组">4.3 向量的秩与极大无关组</h2>
+<h3
+id="一向量组的秩与最大无关组的概念及性质">一、向量组的秩与最大无关组的概念及性质</h3>
+<p><strong>定义</strong> 设有向量组 <span
+class="math inline">\(T\)</span>，如果在 <span
+class="math inline">\(T\)</span> 中能选出 <span
+class="math inline">\(r\)</span> 个向量 <span
+class="math inline">\(a_1,a_2,\cdots a_r\)</span> 满足</p>
+<ol type="1">
+<li>向量 <span class="math inline">\(a_1,a_2,\cdots a_r\)</span>
+线性无关</li>
+<li><span class="math inline">\(T\)</span> 中任意 <span
+class="math inline">\(r+1\)</span> 个线性相关</li>
+</ol>
+<p>则称 <span class="math inline">\(a_1,a_2,\cdots a_r\)</span> 是向量组
+<span class="math inline">\(T\)</span> 的一个最大无关组，数 <span
+class="math inline">\(r\)</span> 为向量组 <span
+class="math inline">\(T\)</span> 的秩</p>
+<p><strong>定理1</strong> 若 <span class="math inline">\(A_{m\times
+n}\underrightarrow{行初等变换}B\)</span>，则 <span
+class="math inline">\(A\)</span> 的任意 <span
+class="math inline">\(k\)</span> 个（<span class="math inline">\(1\leq
+k\leq n\)</span>）个列向量与 <span class="math inline">\(B\)</span>
+的对应 <span class="math inline">\(k\)</span>
+个列向量有相同的线性相关性</p>
+<p><strong>定理2</strong> 矩阵的行秩=列秩=矩阵的秩</p>
+<p><strong>定理3</strong> 若向量组 <span
+class="math inline">\(a_1,a_2,\cdots,a_r\)</span> 可由 <span
+class="math inline">\(\beta_1,\beta_2,\cdots,\beta_s\)</span>
+线性表出，且 <span class="math inline">\(a_1,a_2,\cdots,a_r\)</span>
+线性无关，则 <span class="math inline">\(r\leq s\)</span></p>
+<p><strong>推论</strong> 若向量组 <span
+class="math inline">\(a_1,a_2,\cdots,a_r\)</span> 可由 <span
+class="math inline">\(\beta_1,\beta_2,\cdots,\beta_s\)</span>
+线性表出，且 <span class="math inline">\(r&gt;s\)</span>，则 <span
+class="math inline">\(a_1,a_2,\cdots,a_r\)</span> 线性相关</p>
+<p><strong>两向量组秩的关系：</strong></p>
+<pre><code>若向量组 I 可由组 II 线性表出，则组 I 的秩 $r_1\leq$ 组 II 的秩 $r_2$</code></pre>
+<p><strong>定理4</strong> 设 <span
+class="math inline">\(a_{j_1},\cdots,a_{j_r}\)</span> 是 <span
+class="math inline">\(a_1,a_2,\cdots,a_s\)</span>
+的线性无关部分组，它为最大无关组的充要条件是 <span
+class="math inline">\(a_1,a_2,\cdots,a_s\)</span> 中每一个向量均可由
+<span class="math inline">\(a_{j_1},\cdots,a_{j_r}\)</span> 线性表出</p>
+<h3 id="二rn-的基维数与坐标">二、<span
+class="math inline">\(R^n\)</span> 的基、维数与坐标</h3>
+<p><span class="math inline">\(R^n\)</span>：<span
+class="math inline">\(n\)</span> 维向量空间</p>
+<p><span class="math inline">\(R^n\)</span> 的一组基：<span
+class="math inline">\(R^n\)</span> 的一个最大无关组</p>
+<p><span class="math inline">\(R^n\)</span> 的维数（<span
+class="math inline">\(\dim R^n\)</span>）：<span
+class="math inline">\(R^n\)</span> 的秩，<span
+class="math inline">\(\dim R^n=n\)</span></p>
+<p>设 <span
+class="math inline">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span> 为
+<span class="math inline">\(R^n\)</span> 的一组基，则 <span
+class="math inline">\(R^n=L(\alpha_1,\alpha_2,\cdots,\alpha_n)\)</span>，特别地，<span
+class="math inline">\(R^n=L(\epsilon_1,\epsilon_2,\cdots,\epsilon_n)\)</span></p>
+<p><span class="math inline">\(\forall \alpha\in
+R^n,\alpha_1,\alpha_2,\cdots,\alpha_n\)</span> 为一组基， <span
+class="math display">\[
+\alpha=x_1\alpha_1+x_2\alpha_2+\cdots+x_n\alpha_n
+\]</span> 中 <span class="math inline">\((x_1,x_2,\cdots,x_n)\)</span>
+称为 <span class="math inline">\(\alpha\)</span> 在基 <span
+class="math inline">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span>
+下的坐标</p>
+<p>一个向量在确定基下的坐标是唯一的（坐标的唯一性）</p>
+<p>设向量组 <span class="math inline">\(a_1,a_2,\cdots,a_n\)</span> 和
+<span class="math inline">\(\beta_1,\beta_2,\cdots,\beta_n\)</span>
+分别为 <span class="math inline">\(R^n\)</span> 的基，由于 <span
+class="math inline">\(R^n\)</span>
+的任意两组基都是等价的，所以存在可逆矩阵 <span
+class="math inline">\(A\)</span>，使得 <span
+class="math inline">\((\beta_1,\beta_2,\cdots,\beta_n)=(\alpha_1,\alpha_2,\cdots,\alpha_n)A\)</span></p>
+<p>称 <span class="math inline">\(A\)</span> 为从基 <span
+class="math inline">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span> 到基
+<span class="math inline">\(\beta_1,\beta_2,\cdots,\beta_n\)</span>
+的过渡矩阵</p>
+<h2 id="线性方程组解的结构">4.4 线性方程组解的结构</h2>
+<h3 id="一齐次线性方程组">一、齐次线性方程组</h3>
+<p>齐次线性方程组 <span class="math inline">\(AX=0\)</span> 显然有 <span
+class="math inline">\(X=0\)</span> 称为零解</p>
+<p><strong>性质1</strong> 设 <span
+class="math inline">\(\xi_1,\xi_2\)</span> 为齐次线性方程组 <span
+class="math inline">\(AX=0\)</span> 的解，则 <span
+class="math inline">\(X=\xi_1+\xi_2\)</span> 也是 <span
+class="math inline">\(AX=0\)</span> 的解</p>
+<p><strong>性质2</strong> 若 <span class="math inline">\(\xi\)</span>
+为齐次线性方程组 <span class="math inline">\(AX=0\)</span> 的解，<span
+class="math inline">\(k\)</span> 为数，则 <span
+class="math inline">\(X=k\xi\)</span> 也是 <span
+class="math inline">\(AX=0\)</span> 的解</p>
+<p><strong>性质3</strong> 齐次线性方程组 <span
+class="math inline">\(AX=0\)</span> 解向量的线性组合也为 <span
+class="math inline">\(AX=0\)</span> 的解，即设 <span
+class="math inline">\(\xi_1,\xi_2,\cdots ,\xi_s\)</span> 为 <span
+class="math inline">\(AX=0\)</span> 的解，则对任意 <span
+class="math inline">\(s\)</span> 个数 <span
+class="math inline">\(k_1,k_2,\cdots,k_s,k_1\xi_1+k_2\xi_2+\cdots
++k_s\xi_s\)</span> 也是 <span class="math inline">\(AX=0\)</span>
+的解</p>
+<p>将齐次线性方程组 <span class="math inline">\(AX=0\)</span>
+的解的全体记为 <span class="math inline">\(S\)</span>，即 <span
+class="math inline">\(W=\{X\in R^n|AX=0\}\)</span></p>
+<p>由性质 1,2知 <span class="math inline">\(W\)</span> 为 <span
+class="math inline">\(R^n\)</span> 的一个子空间，称为 <span
+class="math inline">\(AX=0\)</span>
+的<strong>解空间</strong>，其任意一组基称为 <span
+class="math inline">\(AX=0\)</span> 的一个<strong>基础解系</strong></p>
+<p><strong>定理</strong> 设齐次线性方程组 <span
+class="math inline">\(AX=0\)</span> 的系数矩阵 <span
+class="math inline">\(A\)</span> 的秩 <span
+class="math inline">\(R(A)=r&lt;n\)</span>，则方程组 <span
+class="math inline">\(AX=0\)</span> 有基础解系且所含解向量个数为 <span
+class="math inline">\(n-r\)</span>，即 <span
+class="math inline">\(W\)</span> 的维数为 <span
+class="math inline">\(n-r\)</span>，这里 <span
+class="math inline">\(n\)</span> 为方程组中未知数的个数</p>
+<h3 id="基础解系的求法">2.基础解系的求法</h3>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://buzhibujue.cf/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E5%9B%9B%E7%AB%A0-n-%E7%BB%B4%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4/" title="线性代数与空间解析几何 第四章 n 维向量空间" target="_blank" rel="external">https://buzhibujue.cf/2022/06/21/线性代数与空间解析几何-第四章-n-维向量空间/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/buzhibujuelb" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/buzhibujuelb" target="_blank"><span class="text-dark">不知不觉</span><small class="ml-1x">Acmer &amp; Student</small></a></h3>
+        <div>Never Settle</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" title="线性代数与空间解析几何 第五章 特征值与特征向量"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%87%A0%E4%BD%95%E7%A9%BA%E9%97%B4/" title="线性代数与空间解析几何 第三章 几何空间"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'dUYIOlsqHv5VgCljRF9mTTtv-gzGzoHsz',
+    appKey: 'HRaJc2h4HiPKBHSGP9lyU5tx',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

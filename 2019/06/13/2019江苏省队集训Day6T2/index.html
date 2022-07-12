@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>2019江苏省队集训Day6T2 | Imperceptible</title>
+  <meta name="description" content="【2019 江苏省队第一轮集训】D6T2 计数  Description 对于一个01 串s, 定义f (s) 为. $ f(s)&#x3D;_{i&#x3D;0}^{-1}$ 其中$[x &#x3D; y] $是个函数, 其定义为 \([x&#x3D;y]&#x3D;\left\{\begin{array}{ll}{1,} &amp; {x&#x3D;y} \\ {0,} &amp; {x \neq y}\end{array}\right">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2019江苏省队集训Day6T2">
+<meta property="og:url" content="https://buzhibujue.cf/2019/06/13/2019%E6%B1%9F%E8%8B%8F%E7%9C%81%E9%98%9F%E9%9B%86%E8%AE%ADDay6T2/index.html">
+<meta property="og:site_name" content="Imperceptible">
+<meta property="og:description" content="【2019 江苏省队第一轮集训】D6T2 计数  Description 对于一个01 串s, 定义f (s) 为. $ f(s)&#x3D;_{i&#x3D;0}^{-1}$ 其中$[x &#x3D; y] $是个函数, 其定义为 \([x&#x3D;y]&#x3D;\left\{\begin{array}{ll}{1,} &amp; {x&#x3D;y} \\ {0,} &amp; {x \neq y}\end{array}\right">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-06-13T05:57:51.000Z">
+<meta property="article:modified_time" content="2022-07-12T17:23:26.289Z">
+<meta property="article:author" content="不知不觉">
+<meta property="article:tag" content="计数">
+<meta property="article:tag" content="NTT">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://buzhibujue.cf/2019/06/13/2019%E6%B1%9F%E8%8B%8F%E7%9C%81%E9%98%9F%E9%9B%86%E8%AE%ADDay6T2/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Imperceptible" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/buzhibujuelb" target="_blank">
+          <img class="img-circle img-rotate" src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">不知不觉</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Acmer &amp; Student</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Chengdu, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools">
+            
+            <i class="icon icon-plus"></i>
+            
+            <span class="menu-title">menu.Tools</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>Never Settle</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HDU/">HDU</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/LOJ/">LOJ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SPOJ/">SPOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UOJ/">UOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B4%9B%E8%B0%B7/">洛谷</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/DP/" style="font-size: 13px;">DP</a> <a href="/tags/FFT/" style="font-size: 13.2px;">FFT</a> <a href="/tags/LCT/" style="font-size: 13px;">LCT</a> <a href="/tags/NTT/" style="font-size: 13.2px;">NTT</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 13px;">二分</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 13px;">凸包</a> <a href="/tags/%E5%8A%A8%E6%80%81DP/" style="font-size: 13px;">动态DP</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 13.2px;">图论</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13px;">字符串</a> <a href="/tags/%E5%AE%B9%E6%96%A5/" style="font-size: 13.4px;">容斥</a> <a href="/tags/%E6%80%9D%E7%BB%B4/" style="font-size: 13.6px;">思维</a> <a href="/tags/%E6%89%A9%E5%9F%9F/" style="font-size: 13px;">扩域</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px;">数学</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 13px;">最短路</a> <a href="/tags/%E6%B0%B4%E9%A2%98/" style="font-size: 13px;">水题</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 13.6px;">物理</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 13px;">线性基</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 13px;">组合数学</a> <a href="/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" style="font-size: 13px;">莫比乌斯反演</a> <a href="/tags/%E8%AE%A1%E6%95%B0/" style="font-size: 13.8px;">计数</a> <a href="/tags/%E9%94%99%E6%8E%92/" style="font-size: 13px;">错排</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 13.6px;">随笔</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%8F%98%E5%8C%96%E7%9A%84%E7%94%B5%E7%A3%81%E5%9C%BA/" class="title">大学物理 变化的电磁场</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:22:53.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%94%B5%E5%AD%A6/" class="title">大学物理 静电学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:21:57.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E9%9D%99%E7%A3%81%E5%AD%A6/" class="title">大学物理 静磁学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:37.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6/" class="title">大学物理 刚体力学</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:19:30.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/21/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="title">线性代数与空间解析几何 第五章 特征值与特征向量</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-20T16:16:32.000Z" itemprop="datePublished">2022-06-21</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-2019江苏省队集训Day6T2" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      2019江苏省队集训Day6T2
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2019/06/13/2019%E6%B1%9F%E8%8B%8F%E7%9C%81%E9%98%9F%E9%9B%86%E8%AE%ADDay6T2/" class="article-date">
+	  <time datetime="2019-06-13T05:57:51.000Z" itemprop="datePublished">2019-06-13</time>
+	</a>
+</span>
+        
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/NTT/" rel="tag">NTT</a>, <a class="article-tag-link-link" href="/tags/%E8%AE%A1%E6%95%B0/" rel="tag">计数</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/06/13/2019%E6%B1%9F%E8%8B%8F%E7%9C%81%E9%98%9F%E9%9B%86%E8%AE%ADDay6T2/#comments" class="article-comment-link">Comments</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="江苏省队第一轮集训d6t2-计数"><a
+target="_blank" rel="noopener" href="https://acm.nflsoj.com/problem/423">【2019
+江苏省队第一轮集训】D6T2 计数</a></h1>
+<blockquote>
+<h3 id="description">Description</h3>
+<p>对于一个01 串s, 定义f (s) 为.</p>
+<p>$ f(s)=_{i=0}^{-1}$</p>
+<p>其中$[x = y] $是个函数, 其定义为</p>
+<p><span class="math inline">\([x=y]=\left\{\begin{array}{ll}{1,} &amp;
+{x=y} \\ {0,} &amp; {x \neq y}\end{array}\right.\)</span></p>
+<p>读入一个串01 串S , 记其所有非空子序列构成的多重集为<span
+class="math inline">\(P(S)\)</span>. 比如<span class="math inline">\(S =
+010\)</span>, 那么<span class="math inline">\(P(S) = [0; 1; 0; 01; 00;
+10; 010]\)</span>. S 一共有$2^{|S|-1} $个不同的非空子序列, 于是有 <span
+class="math inline">\(|P(S )| = 2^{|S|-1}\)</span> . 求<span
+class="math inline">\(\sum_{s\in P(S )} f (s)\)</span> 对$998244353
+<span class="math inline">\(取模后的值. 比如对于\)</span>S = 010<span
+class="math inline">\(, 答案为\)</span>f (0) + f (1) + f (0) + f (01) +
+f (00) + f (10) + f (010) =0 + 0 + 0 + 0 + 1 + 0 + 1 = 2$.</p>
+<h3 id="input">Input</h3>
+<p>从文件$count.in <span class="math inline">\(中读入数据。
+输入第一行读入一个字符串\)</span>S$ .</p>
+<h3 id="output">Output</h3>
+<p>输出到文件$count.out <span class="math inline">\(中。
+输出\)</span>_{sP(S)}f(s)$对$998244353 $取模后的值.</p>
+<h3 id="sample-input">Sample Input</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">010</span><br></pre></td></tr></table></figure>
+<h4 id="sample-output">Sample Output</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="solution">Solution</h3>
+<p>如果按照神仙的题解方式：</p>
+<blockquote>
+<p>贪心即可。</p>
+<p>————《衍芃福音——雅礼集训》第1章——矩阵</p>
+<p>搞出来 dp 就行。 ————《衍芃福音——雅礼集训》第3章——水箱</p>
+<p>李超树板子。</p>
+<p>————《衍芃福音——雅礼集训》第3章——线段游戏</p>
+<p>该怎么 dp 怎么 dp 就行了吧。</p>
+<p>————《衍芃福音——雅礼集训》第10章——数列</p>
+<p><a
+target="_blank" rel="noopener" href="https://blog.csdn.net/qq_35923186/article/details/89408424">原文地址</a></p>
+</blockquote>
+<p>那么就应该是</p>
+<blockquote>
+<p>NTT即可。</p>
+<p>搞出来卷积即可。</p>
+<p>NTT板子。</p>
+<p>该怎么卷积就怎么卷积就行了吧。</p>
+</blockquote>
+<p>。。。</p>
+<p>还是写点我等凡人能看懂的题解：=.=</p>
+<p>有一个套路式子（我考场上就不会太菜了）</p>
+<p><span class="math display">\[
+\begin{align}
+&amp;\sum_{k=0}^{n}\sum_{i=0}^{n}\sum_{j=0}^{n-i}\binom{i}{k}\binom{j}{k}\\
+&amp;=\sum_{i=0}^n\sum_{j=0}^n\binom{i+j}{i}
+\end{align}
+\]</span></p>
+<p>然后枚举一对<span class="math inline">\(A,\ B\ 使得\ S[A]==S[n-B-1]\
+(0base)\)</span>，它们对答案的贡献就是左右各自选相等的若干个，中间的<span
+class="math inline">\(n-2-A-B\)</span>个任意选或者不选，则有 $$ <span
+class="math display">\[\begin{align}
+ans&amp;=\sum_{A=0}^{n-2}\sum_{k=0}^{n-2}\binom{A}{k}\times\sum_{B=0}^{n-2-A}[s[A]=S[n-B-1]]\binom{B}{k}\times2^{n-2-A-B}\\
+&amp;枚举相等的值val\\
+&amp;=\sum_{val=0}^1[S[A]=S[n-B-1]=val]\sum_{k=0}^{n-2}\sum_{A=0}^{n-2}\sum_{B=0}^{n-2-A}\binom{A}{k}\times\binom{B}{k}\times2^{n-2-A-B}\\
+
+&amp;=\sum_{val=0}^1[S[A]=S[n-B-1]=val]\sum_{A=0}^{n-2}\sum_{B=0}^{n-2-A}\binom{A+B}{A}\times2^{n-2-A-B}\\
+
+&amp;=\sum_{val=0}^1[S[A]=S[n-B-1]=val]2^{n-2}\times\sum_{C=A+B=0}^{n-2}\frac{C!}{2^C}\times\sum_{A=0}^{n-2}\frac{1}{A!\times
+(C-A)!}\\
+
+\end{align}\]</span> $$</p>
+<p><del>这下可以说该怎么卷积就怎么卷积了</del></p>
+<p><del>代码里字符串是1base</del></p>
+<h3 id="code">Code</h3>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> FIO <span class="string">&quot;count&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mul3(a,b,c) mul(mul(a,b),c)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">2.5e5</span>+<span class="number">5</span>,MOD=<span class="number">998244353</span>,P=<span class="number">19</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">add</span><span class="params">(<span class="type">int</span> a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">if</span>((a+=b)&gt;=MOD)a-=MOD;<span class="keyword">return</span> a;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">sub</span><span class="params">(<span class="type">int</span> a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">if</span>((a-=b)&lt;		<span class="number">0</span>)a+=MOD;<span class="keyword">return</span> a;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">mul</span><span class="params">(<span class="type">const</span> <span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> <span class="number">1ll</span>*a*b%MOD;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">sqr</span><span class="params">(<span class="type">const</span> <span class="type">int</span> &amp;a)</span></span>&#123;<span class="keyword">return</span> <span class="built_in">mul</span>(a,a);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span>&amp; <span class="title">inc</span><span class="params">(<span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> a=<span class="built_in">add</span>(a,b);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span>&amp; <span class="title">dec</span><span class="params">(<span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> a=<span class="built_in">sub</span>(a,b);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span>&amp; <span class="title">pro</span><span class="params">(<span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> a=<span class="built_in">mul</span>(a,b);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">qpow</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b)</span></span>&#123;<span class="type">int</span> c=<span class="number">1</span>;<span class="keyword">for</span>(;b;b&gt;&gt;=<span class="number">1</span>,<span class="built_in">pro</span>(a,a))<span class="keyword">if</span>(b&amp;<span class="number">1</span>)<span class="built_in">pro</span>(c,a);<span class="keyword">return</span> c;&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> fac[N],inv[N],invc[N],bin[N],invb[N];</span><br><span class="line"><span class="type">int</span> w[<span class="number">2</span>][<span class="number">1</span>&lt;&lt;P],rev[<span class="number">1</span>&lt;&lt;P];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">C</span><span class="params">(<span class="type">const</span> <span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span></span>&#123;<span class="keyword">return</span> a&gt;=b?<span class="built_in">mul3</span>(fac[a],invc[b],invc[a-b]):<span class="number">0</span>;&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n,ans;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">pre</span><span class="params">()</span></span>&#123;</span><br><span class="line">	fac[<span class="number">0</span>]=fac[<span class="number">1</span>]=inv[<span class="number">0</span>]=inv[<span class="number">1</span>]=invc[<span class="number">0</span>]=invc[<span class="number">1</span>]=bin[<span class="number">0</span>]=invb[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">	bin[<span class="number">1</span>]=<span class="number">2</span>;invb[<span class="number">1</span>]=MOD+<span class="number">1</span>&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>;i&lt;=n;i++)fac[i]=<span class="built_in">mul</span>(fac[i<span class="number">-1</span>],i),inv[i]=<span class="built_in">mul</span>(inv[MOD%i],MOD-MOD/i),invc[i]=<span class="built_in">mul</span>(invc[i<span class="number">-1</span>],inv[i]),bin[i]=<span class="built_in">mul</span>(bin[i<span class="number">-1</span>],<span class="number">2</span>),invb[i]=<span class="built_in">mul</span>(invb[i<span class="number">-1</span>],invb[<span class="number">1</span>]);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;<span class="number">1</span>&lt;&lt;P;i&lt;&lt;=<span class="number">1</span>)&#123;</span><br><span class="line">		w[<span class="number">0</span>][i]=w[<span class="number">1</span>][i]=<span class="number">1</span>;</span><br><span class="line">		<span class="type">int</span> wn1=<span class="built_in">qpow</span>(<span class="number">3</span>,(MOD<span class="number">-1</span>)/(i&lt;&lt;<span class="number">1</span>)),wn0=<span class="built_in">qpow</span>(wn1,MOD<span class="number">-2</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;i;j++)</span><br><span class="line">			w[<span class="number">0</span>][i+j]=<span class="built_in">mul</span>(w[<span class="number">0</span>][i+j<span class="number">-1</span>],wn0),w[<span class="number">1</span>][i+j]=<span class="built_in">mul</span>(w[<span class="number">1</span>][i+j<span class="number">-1</span>],wn1);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">ntt</span><span class="params">(<span class="type">int</span> *f,<span class="type">int</span> opt,<span class="type">int</span> l)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;l;i++)&#123;rev[i]=rev[i&gt;&gt;<span class="number">1</span>]&gt;&gt;<span class="number">1</span>|(i&amp;<span class="number">1</span>)*l&gt;&gt;<span class="number">1</span>;<span class="keyword">if</span>(i&lt;rev[i])<span class="built_in">swap</span>(f[i],f[rev[i]]);&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;l;i&lt;&lt;=<span class="number">1</span>)</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;l;j+=i&lt;&lt;<span class="number">1</span>)</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> k=<span class="number">0</span>;k&lt;i;k++)&#123;</span><br><span class="line">				<span class="type">int</span> x=f[j+k],y=<span class="built_in">mul</span>(f[i+j+k],w[opt][i+k]);</span><br><span class="line">				f[j+k]=<span class="built_in">add</span>(x,y);</span><br><span class="line">				f[i+j+k]=<span class="built_in">sub</span>(x,y);</span><br><span class="line">			&#125;</span><br><span class="line">	<span class="keyword">if</span>(opt)<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>,inv=<span class="built_in">qpow</span>(l,MOD<span class="number">-2</span>);i&lt;l;i++)<span class="built_in">pro</span>(f[i],inv);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">char</span> s[N];</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> poly vector<span class="string">&lt;int&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">out</span><span class="params">(<span class="type">const</span> poly &amp;a)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>,n=a.<span class="built_in">size</span>();i&lt;n;i++)<span class="built_in">printf</span>(<span class="string">&quot;%d%c&quot;</span>,a[i],i^n<span class="number">-1</span>?<span class="string">&#x27; &#x27;</span>:<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">inline</span> poly <span class="keyword">operator</span>*(poly a,poly b)&#123;</span><br><span class="line">	<span class="type">int</span> n=a.<span class="built_in">size</span>(),m=b.<span class="built_in">size</span>(),l=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(l&lt;n+m)l&lt;&lt;=<span class="number">1</span>;</span><br><span class="line">	a.<span class="built_in">resize</span>(l);b.<span class="built_in">resize</span>(l);</span><br><span class="line">	<span class="built_in">ntt</span>(&amp;a[<span class="number">0</span>],<span class="number">0</span>,l);<span class="built_in">ntt</span>(&amp;b[<span class="number">0</span>],<span class="number">0</span>,l);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;l;i++)<span class="built_in">pro</span>(a[i],b[i]);</span><br><span class="line">	<span class="built_in">ntt</span>(&amp;a[<span class="number">0</span>],<span class="number">1</span>,l);</span><br><span class="line">	a.<span class="built_in">resize</span>(n+m<span class="number">-1</span>);</span><br><span class="line">	<span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">inline</span> poly&amp; <span class="keyword">operator</span> *=(poly &amp;a,<span class="type">const</span> poly &amp;b)&#123;<span class="keyword">return</span> a=a*b;&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">freopen</span>(FIO<span class="string">&quot;.in&quot;</span>,<span class="string">&quot;r&quot;</span>,stdin);</span><br><span class="line">	<span class="comment">//freopen(FIO&quot;.out&quot;,&quot;w&quot;,stdout);</span></span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>,s+<span class="number">1</span>);</span><br><span class="line">	n=<span class="built_in">strlen</span>(s+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">pre</span>();</span><br><span class="line">	poly f,g;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> val=<span class="number">0</span>;val&lt;<span class="number">2</span>;val++)&#123;</span><br><span class="line">		f.<span class="built_in">clear</span>();</span><br><span class="line">		g.<span class="built_in">clear</span>();</span><br><span class="line">		f.<span class="built_in">resize</span>(n);</span><br><span class="line">		g.<span class="built_in">resize</span>(n);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)f[i]=(s[i+<span class="number">1</span>]==val+<span class="string">&#x27;0&#x27;</span>)?invc[i]:<span class="number">0</span>,g[i]=(s[n-i]==val+<span class="string">&#x27;0&#x27;</span>)?invc[i]:<span class="number">0</span>;</span><br><span class="line">		f*=g;</span><br><span class="line">		f.<span class="built_in">resize</span>(n);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> k=<span class="number">0</span>;k&lt;n<span class="number">-1</span>;k++)</span><br><span class="line">			<span class="built_in">inc</span>(ans,<span class="built_in">mul3</span>(f[k],fac[k],invb[k]));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,<span class="built_in">mul</span>(ans,bin[n<span class="number">-2</span>]));</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://buzhibujue.cf/2019/06/13/2019%E6%B1%9F%E8%8B%8F%E7%9C%81%E9%98%9F%E9%9B%86%E8%AE%ADDay6T2/" title="2019江苏省队集训Day6T2" target="_blank" rel="external">https://buzhibujue.cf/2019/06/13/2019江苏省队集训Day6T2/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/buzhibujuelb" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/buzhibujuelb" target="_blank"><span class="text-dark">不知不觉</span><small class="ml-1x">Acmer &amp; Student</small></a></h3>
+        <div>Never Settle</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2019/06/14/SPOJDIV1CNT/" title="SPOJ DIV1CNT"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2019/04/16/SCOI2019%E6%80%BB%E7%BB%93/" title="SCOI2019总结"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'dUYIOlsqHv5VgCljRF9mTTtv-gzGzoHsz',
+    appKey: 'HRaJc2h4HiPKBHSGP9lyU5tx',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>
