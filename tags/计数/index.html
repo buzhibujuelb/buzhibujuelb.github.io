@@ -358,11 +358,11 @@
           
           <li><a href="/tags/思维/">思维</a></li>
           
+          <li><a href="/tags/二分/">二分</a></li>
+          
           <li><a href="/tags/图论/">图论</a></li>
           
           <li><a href="/tags/最短路/">最短路</a></li>
-          
-          <li><a href="/tags/二分/">二分</a></li>
           
           <li><a href="/tags/数学/">数学</a></li>
           
@@ -374,9 +374,9 @@
           
           <li><a href="/tags/FFT/">FFT</a></li>
           
-          <li><a href="/tags/LCT/">LCT</a></li>
-          
           <li><a href="/tags/水题/">水题</a></li>
+          
+          <li><a href="/tags/LCT/">LCT</a></li>
           
           <li><a href="/tags/物理/">物理</a></li>
           
@@ -656,6 +656,22 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 </body>
 </html>
