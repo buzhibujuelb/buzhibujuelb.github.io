@@ -70,8 +70,8 @@ add_one_pipe: function(x, y) {
 							// Add a row of 6 pipes with a hole somewhere in the middle
 add_row_of_pipes: function() {
 										var hole = Math.floor(Math.random()*5)+1;
-										for (var i = 0; i &lt; 8; i++)
-											if (i != hole &amp;&amp; i != hole +1) 
+										for (var i = 0; i < 8; i++)
+											if (i != hole && i != hole +1) 
 												this.add_one_pipe(800, i*60);   
 										this.score++;
 										this.label_score.content = this.score ;  
