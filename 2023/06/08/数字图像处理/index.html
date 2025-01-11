@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=de>
+<html lang=zh>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,7 +23,7 @@
 <meta property="og:url" content="https://20021123.xyz/2023/06/08/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/index.html">
 <meta property="og:site_name" content="Imperceptible">
 <meta property="og:description" content="一、数字图像处理基础 数字图像的定义 像素组成的二维排列，可以用矩阵表示 数字图像由二维的元素组成，每一个元素具有一个特定的位置  和幅值 ，这些元素就称为像素 对于单色（灰度）图像而言，每个像素的亮度用一个数值来表示，通常数值范围在  到  之间， 表示黑、 表示白，其它值表示处于黑白之间的灰度 彩色图像可以用红、绿、蓝三元组的二维矩阵来表示。通常，三元组的每个数值也是在  到">
-<meta property="og:locale">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2023/06/07/D7Bu86lFQ1OwrHM.png">
 <meta property="og:image" content="https://s2.loli.net/2023/06/07/hr93YeiQK8cJs16.png">
 <meta property="og:image" content="https://s2.loli.net/2023/06/07/3AgvZ8V7yYWNBn1.png">
@@ -274,14 +274,27 @@ mjx-container[display="true"] + br {
       
       <div class="search" id="search-form-wrap">
 
-    <form class="search-form sidebar-form" method="GET" action="https://www.baidu.com/s?">
-	<div class="input-group">
-    	<input name="wd" type="text" class="form-control search-form-input" placeholder="Search" />
-	    <span class="input-group-btn">
-	    	<button type="submit" class=" btn btn-flat search-form-submit"><i class="icon icon-search"></i></button>
-	    </span>
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     </div>
-</form>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
 
 </div>
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
@@ -300,7 +313,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-home-fill"></i>
             
-            <span class="menu-title">Home</span>
+            <span class="menu-title">首页</span>
           </a>
         </li>
         
@@ -310,7 +323,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-archives-fill"></i>
             
-            <span class="menu-title">Archives</span>
+            <span class="menu-title">归档</span>
           </a>
         </li>
         
@@ -320,7 +333,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-folder"></i>
             
-            <span class="menu-title">Categories</span>
+            <span class="menu-title">分类</span>
           </a>
         </li>
         
@@ -330,7 +343,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-tags"></i>
             
-            <span class="menu-title">Tags</span>
+            <span class="menu-title">标签</span>
           </a>
         </li>
         
@@ -340,7 +353,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-project"></i>
             
-            <span class="menu-title">Repository</span>
+            <span class="menu-title">项目</span>
           </a>
         </li>
         
@@ -350,7 +363,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-friendship"></i>
             
-            <span class="menu-title">Links</span>
+            <span class="menu-title">友链</span>
           </a>
         </li>
         
@@ -360,7 +373,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-cup-fill"></i>
             
-            <span class="menu-title">About</span>
+            <span class="menu-title">关于</span>
           </a>
         </li>
         
@@ -370,7 +383,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-book-shelf"></i>
             
-            <span class="menu-title">Tools</span>
+            <span class="menu-title">工具</span>
           </a>
         </li>
         
@@ -380,7 +393,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-delicious"></i>
             
-            <span class="menu-title">Fun</span>
+            <span class="menu-title">有趣</span>
           </a>
         </li>
         
@@ -408,7 +421,7 @@ mjx-container[display="true"] + br {
   <div class="slimContent">
     
       <div class="widget">
-    <h3 class="widget-title">Board</h3>
+    <h3 class="widget-title">公告</h3>
     <div class="widget-body">
         <div id="board">
             <div class="content">
@@ -421,7 +434,7 @@ mjx-container[display="true"] + br {
     
       
   <div class="widget">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">分类</h3>
     <div class="widget-body">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HDU/">HDU</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/LOJ/">LOJ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SPOJ/">SPOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UOJ/">UOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/">概率论与数理统计</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B4%9B%E8%B0%B7/">洛谷</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">计算机体系结构</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">软件工程</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">4</span></li></ul>
     </div>
@@ -431,7 +444,7 @@ mjx-container[display="true"] + br {
     
       
   <div class="widget">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
       <a href="/tags/AI/" style="font-size: 13px;">AI</a> <a href="/tags/DP/" style="font-size: 13px;">DP</a> <a href="/tags/FFT/" style="font-size: 13.17px;">FFT</a> <a href="/tags/KDE/" style="font-size: 13px;">KDE</a> <a href="/tags/LCT/" style="font-size: 13px;">LCT</a> <a href="/tags/Linux/" style="font-size: 13.17px;">Linux</a> <a href="/tags/NTT/" style="font-size: 13.17px;">NTT</a> <a href="/tags/Ubuntu/" style="font-size: 13px;">Ubuntu</a> <a href="/tags/obs/" style="font-size: 13px;">obs</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 13px;">二分</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 13px;">凸包</a> <a href="/tags/%E5%8A%A8%E6%80%81DP/" style="font-size: 13px;">动态DP</a> <a href="/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/" style="font-size: 13.33px;">图形学</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 13.17px;">图论</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13px;">字符串</a> <a href="/tags/%E5%AE%B9%E6%96%A5/" style="font-size: 13.33px;">容斥</a> <a href="/tags/%E6%80%9D%E7%BB%B4/" style="font-size: 13.5px;">思维</a> <a href="/tags/%E6%89%A9%E5%9F%9F/" style="font-size: 13px;">扩域</a> <a href="/tags/%E6%90%9E%E6%9C%BA/" style="font-size: 13px;">搞机</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 13.83px;">操作系统</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px;">数学</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 13px;">数据库</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 13px;">最短路</a> <a href="/tags/%E6%B0%B4%E9%A2%98/" style="font-size: 13px;">水题</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 13.5px;">物理</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 13px;">线性基</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 13px;">组合数学</a> <a href="/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" style="font-size: 13px;">莫比乌斯反演</a> <a href="/tags/%E8%AE%A1%E6%95%B0/" style="font-size: 13.67px;">计数</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" style="font-size: 13.17px;">计算机体系结构</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" style="font-size: 13px;">计算机组成原理</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 13px;">计算机网络</a> <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" style="font-size: 13px;">软件工程</a> <a href="/tags/%E9%94%99%E6%8E%92/" style="font-size: 13px;">错排</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 13.5px;">随笔</a>
     </div>
@@ -440,9 +453,9 @@ mjx-container[display="true"] + br {
     
       
   <div class="widget">
-    <h3 class="widget-title">Archive</h3>
+    <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">六月 2023</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">二月 2023</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">十月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">四月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">5</span></li></ul>
     </div>
   </div>
 
@@ -450,7 +463,7 @@ mjx-container[display="true"] + br {
     
       
   <div class="widget">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">最新文章</h3>
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
@@ -575,15 +588,13 @@ mjx-container[display="true"] + br {
 
 
         
+
 	<span class="article-read hidden-xs">
-	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
-	    <span id="busuanzi_container_page_pv">
-			<span id="busuanzi_value_page_pv">0</span>
-		</span>
-	</span>
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="/2023/06/08/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/" class="leancloud_visitors"  data-flag-title="数字图像处理">0</span>
+    </span>
 
-
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/06/08/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/06/08/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
@@ -1280,7 +1291,7 @@ BLPF，代价是可能产生振铃</li>
 <span class="math display"><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -2.534ex;" xmlns="http://www.w3.org/2000/svg" width="9.377ex" height="6.199ex" role="img" focusable="false" viewBox="0 -1620 4144.8 2740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="mi" transform="translate(748,-150) scale(0.707)"><path data-c="1D445" d="M230 637Q203 637 198 638T193 649Q193 676 204 682Q206 683 378 683Q550 682 564 680Q620 672 658 652T712 606T733 563T739 529Q739 484 710 445T643 385T576 351T538 338L545 333Q612 295 612 223Q612 212 607 162T602 80V71Q602 53 603 43T614 25T640 16Q668 16 686 38T712 85Q717 99 720 102T735 105Q755 105 755 93Q755 75 731 36Q693 -21 641 -21H632Q571 -21 531 4T487 82Q487 109 502 166T517 239Q517 290 474 313Q459 320 449 321T378 323H309L277 193Q244 61 244 59Q244 55 245 54T252 50T269 48T302 46H333Q339 38 339 37T336 19Q332 6 326 0H311Q275 2 180 2Q146 2 117 2T71 2T50 1Q33 1 33 10Q33 12 36 24Q41 43 46 45Q50 46 61 46H67Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628Q287 635 230 637ZM630 554Q630 586 609 608T523 636Q521 636 500 636T462 637H440Q393 637 386 627Q385 624 352 494T319 361Q319 360 388 360Q466 361 492 367Q556 377 592 426Q608 449 619 486T630 554Z"></path></g></g><g data-mml-node="mo" transform="translate(1612.5,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mfrac" transform="translate(2668.2,0)"><g data-mml-node="mrow" transform="translate(220,760)"><g data-mml-node="mpadded"><g data-mml-node="mrow"></g></g><g data-mml-node="mstyle"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mn" transform="translate(633,-150) scale(0.707)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></g></g><g data-mml-node="mrow" transform="translate(220,-820)"><g data-mml-node="mpadded"><g data-mml-node="mrow"></g></g><g data-mml-node="mstyle"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mn" transform="translate(633,-150) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></g></g><rect width="1236.6" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container></span></p>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>n1相对于n2</th>
 <th><span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.373ex;" xmlns="http://www.w3.org/2000/svg" width="3.02ex" height="1.968ex" role="img" focusable="false" viewBox="0 -705 1334.7 869.8"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="mi" transform="translate(748,-150) scale(0.707)"><path data-c="1D445" d="M230 637Q203 637 198 638T193 649Q193 676 204 682Q206 683 378 683Q550 682 564 680Q620 672 658 652T712 606T733 563T739 529Q739 484 710 445T643 385T576 351T538 338L545 333Q612 295 612 223Q612 212 607 162T602 80V71Q602 53 603 43T614 25T640 16Q668 16 686 38T712 85Q717 99 720 102T735 105Q755 105 755 93Q755 75 731 36Q693 -21 641 -21H632Q571 -21 531 4T487 82Q487 109 502 166T517 239Q517 290 474 313Q459 320 449 321T378 323H309L277 193Q244 61 244 59Q244 55 245 54T252 50T269 48T302 46H333Q339 38 339 37T336 19Q332 6 326 0H311Q275 2 180 2Q146 2 117 2T71 2T50 1Q33 1 33 10Q33 12 36 24Q41 43 46 45Q50 46 61 46H67Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628Q287 635 230 637ZM630 554Q630 586 609 608T523 636Q521 636 500 636T462 637H440Q393 637 386 627Q385 624 352 494T319 361Q319 360 388 360Q466 361 492 367Q556 377 592 426Q608 449 619 486T630 554Z"></path></g></g></g></g></svg></mjx-container></span></th>
 <th><span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.339ex;" xmlns="http://www.w3.org/2000/svg" width="3.23ex" height="1.885ex" role="img" focusable="false" viewBox="0 -683 1427.5 833"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D445" d="M230 637Q203 637 198 638T193 649Q193 676 204 682Q206 683 378 683Q550 682 564 680Q620 672 658 652T712 606T733 563T739 529Q739 484 710 445T643 385T576 351T538 338L545 333Q612 295 612 223Q612 212 607 162T602 80V71Q602 53 603 43T614 25T640 16Q668 16 686 38T712 85Q717 99 720 102T735 105Q755 105 755 93Q755 75 731 36Q693 -21 641 -21H632Q571 -21 531 4T487 82Q487 109 502 166T517 239Q517 290 474 313Q459 320 449 321T378 323H309L277 193Q244 61 244 59Q244 55 245 54T252 50T269 48T302 46H333Q339 38 339 37T336 19Q332 6 326 0H311Q275 2 180 2Q146 2 117 2T71 2T50 1Q33 1 33 10Q33 12 36 24Q41 43 46 45Q50 46 61 46H67Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628Q287 635 230 637ZM630 554Q630 586 609 608T523 636Q521 636 500 636T462 637H440Q393 637 386 627Q385 624 352 494T319 361Q319 360 388 360Q466 361 492 367Q556 377 592 426Q608 449 619 486T630 554Z"></path></g><g data-mml-node="mi" transform="translate(792,-150) scale(0.707)"><path data-c="1D437" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path></g></g></g></g></svg></mjx-container></span></th>
@@ -1288,19 +1299,19 @@ BLPF，代价是可能产生振铃</li>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>n1 = n2</td>
 <td>1</td>
 <td>0</td>
 <td>第1种表达相对第2种表达不含冗余数据</td>
 </tr>
-<tr class="even">
+<tr>
 <td>n1 &gt;&gt; n2</td>
 <td>∞</td>
 <td>1</td>
 <td>第1种数据集合包含相当多的冗余数据</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>n1 &lt;&lt; n2</td>
 <td>0</td>
 <td>∞</td>
@@ -1498,19 +1509,19 @@ Predictive Coding)</h4>
 <col style="width: 33%">
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>原始图像</th>
 <th>膨胀</th>
 <th>腐蚀</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><img src="https://s2.loli.net/2023/06/07/9wQJgWR2TXnbs7j.png" alt="image-20230607003116211"></td>
 <td><img src="https://s2.loli.net/2023/06/07/XNoU5zf3TBpDGhj.png" alt="image-20230607003120315"></td>
 <td><img src="https://s2.loli.net/2023/06/07/QG4AyfuEUdPx1C2.png" alt="image-20230607003124419"></td>
 </tr>
-<tr class="even">
+<tr>
 <td><img src="https://s2.loli.net/2023/06/07/vPXtFaq12LMsIVC.png" alt="image-20230607003148732"></td>
 <td><img src="https://s2.loli.net/2023/06/07/iV7rO6SDbChwWyI.png" alt="image-20230607003155853"></td>
 <td><img src="https://s2.loli.net/2023/06/07/K3mO7ztVkIYHagc.png" alt="image-20230607003152044"></td>
@@ -1797,12 +1808,12 @@ R1,R2,…,Rn，这些子区域满足5个条件：</p>
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2023/06/08/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/" title="数据库原理及应用"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+      <a href="/2023/06/08/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/" title="数据库原理及应用"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2023/06/08/%E5%9B%BE%E5%BD%A2%E4%B8%8E%E5%8A%A8%E7%94%BB/" title="图形与动画"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2023/06/08/%E5%9B%BE%E5%BD%A2%E4%B8%8E%E5%8A%A8%E7%94%BB/" title="图形与动画"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
@@ -1853,29 +1864,37 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <script src="/js/application.js"></script>
 
 
-
     <script>
-(function ($) {
-    $('.search-form').on('submit', function (e) {
-        var keyword = $('.search-form-input[name="wd"]').val();
-        window.location = 'https://www.baidu.com/s?wd=site:20021123.xyz ' + keyword;
-        return false;
-    });
-})(jQuery);
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
 </script>
+
+<script src="/js/insight.js"></script>
+
+
 
 
 
    
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
 
 
 
 
    
     
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/valine"></script>
   <script type="text/javascript">
   var GUEST = ['nick', 'mail', 'link'];
@@ -1886,14 +1905,15 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
   new Valine({
     el: '#vcomments',
     verify: false,
-    notify: false,
-    appId: 'ns7UbkfnGckm0biBwL2VtZ5o-9Nh9j0Va',
-    appKey: 'q4V6fRWfb8MlF0mjRuPc2VbF',
+    notify: true,
+    appId: 'Lg7JjXKw5FflnXYC347uVprV-MdYXbMMI',
+    appKey: 'fLDKVrreL9skeVgqrZV80eh4',
     placeholder: 'Just go go',
     avatar: 'mm',
     meta: meta,
     pageSize: '10' || 10,
-    visitor: false
+    visitor: true,
+    serverURLs: 'https://lg7jjxkw.api.lncldglobal.com'
   });
   </script>
 

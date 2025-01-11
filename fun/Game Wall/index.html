@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Wall</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <button class="icon-button" id="sortToggle"><i class="fas fa-list"></i></button>
+  <button class="icon-button" id="toggleDarkMode"><i class="fas fa-moon"></i></button>
+  <div class="sort-menu" id="sortMenu">
+    <button id="sortByName"><i class="fas fa-font"></i></button>
+    <button id="sortByRating"><i class="fas fa-star"></i></button>
+    <button id="sortByDate"><i class="fas fa-calendar-alt"></i></button>
+  </div>
+</div>
+
+<div class="game-grid" id="gameGrid"></div>
+
+<div class="modal" id="gameModal">
+  <div class="modal-content" id="modalContent"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=de>
+<html lang=zh>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,7 +23,7 @@
 <meta property="og:url" content="https://20021123.xyz/2023/06/08/%E5%9B%BE%E5%BD%A2%E4%B8%8E%E5%8A%A8%E7%94%BB/index.html">
 <meta property="og:site_name" content="Imperceptible">
 <meta property="og:description" content="一、计算机动画 动画：运动（活动）的画面（图像）  动画是通过连续播放一系列画面，给人的视觉造成连续变化的效果 二维动画：通过设计和绘制二维图形或图像而生成的动画 三维动画：通过构造并直接控制三维模型运动而生成的动画  动画片的基本原理和基本概念  视觉暂留原理：人的眼睛看到一幅画或一个物体后，大约在  秒内不会消失 利用视觉暂留原理，在一幅画还没有消失前播放下一幅画，就会给人">
-<meta property="og:locale">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2023/06/07/ueRD9Fl3rCV8XOm.png">
 <meta property="og:image" content="https://s2.loli.net/2023/06/07/TacgyEvDY5XSOwA.png">
 <meta property="og:image" content="https://s2.loli.net/2023/06/07/wHP2eBzdnLImNEU.png">
@@ -216,14 +216,27 @@ mjx-container[display="true"] + br {
       
       <div class="search" id="search-form-wrap">
 
-    <form class="search-form sidebar-form" method="GET" action="https://www.baidu.com/s?">
-	<div class="input-group">
-    	<input name="wd" type="text" class="form-control search-form-input" placeholder="Search" />
-	    <span class="input-group-btn">
-	    	<button type="submit" class=" btn btn-flat search-form-submit"><i class="icon icon-search"></i></button>
-	    </span>
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     </div>
-</form>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
 
 </div>
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
@@ -242,7 +255,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-home-fill"></i>
             
-            <span class="menu-title">Home</span>
+            <span class="menu-title">首页</span>
           </a>
         </li>
         
@@ -252,7 +265,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-archives-fill"></i>
             
-            <span class="menu-title">Archives</span>
+            <span class="menu-title">归档</span>
           </a>
         </li>
         
@@ -262,7 +275,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-folder"></i>
             
-            <span class="menu-title">Categories</span>
+            <span class="menu-title">分类</span>
           </a>
         </li>
         
@@ -272,7 +285,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-tags"></i>
             
-            <span class="menu-title">Tags</span>
+            <span class="menu-title">标签</span>
           </a>
         </li>
         
@@ -282,7 +295,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-project"></i>
             
-            <span class="menu-title">Repository</span>
+            <span class="menu-title">项目</span>
           </a>
         </li>
         
@@ -292,7 +305,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-friendship"></i>
             
-            <span class="menu-title">Links</span>
+            <span class="menu-title">友链</span>
           </a>
         </li>
         
@@ -302,7 +315,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-cup-fill"></i>
             
-            <span class="menu-title">About</span>
+            <span class="menu-title">关于</span>
           </a>
         </li>
         
@@ -312,7 +325,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-book-shelf"></i>
             
-            <span class="menu-title">Tools</span>
+            <span class="menu-title">工具</span>
           </a>
         </li>
         
@@ -322,7 +335,7 @@ mjx-container[display="true"] + br {
             
             <i class="icon icon-delicious"></i>
             
-            <span class="menu-title">Fun</span>
+            <span class="menu-title">有趣</span>
           </a>
         </li>
         
@@ -350,7 +363,7 @@ mjx-container[display="true"] + br {
   <div class="slimContent">
     
       <div class="widget">
-    <h3 class="widget-title">Board</h3>
+    <h3 class="widget-title">公告</h3>
     <div class="widget-body">
         <div id="board">
             <div class="content">
@@ -363,7 +376,7 @@ mjx-container[display="true"] + br {
     
       
   <div class="widget">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">分类</h3>
     <div class="widget-body">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HDU/">HDU</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/LOJ/">LOJ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SPOJ/">SPOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UOJ/">UOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/">概率论与数理统计</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B4%9B%E8%B0%B7/">洛谷</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">计算机体系结构</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">软件工程</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">4</span></li></ul>
     </div>
@@ -373,7 +386,7 @@ mjx-container[display="true"] + br {
     
       
   <div class="widget">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
       <a href="/tags/AI/" style="font-size: 13px;">AI</a> <a href="/tags/DP/" style="font-size: 13px;">DP</a> <a href="/tags/FFT/" style="font-size: 13.17px;">FFT</a> <a href="/tags/KDE/" style="font-size: 13px;">KDE</a> <a href="/tags/LCT/" style="font-size: 13px;">LCT</a> <a href="/tags/Linux/" style="font-size: 13.17px;">Linux</a> <a href="/tags/NTT/" style="font-size: 13.17px;">NTT</a> <a href="/tags/Ubuntu/" style="font-size: 13px;">Ubuntu</a> <a href="/tags/obs/" style="font-size: 13px;">obs</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 13px;">二分</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 13px;">凸包</a> <a href="/tags/%E5%8A%A8%E6%80%81DP/" style="font-size: 13px;">动态DP</a> <a href="/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/" style="font-size: 13.33px;">图形学</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 13.17px;">图论</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13px;">字符串</a> <a href="/tags/%E5%AE%B9%E6%96%A5/" style="font-size: 13.33px;">容斥</a> <a href="/tags/%E6%80%9D%E7%BB%B4/" style="font-size: 13.5px;">思维</a> <a href="/tags/%E6%89%A9%E5%9F%9F/" style="font-size: 13px;">扩域</a> <a href="/tags/%E6%90%9E%E6%9C%BA/" style="font-size: 13px;">搞机</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 13.83px;">操作系统</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px;">数学</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 13px;">数据库</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 13px;">最短路</a> <a href="/tags/%E6%B0%B4%E9%A2%98/" style="font-size: 13px;">水题</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 13.5px;">物理</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 13px;">线性基</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 13px;">组合数学</a> <a href="/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" style="font-size: 13px;">莫比乌斯反演</a> <a href="/tags/%E8%AE%A1%E6%95%B0/" style="font-size: 13.67px;">计数</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" style="font-size: 13.17px;">计算机体系结构</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" style="font-size: 13px;">计算机组成原理</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 13px;">计算机网络</a> <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" style="font-size: 13px;">软件工程</a> <a href="/tags/%E9%94%99%E6%8E%92/" style="font-size: 13px;">错排</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 13.5px;">随笔</a>
     </div>
@@ -382,9 +395,9 @@ mjx-container[display="true"] + br {
     
       
   <div class="widget">
-    <h3 class="widget-title">Archive</h3>
+    <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">六月 2023</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">二月 2023</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">十月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">四月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">5</span></li></ul>
     </div>
   </div>
 
@@ -392,7 +405,7 @@ mjx-container[display="true"] + br {
     
       
   <div class="widget">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">最新文章</h3>
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
@@ -517,15 +530,13 @@ mjx-container[display="true"] + br {
 
 
         
+
 	<span class="article-read hidden-xs">
-	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
-	    <span id="busuanzi_container_page_pv">
-			<span id="busuanzi_value_page_pv">0</span>
-		</span>
-	</span>
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="/2023/06/08/%E5%9B%BE%E5%BD%A2%E4%B8%8E%E5%8A%A8%E7%94%BB/" class="leancloud_visitors"  data-flag-title="图形与动画">0</span>
+    </span>
 
-
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/06/08/%E5%9B%BE%E5%BD%A2%E4%B8%8E%E5%8A%A8%E7%94%BB/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/06/08/%E5%9B%BE%E5%BD%A2%E4%B8%8E%E5%8A%A8%E7%94%BB/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
@@ -805,44 +816,44 @@ partitioning），每次将空间分成两部分
 </ol>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>索引</th>
 <th>路径方程参数值 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.294ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 572 453"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D462" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container></span></th>
 <th>路径长度 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.023ex;" xmlns="http://www.w3.org/2000/svg" width="1.061ex" height="1.023ex" role="img" focusable="false" viewBox="0 -442 469 452"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g></g></g></svg></mjx-container></span></th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>0</td>
 <td>0.00</td>
 <td>0.000</td>
 </tr>
-<tr class="even">
+<tr>
 <td>…</td>
 <td>…</td>
 <td>…</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>8</td>
 <td>0.40</td>
 <td>0.720</td>
 </tr>
-<tr class="even">
+<tr>
 <td>9</td>
 <td>0.45</td>
 <td>0.800</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>…</td>
 <td>…</td>
 <td>…</td>
 </tr>
-<tr class="even">
+<tr>
 <td>14</td>
 <td>0.70</td>
 <td>0.944</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>15</td>
 <td>0.75</td>
 <td>0.959</td>
@@ -1930,12 +1941,12 @@ P(x,y,t)=
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2023/06/08/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/" title="数字图像处理"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+      <a href="/2023/06/08/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/" title="数字图像处理"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2023/02/25/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" title="软件工程"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2023/02/25/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" title="软件工程"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
@@ -1986,29 +1997,37 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <script src="/js/application.js"></script>
 
 
-
     <script>
-(function ($) {
-    $('.search-form').on('submit', function (e) {
-        var keyword = $('.search-form-input[name="wd"]').val();
-        window.location = 'https://www.baidu.com/s?wd=site:20021123.xyz ' + keyword;
-        return false;
-    });
-})(jQuery);
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
 </script>
+
+<script src="/js/insight.js"></script>
+
+
 
 
 
    
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
 
 
 
 
    
     
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/valine"></script>
   <script type="text/javascript">
   var GUEST = ['nick', 'mail', 'link'];
@@ -2019,14 +2038,15 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
   new Valine({
     el: '#vcomments',
     verify: false,
-    notify: false,
-    appId: 'ns7UbkfnGckm0biBwL2VtZ5o-9Nh9j0Va',
-    appKey: 'q4V6fRWfb8MlF0mjRuPc2VbF',
+    notify: true,
+    appId: 'Lg7JjXKw5FflnXYC347uVprV-MdYXbMMI',
+    appKey: 'fLDKVrreL9skeVgqrZV80eh4',
     placeholder: 'Just go go',
     avatar: 'mm',
     meta: meta,
     pageSize: '10' || 10,
-    visitor: false
+    visitor: true,
+    serverURLs: 'https://lg7jjxkw.api.lncldglobal.com'
   });
   </script>
 
