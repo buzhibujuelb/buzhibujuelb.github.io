@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>C 语言程序设计 现代方法 | Imperceptible</title>
+  <meta name="description" content="C 语言程序设计 现代方法 第十四章 预处理器 14.3 宏定义 # 运算符将宏的一个参数转换为字面串。 123#DEFINE PRINT_INT(n) printf(#n &quot;&#x3D;%d\n&quot;, n)PRINT_INT(i&#x2F;j); ## 运算符将两个记号（如标识符）“粘合”在一起，成为一个记号。若其中一个参数是宏参数，“粘合”会在形参被相应的实参替换后发生 123#define MK_I">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C 语言程序设计 现代方法">
+<meta property="og:url" content="https://20021123.xyz/2025/02/05/C-%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E7%8E%B0%E4%BB%A3%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:site_name" content="Imperceptible">
+<meta property="og:description" content="C 语言程序设计 现代方法 第十四章 预处理器 14.3 宏定义 # 运算符将宏的一个参数转换为字面串。 123#DEFINE PRINT_INT(n) printf(#n &quot;&#x3D;%d\n&quot;, n)PRINT_INT(i&#x2F;j); ## 运算符将两个记号（如标识符）“粘合”在一起，成为一个记号。若其中一个参数是宏参数，“粘合”会在形参被相应的实参替换后发生 123#define MK_I">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-02-04T18:03:14.000Z">
+<meta property="article:modified_time" content="2025-02-04T18:03:59.914Z">
+<meta property="article:author" content="不知不觉">
+<meta property="article:tag" content="总结">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://20021123.xyz/2025/02/05/C-%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E7%8E%B0%E4%BB%A3%E6%96%B9%E6%B3%95/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Imperceptible" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+  
+<meta name="generator" content="Hexo 6.2.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/buzhibujuelb" target="_blank">
+          <img class="img-circle img-rotate" src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">不知不觉</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Acmer &amp; Student</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Chengdu, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">项目</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">友链</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">关于</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools">
+            
+            <i class="icon icon-book-shelf"></i>
+            
+            <span class="menu-title">工具</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-fun">
+          <a href="/fun">
+            
+            <i class="icon icon-delicious"></i>
+            
+            <span class="menu-title">有趣</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>Never Settle</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HDU/">HDU</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/LOJ/">LOJ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SPOJ/">SPOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UOJ/">UOJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/">概率论与数理统计</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B4%9B%E8%B0%B7/">洛谷</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">计算机体系结构</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">软件工程</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/AI/" style="font-size: 13px;">AI</a> <a href="/tags/DP/" style="font-size: 13px;">DP</a> <a href="/tags/FFT/" style="font-size: 13.17px;">FFT</a> <a href="/tags/KDE/" style="font-size: 13px;">KDE</a> <a href="/tags/LCT/" style="font-size: 13px;">LCT</a> <a href="/tags/Linux/" style="font-size: 13.17px;">Linux</a> <a href="/tags/NTT/" style="font-size: 13.17px;">NTT</a> <a href="/tags/Ubuntu/" style="font-size: 13px;">Ubuntu</a> <a href="/tags/obs/" style="font-size: 13px;">obs</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 13px;">二分</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 13px;">凸包</a> <a href="/tags/%E5%8A%A8%E6%80%81DP/" style="font-size: 13px;">动态DP</a> <a href="/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/" style="font-size: 13.33px;">图形学</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 13.17px;">图论</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13px;">字符串</a> <a href="/tags/%E5%AE%B9%E6%96%A5/" style="font-size: 13.33px;">容斥</a> <a href="/tags/%E6%80%9D%E7%BB%B4/" style="font-size: 13.5px;">思维</a> <a href="/tags/%E6%80%BB%E7%BB%93/" style="font-size: 13px;">总结</a> <a href="/tags/%E6%89%A9%E5%9F%9F/" style="font-size: 13px;">扩域</a> <a href="/tags/%E6%90%9E%E6%9C%BA/" style="font-size: 13px;">搞机</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 13.83px;">操作系统</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px;">数学</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 13px;">数据库</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 13px;">最短路</a> <a href="/tags/%E6%B0%B4%E9%A2%98/" style="font-size: 13px;">水题</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 13.5px;">物理</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 13px;">线性基</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 13px;">组合数学</a> <a href="/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" style="font-size: 13px;">莫比乌斯反演</a> <a href="/tags/%E8%AE%A1%E6%95%B0/" style="font-size: 13.67px;">计数</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" style="font-size: 13.17px;">计算机体系结构</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" style="font-size: 13px;">计算机组成原理</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 13px;">计算机网络</a> <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" style="font-size: 13px;">软件工程</a> <a href="/tags/%E9%94%99%E6%8E%92/" style="font-size: 13px;">错排</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 13.5px;">随笔</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/02/">二月 2025</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">六月 2023</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">二月 2023</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">十月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">四月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2025/02/05/C-%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E7%8E%B0%E4%BB%A3%E6%96%B9%E6%B3%95/" class="title">C 语言程序设计 现代方法</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2025-02-04T18:03:14.000Z" itemprop="datePublished">2025-02-05</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><i class="icon icon-angle-right"></i><a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
+              </p>
+              <p class="item-title">
+                <a href="/2023/06/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="title">计算机网络</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2023-06-28T15:27:14.000Z" itemprop="datePublished">2023-06-28</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a>
+              </p>
+              <p class="item-title">
+                <a href="/2023/06/25/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E7%AC%AC%E5%85%AB%E7%AB%A0-%E7%A3%81%E7%9B%98%E5%AD%98%E5%82%A8%E5%99%A8%E7%9A%84%E7%AE%A1%E7%90%86/" class="title">操作系统 第八章 磁盘存储器的管理</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2023-06-25T07:20:25.000Z" itemprop="datePublished">2023-06-25</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a>
+              </p>
+              <p class="item-title">
+                <a href="/2023/06/25/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/" class="title">操作系统 第七章 文件管理</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2023-06-25T07:19:25.000Z" itemprop="datePublished">2023-06-25</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a>
+              </p>
+              <p class="item-title">
+                <a href="/2023/06/25/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E7%AC%AC%E5%85%AD%E7%AB%A0-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/" class="title">操作系统 第六章 输入输出系统</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2023-06-25T07:19:25.000Z" itemprop="datePublished">2023-06-25</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-C-语言程序设计-现代方法" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      C 语言程序设计 现代方法
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2025/02/05/C-%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E7%8E%B0%E4%BB%A3%E6%96%B9%E6%B3%95/" class="article-date">
+	  <time datetime="2025-02-04T18:03:14.000Z" itemprop="datePublished">2025-02-05</time>
+	</a>
+</span>
+        
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E6%80%BB%E7%BB%93/" rel="tag">总结</a>
+  </span>
+
+
+        
+
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="/2025/02/05/C-%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E7%8E%B0%E4%BB%A3%E6%96%B9%E6%B3%95/" class="leancloud_visitors"  data-flag-title="C 语言程序设计 现代方法">0</span>
+    </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2025/02/05/C-%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E7%8E%B0%E4%BB%A3%E6%96%B9%E6%B3%95/#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="c-语言程序设计-现代方法">C 语言程序设计 现代方法</h1>
+<h2 id="第十四章-预处理器">第十四章 预处理器</h2>
+<h3 id="宏定义">14.3 宏定义</h3>
+<p># 运算符将宏的一个参数转换为字面串。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#DEFINE <span class="title function_">PRINT_INT</span><span class="params">(n)</span> <span class="title function_">printf</span><span class="params">(#n <span class="string">"=%d\n"</span>, n)</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">PRINT_INT</span><span class="params">(i/j)</span>;</span><br></pre></td></tr></table></figure>
+<p>##
+运算符将两个记号（如标识符）“粘合”在一起，成为一个记号。若其中一个参数是宏参数，“粘合”会在形参被相应的实参替换后发生</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> MK_ID(n)i##n</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">MK_ID</span><span class="params">(<span class="number">1</span>)</span>,<span class="title function_">MK_ID</span><span class="params">(<span class="number">2</span>)</span>,<span class="title function_">MK_ID</span><span class="params">(<span class="number">3</span>)</span>;</span><br></pre></td></tr></table></figure>
+<p>预处理后变成</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i1,i2,i3;</span><br></pre></td></tr></table></figure>
+<p>另一种用法</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> GENERIC_MAX(type) \</span></span><br><span class="line"><span class="meta">type type##_max(type x,type y) \</span></span><br><span class="line"><span class="meta">{	\</span></span><br><span class="line"><span class="meta">	return x&gt;y?x:y; \</span></span><br><span class="line"><span class="meta">}</span></span><br><span class="line"></span><br><span class="line">GENERIC_MAX(<span class="type">float</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> TEST(condition, ...) ((condition)? \</span></span><br><span class="line"><span class="meta">	printf(<span class="string">"Passed test: %s\n"</span>, #condition): \</span></span><br><span class="line"><span class="meta">	printf(__VA_ARGS))</span></span><br><span class="line">TEST(voltage &lt;=max_voltage, <span class="string">"Vlotage %d exceeds %d\n"</span>, vlotage, max_voltage)</span><br></pre></td></tr></table></figure>
+<p><code>__VA_ARGS__</code>
+是一个专用的标识符，出现在具有可变参数个数的宏的替换列表中，代表所有与省略号相对应的参数。</p>
+<h2 id="第十六章-结构联合和枚举">第十六章 结构、联合和枚举</h2>
+<h3 id="联合">16.4 联合</h3>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">union</span> {</span></span><br><span class="line">	<span class="type">int</span> i;</span><br><span class="line">	<span class="type">double</span> d;</span><br><span class="line">} u;</span><br></pre></td></tr></table></figure>
+<h3 id="枚举">16.5 枚举</h3>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">suit</span>{</span></span><br><span class="line">	CLUBS,</span><br><span class="line">	DIAMONDS,</span><br><span class="line">	HEARTS,</span><br><span class="line">	SPADES</span><br><span class="line">} s1,s2;</span><br></pre></td></tr></table></figure>
+<h2 id="第十七章-指针的高级运用">第十七章 指针的高级运用</h2>
+<h3 id="动态分配数组">17.3 动态分配数组</h3>
+<p>malloc 函数</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> *<span class="title function_">malloc</span><span class="params">(<span class="type">size_t</span> size)</span></span><br></pre></td></tr></table></figure>
+<p>calloc 函数</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> *<span class="title function_">calloc</span><span class="params">(<span class="type">size_t</span> nmemb, <span class="type">size_t</span> size)</span></span><br></pre></td></tr></table></figure>
+<p>为 <code>nmemb</code> 个元素的数组分配空间，每个元素长度都是
+<code>size</code> 字节</p>
+<p>分配后，会把所有位置 0</p>
+<p>realloc 函数</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> *<span class="title function_">realloc</span><span class="params">(<span class="type">void</span> *ptr, <span class="type">size_t</span> size)</span></span><br></pre></td></tr></table></figure>
+<h3 id="链表">17.5 链表</h3>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span>{</span></span><br><span class="line">	<span class="type">int</span> value;</span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">next</span>;</span></span><br><span class="line">};</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">first</span> =</span> <span class="literal">NULL</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="指向函数的指针">17.6 指向函数的指针</h3>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">double</span> <span class="title function_">integrate</span><span class="params">(<span class="type">double</span> (*f)(<span class="type">double</span>), <span class="type">double</span> a, <span class="type">double</span> b)</span>;</span><br></pre></td></tr></table></figure>
+<p>qsort 函数</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">qsort</span><span class="params">(<span class="type">void</span> *base, <span class="type">size_t</span> nmemb, <span class="type">size_t</span> size, <span class="type">int</span> (*compar)(<span class="type">const</span> <span class="type">void</span> *, <span class="type">const</span> <span class="type">void</span> *))</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">compare_parts</span><span class="params">(<span class="type">const</span> <span class="type">void</span> *p, <span class="type">const</span> <span class="type">void</span> *q)</span></span><br><span class="line">{</span><br><span class="line">	<span class="keyword">return</span> ((<span class="keyword">struct</span> part *)p)-&gt;number - ((<span class="keyword">struct</span> part *) q)-&gt;number;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="第十八章-声明">第十八章 声明</h2>
+<h3 id="声明的语法">18.1 声明的语法</h3>
+<p>声明形式 <code>声明指定符 声明符;</code></p>
+<p>声明指定符分为</p>
+<ul>
+<li><p>存储类型，包括
+<code>auto</code>、<code>static</code>、<code>extern</code> 和
+<code>register</code> 必须在最前面</p></li>
+<li><p>类型限定符，包括 <code>const</code> 和
+<code>volatile</code>、<code>restrict</code>、<code>_Atomic</code></p></li>
+<li><p>类型指定符，包括
+<code>void</code>、<code>char</code>、<code>short</code>、<code>int</code>、<code>long</code>、<code>float</code>、<code>double</code>、<code>signed</code>、<code>unsigned</code>、<code>struct</code>、<code>union</code>、<code>enum</code>
+和用 <code>typedef</code> 创建的类型名</p></li>
+<li><p>函数指定符，包括 <code>inline</code> 和
+<code>_Noreture</code></p></li>
+</ul>
+<h3 id="存储类型">18.2 存储类型</h3>
+<p>C 程序中每个变量都有三个性质</p>
+<ul>
+<li><strong>存储期</strong>：变量的存储期决定了为变量预留的内存被释放的时间。
+<ul>
+<li>具有<strong>自动存储期</strong>的变量在所属块被执行时获得内存单元，块终止时释放内存单元。</li>
+<li>具有<strong>静态存储期</strong>的变量在程序运行期间占有同一个存储单元，也就允许变量无限期地保留所占有的空间。</li>
+</ul></li>
+<li><strong>作用域</strong>：变量的作用域是变量名字的作用范围。
+<ul>
+<li>块作用域：变量的名字从声明的地方一直到所在块的末尾都是可见的。</li>
+<li>文件作用域：变量的名字从声明的地方一直到所在文件末尾都是可见的。</li>
+</ul></li>
+<li><strong>链接</strong>：变量名字的链接属性
+<ul>
+<li>通过具有<strong>外部链接</strong>属性的名字，变量可以被程序中的几个或全部文件共享。</li>
+<li>名字具有<strong>内部链接</strong>属性，变量只能属于单独一个文件，文件中的函数可以共享这个变量。</li>
+<li>名字属于<strong>无链接</strong>的变量属于单独一个函数，不能被共享</li>
+</ul></li>
+</ul>
+<p>默认的性质</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i;</span><br></pre></td></tr></table></figure>
+<p>有静态存储期，文件作用域，外部链接</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">f</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">{</span><br><span class="line">	<span class="type">int</span> j;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<p>自动存储期，块作用域，无链接</p>
+<h4 id="auto-存储类型">auto 存储类型</h4>
+<p>对块内部变量默认</p>
+<h4 id="static-存储类型">static 存储类型</h4>
+<p>作用在块外部时，<code>static</code> 说明变量名字具有内部链接。</p>
+<p>用在块内部时，<code>static</code>
+把变量的存储期从自动的变成静态的。</p>
+<h4 id="extern-存储类型">extern 存储类型</h4>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extern</span> <span class="type">int</span> i;</span><br></pre></td></tr></table></figure>
+<p>编译器不会为变量 <code>i</code> 分配存储单元。</p>
+<p>上述声明不是变量 <code>i</code>
+的<strong>定义</strong>，它只是提示编译器需要访问定义在别处的变量（可能稍后在同一文件，更常见的是另一文件）。变量在程序中可以多次<strong>声明</strong>，只能有一次<strong>定义</strong>。</p>
+<p>变量的 <code>extern</code>
+声明不是定义，除了一个例外：对变量进行初始化的声明，例如</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extern</span> <span class="type">int</span> i=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> i=<span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+<p>上两条等价。</p>
+<p><code>extern</code>
+声明中的变量始终具有静态存储期，若声明在块内部，那么具有块作用域，否则具有文件作用域</p>
+<p>若 <code>extern</code>
+型变量在文件中较早的位置（任何函数定义的外部）声明为 <code>static</code>
+那么它具有内部链接；否则（通常情况下）具有外部链接。</p>
+<h4 id="register-存储类型">register 存储类型</h4>
+<p>要求编译器把变量存储在寄存器而不是内存中</p>
+<h4 id="函数的存储类型">函数的存储类型</h4>
+<p>函数声明也可以包含存储类型，选项只有 <code>extern</code> 和
+<code>static</code></p>
+<p><code>extern</code>
+说明函数具有外部链接，即允许其他函数调用此函数</p>
+<p><code>static</code>
+说明是内部链接，也就是只能在定义函数的内部调用此函数</p>
+<p>函数默认具有外部链接</p>
+<h3 id="声明符">18.4 声明符</h3>
+<ul>
+<li>始终从内向外读声明符</li>
+<li><code>[]</code> 和 <code>()</code> 优先于 <code>*</code></li>
+</ul>
+<h3 id="内联函数">18.6 内联函数</h3>
+<p>对具有外部链接的内联函数的限制</p>
+<ul>
+<li>内联函数不能定义可改变的 static 变量</li>
+<li>函数中不能引用具有内部链接的变量</li>
+</ul>
+<p><code>GCC</code> 命令行选项需要添加 <code>-O</code> 才会进行内联</p>
+<h2 id="第二十章-底层程序设计">第二十章 底层程序设计</h2>
+<p>当数据项多于一个字节时，先存储最左边的字节叫<strong>大端</strong>，相最后存储相反的叫<strong>小端</strong></p>
+<p>x86 处理器假设数据按小端存储</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">union</span> {</span></span><br><span class="line">	<span class="class"><span class="keyword">struct</span> {</span></span><br><span class="line">		WORD ax, bx, cx, dx;</span><br><span class="line">	} word;</span><br><span class="line">	<span class="class"><span class="keyword">struct</span> {</span></span><br><span class="line">		BYTE al, ah, bl, bh, cl, ch, dl, dh;</span><br><span class="line">	} byte;</span><br><span class="line">} regs;</span><br></pre></td></tr></table></figure>
+<h2 id="第二十五章-国际化特性">第二十五章 国际化特性</h2>
+<h3 id="多字节字符与宽字符的比较">多字节字符与宽字符的比较</h3>
+<table>
+<colgroup>
+<col style="width: 10%">
+<col style="width: 44%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr>
+<th>特性</th>
+<th>多字节字符（Multibyte Character）</th>
+<th>宽字符（Wide Character）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>表示类型</td>
+<td><code>char</code></td>
+<td><code>wchar_t</code></td>
+</tr>
+<tr>
+<td>存储长度</td>
+<td>动态长度（1 至多字节，依编码不同）</td>
+<td>固定长度（2 或 4 字节，依实现不同）</td>
+</tr>
+<tr>
+<td>编码方式</td>
+<td>变长编码（如 UTF-8、GBK）</td>
+<td>定长编码（如 UTF-16、UTF-32）</td>
+</tr>
+<tr>
+<td>函数支持</td>
+<td>标准 C 函数（<code>strlen</code>, <code>strcpy</code>）</td>
+<td>宽字符函数（<code>wcslen</code>, <code>wcscpy</code>）</td>
+</tr>
+<tr>
+<td>兼容性</td>
+<td>与 ASCII 兼容</td>
+<td>需要专门支持</td>
+</tr>
+<tr>
+<td>优点</td>
+<td>存储效率高</td>
+<td>处理字符方便</td>
+</tr>
+<tr>
+<td>缺点</td>
+<td>操作复杂（需处理变长编码）</td>
+<td>占用更多存储空间</td>
+</tr>
+</tbody>
+</table>
+<h2 id="第二十六章-其他库函数">第二十六章 其他库函数</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">max_int</span><span class="params">(<span class="type">int</span> n, ...)</span>{</span><br><span class="line">	va_list ap;</span><br><span class="line">	<span class="type">int</span> i,cur, mx;</span><br><span class="line">	va_start(ap, n);</span><br><span class="line">	mx = va_arg(ap, <span class="type">int</span>);</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;n;i++){</span><br><span class="line">		cur = va_arg(ap, <span class="type">int</span>);</span><br><span class="line">		<span class="keyword">if</span>(cur&gt;mx) mx=cur;</span><br><span class="line">	}</span><br><span class="line">	va_end(ap);</span><br><span class="line">	<span class="keyword">return</span> mx;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<p><code>va_copy(va_list dest, va_list src)</code> 宏把 src 复制到 dest
+中</p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://20021123.xyz/2025/02/05/C-%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E7%8E%B0%E4%BB%A3%E6%96%B9%E6%B3%95/" title="C 语言程序设计 现代方法" target="_blank" rel="external">https://20021123.xyz/2025/02/05/C-语言程序设计-现代方法/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/buzhibujuelb" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://www.gravatar.com/avatar/9fbae1cb91834819ac74ee7a926ed62b?s=128" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/buzhibujuelb" target="_blank"><span class="text-dark">不知不觉</span><small class="ml-1x">Acmer &amp; Student</small></a></h3>
+        <div>Never Settle</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2023/06/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" title="计算机网络"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/buzhibujuelb" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/u/3245362780" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://www.zhihu.com/people/liu-bei-86-84/activities" target="_blank" title="Zhihu" data-toggle=tooltip data-placement=top><i class="icon icon-zhihu"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+
+
+
+
+   
+    
+  <script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: true,
+    appId: 'Lg7JjXKw5FflnXYC347uVprV-MdYXbMMI',
+    appKey: 'fLDKVrreL9skeVgqrZV80eh4',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: true,
+    serverURLs: 'https://lg7jjxkw.api.lncldglobal.com'
+  });
+  </script>
+
+     
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
+
+
+
+
+
+
+</body>
+</html>

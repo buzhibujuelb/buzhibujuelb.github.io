@@ -6,7 +6,7 @@
   <link href="https://20021123.xyz/atom.xml" rel="self"/>
   
   <link href="https://20021123.xyz/"/>
-  <updated>2023-06-28T15:28:47.182Z</updated>
+  <updated>2025-02-04T18:03:59.914Z</updated>
   <id>https://20021123.xyz/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C 语言程序设计 现代方法</title>
+    <link href="https://20021123.xyz/2025/02/05/C-%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E7%8E%B0%E4%BB%A3%E6%96%B9%E6%B3%95/"/>
+    <id>https://20021123.xyz/2025/02/05/C-%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E7%8E%B0%E4%BB%A3%E6%96%B9%E6%B3%95/</id>
+    <published>2025-02-04T18:03:14.000Z</published>
+    <updated>2025-02-04T18:03:59.914Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;c-语言程序设计-现代方法&quot;&gt;C 语言程序设计 现代方法&lt;/h1&gt;
+&lt;h2 id=&quot;第十四章-预处理器&quot;&gt;第十四章 预处理器&lt;/h2&gt;
+&lt;h3 id=&quot;宏定义&quot;&gt;14.3 宏定义&lt;/h3&gt;
+&lt;p&gt;# 运算符将宏的一个参数转换为字面串。&lt;/p&gt;
+&lt;figur</summary>
+      
+    
+    
+    
+    
+    <category term="总结" scheme="https://20021123.xyz/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>计算机网络</title>
@@ -520,30 +544,6 @@
 &lt;h2 id=&quot;假设检验的基本概念&quot;&gt;8.1 假设检验的基本概念&lt;/h2&gt;
 &lt;h3 id=&quot;一问题的提出&quot;&gt;一、问题的提出&lt;/h3&gt;
 &lt;p&gt;提出统计假设 &lt;span class=&quot;math display&quot;&gt;&lt;</summary>
-      
-    
-    
-    
-    <category term="概率论与数理统计" scheme="https://20021123.xyz/categories/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/"/>
-    
-    
-    <category term="数学" scheme="https://20021123.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>概率论与数理统计 第七章 参数估计</title>
-    <link href="https://20021123.xyz/2023/02/25/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/"/>
-    <id>https://20021123.xyz/2023/02/25/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/</id>
-    <published>2023-02-25T04:25:13.000Z</published>
-    <updated>2023-02-25T04:25:34.000Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;第七章-参数估计&quot;&gt;第七章 参数估计&lt;/h1&gt;
-&lt;h2 id=&quot;参数的点估计&quot;&gt;7.1 参数的点估计&lt;/h2&gt;
-&lt;p&gt;设总体 &lt;span class=&quot;math inline&quot;&gt;&lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot;&gt;</summary>
       
     
     
