@@ -1,0 +1,167 @@
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #222;
+  margin: 40px auto;
+  max-width: 960px;
+  padding: 0 20px;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.profile-left img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-right {
+  flex: 1;                 /* 自动占满剩余空间 */
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+.profile-right .desc {
+  color: #333;
+  text-align: justify;     /* ✅ 让英文左右对齐更自然 */
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.desc {
+  white-space: pre-line; /* ✅ 多行文字自动换行 */
+  word-wrap: break-word;
+  font-size: 15px;
+  margin-bottom: 16px;
+  line-height: 1.8em;
+  color: #333;
+}
+
+.desc a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.desc a:hover {
+  text-decoration: underline;
+}
+
+.desc strong {
+  color: #000;
+}
+
+.links {
+  margin-top: 8px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #0078ff;
+}
+
+.btn,
+.resume-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 12px;
+  border: 1px solid #0078ff;
+  border-radius: 6px;
+  color: #0078ff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn:hover,
+.resume-btn:hover {
+  background: #0078ff;
+  color: #fff;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.project-img {
+  max-width: 320px;        /* 图片最大宽度，可根据你的页面调节 */
+  height: auto;            /* ✅ 保持原比例 */
+  border-radius: 10px;
+  margin-right: 25px;
+  flex-shrink: 0;
+  object-fit: contain;     /* ✅ 不裁切、不拉伸 */
+}
+
+.project-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.awards {
+  margin-top: 40px;
+}
+
+.award-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.award-item {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.award-item strong {
+  color: #222;
+  font-weight: 600;
+}
+
+.award-item a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.award-item a:hover {
+  text-decoration: underline;
+}
+
+.award-item .date {
+  color: #777;
+  font-size: 0.9em;
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column; /* ✅ 竖排显示 */
+    align-items: center;    /* ✅ 居中对齐 */
+    text-align: center;     /* ✅ 让文字居中更自然 */
+  }
+
+  .profile-left img {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 16px;
+  }
+
+  .profile-right {
+    max-width: 100%;        /* ✅ 不再限制宽度 */
+  }
+
+  .desc {
+    max-width: 100%;
+    text-align: left;       /* 如果你希望仍左对齐，可保留这一行 */
+  }
+}
