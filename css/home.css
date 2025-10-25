@@ -1,10 +1,14 @@
 body {
-  font-family: "Inter", "Segoe UI", sans-serif;
+ font-family: "DM Sans", "Inter", "Segoe UI", sans-serif;
   line-height: 1.6;
   color: #222;
   margin: 40px auto;
   max-width: 960px;
   padding: 0 20px;
+}
+h1, h2, h3 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
 }
 
 .profile {
@@ -106,6 +110,12 @@ body {
 .project-info {
   flex: 1;
   min-width: 300px;
+}
+
+.project-date {
+  color: #777;
+  font-size: 0.9em;
+  margin: -6px 0 8px 0;
 }
 
 .awards {
