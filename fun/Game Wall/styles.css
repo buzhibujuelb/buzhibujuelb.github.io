@@ -79,9 +79,7 @@ body {
 }
 
 .game-grid {
-  column-width: 250px;
-  column-gap: 20px;
-  padding: 20px;
+  position: relative;
 }
 
 .game-card {
@@ -178,4 +176,58 @@ body {
 
 .modal a:hover {
   background-color: #0056b3;
+}
+.photo-wall .game-card {
+  padding: 0 !important;
+  border: none !important;       /* 去掉边框 */
+  box-shadow: none !important;   /* 去掉阴影（可选，看你喜好） */
+  background: transparent !important;
+}
+
+.photo-wall .game-card img {
+  display: block;                /* 去掉 inline-block 造成的缝隙 */
+  border-radius: 0 !important;   /* 图片贴边（可选） */
+}
+
+.photo-wall .game-info {
+  display: none !important;
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* 看你喜好，加不加都行 */
+}
+/* 默认模式：gameGrid 作为 Masonry 容器 */
+#gameGrid {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+body:not(.photo-wall) #gameGrid {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+/* 照片墙模式：卡片只显示图片，去掉边框和阴影 */
+.photo-wall .game-card {
+  padding: 0;
+  margin-bottom: 0px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+/* 照片墙模式：不显示文字 */
+.photo-wall .game-info {
+  display: none;
+}
+
+/* 照片墙模式：图片填满卡片高度 */
+.photo-wall .game-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
