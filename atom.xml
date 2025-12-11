@@ -6,7 +6,7 @@
   <link href="https://20021123.xyz/atom.xml" rel="self"/>
   
   <link href="https://20021123.xyz/"/>
-  <updated>2025-02-04T18:03:59.914Z</updated>
+  <updated>2025-12-11T14:59:34.316Z</updated>
   <id>https://20021123.xyz/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cs8803 GPU Hardware and Software</title>
+    <link href="https://20021123.xyz/2025/12/10/cs8803-GPU-Hardware-and-Software/"/>
+    <id>https://20021123.xyz/2025/12/10/cs8803-GPU-Hardware-and-Software/</id>
+    <published>2025-12-11T01:59:12.000Z</published>
+    <updated>2025-12-11T14:59:34.316Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;parallel-programming&quot;&gt;Parallel Programming&lt;/h1&gt;
+&lt;h2 id=&quot;cpu-gpu&quot;&gt;CPU &amp;amp; GPU&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;3D graphics accelerator&lt;/li&gt;
+&lt;li&gt;ma</summary>
+      
+    
+    
+    
+    
+    <category term="总结" scheme="https://20021123.xyz/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>C 语言程序设计 现代方法</title>
@@ -519,31 +543,6 @@
 &lt;p&gt;一般来说，变量之间的关系可分为两类&lt;/p&gt;
 &lt;ol type=&quot;1&quot;&gt;
 &lt;li&gt;&lt;strong&gt;确定性关系&lt;/strong&gt;，在数学上</summary>
-      
-    
-    
-    
-    <category term="概率论与数理统计" scheme="https://20021123.xyz/categories/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/"/>
-    
-    
-    <category term="数学" scheme="https://20021123.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>概率论与数理统计 第八章 假设检验</title>
-    <link href="https://20021123.xyz/2023/02/24/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-%E7%AC%AC%E5%85%AB%E7%AB%A0-%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/"/>
-    <id>https://20021123.xyz/2023/02/24/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-%E7%AC%AC%E5%85%AB%E7%AB%A0-%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/</id>
-    <published>2023-02-25T04:25:45.000Z</published>
-    <updated>2023-02-25T04:26:02.000Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;第八章-假设检验&quot;&gt;第八章 假设检验&lt;/h1&gt;
-&lt;h2 id=&quot;假设检验的基本概念&quot;&gt;8.1 假设检验的基本概念&lt;/h2&gt;
-&lt;h3 id=&quot;一问题的提出&quot;&gt;一、问题的提出&lt;/h3&gt;
-&lt;p&gt;提出统计假设 &lt;span class=&quot;math display&quot;&gt;&lt;</summary>
       
     
     
