@@ -6,7 +6,7 @@
   <link href="https://20021123.xyz/atom.xml" rel="self"/>
   
   <link href="https://20021123.xyz/"/>
-  <updated>2025-12-11T15:42:11.000Z</updated>
+  <updated>2026-04-21T05:41:29.005Z</updated>
   <id>https://20021123.xyz/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>macOS 下使用 bits/stdc++.h</title>
+    <link href="https://20021123.xyz/2026/04/13/macOS%E4%B8%8B%E4%BD%BF%E7%94%A8bits/"/>
+    <id>https://20021123.xyz/2026/04/13/macOS%E4%B8%8B%E4%BD%BF%E7%94%A8bits/</id>
+    <published>2026-04-13T05:57:00.000Z</published>
+    <updated>2026-04-21T05:41:29.005Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;平时在 Linux 或 OJ 上写 C++，常见写法是：&lt;/p&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span cl</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://20021123.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="搞机" scheme="https://20021123.xyz/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linear Programming</title>
+    <link href="https://20021123.xyz/2026/04/09/Linear%20Programming/"/>
+    <id>https://20021123.xyz/2026/04/09/Linear%20Programming/</id>
+    <published>2026-04-09T07:58:00.000Z</published>
+    <updated>2026-04-21T05:44:33.696Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;lp&quot;&gt;LP&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;&lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot; display=&quot;true&quot;&gt;&lt;svg style=&quot;vertical-align: -3.507</summary>
+      
+    
+    
+    
+    <category term="总结" scheme="https://20021123.xyz/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+    <category term="数学" scheme="https://20021123.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>cs8803 Procedural Content Generation</title>
@@ -489,65 +535,6 @@
     <category term="数学" scheme="https://20021123.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
     <category term="计算机体系结构" scheme="https://20021123.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机体系结构</title>
-    <link href="https://20021123.xyz/2023/02/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
-    <id>https://20021123.xyz/2023/02/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</id>
-    <published>2023-02-25T04:30:08.000Z</published>
-    <updated>2023-02-25T09:01:58.000Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;第一章-概论&quot;&gt;第一章 概论&lt;/h2&gt;
-&lt;h3 id=&quot;一基本概念&quot;&gt;一、基本概念&lt;/h3&gt;
-&lt;h4 id=&quot;冯.诺依曼体制存储程序方式&quot;&gt;1. 冯.诺依曼体制？存储程序方式？&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;信息用二进制表示。&lt;/p&gt;&lt;/li&gt;
-&lt;l</summary>
-      
-    
-    
-    
-    <category term="总结" scheme="https://20021123.xyz/categories/%E6%80%BB%E7%BB%93/"/>
-    
-    <category term="计算机体系结构" scheme="https://20021123.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
-    
-    
-    <category term="计算机体系结构" scheme="https://20021123.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
-    
-    <category term="计算机组成原理" scheme="https://20021123.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习导论</title>
-    <link href="https://20021123.xyz/2023/02/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%AE%BA/"/>
-    <id>https://20021123.xyz/2023/02/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%AE%BA/</id>
-    <published>2023-02-25T04:27:21.000Z</published>
-    <updated>2023-02-25T04:45:12.000Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;一机器学习概论&quot;&gt;一、机器学习概论&lt;/h2&gt;
-&lt;h3 id=&quot;机器学习方法三要素&quot;&gt;机器学习方法三要素&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;&lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot; di</summary>
-      
-    
-    
-    
-    <category term="总结" scheme="https://20021123.xyz/categories/%E6%80%BB%E7%BB%93/"/>
-    
-    <category term="机器学习" scheme="https://20021123.xyz/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="数学" scheme="https://20021123.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="AI" scheme="https://20021123.xyz/tags/AI/"/>
     
   </entry>
   
