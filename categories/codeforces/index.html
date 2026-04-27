@@ -37,6 +37,16 @@
   
     <link rel="icon" href="/favicon.png" type="image/x-icon">
   
+  <script>
+  (function() {
+    try {
+      var savedTheme = localStorage.getItem('pure-document-theme');
+      if (savedTheme === 'dark' || savedTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    } catch (e) {}
+  })();
+  </script>
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -314,7 +324,13 @@ mjx-container[display="true"] + br {
         
         <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
         
+        <li class="theme-toggle-item">
+            <button class="theme-toggle" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">
+                <span class="theme-toggle-mark" aria-hidden="true"></span>
+            </button>
+        </li>
     </ul>
+
 
     </nav>
   </div>
@@ -566,7 +582,13 @@ mjx-container[display="true"] + br {
         
         <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
         
+        <li class="theme-toggle-item">
+            <button class="theme-toggle" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">
+                <span class="theme-toggle-mark" aria-hidden="true"></span>
+            </button>
+        </li>
     </ul>
+
 
     <div class="copyright">
     	

@@ -40,6 +40,16 @@
   
     <link rel="icon" href="/favicon.png" type="image/x-icon">
   
+  <script>
+  (function() {
+    try {
+      var savedTheme = localStorage.getItem('pure-document-theme');
+      if (savedTheme === 'dark' || savedTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    } catch (e) {}
+  })();
+  </script>
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -166,7 +176,7 @@ mjx-container[display="true"] + br {
 </style></head>
 
 
-<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+<body class="main-center is-post-page" itemscope itemtype="http://schema.org/WebPage">
   <header class="header" itemscope itemtype="http://schema.org/WPHeader">
   <div class="slimContent">
     <div class="navbar-header">
@@ -319,7 +329,13 @@ mjx-container[display="true"] + br {
         
         <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
         
+        <li class="theme-toggle-item">
+            <button class="theme-toggle" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">
+                <span class="theme-toggle-mark" aria-hidden="true"></span>
+            </button>
+        </li>
     </ul>
+
 
     </nav>
   </div>
@@ -463,6 +479,9 @@ mjx-container[display="true"] + br {
   
   
 <main class="main" role="main">
+  <nav class="doc-return-nav" aria-label="Blog navigation">
+    <a href="/blog">← Blog</a>
+  </nav>
   <div class="content">
   <article id="post-操作系统-第五章-虚拟存储器" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
@@ -874,7 +893,13 @@ M 组合成一下四种页面</p>
         
         <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
         
+        <li class="theme-toggle-item">
+            <button class="theme-toggle" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">
+                <span class="theme-toggle-mark" aria-hidden="true"></span>
+            </button>
+        </li>
     </ul>
+
 
     <div class="copyright">
     	

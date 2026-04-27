@@ -1,4 +1,56 @@
 $(function() {
+  // document theme toggle
+  (function() {
+    var storageKey = 'pure-document-theme';
+    var media = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+    var $toggle = $('.theme-toggle');
+
+    function savedTheme() {
+      try {
+        var value = localStorage.getItem(storageKey);
+        return value === 'dark' || value === 'light' ? value : null;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function effectiveTheme() {
+      return savedTheme() || (media && media.matches ? 'dark' : 'light');
+    }
+
+    function applyTheme(theme) {
+      if (theme === 'dark' || theme === 'light') {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+      $toggle.attr('aria-pressed', effectiveTheme() === 'dark' ? 'true' : 'false');
+      $toggle.attr('title', effectiveTheme() === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+
+    applyTheme(savedTheme());
+
+    $toggle.on('click', function() {
+      var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+      try {
+        localStorage.setItem(storageKey, next);
+      } catch (e) {}
+      applyTheme(next);
+    });
+
+    if (media) {
+      var onChange = function() {
+        if (!savedTheme()) {
+          document.documentElement.removeAttribute('data-theme');
+          applyTheme(null);
+        }
+      };
+      if (media.addEventListener) {
+        media.addEventListener('change', onChange);
+      } else if (media.addListener) {
+        media.addListener(onChange);
+      }
+    }
+  })();
+
   // bootstrap tooltip
   $('[data-toggle="tooltip"]').tooltip();
 
