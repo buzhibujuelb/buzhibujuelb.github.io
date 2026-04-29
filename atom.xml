@@ -6,7 +6,7 @@
   <link href="https://20021123.xyz/atom.xml" rel="self"/>
   
   <link href="https://20021123.xyz/"/>
-  <updated>2026-04-21T05:41:29.005Z</updated>
+  <updated>2026-04-29T05:16:03.977Z</updated>
   <id>https://20021123.xyz/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>macOS 下设置英雄联盟客户端为简体中文</title>
+    <link href="https://20021123.xyz/2026/04/28/macOS-%E4%B8%8B%E8%AE%BE%E7%BD%AE%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%BA%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/"/>
+    <id>https://20021123.xyz/2026/04/28/macOS-%E4%B8%8B%E8%AE%BE%E7%BD%AE%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%BA%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/</id>
+    <published>2026-04-28T17:20:00.000Z</published>
+    <updated>2026-04-29T05:16:03.977Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;macOS
+上的英雄联盟客户端有时默认是英文或繁体中文，可以直接改配置文件，把
+locale 切到简体中文。&lt;/p&gt;
+&lt;h2 id=&quot;一修改配置&quot;&gt;一、修改配置&lt;/h2&gt;
+&lt;p&gt;先打开配置文件：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;tab</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://20021123.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="搞机" scheme="https://20021123.xyz/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>macOS 上手动启动/关闭 GlobalProtect</title>
+    <link href="https://20021123.xyz/2026/04/21/globalprotect-macos/"/>
+    <id>https://20021123.xyz/2026/04/21/globalprotect-macos/</id>
+    <published>2026-04-21T05:57:00.000Z</published>
+    <updated>2026-04-29T05:15:27.623Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;GlobalProtect 在 macOS 上默认会开机自启。如果只是偶尔需要
+VPN，可以写一个小脚本，平时关闭它，需要时再手动启动。&lt;/p&gt;
+&lt;h2 id=&quot;安装脚本&quot;&gt;安装脚本&lt;/h2&gt;
+&lt;p&gt;在 &lt;code&gt;/usr/local/bin&lt;/code&gt; 下新建一个命令</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://20021123.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="搞机" scheme="https://20021123.xyz/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>macOS 下使用 bits/stdc++.h</title>
@@ -473,68 +525,6 @@
     
     
     <category term="软件工程" scheme="https://20021123.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机图形学</title>
-    <link href="https://20021123.xyz/2023/02/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/"/>
-    <id>https://20021123.xyz/2023/02/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/</id>
-    <published>2023-02-25T04:33:11.000Z</published>
-    <updated>2023-02-25T04:44:56.000Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;一问答题&quot;&gt;一、问答题&lt;/h2&gt;
-&lt;h3 id=&quot;数字图像处理计算机图形学模式识别的关系&quot;&gt;1.
-数字图像处理、计算机图形学、模式识别的关系&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;图像处理&lt;/p&gt;
-&lt;p&gt;利用计算机对图像进行分析处理，继而再现图像&lt;/p&gt;&lt;/</summary>
-      
-    
-    
-    
-    <category term="总结" scheme="https://20021123.xyz/categories/%E6%80%BB%E7%BB%93/"/>
-    
-    <category term="图形学" scheme="https://20021123.xyz/categories/%E5%9B%BE%E5%BD%A2%E5%AD%A6/"/>
-    
-    
-    <category term="数学" scheme="https://20021123.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="图形学" scheme="https://20021123.xyz/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机中信息的表示</title>
-    <link href="https://20021123.xyz/2023/02/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA/"/>
-    <id>https://20021123.xyz/2023/02/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA/</id>
-    <published>2023-02-25T04:31:53.000Z</published>
-    <updated>2023-02-25T04:45:06.000Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;一数值型数据的表示方法&quot;&gt;一、数值型数据的表示方法&lt;/h2&gt;
-&lt;p&gt;一个数值型数据的完整表示需三个方面：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;进位计数制&lt;/li&gt;
-&lt;li&gt;符号的数字化（机器数）&lt;/li&gt;
-&lt;li&gt;小数点的处理&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 i</summary>
-      
-    
-    
-    
-    <category term="计算机体系结构" scheme="https://20021123.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
-    
-    
-    <category term="数学" scheme="https://20021123.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="计算机体系结构" scheme="https://20021123.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
