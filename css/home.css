@@ -30,11 +30,12 @@ h1, h2, h3 {
   flex: 1;                 /* 自动占满剩余空间 */
   line-height: 1.65;
   font-size: 16px;
+  min-width: 0;
 }
 
 .profile-right .desc {
-  color: #333;
-  text-align: justify;     /* ✅ 让英文左右对齐更自然 */
+  color: #2f343b;
+  max-width: 680px;
 }
 
 .subtitle {
@@ -43,12 +44,19 @@ h1, h2, h3 {
 }
 
 .desc {
-  white-space: pre-line; /* ✅ 多行文字自动换行 */
-  word-wrap: break-word;
+  overflow-wrap: break-word;
   font-size: 15px;
-  margin-bottom: 16px;
-  line-height: 1.8em;
+  margin: 0 0 18px;
+  line-height: 1.78;
   color: #333;
+}
+
+.desc p {
+  margin: 0 0 12px;
+}
+
+.desc p:last-child {
+  margin-bottom: 0;
 }
 
 .desc a {
