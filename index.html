@@ -12,8 +12,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('pure-document-theme');
+        if (savedTheme === 'dark' || savedTheme === 'light') {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
+
+<button class="theme-toggle" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">
+  <span class="theme-toggle-mark" aria-hidden="true"></span>
+</button>
 
 <section class="profile">
   <div class="profile-left">
@@ -154,5 +168,6 @@ href="https://www.timistudios.com/">Tencent TiMi Studio</a></strong> (UE5) and a
     <a href="/blog/"><i class="fa fa-arrow-right"></i> Enter Blog</a></p>
 </footer>
 
+<script src="/js/home.js"></script>
 </body>
 </html>
