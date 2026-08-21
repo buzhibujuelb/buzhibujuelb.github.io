@@ -1,0 +1,145 @@
+{
+  "你的名字。": {
+    "src": "media/work/your-name.webp",
+    "heroSrc": "media/work/your-name-hero.webp",
+    "heroWidth": 1900,
+    "heroHeight": 1200,
+    "source": "https://kiminona.com/",
+    "heroSource": "https://kiminona.com/",
+    "objectPosition": "50% 50%",
+    "heroObjectPosition": "50% 50%",
+    "fit": "cover"
+  },
+  "天气之子": {
+    "src": "media/work/weathering-with-you.webp",
+    "heroSrc": "media/work/weathering-with-you-hero.webp",
+    "heroWidth": 1235,
+    "heroHeight": 1859,
+    "source": "https://tenkinoko.com/",
+    "heroSource": "https://tenkinoko.com/",
+    "objectPosition": "50% 50%",
+    "heroObjectPosition": "50% 42%",
+    "fit": "cover"
+  },
+  "ATRI -My Dear Moments-": {
+    "src": "media/work/atri-my-dear-moments.webp",
+    "heroSrc": "media/work/atri-my-dear-moments-hero.webp",
+    "heroWidth": 1920,
+    "heroHeight": 620,
+    "source": "https://store.steampowered.com/app/1230140/ATRI_My_Dear_Moments/",
+    "heroSource": "https://store.steampowered.com/app/1230140/ATRI_My_Dear_Moments/",
+    "objectPosition": "50% 50%",
+    "heroObjectPosition": "50% 50%",
+    "fit": "cover"
+  },
+  "Girls Band Cry": {
+    "src": "media/work/girls-band-cry.webp",
+    "heroSrc": "media/work/girls-band-cry-hero.webp",
+    "heroWidth": 2401,
+    "heroHeight": 3253,
+    "source": "https://girls-band-cry.com/tv/",
+    "heroSource": "https://girls-band-cry.com/tv/",
+    "objectPosition": "50% 50%",
+    "heroObjectPosition": "50% 38%",
+    "fit": "cover"
+  },
+  "Resident Evil 4": {
+    "src": "media/work/resident-evil-4.webp",
+    "heroSrc": "media/work/resident-evil-4-hero.webp",
+    "heroWidth": 3200,
+    "heroHeight": 1033,
+    "source": "https://store.steampowered.com/app/2050650/Resident_Evil_4/",
+    "heroSource": "https://store.steampowered.com/app/2050650/Resident_Evil_4/",
+    "objectPosition": "50% 50%",
+    "heroObjectPosition": "50% 50%",
+    "fit": "cover"
+  },
+  "Watch Dogs": {
+    "src": "media/work/watch-dogs.webp",
+    "heroSrc": "media/work/watch-dogs-hero.webp",
+    "heroWidth": 1920,
+    "heroHeight": 1080,
+    "source": "https://store.steampowered.com/app/243470/Watch_Dogs/",
+    "heroSource": "https://www.ubisoft.com/en-us/games/fan-kits",
+    "objectPosition": "50% 50%",
+    "heroObjectPosition": "50% 50%",
+    "fit": "cover"
+  },
+  "败犬女主太多了！": {
+    "src": "media/work/makeine.webp",
+    "heroSrc": "media/work/makeine-hero.webp",
+    "heroWidth": 1590,
+    "heroHeight": 2250,
+    "source": "https://makeine-anime.com/special/gallery/",
+    "heroSource": "https://makeine-anime.com/",
+    "objectPosition": "50% 50%",
+    "heroObjectPosition": "50% 56%",
+    "fit": "cover"
+  },
+  "千恋＊万花": {
+    "src": "media/work/senren-banka.webp",
+    "heroSrc": "media/work/senren-banka-hero.webp",
+    "heroWidth": 1920,
+    "heroHeight": 620,
+    "source": "https://store.steampowered.com/app/1144400/SenrenBanka/",
+    "heroSource": "https://store.steampowered.com/app/1144400/SenrenBanka/",
+    "objectPosition": "50% 50%",
+    "heroObjectPosition": "50% 50%",
+    "fit": "cover"
+  },
+  "Xenoblade Chronicles 3": {
+    "src": "media/work/xenoblade-chronicles-3.webp",
+    "heroSrc": "media/work/xenoblade-chronicles-3-hero.webp",
+    "heroWidth": 3200,
+    "heroHeight": 1800,
+    "source": "https://www.nintendo.com/us/store/products/xenoblade-chronicles-3-switch/",
+    "heroSource": "https://www.nintendo.com/us/store/products/xenoblade-chronicles-3-switch/",
+    "objectPosition": "50% 50%",
+    "heroObjectPosition": "50% 50%",
+    "fit": "cover"
+  },
+  "【我推的孩子】": {
+    "src": "media/work/oshi-no-ko.webp",
+    "heroSrc": "media/work/oshi-no-ko-hero.webp",
+    "heroWidth": 2152,
+    "heroHeight": 3044,
+    "source": "https://ichigoproduction.com/Season1/",
+    "heroSource": "https://ichigoproduction.com/Season1/",
+    "objectPosition": "50% 50%",
+    "heroObjectPosition": "50% 38%",
+    "fit": "cover"
+  },
+  "孤独摇滚！": {
+    "src": "media/work/bocchi-the-rock.webp",
+    "heroSrc": "media/work/bocchi-the-rock-hero.webp",
+    "heroWidth": 1220,
+    "heroHeight": 1500,
+    "source": "https://bocchi.rocks/tv/",
+    "heroSource": "https://bocchi.rocks/tv/",
+    "objectPosition": "50% 50%",
+    "heroObjectPosition": "50% 50%",
+    "fit": "cover"
+  },
+  "辉夜大小姐想让我告白": {
+    "src": "media/work/kaguya-sama.webp",
+    "heroSrc": "media/work/kaguya-sama-hero.webp",
+    "heroWidth": 2000,
+    "heroHeight": 1820,
+    "source": "https://kaguya.love/1st/index.html",
+    "heroSource": "https://kaguya.love/1st/index.html",
+    "objectPosition": "50% 50%",
+    "heroObjectPosition": "50% 50%",
+    "fit": "cover"
+  },
+  "Watch Dogs 2": {
+    "src": "media/work/watch-dogs-2.webp",
+    "heroSrc": "media/work/watch-dogs-2-hero.webp",
+    "heroWidth": 3200,
+    "heroHeight": 1033,
+    "source": "https://store.steampowered.com/app/447040/Watch_Dogs_2/",
+    "heroSource": "https://store.steampowered.com/app/447040/Watch_Dogs_2/",
+    "objectPosition": "50% 50%",
+    "heroObjectPosition": "50% 50%",
+    "fit": "cover"
+  }
+}

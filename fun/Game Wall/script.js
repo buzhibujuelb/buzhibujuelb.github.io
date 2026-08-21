@@ -230,8 +230,26 @@ async function fetchStoreLinks(gameId) {
 // ---------------------------
 // Modal
 // ---------------------------
+const gameModal = document.getElementById("gameModal");
+const modalCloseButton = document.getElementById("modalClose");
+
+function closeModal() {
+  gameModal.classList.remove("active");
+  gameModal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
+}
+
+modalCloseButton.addEventListener("click", closeModal);
+gameModal.addEventListener("click", (event) => {
+  if (event.target === gameModal) closeModal();
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && gameModal.classList.contains("active")) {
+    closeModal();
+  }
+});
+
 async function showModal(game, imageUrl) {
-  const modal = document.getElementById("gameModal");
   const content = document.getElementById("modalContent");
 
   content.innerHTML = `
@@ -243,14 +261,16 @@ async function showModal(game, imageUrl) {
     <div id="storeLinks"><strong>商店链接:</strong> 加载中...</div>
   `;
 
-  modal.classList.add("active");
-  modal.onclick = (e) => {
-    if (e.target === modal) modal.classList.remove("active");
-  };
+  gameModal.classList.add("active");
+  gameModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+  content.scrollTop = 0;
+  modalCloseButton.focus();
 
   if (game.id) {
     const stores = await fetchStoreLinks(game.id);
-    const box = document.getElementById("storeLinks");
+    const box = content.querySelector("#storeLinks");
+    if (!box) return;
     if (stores.length > 0) {
       box.innerHTML =
         "<strong>商店链接:</strong> " +

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Visual Archive · 圣地巡礼、Cosplay 与绘画档案">
+  <title>Seichi junrei · 圣地巡礼</title>
+  <link rel="icon" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Visual Archive，返回主页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 28 28" focusable="false">
+          <path class="brand-mark-back" d="M9 4.5h14.5V18H20" />
+          <rect x="4.5" y="8.5" width="15.5" height="15" />
+          <circle cx="15.75" cy="12.75" r="1.25" />
+          <path d="m7.5 20 4.1-4.1 2.8 2.8 1.8-1.8 3.8 3.8" />
+        </svg>
+      </span>
+      <span><strong>VISUAL ARCHIVE</strong></span>
+    </a>
+    <nav class="collection-switch" aria-label="图库分类">
+      <button class="is-active" data-collection="pilgrimage">圣地巡礼</button>
+      <button data-collection="cosplay">Cosplay</button>
+      <button data-collection="drawings">绘画</button>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式"><span>LIGHT</span><span>DARK</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-rail" id="heroRail" aria-hidden="true"></div>
+      <h1 class="hero-title" id="heroTitle" aria-label="Seichi Junrei">
+        <span>SEICHI</span>
+        <span>JUNREI</span>
+      </h1>
+      <div class="hero-index" aria-label="图库统计">
+        <span><strong id="photoCount">0</strong><small id="photoLabel">PHOTOGRAPHS</small></span>
+        <span><strong id="workCount">0</strong><small id="workLabel">TITLES</small></span>
+        <span><strong id="placeCount">0</strong><small id="placeLabel">PLACES</small></span>
+      </div>
+    </section>
+
+    <section class="exhibition" id="exhibition">
+      <div class="section-heading">
+        <p class="section-code" id="sectionCode">SJ / INDEX</p>
+        <div class="view-switch" role="tablist" aria-label="浏览方式">
+          <button data-view="all" role="tab" hidden>全部</button>
+          <button class="is-active" data-view="work" role="tab">按作品</button>
+          <button data-view="time" role="tab">按时间</button>
+          <button data-view="place" role="tab">按地点</button>
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <div class="filter-chips" id="filterChips" aria-label="筛选条件"></div>
+        <button class="clear-filter" id="clearFilter" hidden>清除筛选</button>
+      </div>
+
+      <section class="map-section" id="mapSection" hidden aria-label="拍摄地点地图">
+        <div class="map-copy">
+          <p class="section-code">LOCATION INDEX</p>
+          <h3>地点</h3>
+          <div class="place-list" id="placeList"></div>
+        </div>
+        <div id="map" aria-label="巡礼地点交互地图"></div>
+      </section>
+
+      <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <span>準備中</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Bei Liu · <a href="/">返回主页</a></p>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" type="button" aria-label="关闭">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="上一张">‹</button>
+    <figure>
+      <img id="lightboxImage" alt="">
+      <figcaption>
+        <p class="lightbox-work" id="lightboxWork"></p>
+        <h3 id="lightboxCaption"></h3>
+        <p id="lightboxMeta"></p>
+      </figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="下一张">›</button>
+  </dialog>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

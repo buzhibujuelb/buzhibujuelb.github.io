@@ -1,0 +1,3160 @@
+[
+  {
+    "id": "library-your-name-kamisuwa-taki-2026-08-4b354af88b",
+    "source": "seichi-junrei",
+    "albumId": "your-name-kamisuwa-taki-2026-08",
+    "collections": [
+      "pilgrimage",
+      "cosplay"
+    ],
+    "work": "你的名字。",
+    "country": "日本",
+    "character": "立花泷",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "site": "立石公園",
+    "coordinates": [
+      36.05342,
+      138.12255
+    ],
+    "caption": "立花泷",
+    "src": "media/full/library-your-name-kamisuwa-taki-2026-08-4b354af88b.jpg",
+    "thumb": "media/thumb/library-your-name-kamisuwa-taki-2026-08-4b354af88b.jpg",
+    "width": 1024,
+    "height": 768,
+    "cover": false
+  },
+  {
+    "id": "library-your-name-kamisuwa-taki-2026-08-b5a4640c8c",
+    "source": "seichi-junrei",
+    "albumId": "your-name-kamisuwa-taki-2026-08",
+    "collections": [
+      "pilgrimage",
+      "cosplay"
+    ],
+    "work": "你的名字。",
+    "country": "日本",
+    "character": "立花泷",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "site": "立石公園",
+    "coordinates": [
+      36.05342,
+      138.12255
+    ],
+    "caption": "立花泷",
+    "src": "media/full/library-your-name-kamisuwa-taki-2026-08-b5a4640c8c.jpg",
+    "thumb": "media/thumb/library-your-name-kamisuwa-taki-2026-08-b5a4640c8c.jpg",
+    "width": 768,
+    "height": 1024,
+    "cover": false
+  },
+  {
+    "id": "library-your-name-kamisuwa-taki-2026-08-b02c8726a1",
+    "source": "seichi-junrei",
+    "albumId": "your-name-kamisuwa-taki-2026-08",
+    "collections": [
+      "pilgrimage",
+      "cosplay"
+    ],
+    "work": "你的名字。",
+    "country": "日本",
+    "character": "立花泷",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "site": "立石公園",
+    "coordinates": [
+      36.05342,
+      138.12255
+    ],
+    "caption": "立花泷",
+    "src": "media/full/library-your-name-kamisuwa-taki-2026-08-b02c8726a1.jpg",
+    "thumb": "media/thumb/library-your-name-kamisuwa-taki-2026-08-b02c8726a1.jpg",
+    "width": 1022,
+    "height": 768,
+    "cover": false
+  },
+  {
+    "id": "weathering-ginza-01",
+    "work": "天气之子",
+    "date": "2026-08",
+    "place": "東京都 · 中央区",
+    "coordinates": [
+      35.67136,
+      139.76714
+    ],
+    "caption": "銀座",
+    "src": "media/full/weathering-ginza-01.jpg",
+    "thumb": "media/thumb/weathering-ginza-01.jpg",
+    "width": 1206,
+    "height": 1503,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "銀座"
+  },
+  {
+    "id": "weathering-ginza-02",
+    "work": "天气之子",
+    "date": "2026-08",
+    "place": "東京都 · 中央区",
+    "coordinates": [
+      35.67136,
+      139.76714
+    ],
+    "caption": "銀座",
+    "src": "media/full/weathering-ginza-02.jpg",
+    "thumb": "media/thumb/weathering-ginza-02.jpg",
+    "width": 1202,
+    "height": 2400,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "銀座"
+  },
+  {
+    "id": "weathering-tabata-01",
+    "work": "天气之子",
+    "date": "2026-08",
+    "place": "東京都 · 北区",
+    "coordinates": [
+      35.7369,
+      139.7619
+    ],
+    "caption": "田端",
+    "src": "media/full/weathering-tabata-01.jpg",
+    "thumb": "media/thumb/weathering-tabata-01.jpg",
+    "width": 1438,
+    "height": 1799,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "田端"
+  },
+  {
+    "id": "weathering-tabata-02",
+    "work": "天气之子",
+    "date": "2026-08",
+    "place": "東京都 · 北区",
+    "coordinates": [
+      35.7369,
+      139.7619
+    ],
+    "caption": "田端",
+    "src": "media/full/weathering-tabata-02.jpg",
+    "thumb": "media/thumb/weathering-tabata-02.jpg",
+    "width": 1438,
+    "height": 2034,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "田端"
+  },
+  {
+    "id": "weathering-tabata-03",
+    "work": "天气之子",
+    "date": "2026-08",
+    "place": "東京都 · 北区",
+    "coordinates": [
+      35.7369,
+      139.7619
+    ],
+    "caption": "田端",
+    "src": "media/full/weathering-tabata-03.jpg",
+    "thumb": "media/thumb/weathering-tabata-03.jpg",
+    "width": 1440,
+    "height": 1888,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "田端"
+  },
+  {
+    "id": "weathering-tabata-04",
+    "work": "天气之子",
+    "date": "2026-08",
+    "place": "東京都 · 北区",
+    "coordinates": [
+      35.7369,
+      139.7619
+    ],
+    "caption": "田端",
+    "src": "media/full/weathering-tabata-04.jpg",
+    "thumb": "media/thumb/weathering-tabata-04.jpg",
+    "width": 1439,
+    "height": 1882,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "田端"
+  },
+  {
+    "id": "weathering-tabata-05",
+    "work": "天气之子",
+    "date": "2026-08",
+    "place": "東京都 · 北区",
+    "coordinates": [
+      35.7369,
+      139.7619
+    ],
+    "caption": "田端",
+    "src": "media/full/weathering-tabata-05.jpg",
+    "thumb": "media/thumb/weathering-tabata-05.jpg",
+    "width": 1439,
+    "height": 1885,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "田端"
+  },
+  {
+    "id": "weathering-tabata-06",
+    "work": "天气之子",
+    "date": "2026-08",
+    "place": "東京都 · 北区",
+    "coordinates": [
+      35.7369,
+      139.7619
+    ],
+    "caption": "田端",
+    "src": "media/full/weathering-tabata-06.jpg",
+    "thumb": "media/thumb/weathering-tabata-06.jpg",
+    "width": 1440,
+    "height": 1885,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "田端"
+  },
+  {
+    "id": "atri-choshi-01",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-01.jpg",
+    "thumb": "media/thumb/atri-choshi-01.jpg",
+    "width": 1440,
+    "height": 1881,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-02",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-02.jpg",
+    "thumb": "media/thumb/atri-choshi-02.jpg",
+    "width": 1440,
+    "height": 1891,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-03",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-03.jpg",
+    "thumb": "media/thumb/atri-choshi-03.jpg",
+    "width": 1440,
+    "height": 1884,
+    "featured": true,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-04",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-04.jpg",
+    "thumb": "media/thumb/atri-choshi-04.jpg",
+    "width": 1200,
+    "height": 1579,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-05",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-05.jpg",
+    "thumb": "media/thumb/atri-choshi-05.jpg",
+    "width": 1440,
+    "height": 1888,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-06",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-06.jpg",
+    "thumb": "media/thumb/atri-choshi-06.jpg",
+    "width": 1023,
+    "height": 2270,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-07",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-07.jpg",
+    "thumb": "media/thumb/atri-choshi-07.jpg",
+    "width": 1440,
+    "height": 1886,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-08",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-08.jpg",
+    "thumb": "media/thumb/atri-choshi-08.jpg",
+    "width": 1199,
+    "height": 1565,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-09",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-09.jpg",
+    "thumb": "media/thumb/atri-choshi-09.jpg",
+    "width": 1440,
+    "height": 1878,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-10",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-10.jpg",
+    "thumb": "media/thumb/atri-choshi-10.jpg",
+    "width": 1206,
+    "height": 1575,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-11",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "character": "斑鸠夏生",
+    "src": "media/full/atri-choshi-11.jpg",
+    "thumb": "media/thumb/atri-choshi-11.jpg",
+    "width": 1440,
+    "height": 1891,
+    "featured": false,
+    "collections": [
+      "pilgrimage",
+      "cosplay"
+    ]
+  },
+  {
+    "id": "atri-choshi-12",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-12.jpg",
+    "thumb": "media/thumb/atri-choshi-12.jpg",
+    "width": 1206,
+    "height": 1591,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-13",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-13.jpg",
+    "thumb": "media/thumb/atri-choshi-13.jpg",
+    "width": 1200,
+    "height": 1545,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-14",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-14.jpg",
+    "thumb": "media/thumb/atri-choshi-14.jpg",
+    "width": 1440,
+    "height": 1887,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-15",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-15.jpg",
+    "thumb": "media/thumb/atri-choshi-15.jpg",
+    "width": 1170,
+    "height": 1543,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-16",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-16.jpg",
+    "thumb": "media/thumb/atri-choshi-16.jpg",
+    "width": 1440,
+    "height": 1891,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-17",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-17.jpg",
+    "thumb": "media/thumb/atri-choshi-17.jpg",
+    "width": 1440,
+    "height": 1883,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-18",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-18.jpg",
+    "thumb": "media/thumb/atri-choshi-18.jpg",
+    "width": 1200,
+    "height": 1573,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-19",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-19.jpg",
+    "thumb": "media/thumb/atri-choshi-19.jpg",
+    "width": 1440,
+    "height": 1878,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-20",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-20.jpg",
+    "thumb": "media/thumb/atri-choshi-20.jpg",
+    "width": 1440,
+    "height": 1886,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-21",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-21.jpg",
+    "thumb": "media/thumb/atri-choshi-21.jpg",
+    "width": 1200,
+    "height": 1563,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-22",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-22.jpg",
+    "thumb": "media/thumb/atri-choshi-22.jpg",
+    "width": 1440,
+    "height": 1886,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-23",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-23.jpg",
+    "thumb": "media/thumb/atri-choshi-23.jpg",
+    "width": 1440,
+    "height": 1881,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-24",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-24.jpg",
+    "thumb": "media/thumb/atri-choshi-24.jpg",
+    "width": 1199,
+    "height": 1546,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-25",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-25.jpg",
+    "thumb": "media/thumb/atri-choshi-25.jpg",
+    "width": 1440,
+    "height": 1891,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-26",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-26.jpg",
+    "thumb": "media/thumb/atri-choshi-26.jpg",
+    "width": 1280,
+    "height": 1680,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-27",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "src": "media/full/atri-choshi-27.jpg",
+    "thumb": "media/thumb/atri-choshi-27.jpg",
+    "width": 1440,
+    "height": 1891,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "atri-choshi-28",
+    "work": "ATRI -My Dear Moments-",
+    "date": "2026-08",
+    "place": "千葉県 · 銚子市",
+    "coordinates": [
+      35.7341,
+      140.8267
+    ],
+    "caption": "千葉県 · 銚子市",
+    "character": "斑鸠夏生",
+    "src": "media/full/atri-choshi-28.jpg",
+    "thumb": "media/thumb/atri-choshi-28.jpg",
+    "width": 707,
+    "height": 2400,
+    "featured": false,
+    "collections": [
+      "pilgrimage",
+      "cosplay"
+    ]
+  },
+  {
+    "id": "gbc-kamisuwa-01",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-01.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-01.jpg",
+    "width": 1440,
+    "height": 1890,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-02",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-02.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-02.jpg",
+    "width": 1206,
+    "height": 1697,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-03",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-03.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-03.jpg",
+    "width": 1206,
+    "height": 1706,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-04",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-04.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-04.jpg",
+    "width": 1440,
+    "height": 1890,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-05",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-05.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-05.jpg",
+    "width": 1438,
+    "height": 1886,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-06",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-06.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-06.jpg",
+    "width": 1206,
+    "height": 1692,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-07",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-07.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-07.jpg",
+    "width": 1800,
+    "height": 2248,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-08",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-08.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-08.jpg",
+    "width": 1800,
+    "height": 2248,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-09",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-09.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-09.jpg",
+    "width": 1800,
+    "height": 2248,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-10",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-10.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-10.jpg",
+    "width": 1800,
+    "height": 2248,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-11",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-11.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-11.jpg",
+    "width": 1800,
+    "height": 2248,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-12",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-12.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-12.jpg",
+    "width": 1800,
+    "height": 2248,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-13",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-13.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-13.jpg",
+    "width": 1800,
+    "height": 2248,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-14",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-14.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-14.jpg",
+    "width": 1800,
+    "height": 2248,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-15",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-15.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-15.jpg",
+    "width": 1800,
+    "height": 2248,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "gbc-kamisuwa-16",
+    "work": "Girls Band Cry",
+    "date": "2026-08",
+    "place": "長野県 · 諏訪市",
+    "coordinates": [
+      36.0467642,
+      138.1162951
+    ],
+    "caption": "上諏訪",
+    "src": "media/full/gbc-kamisuwa-16.jpg",
+    "thumb": "media/thumb/gbc-kamisuwa-16.jpg",
+    "width": 1800,
+    "height": 2248,
+    "featured": false,
+    "collections": [
+      "pilgrimage"
+    ],
+    "site": "上諏訪"
+  },
+  {
+    "id": "library-resident-evil-4-range-leon-2026-03-7b1bd5a74a",
+    "source": "seichi-junrei",
+    "albumId": "resident-evil-4-range-leon-2026-03",
+    "collections": [
+      "cosplay"
+    ],
+    "work": "Resident Evil 4",
+    "country": "美国",
+    "character": "Leon S. Kennedy",
+    "date": "2026-03",
+    "place": "Georgia · Peachtree Corners",
+    "site": "靶场",
+    "coordinates": [
+      33.9624,
+      -84.2072
+    ],
+    "caption": "Leon S. Kennedy",
+    "src": "media/full/library-resident-evil-4-range-leon-2026-03-7b1bd5a74a.jpg",
+    "thumb": "media/thumb/library-resident-evil-4-range-leon-2026-03-7b1bd5a74a.jpg",
+    "width": 360,
+    "height": 480,
+    "cover": false
+  },
+  {
+    "id": "library-resident-evil-4-range-leon-2026-03-b4c23f5020",
+    "source": "seichi-junrei",
+    "albumId": "resident-evil-4-range-leon-2026-03",
+    "collections": [
+      "cosplay"
+    ],
+    "work": "Resident Evil 4",
+    "country": "美国",
+    "character": "Leon S. Kennedy",
+    "date": "2026-03",
+    "place": "Georgia · Peachtree Corners",
+    "site": "靶场",
+    "coordinates": [
+      33.9624,
+      -84.2072
+    ],
+    "caption": "Leon S. Kennedy",
+    "src": "media/full/library-resident-evil-4-range-leon-2026-03-b4c23f5020.jpg",
+    "thumb": "media/thumb/library-resident-evil-4-range-leon-2026-03-b4c23f5020.jpg",
+    "width": 1536,
+    "height": 2048,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-chicago-aiden-2026-03-b516336c81",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-chicago-aiden-2026-03",
+    "collections": [
+      "pilgrimage",
+      "cosplay"
+    ],
+    "work": "Watch Dogs",
+    "country": "美国",
+    "character": "Aiden Pearce",
+    "date": "2026-03",
+    "place": "Illinois · Chicago",
+    "site": "Chicago River",
+    "coordinates": [
+      41.8881,
+      -87.6255
+    ],
+    "caption": "Aiden Pearce",
+    "src": "media/full/library-watch-dogs-chicago-aiden-2026-03-b516336c81.jpg",
+    "thumb": "media/thumb/library-watch-dogs-chicago-aiden-2026-03-b516336c81.jpg",
+    "width": 800,
+    "height": 360,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-chicago-aiden-2026-03-a50f274e82",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-chicago-aiden-2026-03",
+    "collections": [
+      "pilgrimage",
+      "cosplay"
+    ],
+    "work": "Watch Dogs",
+    "country": "美国",
+    "character": "Aiden Pearce",
+    "date": "2026-03",
+    "place": "Illinois · Chicago",
+    "site": "Chicago River",
+    "coordinates": [
+      41.8881,
+      -87.6255
+    ],
+    "caption": "Aiden Pearce",
+    "src": "media/full/library-watch-dogs-chicago-aiden-2026-03-a50f274e82.jpg",
+    "thumb": "media/thumb/library-watch-dogs-chicago-aiden-2026-03-a50f274e82.jpg",
+    "width": 1024,
+    "height": 768,
+    "cover": true
+  },
+  {
+    "id": "library-watch-dogs-chicago-aiden-2026-03-04474c9fd0",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-chicago-aiden-2026-03",
+    "collections": [
+      "pilgrimage",
+      "cosplay"
+    ],
+    "work": "Watch Dogs",
+    "country": "美国",
+    "character": "Aiden Pearce",
+    "date": "2026-03",
+    "place": "Illinois · Chicago",
+    "coordinates": [
+      41.8781,
+      -87.6298
+    ],
+    "caption": "Aiden Pearce",
+    "src": "media/full/library-watch-dogs-chicago-aiden-2026-03-04474c9fd0.jpg",
+    "thumb": "media/thumb/library-watch-dogs-chicago-aiden-2026-03-04474c9fd0.jpg",
+    "width": 800,
+    "height": 360,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-chicago-aiden-2026-03-183fc7e2a6",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-chicago-aiden-2026-03",
+    "collections": [
+      "pilgrimage",
+      "cosplay"
+    ],
+    "work": "Watch Dogs",
+    "country": "美国",
+    "character": "Aiden Pearce",
+    "date": "2026-03",
+    "place": "Illinois · Chicago",
+    "coordinates": [
+      41.8781,
+      -87.6298
+    ],
+    "caption": "Aiden Pearce",
+    "src": "media/full/library-watch-dogs-chicago-aiden-2026-03-183fc7e2a6.jpg",
+    "thumb": "media/thumb/library-watch-dogs-chicago-aiden-2026-03-183fc7e2a6.jpg",
+    "width": 360,
+    "height": 480,
+    "cover": false
+  },
+  {
+    "id": "library-resident-evil-4-ax-leon-2026-01-49def50c92",
+    "source": "seichi-junrei",
+    "albumId": "resident-evil-4-ax-leon-2026-01",
+    "collections": [
+      "cosplay"
+    ],
+    "work": "Resident Evil 4",
+    "country": "美国",
+    "character": "Leon S. Kennedy",
+    "event": "Anime Expo",
+    "date": "2026-01",
+    "place": "California · Los Angeles",
+    "coordinates": [
+      34.0407,
+      -118.2697
+    ],
+    "caption": "Leon S. Kennedy",
+    "src": "media/full/library-resident-evil-4-ax-leon-2026-01-49def50c92.jpg",
+    "thumb": "media/thumb/library-resident-evil-4-ax-leon-2026-01-49def50c92.jpg",
+    "width": 768,
+    "height": 1024,
+    "cover": false
+  },
+  {
+    "id": "library-resident-evil-4-ax-leon-2026-01-149156d959",
+    "source": "seichi-junrei",
+    "albumId": "resident-evil-4-ax-leon-2026-01",
+    "collections": [
+      "cosplay"
+    ],
+    "work": "Resident Evil 4",
+    "country": "美国",
+    "character": "Leon S. Kennedy",
+    "event": "Anime Expo",
+    "date": "2026-01",
+    "place": "California · Los Angeles",
+    "coordinates": [
+      34.0407,
+      -118.2697
+    ],
+    "caption": "Leon S. Kennedy",
+    "src": "media/full/library-resident-evil-4-ax-leon-2026-01-149156d959.jpg",
+    "thumb": "media/thumb/library-resident-evil-4-ax-leon-2026-01-149156d959.jpg",
+    "width": 1024,
+    "height": 768,
+    "cover": false
+  },
+  {
+    "id": "library-resident-evil-4-ax-leon-2026-01-c82f10e9ef",
+    "source": "seichi-junrei",
+    "albumId": "resident-evil-4-ax-leon-2026-01",
+    "collections": [
+      "cosplay"
+    ],
+    "work": "Resident Evil 4",
+    "country": "美国",
+    "character": "Leon S. Kennedy",
+    "event": "Anime Expo",
+    "date": "2026-01",
+    "place": "California · Los Angeles",
+    "coordinates": [
+      34.0407,
+      -118.2697
+    ],
+    "caption": "Leon S. Kennedy",
+    "src": "media/full/library-resident-evil-4-ax-leon-2026-01-c82f10e9ef.jpg",
+    "thumb": "media/thumb/library-resident-evil-4-ax-leon-2026-01-c82f10e9ef.jpg",
+    "width": 768,
+    "height": 1024,
+    "cover": true
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-bd77792246",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "豊橋駅",
+    "coordinates": [
+      34.7626,
+      137.3816
+    ],
+    "caption": "豊橋駅",
+    "src": "media/full/library-makeine-toyohashi-2025-07-bd77792246.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-bd77792246.jpg",
+    "width": 1080,
+    "height": 1216,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-1049696612",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "豊橋駅",
+    "coordinates": [
+      34.7626,
+      137.3816
+    ],
+    "caption": "豊橋駅",
+    "src": "media/full/library-makeine-toyohashi-2025-07-1049696612.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-1049696612.jpg",
+    "width": 1080,
+    "height": 1510,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-7a28f38935",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "豊橋駅",
+    "coordinates": [
+      34.7626,
+      137.3816
+    ],
+    "caption": "豊橋駅",
+    "src": "media/full/library-makeine-toyohashi-2025-07-7a28f38935.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-7a28f38935.jpg",
+    "width": 1080,
+    "height": 1529,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-0d17ac0a8d",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "豊橋駅ビル カルミア",
+    "coordinates": [
+      34.7628,
+      137.3822
+    ],
+    "caption": "豊橋駅ビル カルミア",
+    "src": "media/full/library-makeine-toyohashi-2025-07-0d17ac0a8d.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-0d17ac0a8d.jpg",
+    "width": 1080,
+    "height": 1274,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-47cd37ecc2",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "豊橋駅ビル カルミア",
+    "coordinates": [
+      34.7628,
+      137.3822
+    ],
+    "caption": "豊橋駅ビル カルミア",
+    "src": "media/full/library-makeine-toyohashi-2025-07-47cd37ecc2.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-47cd37ecc2.jpg",
+    "width": 1080,
+    "height": 1313,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-1342a73a5d",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "豊橋駅ビル カルミア",
+    "coordinates": [
+      34.7628,
+      137.3822
+    ],
+    "caption": "豊橋駅ビル カルミア",
+    "src": "media/full/library-makeine-toyohashi-2025-07-1342a73a5d.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-1342a73a5d.jpg",
+    "width": 1080,
+    "height": 1331,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-6ef0d45dd9",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "豊鉄市内線 駅前停留所",
+    "coordinates": [
+      34.7635,
+      137.3827
+    ],
+    "caption": "豊鉄市内線 駅前停留所",
+    "src": "media/full/library-makeine-toyohashi-2025-07-6ef0d45dd9.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-6ef0d45dd9.jpg",
+    "width": 1080,
+    "height": 1298,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-97cd6f774a",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "豊橋駅東口周辺",
+    "coordinates": [
+      34.7631,
+      137.3832
+    ],
+    "caption": "豊橋駅東口周辺",
+    "src": "media/full/library-makeine-toyohashi-2025-07-97cd6f774a.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-97cd6f774a.jpg",
+    "width": 807,
+    "height": 699,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-d63dd78b08",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "豊橋駅東口周辺",
+    "coordinates": [
+      34.7631,
+      137.3832
+    ],
+    "caption": "豊橋駅東口周辺",
+    "src": "media/full/library-makeine-toyohashi-2025-07-d63dd78b08.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-d63dd78b08.jpg",
+    "width": 849,
+    "height": 785,
+    "cover": true
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-c56f300d83",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "豊橋駅東口周辺",
+    "coordinates": [
+      34.7631,
+      137.3832
+    ],
+    "caption": "豊橋駅東口周辺",
+    "src": "media/full/library-makeine-toyohashi-2025-07-c56f300d83.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-c56f300d83.jpg",
+    "width": 640,
+    "height": 787,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-a8b796a116",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "豊橋駅東口周辺",
+    "coordinates": [
+      34.7631,
+      137.3832
+    ],
+    "caption": "豊橋駅東口周辺",
+    "src": "media/full/library-makeine-toyohashi-2025-07-a8b796a116.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-a8b796a116.jpg",
+    "width": 850,
+    "height": 785,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-980ab8cc0f",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "ときわ通り",
+    "coordinates": [
+      34.765,
+      137.3862
+    ],
+    "caption": "ときわ通り",
+    "src": "media/full/library-makeine-toyohashi-2025-07-980ab8cc0f.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-980ab8cc0f.jpg",
+    "width": 1080,
+    "height": 1132,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-7760b8d44c",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "精文館書店 豊橋本店",
+    "coordinates": [
+      34.7645,
+      137.3869
+    ],
+    "caption": "精文館書店 豊橋本店",
+    "src": "media/full/library-makeine-toyohashi-2025-07-7760b8d44c.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-7760b8d44c.jpg",
+    "width": 643,
+    "height": 842,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-4db2044c68",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "精文館書店 豊橋本店",
+    "coordinates": [
+      34.7645,
+      137.3869
+    ],
+    "caption": "精文館書店 豊橋本店",
+    "src": "media/full/library-makeine-toyohashi-2025-07-4db2044c68.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-4db2044c68.jpg",
+    "width": 853,
+    "height": 786,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-3cc940e96c",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "精文館書店 豊橋本店",
+    "coordinates": [
+      34.7645,
+      137.3869
+    ],
+    "caption": "精文館書店 豊橋本店",
+    "src": "media/full/library-makeine-toyohashi-2025-07-3cc940e96c.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-3cc940e96c.jpg",
+    "width": 1080,
+    "height": 1218,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-b96bcfb166",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "精文館書店 豊橋本店",
+    "coordinates": [
+      34.7645,
+      137.3869
+    ],
+    "caption": "精文館書店 豊橋本店",
+    "src": "media/full/library-makeine-toyohashi-2025-07-b96bcfb166.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-b96bcfb166.jpg",
+    "width": 1080,
+    "height": 1429,
+    "cover": false
+  },
+  {
+    "id": "library-makeine-toyohashi-2025-07-dd238e2606",
+    "source": "seichi-junrei",
+    "albumId": "makeine-toyohashi-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "败犬女主太多了！",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "愛知県 · 豊橋市",
+    "site": "精文館書店 豊橋本店",
+    "coordinates": [
+      34.7645,
+      137.3869
+    ],
+    "caption": "精文館書店 豊橋本店",
+    "src": "media/full/library-makeine-toyohashi-2025-07-dd238e2606.jpg",
+    "thumb": "media/thumb/library-makeine-toyohashi-2025-07-dd238e2606.jpg",
+    "width": 1080,
+    "height": 1215,
+    "cover": false
+  },
+  {
+    "id": "library-senren-banka-kobe-2025-07-00a39c2203",
+    "source": "seichi-junrei",
+    "albumId": "senren-banka-kobe-2025-07",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "千恋＊万花",
+    "country": "日本",
+    "date": "2025-07",
+    "place": "兵庫県 · 神戸市",
+    "site": "生田神社",
+    "coordinates": [
+      34.6946,
+      135.1955
+    ],
+    "caption": "生田神社",
+    "src": "media/full/library-senren-banka-kobe-2025-07-00a39c2203.jpg",
+    "thumb": "media/thumb/library-senren-banka-kobe-2025-07-00a39c2203.jpg",
+    "width": 1599,
+    "height": 2100,
+    "cover": false
+  },
+  {
+    "id": "library-xenoblade-3-cd28-noah-2024-10-765e5fb6bf",
+    "source": "seichi-junrei",
+    "albumId": "xenoblade-3-cd28-noah-2024-10",
+    "collections": [
+      "cosplay"
+    ],
+    "work": "Xenoblade Chronicles 3",
+    "country": "中国",
+    "character": "Noah",
+    "event": "ComiDay 28",
+    "date": "2024-10",
+    "place": "四川省 · 成都市",
+    "coordinates": [
+      30.5728,
+      104.0668
+    ],
+    "caption": "Noah",
+    "src": "media/full/library-xenoblade-3-cd28-noah-2024-10-765e5fb6bf.jpg",
+    "thumb": "media/thumb/library-xenoblade-3-cd28-noah-2024-10-765e5fb6bf.jpg",
+    "width": 1620,
+    "height": 1080,
+    "cover": true
+  },
+  {
+    "id": "library-xenoblade-3-cd28-noah-2024-10-c145ec9c24",
+    "source": "seichi-junrei",
+    "albumId": "xenoblade-3-cd28-noah-2024-10",
+    "collections": [
+      "cosplay"
+    ],
+    "work": "Xenoblade Chronicles 3",
+    "country": "中国",
+    "character": "Noah",
+    "event": "ComiDay 28",
+    "date": "2024-10",
+    "place": "四川省 · 成都市",
+    "coordinates": [
+      30.5728,
+      104.0668
+    ],
+    "caption": "Noah",
+    "src": "media/full/library-xenoblade-3-cd28-noah-2024-10-c145ec9c24.jpg",
+    "thumb": "media/thumb/library-xenoblade-3-cd28-noah-2024-10-c145ec9c24.jpg",
+    "width": 1080,
+    "height": 1620,
+    "cover": false
+  },
+  {
+    "id": "library-xenoblade-3-cd28-noah-2024-10-6895551756",
+    "source": "seichi-junrei",
+    "albumId": "xenoblade-3-cd28-noah-2024-10",
+    "collections": [
+      "cosplay"
+    ],
+    "work": "Xenoblade Chronicles 3",
+    "country": "中国",
+    "character": "Noah",
+    "event": "ComiDay 28",
+    "date": "2024-10",
+    "place": "四川省 · 成都市",
+    "coordinates": [
+      30.5728,
+      104.0668
+    ],
+    "caption": "Noah",
+    "src": "media/full/library-xenoblade-3-cd28-noah-2024-10-6895551756.jpg",
+    "thumb": "media/thumb/library-xenoblade-3-cd28-noah-2024-10-6895551756.jpg",
+    "width": 1080,
+    "height": 1620,
+    "cover": false
+  },
+  {
+    "id": "library-xenoblade-3-cd28-noah-2024-10-d3f6b07604",
+    "source": "seichi-junrei",
+    "albumId": "xenoblade-3-cd28-noah-2024-10",
+    "collections": [
+      "cosplay"
+    ],
+    "work": "Xenoblade Chronicles 3",
+    "country": "中国",
+    "character": "Noah",
+    "event": "ComiDay 28",
+    "date": "2024-10",
+    "place": "四川省 · 成都市",
+    "coordinates": [
+      30.5728,
+      104.0668
+    ],
+    "caption": "Noah",
+    "src": "media/full/library-xenoblade-3-cd28-noah-2024-10-d3f6b07604.jpg",
+    "thumb": "media/thumb/library-xenoblade-3-cd28-noah-2024-10-d3f6b07604.jpg",
+    "width": 1080,
+    "height": 1620,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-7369391d4c",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 渋谷区",
+    "site": "渋谷駅前スクランブル交差点",
+    "coordinates": [
+      35.6595,
+      139.7005
+    ],
+    "caption": "渋谷駅前スクランブル交差点",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-7369391d4c.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-7369391d4c.jpg",
+    "width": 1748,
+    "height": 2400,
+    "cover": true
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-bcd1c0bcff",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 渋谷区",
+    "site": "渋谷駅周辺",
+    "coordinates": [
+      35.6595,
+      139.7005
+    ],
+    "caption": "渋谷駅周辺",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-bcd1c0bcff.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-bcd1c0bcff.jpg",
+    "width": 1800,
+    "height": 2160,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-331d754d80",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 渋谷区",
+    "site": "渋谷駅前スクランブル交差点",
+    "coordinates": [
+      35.6595,
+      139.7005
+    ],
+    "caption": "渋谷駅前スクランブル交差点",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-331d754d80.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-331d754d80.jpg",
+    "width": 1769,
+    "height": 2400,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-7b4e2d04ab",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-7b4e2d04ab.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-7b4e2d04ab.jpg",
+    "width": 1800,
+    "height": 1823,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-109df85345",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-109df85345.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-109df85345.jpg",
+    "width": 1800,
+    "height": 1823,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-d18ae77565",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-d18ae77565.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-d18ae77565.jpg",
+    "width": 1800,
+    "height": 1823,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-9491e87ff5",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-9491e87ff5.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-9491e87ff5.jpg",
+    "width": 1800,
+    "height": 2199,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-e48db2ccbc",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-e48db2ccbc.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-e48db2ccbc.jpg",
+    "width": 1800,
+    "height": 2132,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-d8a8a48ba4",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 千代田区",
+    "site": "秋葉原駅周辺",
+    "coordinates": [
+      35.6984,
+      139.7731
+    ],
+    "caption": "秋葉原駅周辺",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-d8a8a48ba4.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-d8a8a48ba4.jpg",
+    "width": 1800,
+    "height": 2103,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-93f022ba7f",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 千代田区",
+    "site": "秋葉原駅周辺",
+    "coordinates": [
+      35.6984,
+      139.7731
+    ],
+    "caption": "秋葉原駅周辺",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-93f022ba7f.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-93f022ba7f.jpg",
+    "width": 1800,
+    "height": 2110,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-a44f7ebe5b",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-a44f7ebe5b.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-a44f7ebe5b.jpg",
+    "width": 1800,
+    "height": 2125,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-def028a8d9",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-def028a8d9.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-def028a8d9.jpg",
+    "width": 1800,
+    "height": 2117,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-f3c9b109ba",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-f3c9b109ba.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-f3c9b109ba.jpg",
+    "width": 1800,
+    "height": 2124,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-be8cfc7371",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-be8cfc7371.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-be8cfc7371.jpg",
+    "width": 1800,
+    "height": 1823,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-1418f682d0",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-1418f682d0.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-1418f682d0.jpg",
+    "width": 1800,
+    "height": 1822,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-cfb8346f74",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-cfb8346f74.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-cfb8346f74.jpg",
+    "width": 1800,
+    "height": 1823,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-fdd8de4b17",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-fdd8de4b17.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-fdd8de4b17.jpg",
+    "width": 1800,
+    "height": 1823,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-d4eb64799a",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-d4eb64799a.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-d4eb64799a.jpg",
+    "width": 1800,
+    "height": 1823,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-e7d4cb939a",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-e7d4cb939a.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-e7d4cb939a.jpg",
+    "width": 1800,
+    "height": 1823,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-65e5175009",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-65e5175009.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-65e5175009.jpg",
+    "width": 1800,
+    "height": 1823,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-meguro-2024-08-6a927b61dd",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-meguro-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "【我推的孩子】",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 目黒区",
+    "site": "目黒",
+    "coordinates": [
+      35.6339,
+      139.7155
+    ],
+    "caption": "目黒",
+    "src": "media/full/library-oshi-no-ko-meguro-2024-08-6a927b61dd.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-meguro-2024-08-6a927b61dd.jpg",
+    "width": 1602,
+    "height": 1622,
+    "cover": false
+  },
+  {
+    "id": "library-bocchi-shimokitazawa-2024-08-784cea7bba",
+    "source": "seichi-junrei",
+    "albumId": "bocchi-shimokitazawa-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "孤独摇滚！",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 世田谷区",
+    "site": "下北沢",
+    "coordinates": [
+      35.6616,
+      139.6669
+    ],
+    "caption": "下北沢",
+    "src": "media/full/library-bocchi-shimokitazawa-2024-08-784cea7bba.jpg",
+    "thumb": "media/thumb/library-bocchi-shimokitazawa-2024-08-784cea7bba.jpg",
+    "width": 1080,
+    "height": 1214,
+    "cover": true
+  },
+  {
+    "id": "library-bocchi-shimokitazawa-2024-08-0b66b5b8ea",
+    "source": "seichi-junrei",
+    "albumId": "bocchi-shimokitazawa-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "孤独摇滚！",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 世田谷区",
+    "site": "下北沢",
+    "coordinates": [
+      35.6616,
+      139.6669
+    ],
+    "caption": "下北沢",
+    "src": "media/full/library-bocchi-shimokitazawa-2024-08-0b66b5b8ea.jpg",
+    "thumb": "media/thumb/library-bocchi-shimokitazawa-2024-08-0b66b5b8ea.jpg",
+    "width": 605,
+    "height": 820,
+    "cover": false
+  },
+  {
+    "id": "library-bocchi-shimokitazawa-2024-08-2d0807c19a",
+    "source": "seichi-junrei",
+    "albumId": "bocchi-shimokitazawa-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "孤独摇滚！",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 世田谷区",
+    "site": "下北沢",
+    "coordinates": [
+      35.6616,
+      139.6669
+    ],
+    "caption": "下北沢",
+    "src": "media/full/library-bocchi-shimokitazawa-2024-08-2d0807c19a.jpg",
+    "thumb": "media/thumb/library-bocchi-shimokitazawa-2024-08-2d0807c19a.jpg",
+    "width": 1192,
+    "height": 1560,
+    "cover": false
+  },
+  {
+    "id": "library-bocchi-shimokitazawa-2024-08-705c72661d",
+    "source": "seichi-junrei",
+    "albumId": "bocchi-shimokitazawa-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "孤独摇滚！",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 世田谷区",
+    "site": "下北沢",
+    "coordinates": [
+      35.6616,
+      139.6669
+    ],
+    "caption": "下北沢",
+    "src": "media/full/library-bocchi-shimokitazawa-2024-08-705c72661d.jpg",
+    "thumb": "media/thumb/library-bocchi-shimokitazawa-2024-08-705c72661d.jpg",
+    "width": 760,
+    "height": 855,
+    "cover": false
+  },
+  {
+    "id": "library-bocchi-shimokitazawa-2024-08-f47afa00b6",
+    "source": "seichi-junrei",
+    "albumId": "bocchi-shimokitazawa-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "孤独摇滚！",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 世田谷区",
+    "site": "下北沢",
+    "coordinates": [
+      35.6616,
+      139.6669
+    ],
+    "caption": "下北沢",
+    "src": "media/full/library-bocchi-shimokitazawa-2024-08-f47afa00b6.jpg",
+    "thumb": "media/thumb/library-bocchi-shimokitazawa-2024-08-f47afa00b6.jpg",
+    "width": 760,
+    "height": 849,
+    "cover": false
+  },
+  {
+    "id": "library-kaguya-yoyogi-2024-08-5f5f10fd24",
+    "source": "seichi-junrei",
+    "albumId": "kaguya-yoyogi-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "辉夜大小姐想让我告白",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 渋谷区",
+    "site": "代々木公園",
+    "coordinates": [
+      35.6717,
+      139.6949
+    ],
+    "caption": "代々木公園",
+    "src": "media/full/library-kaguya-yoyogi-2024-08-5f5f10fd24.jpg",
+    "thumb": "media/thumb/library-kaguya-yoyogi-2024-08-5f5f10fd24.jpg",
+    "width": 1440,
+    "height": 1842,
+    "cover": true
+  },
+  {
+    "id": "library-kaguya-yoyogi-2024-08-96d9c71454",
+    "source": "seichi-junrei",
+    "albumId": "kaguya-yoyogi-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "辉夜大小姐想让我告白",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 渋谷区",
+    "site": "代々木公園",
+    "coordinates": [
+      35.6717,
+      139.6949
+    ],
+    "caption": "代々木公園",
+    "src": "media/full/library-kaguya-yoyogi-2024-08-96d9c71454.jpg",
+    "thumb": "media/thumb/library-kaguya-yoyogi-2024-08-96d9c71454.jpg",
+    "width": 1440,
+    "height": 1579,
+    "cover": false
+  },
+  {
+    "id": "library-kaguya-yoyogi-2024-08-df9cb1790a",
+    "source": "seichi-junrei",
+    "albumId": "kaguya-yoyogi-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "辉夜大小姐想让我告白",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 渋谷区",
+    "site": "代々木公園",
+    "coordinates": [
+      35.6717,
+      139.6949
+    ],
+    "caption": "代々木公園",
+    "src": "media/full/library-kaguya-yoyogi-2024-08-df9cb1790a.jpg",
+    "thumb": "media/thumb/library-kaguya-yoyogi-2024-08-df9cb1790a.jpg",
+    "width": 1440,
+    "height": 2370,
+    "cover": false
+  },
+  {
+    "id": "library-kaguya-yoyogi-2024-08-cdaae9f3ad",
+    "source": "seichi-junrei",
+    "albumId": "kaguya-yoyogi-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "辉夜大小姐想让我告白",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 渋谷区",
+    "site": "代々木公園",
+    "coordinates": [
+      35.6717,
+      139.6949
+    ],
+    "caption": "代々木公園",
+    "src": "media/full/library-kaguya-yoyogi-2024-08-cdaae9f3ad.jpg",
+    "thumb": "media/thumb/library-kaguya-yoyogi-2024-08-cdaae9f3ad.jpg",
+    "width": 1440,
+    "height": 1320,
+    "cover": false
+  },
+  {
+    "id": "library-kaguya-yoyogi-2024-08-05686a3d7c",
+    "source": "seichi-junrei",
+    "albumId": "kaguya-yoyogi-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "辉夜大小姐想让我告白",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 渋谷区",
+    "site": "代々木公園",
+    "coordinates": [
+      35.6717,
+      139.6949
+    ],
+    "caption": "代々木公園",
+    "src": "media/full/library-kaguya-yoyogi-2024-08-05686a3d7c.jpg",
+    "thumb": "media/thumb/library-kaguya-yoyogi-2024-08-05686a3d7c.jpg",
+    "width": 1248,
+    "height": 2400,
+    "cover": false
+  },
+  {
+    "id": "library-kaguya-yoyogi-2024-08-a4b6727fc7",
+    "source": "seichi-junrei",
+    "albumId": "kaguya-yoyogi-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "辉夜大小姐想让我告白",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 渋谷区",
+    "site": "代々木公園",
+    "coordinates": [
+      35.6717,
+      139.6949
+    ],
+    "caption": "代々木公園",
+    "src": "media/full/library-kaguya-yoyogi-2024-08-a4b6727fc7.jpg",
+    "thumb": "media/thumb/library-kaguya-yoyogi-2024-08-a4b6727fc7.jpg",
+    "width": 1440,
+    "height": 938,
+    "cover": false
+  },
+  {
+    "id": "library-your-name-suga-shrine-2024-08-553180c9d0",
+    "source": "seichi-junrei",
+    "albumId": "your-name-suga-shrine-2024-08",
+    "collections": [
+      "pilgrimage",
+      "cosplay"
+    ],
+    "work": "你的名字。",
+    "country": "日本",
+    "character": "立花泷",
+    "date": "2024-08",
+    "place": "東京都 · 新宿区",
+    "site": "須賀神社",
+    "coordinates": [
+      35.6853,
+      139.7202
+    ],
+    "caption": "立花泷",
+    "src": "media/full/library-your-name-suga-shrine-2024-08-553180c9d0.jpg",
+    "thumb": "media/thumb/library-your-name-suga-shrine-2024-08-553180c9d0.jpg",
+    "width": 1080,
+    "height": 1440,
+    "cover": true
+  },
+  {
+    "id": "library-your-name-suga-shrine-2024-08-7f70b979dc",
+    "source": "seichi-junrei",
+    "albumId": "your-name-suga-shrine-2024-08",
+    "collections": [
+      "pilgrimage",
+      "cosplay"
+    ],
+    "work": "你的名字。",
+    "country": "日本",
+    "character": "立花泷",
+    "date": "2024-08",
+    "place": "東京都 · 新宿区",
+    "site": "須賀神社",
+    "coordinates": [
+      35.6853,
+      139.7202
+    ],
+    "caption": "立花泷",
+    "src": "media/full/library-your-name-suga-shrine-2024-08-7f70b979dc.jpg",
+    "thumb": "media/thumb/library-your-name-suga-shrine-2024-08-7f70b979dc.jpg",
+    "width": 849,
+    "height": 1095,
+    "cover": false
+  },
+  {
+    "id": "library-your-name-suga-shrine-2024-08-12858a1b0f",
+    "source": "seichi-junrei",
+    "albumId": "your-name-suga-shrine-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "你的名字。",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "東京都 · 新宿区",
+    "site": "須賀神社",
+    "coordinates": [
+      35.6853,
+      139.7202
+    ],
+    "caption": "須賀神社",
+    "src": "media/full/library-your-name-suga-shrine-2024-08-12858a1b0f.jpg",
+    "thumb": "media/thumb/library-your-name-suga-shrine-2024-08-12858a1b0f.jpg",
+    "width": 1800,
+    "height": 1823,
+    "cover": false
+  },
+  {
+    "id": "library-senren-banka-kyoto-2024-08-64b4a24e44",
+    "source": "seichi-junrei",
+    "albumId": "senren-banka-kyoto-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "千恋＊万花",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "京都府 · 京都市",
+    "site": "祇園白川南通（巽橋）",
+    "coordinates": [
+      35.00556,
+      135.77449
+    ],
+    "caption": "祇園白川南通（巽橋）",
+    "src": "media/full/library-senren-banka-kyoto-2024-08-64b4a24e44.jpg",
+    "thumb": "media/thumb/library-senren-banka-kyoto-2024-08-64b4a24e44.jpg",
+    "width": 1800,
+    "height": 2021,
+    "cover": true
+  },
+  {
+    "id": "library-senren-banka-kyoto-2024-08-b355739391",
+    "source": "seichi-junrei",
+    "albumId": "senren-banka-kyoto-2024-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "千恋＊万花",
+    "country": "日本",
+    "date": "2024-08",
+    "place": "京都府 · 京都市",
+    "site": "花見小路通",
+    "coordinates": [
+      35.00265,
+      135.77518
+    ],
+    "caption": "花見小路通",
+    "src": "media/full/library-senren-banka-kyoto-2024-08-b355739391.jpg",
+    "thumb": "media/thumb/library-senren-banka-kyoto-2024-08-b355739391.jpg",
+    "width": 1800,
+    "height": 1982,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-worldline-aqua-2024-07-ed55b8a2cc",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-worldline-aqua-2024-07",
+    "collections": [
+      "cosplay"
+    ],
+    "work": "【我推的孩子】",
+    "country": "中国",
+    "character": "星野爱久爱海",
+    "event": "世界线动漫展 16",
+    "date": "2024-07",
+    "place": "四川省 · 成都市",
+    "coordinates": [
+      30.5728,
+      104.0668
+    ],
+    "caption": "星野爱久爱海",
+    "src": "media/full/library-oshi-no-ko-worldline-aqua-2024-07-ed55b8a2cc.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-worldline-aqua-2024-07-ed55b8a2cc.jpg",
+    "width": 1080,
+    "height": 1440,
+    "cover": true
+  },
+  {
+    "id": "library-oshi-no-ko-worldline-aqua-2024-07-a1db27f02b",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-worldline-aqua-2024-07",
+    "collections": [
+      "cosplay"
+    ],
+    "work": "【我推的孩子】",
+    "country": "中国",
+    "character": "星野爱久爱海",
+    "event": "世界线动漫展 16",
+    "date": "2024-07",
+    "place": "四川省 · 成都市",
+    "coordinates": [
+      30.5728,
+      104.0668
+    ],
+    "caption": "星野爱久爱海",
+    "src": "media/full/library-oshi-no-ko-worldline-aqua-2024-07-a1db27f02b.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-worldline-aqua-2024-07-a1db27f02b.jpg",
+    "width": 1080,
+    "height": 1440,
+    "cover": false
+  },
+  {
+    "id": "library-oshi-no-ko-worldline-aqua-2024-07-21250ac2b7",
+    "source": "seichi-junrei",
+    "albumId": "oshi-no-ko-worldline-aqua-2024-07",
+    "collections": [
+      "cosplay"
+    ],
+    "work": "【我推的孩子】",
+    "country": "中国",
+    "character": "星野爱久爱海",
+    "event": "世界线动漫展 16",
+    "date": "2024-07",
+    "place": "四川省 · 成都市",
+    "coordinates": [
+      30.5728,
+      104.0668
+    ],
+    "caption": "星野爱久爱海",
+    "src": "media/full/library-oshi-no-ko-worldline-aqua-2024-07-21250ac2b7.jpg",
+    "thumb": "media/thumb/library-oshi-no-ko-worldline-aqua-2024-07-21250ac2b7.jpg",
+    "width": 1080,
+    "height": 1440,
+    "cover": false
+  },
+  {
+    "id": "library-kaguya-stanford-2023-12-1bef020cbd",
+    "source": "seichi-junrei",
+    "albumId": "kaguya-stanford-2023-12",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "辉夜大小姐想让我告白",
+    "country": "美国",
+    "date": "2023-12",
+    "place": "California · San Mateo County",
+    "site": "San Francisco International Airport",
+    "coordinates": [
+      37.6213,
+      -122.379
+    ],
+    "caption": "San Francisco International Airport",
+    "src": "media/full/library-kaguya-stanford-2023-12-1bef020cbd.jpg",
+    "thumb": "media/thumb/library-kaguya-stanford-2023-12-1bef020cbd.jpg",
+    "width": 1800,
+    "height": 1153,
+    "cover": false
+  },
+  {
+    "id": "library-kaguya-stanford-2023-12-f6aaf74425",
+    "source": "seichi-junrei",
+    "albumId": "kaguya-stanford-2023-12",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "辉夜大小姐想让我告白",
+    "country": "美国",
+    "date": "2023-12",
+    "place": "California · Santa Clara County",
+    "site": "Green Library · Bing Wing",
+    "coordinates": [
+      37.4276,
+      -122.1697
+    ],
+    "caption": "Green Library · Bing Wing",
+    "src": "media/full/library-kaguya-stanford-2023-12-f6aaf74425.jpg",
+    "thumb": "media/thumb/library-kaguya-stanford-2023-12-f6aaf74425.jpg",
+    "width": 1600,
+    "height": 1777,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-b6a6c347b4",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "site": "Alcatraz Island",
+    "coordinates": [
+      37.8266636,
+      -122.4230122
+    ],
+    "caption": "Alcatraz Island",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-b6a6c347b4.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-b6a6c347b4.jpg",
+    "width": 1080,
+    "height": 1282,
+    "cover": true
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-e0d0b571bb",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "site": "Alcatraz Island",
+    "coordinates": [
+      37.8266636,
+      -122.4230122
+    ],
+    "caption": "Alcatraz Island",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-e0d0b571bb.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-e0d0b571bb.jpg",
+    "width": 1080,
+    "height": 1161,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-048ecd451a",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ],
+    "caption": "California · San Francisco",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-048ecd451a.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-048ecd451a.jpg",
+    "width": 1080,
+    "height": 1485,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-8a9bf86fc2",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ],
+    "caption": "California · San Francisco",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-8a9bf86fc2.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-8a9bf86fc2.jpg",
+    "width": 843,
+    "height": 2400,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-660f48e366",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "site": "Alcatraz Island",
+    "coordinates": [
+      37.8266636,
+      -122.4230122
+    ],
+    "caption": "Alcatraz Island",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-660f48e366.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-660f48e366.jpg",
+    "width": 1080,
+    "height": 1282,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-c25c7e9e3c",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "site": "Coit Tower",
+    "coordinates": [
+      37.8024,
+      -122.4058
+    ],
+    "caption": "Coit Tower",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-c25c7e9e3c.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-c25c7e9e3c.jpg",
+    "width": 843,
+    "height": 2400,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-6f3c708f90",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "site": "Lombard Street",
+    "coordinates": [
+      37.8021,
+      -122.4187
+    ],
+    "caption": "Lombard Street",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-6f3c708f90.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-6f3c708f90.jpg",
+    "width": 999,
+    "height": 2400,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-f4fb380358",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "site": "Fisherman's Wharf",
+    "coordinates": [
+      37.808,
+      -122.4177
+    ],
+    "caption": "Fisherman's Wharf",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-f4fb380358.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-f4fb380358.jpg",
+    "width": 1080,
+    "height": 1161,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-a299f39dc1",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "site": "PIER 39",
+    "coordinates": [
+      37.8087,
+      -122.4098
+    ],
+    "caption": "PIER 39",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-a299f39dc1.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-a299f39dc1.jpg",
+    "width": 1080,
+    "height": 1161,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-34ad51772c",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "site": "Chinatown",
+    "coordinates": [
+      37.7941,
+      -122.4078
+    ],
+    "caption": "Chinatown",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-34ad51772c.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-34ad51772c.jpg",
+    "width": 1080,
+    "height": 1282,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-8fccf66fd4",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "site": "Alcatraz Island",
+    "coordinates": [
+      37.8266636,
+      -122.4230122
+    ],
+    "caption": "Alcatraz Island",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-8fccf66fd4.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-8fccf66fd4.jpg",
+    "width": 1080,
+    "height": 1282,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-6056b049a1",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ],
+    "caption": "California · San Francisco",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-6056b049a1.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-6056b049a1.jpg",
+    "width": 843,
+    "height": 2400,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-e1b6d862ce",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "site": "Alcatraz Island · 渡轮视角",
+    "mapSite": "Alcatraz Island",
+    "coordinates": [
+      37.8266636,
+      -122.4230122
+    ],
+    "caption": "Alcatraz Island · 渡轮视角",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-e1b6d862ce.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-e1b6d862ce.jpg",
+    "width": 1080,
+    "height": 1161,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-f9ceeb2cba",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "site": "Alcatraz Island",
+    "coordinates": [
+      37.8266636,
+      -122.4230122
+    ],
+    "caption": "Alcatraz Island",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-f9ceeb2cba.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-f9ceeb2cba.jpg",
+    "width": 999,
+    "height": 2400,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-28b1bce6b2",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "site": "Alcatraz Island",
+    "coordinates": [
+      37.8266636,
+      -122.4230122
+    ],
+    "caption": "Alcatraz Island",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-28b1bce6b2.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-28b1bce6b2.jpg",
+    "width": 999,
+    "height": 2400,
+    "cover": false
+  },
+  {
+    "id": "library-watch-dogs-2-san-francisco-2023-08-4e7bca75b6",
+    "source": "seichi-junrei",
+    "albumId": "watch-dogs-2-san-francisco-2023-08",
+    "collections": [
+      "pilgrimage"
+    ],
+    "work": "Watch Dogs 2",
+    "country": "美国",
+    "date": "2023-08",
+    "place": "California · San Francisco",
+    "site": "Alcatraz Island",
+    "coordinates": [
+      37.8266636,
+      -122.4230122
+    ],
+    "caption": "Alcatraz Island",
+    "src": "media/full/library-watch-dogs-2-san-francisco-2023-08-4e7bca75b6.jpg",
+    "thumb": "media/thumb/library-watch-dogs-2-san-francisco-2023-08-4e7bca75b6.jpg",
+    "width": 1080,
+    "height": 1282,
+    "cover": false
+  }
+]
