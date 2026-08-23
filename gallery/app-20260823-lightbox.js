@@ -1,3 +1,4 @@
+// Versioned filename intentionally bypasses long-lived CDN caches after the lightbox fix.
 const state = {
   collection: "pilgrimage",
   view: "work",
