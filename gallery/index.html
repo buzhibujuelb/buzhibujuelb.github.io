@@ -84,6 +84,35 @@
     <p>© 2026 Bei Liu · <a href="/">返回主页</a></p>
   </footer>
 
+  <aside class="music-dock" id="musicDock" aria-label="背景音乐播放器">
+    <div class="music-dock-heading">
+      <span class="music-dock-signal" aria-hidden="true"><i></i><i></i><i></i></span>
+      <div>
+        <strong>FIELD RECORDS</strong>
+        <span id="musicStatus" role="status">正在读取网易云歌单 2293020797</span>
+      </div>
+      <button class="music-dock-toggle" id="musicDockToggle" type="button" aria-expanded="true" aria-controls="musicDockBody" aria-label="收起播放器">−</button>
+    </div>
+    <div class="music-dock-body" id="musicDockBody">
+      <nmp-player
+        id="galleryPlayer"
+        playlist-id="2293020797"
+        theme="light"
+        layout="compact"
+        position="static"
+        volume="0.65"
+        autoplay="true"
+        lyric="true"
+        playlist="true"
+        remember="true"
+        storage-key="gallery-field-records"
+        hotkeys="true"
+        auto-pause-on-hidden="true"
+      ></nmp-player>
+      <a class="music-source" href="https://music.163.com/#/playlist?id=2293020797" target="_blank" rel="noopener">NETEASE PLAYLIST 2293020797 ↗</a>
+    </div>
+  </aside>
+
   <dialog class="lightbox" id="lightbox">
     <button class="lightbox-close" type="button" aria-label="关闭">×</button>
     <button class="lightbox-nav lightbox-prev" type="button" aria-label="上一张">‹</button>
@@ -100,5 +129,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script type="module" src="app-20260823-lightbox.js"></script>
+  <script src="vendor/netease-mini-player-v3/nmpv3.min.js"></script>
+  <script src="music-player.js" defer></script>
 </body>
 </html>

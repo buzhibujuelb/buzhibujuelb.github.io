@@ -1,0 +1,9 @@
+NeteaseMiniPlayer v3
+====================
+
+Version: 3.0.1
+Source: https://github.com/numakkiyu/NeteaseMiniPlayer_v3
+License: Apache-2.0 (https://www.apache.org/licenses/LICENSE-2.0)
+
+The vendored nmpv3.min.js file is copied unchanged from the published
+netease-mini-player-v3@3.0.1 npm package.
