@@ -24,6 +24,31 @@
     "provider": "igdb",
     "igdb_id": 161224
   },
+  "rawg:11726": {
+    "provider": "igdb",
+    "igdb_id": 26855,
+    "landscape_search": "Dead Cells"
+  },
+  "rawg:5876": {
+    "provider": "igdb",
+    "igdb_id": 58656,
+    "landscape_search": "Chameleon Run"
+  },
+  "rawg:193": {
+    "provider": "igdb",
+    "igdb_id": 1684,
+    "landscape_search": "Fruit Ninja"
+  },
+  "rawg:985056": {
+    "provider": "igdb",
+    "igdb_id": 44097,
+    "landscape_search": "Honor of Kings"
+  },
+  "rawg:545015": {
+    "provider": "igdb",
+    "igdb_id": 141540,
+    "landscape_search": "Disco Elysium: The Final Cut"
+  },
   "rawg:743535": {
     "provider": "vndb",
     "url": "https://t.vndb.org/cv/38/89138.jpg",

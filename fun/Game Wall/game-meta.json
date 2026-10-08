@@ -1,7 +1,7 @@
 {
   "rawg:795632": {
     "background_image": "covers/rawg-795632.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Resident Evil 4",
     "stores": [
       {
@@ -13,20 +13,20 @@
         "url": "https://store.playstation.com/en-us/concept/10004473/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/46cc597bae1fee3cd19314f32c6cb4f0.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 3168,
-    "steamgriddb_grid_id": 67387,
-    "updated_at": "2026-10-08T04:56:15.839Z",
     "background_image_landscape": "covers/rawg-795632-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 145215,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/ee9bd8073a31663328cd3d3f3ed824ad.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cobsxl.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "2050650",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1772502922",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 20065,
+    "igdb_game_name": "Resident Evil 4",
+    "updated_at": "2026-10-08T20:48:18.179Z"
   },
   "rawg:43753": {
     "background_image": "covers/rawg-43753.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Xenoblade Chronicles 2",
     "stores": [
       {
@@ -34,20 +34,20 @@
         "url": "https://www.nintendo.com/games/detail/xenoblade-chronicles-2-switch"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/5ef6efaa8d75619baf4cb6a9cf2df5a6.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5248288,
-    "steamgriddb_grid_id": 132303,
-    "updated_at": "2026-10-08T04:56:16.010Z",
     "background_image_landscape": "covers/rawg-43753-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cob8r2.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 76056,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/6231291d604f83f0011928b2c8ba8bb8.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 26766,
+    "igdb_game_name": "Xenoblade Chronicles 2",
+    "updated_at": "2026-10-08T20:48:18.517Z"
   },
   "rawg:28": {
     "background_image": "covers/rawg-28.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Red Dead Redemption 2",
     "stores": [
       {
@@ -67,20 +67,20 @@
         "url": "https://www.microsoft.com/en-us/p/red-dead-redemption-2/bpswgqbw7r3g?cid=msft_web_chart"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/a5bff26f8f2adb1ec19661b4c4bc9f86.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5249031,
-    "steamgriddb_grid_id": 68939,
-    "updated_at": "2026-10-08T04:56:16.247Z",
     "background_image_landscape": "covers/rawg-28-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 118764,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/3805bc35dca88bf94f89533481d5ae6a.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1q1f.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1174180",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 25076,
+    "igdb_game_name": "Red Dead Redemption 2",
+    "updated_at": "2026-10-08T20:48:18.167Z"
   },
   "rawg:44972": {
     "background_image": "covers/rawg-44972.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Danganronpa V3: Killing Harmony",
     "stores": [
       {
@@ -92,20 +92,20 @@
         "url": "http://store.steampowered.com/app/567640/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/20c8cf27a6d521affeee64697b2ab864.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 15729,
-    "steamgriddb_grid_id": 173021,
-    "updated_at": "2026-10-08T04:56:15.916Z",
     "background_image_landscape": "covers/rawg-44972-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 172746,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/ea4e969b85d8cd1ba8b2688f5d8cda49.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cocnyc.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "567640",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/567640/header.jpg?t=1750134757",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 12579,
+    "igdb_game_name": "Danganronpa V3: Killing Harmony",
+    "updated_at": "2026-10-08T20:48:18.397Z"
   },
   "rawg:3594": {
     "background_image": "covers/rawg-3594.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Danganronpa 2: Goodbye Despair",
     "stores": [
       {
@@ -121,20 +121,20 @@
         "url": "http://store.steampowered.com/app/413420/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/171abe4948c9f43e6fdeafc7a7dfe61f.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 9573,
-    "steamgriddb_grid_id": 162230,
-    "updated_at": "2026-10-08T04:56:16.291Z",
     "background_image_landscape": "covers/rawg-3594-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 104401,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/65a821e1564f80f493393723213599c1.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2h6j.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "413420",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413420/header.jpg?t=1781085654",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 9694,
+    "igdb_game_name": "Danganronpa 2: Goodbye Despair",
+    "updated_at": "2026-10-08T20:48:19.407Z"
   },
   "rawg:564761": {
     "background_image": "covers/rawg-564761.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Pokémon Legends: Arceus",
     "stores": [
       {
@@ -142,20 +142,20 @@
         "url": "https://www.nintendo.com/games/detail/pokemon-legends-arceus-switch/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/ce098cf158927e2cea10919e1e2b36a3.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5286404,
-    "steamgriddb_grid_id": 421515,
-    "updated_at": "2026-10-08T04:56:16.333Z",
     "background_image_landscape": "covers/rawg-564761-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co3d03.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 423901,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/11f7497e0736cbb1c2731ba5e1a22e0d.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 144054,
+    "igdb_game_name": "Pokémon Legends: Arceus",
+    "updated_at": "2026-10-08T20:48:19.012Z"
   },
   "rawg:644661": {
     "background_image": "covers/rawg-644661.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "AI: THE SOMNIUM FILES - nirvanA Initiative",
     "stores": [
       {
@@ -171,20 +171,20 @@
         "url": "https://store.steampowered.com/app/1449200/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/4123eb683492274a7d58c3e5f6411c0e.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5288980,
-    "steamgriddb_grid_id": 575389,
-    "updated_at": "2026-10-08T04:56:16.507Z",
     "background_image_landscape": "covers/rawg-644661-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 343736,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/760593017e56885b48295a95bced6cbb.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cobbw0.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1449200",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449200/header.jpg?t=1715701149",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 153808,
+    "igdb_game_name": "AI: The Somnium Files - Nirvana Initiative",
+    "updated_at": "2026-10-08T20:48:19.153Z"
   },
   "rawg:421698": {
     "background_image": "covers/rawg-421698.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Animal Crossing: New Horizons",
     "stores": [
       {
@@ -192,20 +192,20 @@
         "url": "https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/078d2a1275f0d53cda67d165440aeb50.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5257932,
-    "steamgriddb_grid_id": 78327,
-    "updated_at": "2026-10-08T04:56:17.069Z",
     "background_image_landscape": "covers/rawg-421698-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co3wls.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 79147,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/4128af1c3d6761cd2a7b902d63c633be.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 109462,
+    "igdb_game_name": "Animal Crossing: New Horizons",
+    "updated_at": "2026-10-08T20:48:19.400Z"
   },
   "rawg:8146": {
     "background_image": "covers/rawg-8146.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Assassin's Creed Unity",
     "stores": [
       {
@@ -221,20 +221,20 @@
         "url": "https://www.microsoft.com/en-us/store/p/assassins-creed-unity/brqh27c9rgxs?cid=msft_web_chart"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/2947007280adf8859edffdaf48e6e558.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 4174,
-    "steamgriddb_grid_id": 73947,
-    "updated_at": "2026-10-08T04:56:17.325Z",
     "background_image_landscape": "covers/rawg-8146-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 3883,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/51f3eb940fd73a19119534c063967bff.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1xiq.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "289650",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289650/header.jpg?t=1786632648",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 5606,
+    "igdb_game_name": "Assassin's Creed Unity",
+    "updated_at": "2026-10-08T20:48:19.826Z"
   },
   "rawg:58550": {
     "background_image": "covers/rawg-58550.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Ghost of Tsushima",
     "stores": [
       {
@@ -246,16 +246,16 @@
         "url": "https://store.playstation.com/en-us/product/UP9000-CUSA11456_00-GHOSTSHIP0000000"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/3e1a813196d7bfc007bedb02c7956842.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5261245,
-    "steamgriddb_grid_id": 115896,
-    "updated_at": "2026-10-08T04:56:17.303Z",
     "background_image_landscape": "covers/rawg-58550-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 134574,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/e9cd5717d7468318071f2643481312f1.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2crj.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "2215430",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/header.jpg?t=1763409398",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 75235,
+    "igdb_game_name": "Ghost of Tsushima",
+    "updated_at": "2026-10-08T20:48:20.155Z"
   },
   "rawg:401805": {
     "background_image": "covers/rawg-401805.webp",
@@ -279,20 +279,20 @@
         "url": "https://www.epicgames.com/store/en-US/p/genshin-impact"
       }
     ],
+    "background_image_landscape": "covers/rawg-401805-landscape.webp",
+    "landscape_image_aspect": 2.139535,
     "cover_source_url": "https://cdn2.steamgriddb.com/grid/17ac85cc7b94b7e29577acb5f9b38aa7.png",
     "cover_source": "steamgriddb",
     "steamgriddb_game_id": 5267777,
     "steamgriddb_grid_id": 178213,
-    "updated_at": "2026-10-08T04:56:17.162Z",
-    "background_image_landscape": "covers/rawg-401805-landscape.webp",
-    "landscape_image_aspect": 2.139535,
     "steamgriddb_landscape_grid_id": 113198,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/c2904ed6cfa731edd18d8ffe285b6695.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "updated_at": "2026-10-08T20:48:21.430Z"
   },
   "rawg:46667": {
     "background_image": "covers/rawg-46667.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Octopath Traveler",
     "stores": [
       {
@@ -316,20 +316,20 @@
         "url": "https://www.epicgames.com/store/en-US/p/octopath-traveler"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/e522d9f3e8c056b74f05e8f9fd249fc5.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 4883735,
-    "steamgriddb_grid_id": 535601,
-    "updated_at": "2026-10-08T04:56:17.515Z",
     "background_image_landscape": "covers/rawg-46667-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 251277,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/13f10ba306a19ce7bec2f3cae507b698.jpg",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cocj93.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "921570",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/921570/header.jpg?t=1785812096",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 26765,
+    "igdb_game_name": "Octopath Traveler",
+    "updated_at": "2026-10-08T20:48:20.317Z"
   },
   "rawg:605544": {
     "background_image": "covers/rawg-605544.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Bloodborne: The Old Hunters",
     "stores": [
       {
@@ -337,20 +337,20 @@
         "url": "https://store.playstation.com/en-us/product/UP9000-CUSA00900_00-SPEXPANSIONDLC03"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/9039a6fcfbe802c2b704e93328b4be16.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5507014,
-    "steamgriddb_grid_id": 533913,
-    "updated_at": "2026-10-08T04:56:17.612Z",
     "background_image_landscape": "covers/rawg-605544-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cob99k.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 556554,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/05efb3051bda350e2a9cb22f326fe8d2.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 14647,
+    "igdb_game_name": "Bloodborne: The Old Hunters",
+    "updated_at": "2026-10-08T20:48:21.514Z"
   },
   "rawg:408286": {
     "background_image": "covers/rawg-408286.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "13 Sentinels: Aegis Rim",
     "stores": [
       {
@@ -358,20 +358,20 @@
         "url": "https://store.playstation.com/en-us/product/UP0177-CUSA19610_00-BSTUBCUSA1961000"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/79b796e240e8fe4baf0061fc155bd741.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5270659,
-    "steamgriddb_grid_id": 115232,
-    "updated_at": "2026-10-08T04:56:17.745Z",
     "background_image_landscape": "covers/rawg-408286-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2uls.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 194394,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/dded2ec516198fbc6f630933f463ba19.jpg",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 28337,
+    "igdb_game_name": "13 Sentinels: Aegis Rim",
+    "updated_at": "2026-10-08T20:48:21.408Z"
   },
   "rawg:259801": {
     "background_image": "covers/rawg-259801.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Final Fantasy VII",
     "stores": [
       {
@@ -391,20 +391,20 @@
         "url": "https://www.epicgames.com/store/en-US/p/final-fantasy-vii-remake-intergrade"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/fb038c3ed829a992d6d4cc3ce6654290.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 8631,
-    "steamgriddb_grid_id": 35989,
-    "updated_at": "2026-10-08T04:56:17.804Z",
     "background_image_landscape": "covers/rawg-259801-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 722957,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/62b69996fc52223dafef01229d14be3a.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cobcwt.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1462040",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1462040/67aebedbdfc261278fc5e3cd45b519212ac0555a/header.jpg?t=1789446715",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 11169,
+    "igdb_game_name": "Final Fantasy VII Remake",
+    "updated_at": "2026-10-08T20:48:21.028Z"
   },
   "rawg:28026": {
     "background_image": "covers/rawg-28026.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Super Mario Odyssey",
     "stores": [
       {
@@ -412,15 +412,15 @@
         "url": "https://www.nintendo.com/games/detail/super-mario-odyssey-switch"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/505870c8848f2d550944bf64008c9472.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5245268,
-    "steamgriddb_grid_id": 422148,
-    "updated_at": "2026-10-08T04:56:17.968Z"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1mxf.jpg",
+    "cover_source": "igdb",
+    "igdb_game_id": 26758,
+    "igdb_game_name": "Super Mario Odyssey",
+    "updated_at": "2026-10-08T20:48:22.075Z"
   },
   "rawg:11726": {
     "background_image": "covers/rawg-11726.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Dead Cells",
     "stores": [
       {
@@ -456,20 +456,20 @@
         "url": "https://www.epicgames.com/store/en-US/p/dead-cells"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/f6fa975361cfccc02b55c49305ff2bed.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 16621,
-    "steamgriddb_grid_id": 215397,
-    "updated_at": "2026-10-08T04:56:18.096Z",
     "background_image_landscape": "covers/rawg-11726-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 812834,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/0bd4c0112fe8c37126c7045b2df99fba.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7jfv.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "588650",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/header.jpg?t=1779086887",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 26855,
+    "cover_override_signature": "9ea995dece071c0a",
+    "updated_at": "2026-10-08T20:48:22.126Z"
   },
   "rawg:3775": {
     "background_image": "covers/rawg-3775.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Danganronpa: Trigger Happy Havoc",
     "stores": [
       {
@@ -481,20 +481,20 @@
         "url": "http://store.steampowered.com/app/413410/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/bb997d580d9b9d97167966b8591917fb.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 9572,
-    "steamgriddb_grid_id": 46067,
-    "updated_at": "2026-10-08T04:56:18.292Z",
     "background_image_landscape": "covers/rawg-3775-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 104400,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/c6e6b3a8de2162512bd51fd5f693df52.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1n1w.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "413410",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413410/header.jpg?t=1781085607",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 7842,
+    "igdb_game_name": "Danganronpa: Trigger Happy Havoc",
+    "updated_at": "2026-10-08T20:48:22.445Z"
   },
   "rawg:3687": {
     "background_image": "covers/rawg-3687.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Watch Dogs",
     "stores": [
       {
@@ -522,16 +522,16 @@
         "url": "https://www.microsoft.com/en-us/p/watch-dogs/c4dmgrpnshxg?cid=msft_web_chart"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/df827da31d664707840bc6c221f22d72.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 2823,
-    "steamgriddb_grid_id": 72596,
-    "updated_at": "2026-10-08T04:56:18.287Z",
     "background_image_landscape": "covers/rawg-3687-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 26282,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/806107639381a3c77b34ee5128f7430f.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2p5w.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "243470",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/243470/header.jpg?t=1739177057",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 1121,
+    "igdb_game_name": "Watch Dogs",
+    "updated_at": "2026-10-08T20:48:22.166Z"
   },
   "rawg:10142": {
     "background_image": "covers/rawg-10142.webp",
@@ -563,21 +563,20 @@
         "url": "https://www.microsoft.com/en-us/store/p/playerunknowns-battlegrounds/c0mn5dn8kr3f?cid=msft_web_chart"
       }
     ],
-    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cocxb5.jpg",
-    "cover_source": "igdb",
-    "igdb_game_id": 27789,
-    "igdb_game_name": "PlayerUnknown's Battlegrounds: Season 5",
-    "updated_at": "2026-10-08T06:13:42.203Z",
-    "cover_override_signature": "72c1c3ff3aa799cc",
     "background_image_landscape": "covers/rawg-10142-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 26856,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/aa45ea35cbdcb42012f2bf55012a0624.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coaam4.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "578080",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1786493086",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 27789,
+    "cover_override_signature": "72c1c3ff3aa799cc",
+    "updated_at": "2026-10-08T20:48:22.880Z"
   },
   "rawg:667657": {
     "background_image": "covers/rawg-667657.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 1.272289,
     "provider_title": "Kirby and the Forgotten Land",
     "stores": [
       {
@@ -585,20 +584,20 @@
         "url": "https://www.nintendo.com/games/detail/kirby-and-the-forgotten-land-switch/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/fd5b431d065e37e793b3d8219735f3be.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5297428,
-    "steamgriddb_grid_id": 179829,
-    "updated_at": "2026-10-08T04:56:18.573Z",
     "background_image_landscape": "covers/rawg-667657-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4yjz.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 177606,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/647d0c2386d46d28980edbd4d5955d49.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 208400,
+    "igdb_game_name": "Kirby and the Forgotten Land",
+    "updated_at": "2026-10-08T20:48:23.376Z"
   },
   "rawg:481913": {
     "background_image": "covers/rawg-481913.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Black Myth: Wukong",
     "stores": [
       {
@@ -610,20 +609,20 @@
         "url": "https://store.steampowered.com/app/2358720/Black_Myth_Wukong/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/9130e5ada60abd2e13efb19571cede1d.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5269886,
-    "steamgriddb_grid_id": 474062,
-    "updated_at": "2026-10-08T04:56:18.785Z",
     "background_image_landscape": "covers/rawg-481913-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 823088,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/6a46399f2cb3fe987d05020ff0863554.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8h3y.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "2358720",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/header.jpg?t=1760601605",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 136879,
+    "igdb_game_name": "Black Myth: Wukong",
+    "updated_at": "2026-10-08T20:48:22.764Z"
   },
   "rawg:58824": {
     "background_image": "covers/rawg-58824.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Xenoblade Chronicles 2: Torna ~ The Golden Country",
     "stores": [
       {
@@ -631,20 +630,20 @@
         "url": "https://www.nintendo.com/games/detail/xenoblade-chronicles-2-torna-the-golden-country-switch"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/16f680da22eb39bedeb580da559c71a6.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5295917,
-    "steamgriddb_grid_id": 416664,
-    "updated_at": "2026-10-08T04:56:18.790Z",
     "background_image_landscape": "covers/rawg-58824-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cob8r1.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 793950,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/1e6430f44d2bbd8afab6b08e27bb710e.jpg",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 103340,
+    "igdb_game_name": "Xenoblade Chronicles 2: Torna - The Golden Country",
+    "updated_at": "2026-10-08T20:48:23.253Z"
   },
   "rawg:558975": {
     "background_image": "covers/rawg-558975.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Splatoon 3",
     "stores": [
       {
@@ -652,16 +651,16 @@
         "url": "https://www.nintendo.com/games/detail/splatoon-3-switch/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/9c646d25b279cfc24e329ae87ec8c2e7.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5277939,
-    "steamgriddb_grid_id": 320379,
-    "updated_at": "2026-10-08T04:56:19.127Z",
     "background_image_landscape": "covers/rawg-558975-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co59x3.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 277728,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/d5e983b34a6ae6095eebe370d19e682f.jpg",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 143613,
+    "igdb_game_name": "Splatoon 3",
+    "updated_at": "2026-10-08T20:48:23.850Z"
   },
   "rawg:736257#1": {
     "background_image": "covers/rawg-736257-1.webp",
@@ -677,11 +676,11 @@
     "cover_source": "igdb",
     "igdb_game_id": 236669,
     "cover_override_signature": "f64e3601fbbb5ff1",
-    "updated_at": "2026-10-08T04:56:19.242Z"
+    "updated_at": "2026-10-08T20:48:23.437Z"
   },
   "rawg:736257#2": {
     "background_image": "covers/rawg-736257-2.webp",
-    "image_aspect": 0.709677,
+    "image_aspect": 0.75,
     "provider_title": "Xenoblade Chronicles 3",
     "stores": [
       {
@@ -689,20 +688,20 @@
         "url": "https://www.nintendo.com/games/detail/xenoblade-chronicles-3-switch/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/6bcb29ba74aeaab3bb9c91da4f3f1a17.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5319975,
-    "steamgriddb_grid_id": 690563,
-    "updated_at": "2026-10-08T04:56:19.813Z",
     "background_image_landscape": "covers/rawg-736257-2-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4ocq.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 287917,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/7ed71734caf8c8555fb549691d02da6f.jpg",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 191411,
+    "igdb_game_name": "Xenoblade Chronicles 3",
+    "updated_at": "2026-10-08T20:48:24.134Z"
   },
   "rawg:58812": {
     "background_image": "covers/rawg-58812.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Control",
     "stores": [
       {
@@ -726,20 +725,20 @@
         "url": "https://www.epicgames.com/store/en-US/product/control/home"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/f4d3ed0c74282c3737b540ae25e2bfd1.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5287367,
-    "steamgriddb_grid_id": 106809,
-    "updated_at": "2026-10-08T04:56:19.421Z",
     "background_image_landscape": "covers/rawg-58812-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 35338,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/abc58d2523df2aea708a509fbd201437.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2evj.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "870780",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/870780/ec621653454cdad232187af4eb79f23c05aceca5/header.jpg?t=1781607969",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 103329,
+    "igdb_game_name": "Control",
+    "updated_at": "2026-10-08T20:48:25.401Z"
   },
   "rawg:50734": {
     "background_image": "covers/rawg-50734.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Sekiro: Shadows Die Twice",
     "stores": [
       {
@@ -755,20 +754,20 @@
         "url": "https://store.playstation.com/en-us/product/UP0002-CUSA12047_00-SEKIROGAME000001"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/97771715c7dd7daf009feeb60c49915a.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 26258,
-    "steamgriddb_grid_id": 67554,
-    "updated_at": "2026-10-08T04:56:19.789Z",
     "background_image_landscape": "covers/rawg-50734-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 115491,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/fb36660fc0b93686dbad2936e312ab71.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2a23.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "814380",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/header.jpg?t=1762888662",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 76882,
+    "igdb_game_name": "Sekiro: Shadows Die Twice",
+    "updated_at": "2026-10-08T20:48:24.136Z"
   },
   "rawg:350": {
     "background_image": "covers/rawg-350.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Vainglory",
     "stores": [
       {
@@ -784,20 +783,20 @@
         "url": "https://apps.apple.com/us/app/vainglory/id671464704?mt=8&uo=4"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/37e573e3be876183d1dc407734b0c16f.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 910,
-    "steamgriddb_grid_id": 53417,
-    "updated_at": "2026-10-08T04:56:19.858Z",
     "background_image_landscape": "covers/rawg-350-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 39355,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/67b46df8fd1c23206e0572850ac213b5.jpg",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co25ib.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1025580",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1025580/header.jpg?t=1593627057",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 13174,
+    "igdb_game_name": "Vainglory",
+    "updated_at": "2026-10-08T20:48:24.620Z"
   },
   "rawg:985056": {
     "background_image": "covers/rawg-985056.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Honor of Kings",
     "stores": [
       {
@@ -805,20 +804,20 @@
         "url": "https://apps.apple.com/us/app/honor-of-kings/id1619254071?uo=4"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/6776c7f6cd45c6fb6f8557a6df90d86d.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5459783,
-    "steamgriddb_grid_id": 468097,
-    "updated_at": "2026-10-08T04:56:19.862Z",
     "background_image_landscape": "covers/rawg-985056-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co69y0.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 468102,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/3afb35038cd2feb25acae699a4ebc8d1.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 44097,
+    "cover_override_signature": "79d13a7d57fe646f",
+    "updated_at": "2026-10-08T20:48:25.283Z"
   },
   "rawg:327239": {
     "background_image": "covers/rawg-327239.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.751067,
     "provider_title": "The Legend of Zelda: Tears of the Kingdom",
     "stores": [
       {
@@ -826,20 +825,20 @@
         "url": "https://www.nintendo.com/es-co/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/ae758fbcbd5bd841516c53b3c08ebc6f.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5303117,
-    "steamgriddb_grid_id": 416436,
-    "updated_at": "2026-10-08T04:56:20.375Z",
     "background_image_landscape": "covers/rawg-327239-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5vmg.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 658450,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/a92196d7b3ba6bf81435843a05036e05.jpg",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 119388,
+    "igdb_game_name": "The Legend of Zelda: Tears of the Kingdom",
+    "updated_at": "2026-10-08T20:48:25.433Z"
   },
   "rawg:22511": {
     "background_image": "covers/rawg-22511.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "The Legend of Zelda: Breath of the Wild",
     "stores": [
       {
@@ -847,20 +846,20 @@
         "url": "https://www.nintendo.com/games/detail/the-legend-of-zelda-breath-of-the-wild-switch"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/121b81f7d167ca2c24fdab4f044048f8.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 35744,
-    "steamgriddb_grid_id": 432057,
-    "updated_at": "2026-10-08T04:56:20.793Z",
     "background_image_landscape": "covers/rawg-22511-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co3p2d.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 844977,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/d24347fdee199ae9395ad44484e1caf7.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 7346,
+    "igdb_game_name": "The Legend of Zelda: Breath of the Wild",
+    "updated_at": "2026-10-08T20:48:25.686Z"
   },
   "rawg:614964": {
     "background_image": "covers/rawg-614964.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Death Stranding Director's Cut",
     "stores": [
       {
@@ -880,20 +879,20 @@
         "url": "https://store.steampowered.com/app/1850570"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/34042c360d640bc6a90e04a4a329c906.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5293743,
-    "steamgriddb_grid_id": 191715,
-    "updated_at": "2026-10-08T04:56:20.582Z",
     "background_image_landscape": "covers/rawg-614964-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 696947,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/1ef35253893c83c8cd8f19b422596b65.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cobksg.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1850570",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1850570/header.jpg?t=1773400635",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 152063,
+    "igdb_game_name": "Death Stranding: Director's Cut",
+    "updated_at": "2026-10-08T20:48:25.891Z"
   },
   "rawg:455597": {
     "background_image": "covers/rawg-455597.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "It Takes Two",
     "stores": [
       {
@@ -913,20 +912,20 @@
         "url": "https://store.playstation.com/en-us/product/UP0006-PPSA02342_00-ITTAKESTWORETAIL"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/84d8df6932e202152767f7579f32c613.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5273121,
-    "steamgriddb_grid_id": 211501,
-    "updated_at": "2026-10-08T04:56:20.675Z",
     "background_image_landscape": "covers/rawg-455597-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 405926,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/220cd001795358a2e932e81301092fc6.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cobvya.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1426210",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/header.jpg?t=1777395376",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 397436,
+    "igdb_game_name": "It Takes Two",
+    "updated_at": "2026-10-08T20:48:26.280Z"
   },
   "rawg:326292": {
     "background_image": "covers/rawg-326292.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Fall Guys: Ultimate Knockout",
     "stores": [
       {
@@ -950,20 +949,20 @@
         "url": "https://www.nintendo.com/games/detail/fall-guys-ultimate-knockout-switch/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/1fbfa92495d30d20aa39fd57cee4bf0a.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5173422,
-    "steamgriddb_grid_id": 107465,
-    "updated_at": "2026-10-08T04:56:21.077Z",
     "background_image_landscape": "covers/rawg-326292-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 224921,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/fb06ba2ed7f259ffebf3d39df957ff66.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coa7cs.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1097150",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1097150/header.jpg?t=1698763175",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 119313,
+    "igdb_game_name": "Fall Guys",
+    "updated_at": "2026-10-08T20:48:26.216Z"
   },
   "rawg:52005": {
     "background_image": "covers/rawg-52005.webp",
-    "image_aspect": 0.709677,
+    "image_aspect": 0.75,
     "provider_title": "7 Billion Humans",
     "stores": [
       {
@@ -991,20 +990,20 @@
         "url": "https://www.nintendo.com/games/detail/7-billion-humans-switch"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/fec5678726b6c66bc884abc9d76d2513.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 25220,
-    "steamgriddb_grid_id": 639691,
-    "updated_at": "2026-10-08T04:56:21.098Z",
     "background_image_landscape": "covers/rawg-52005-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 529239,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/3cd3afd945438c42945c8231427d541f.jpg",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co28re.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "792100",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/792100/header.jpg?t=1667105092",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 83847,
+    "igdb_game_name": "7 Billion Humans",
+    "updated_at": "2026-10-08T20:48:26.744Z"
   },
   "rawg:10061": {
     "background_image": "covers/rawg-10061.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Watch Dogs 2",
     "stores": [
       {
@@ -1024,20 +1023,20 @@
         "url": "https://www.epicgames.com/store/en-US/product/watch-dogs-2/home?sessionInvalidated=true&lang=en-US"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/8757d7e24549036de3f2d715b2c06018.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 10872,
-    "steamgriddb_grid_id": 130123,
-    "updated_at": "2026-10-08T04:56:21.236Z",
     "background_image_landscape": "covers/rawg-10061-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 459506,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/a224a981eab397986346b0657be74c2b.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2p3j.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "447040",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447040/header.jpg?t=1751986887",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 19441,
+    "igdb_game_name": "Watch Dogs 2",
+    "updated_at": "2026-10-08T20:48:26.707Z"
   },
   "rawg:10141": {
     "background_image": "covers/rawg-10141.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "NieR:Automata",
     "stores": [
       {
@@ -1049,15 +1048,20 @@
         "url": "https://www.microsoft.com/en-us/p/nierautomata-become-as-gods-edition/BPPZVT8BZ15N?activetab=pivot%3aoverviewtab"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/6dc08e2dd57f32063fd0834694003042.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 13971,
-    "steamgriddb_grid_id": 161795,
-    "updated_at": "2026-10-08T04:56:21.628Z"
+    "background_image_landscape": "covers/rawg-10141-landscape.webp",
+    "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5pcj.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "524220",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/524220/header.jpg?t=1785182957",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 11208,
+    "igdb_game_name": "NieR: Automata",
+    "updated_at": "2026-10-08T20:48:27.204Z"
   },
   "rawg:452646": {
     "background_image": "covers/rawg-452646.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Astro's Playroom",
     "stores": [
       {
@@ -1065,20 +1069,20 @@
         "url": "https://store.playstation.com/en-us/product/IP9100-PPSA01325_00-PREINMASTER00000"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/d9fa4f50e0f26e4fd6b05399dac4b969.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5270665,
-    "steamgriddb_grid_id": 543751,
-    "updated_at": "2026-10-08T04:56:21.648Z",
     "background_image_landscape": "covers/rawg-452646-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9hb4.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 339820,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/cfb3ada82806a79ca5795eb5a8dcd005.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 134597,
+    "igdb_game_name": "Astro's Playroom",
+    "updated_at": "2026-10-08T20:48:27.109Z"
   },
   "rawg:9767": {
     "background_image": "covers/rawg-9767.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Hollow Knight",
     "stores": [
       {
@@ -1102,16 +1106,16 @@
         "url": "https://store.playstation.com/en-us/product/UP1822-CUSA13632_00-HOLLOWKNIGHT18US"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/d18c832e8c956b4ef8b92862e6bf470d.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 7545,
-    "steamgriddb_grid_id": 81639,
-    "updated_at": "2026-10-08T04:56:21.720Z",
     "background_image_landscape": "covers/rawg-9767-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 30586,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/5ca177e9af12f0d5d9c4c72668c81b63.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cobfzp.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "367520",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/3c3489495136b26b34f8a9543c7f5645b99d388c/header.jpg?t=1776125684",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 14593,
+    "igdb_game_name": "Hollow Knight",
+    "updated_at": "2026-10-08T20:48:28.847Z"
   },
   "rawg:58175": {
     "background_image": "covers/rawg-58175.webp",
@@ -1135,20 +1139,20 @@
         "url": "https://www.epicgames.com/store/ru/p/god-of-war"
       }
     ],
+    "background_image_landscape": "covers/rawg-58175-landscape.webp",
+    "landscape_image_aspect": 2.139535,
     "cover_source_url": "https://cdn2.steamgriddb.com/grid/5855660034a74cfe0e5fc8d57d17f4ac.png",
     "cover_source": "steamgriddb",
     "steamgriddb_game_id": 5254321,
     "steamgriddb_grid_id": 115242,
-    "updated_at": "2026-10-08T04:56:21.699Z",
-    "background_image_landscape": "covers/rawg-58175-landscape.webp",
-    "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 338997,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/43b1902dcea79e92a04ac2b5b738d0a4.png",
-    "landscape_source": "steamgriddb"
+    "steam_app_id": "1593500",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/header.jpg?t=1763059412",
+    "landscape_source": "steam-header",
+    "updated_at": "2026-10-08T20:48:29.380Z"
   },
   "rawg:484878": {
     "background_image": "covers/rawg-484878.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "ATRI -My Dear Moments",
     "stores": [
       {
@@ -1156,20 +1160,20 @@
         "url": "https://store.steampowered.com/app/1230140/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/0970c603a57cb1983ca015063574035d.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5256859,
-    "steamgriddb_grid_id": 160851,
-    "updated_at": "2026-10-08T04:56:22.474Z",
     "background_image_landscape": "covers/rawg-484878-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 160931,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/0bd3c6cc56fac2a4aae914769c1a594d.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co21uu.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1230140",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1230140/header.jpg?t=1761759369",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 131634,
+    "igdb_game_name": "Atri: My Dear Moments",
+    "updated_at": "2026-10-08T20:48:28.672Z"
   },
   "rawg:58755": {
     "background_image": "covers/rawg-58755.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Devil May Cry 5",
     "stores": [
       {
@@ -1181,20 +1185,20 @@
         "url": "https://store.steampowered.com/app/601150/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/84bac0d19371a626d1ec02e402b1496c.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 349500,
-    "steamgriddb_grid_id": 106858,
-    "updated_at": "2026-10-08T04:56:22.332Z",
     "background_image_landscape": "covers/rawg-58755-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 435900,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/69c1785c47eaa25554ef2538bf68e694.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1rb4.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "601150",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/601150/header.jpg?t=1790215341",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 76253,
+    "igdb_game_name": "Devil May Cry 5",
+    "updated_at": "2026-10-08T20:48:36.346Z"
   },
   "rawg:23598": {
     "background_image": "covers/rawg-23598.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "League of Legends",
     "stores": [
       {
@@ -1206,20 +1210,20 @@
         "url": "https://www.epicgames.com/store/en-US/p/league-of-legends"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/cf29ee336b07c0572c810f62f5543525.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 1865,
-    "steamgriddb_grid_id": 117652,
-    "updated_at": "2026-10-08T04:56:22.444Z",
     "background_image_landscape": "covers/rawg-23598-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coc99o.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 117651,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/fa1fac878339bf91f624460e5f8f63fb.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 115,
+    "igdb_game_name": "League of Legends",
+    "updated_at": "2026-10-08T20:48:38.552Z"
   },
   "rawg:41494": {
     "background_image": "covers/rawg-41494.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Cyberpunk 2077",
     "stores": [
       {
@@ -1243,15 +1247,20 @@
         "url": "http://www.gog.com/game/cyberpunk_2077"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/f39b781760a403dedaa05587e8889c1a.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5209422,
-    "steamgriddb_grid_id": 385810,
-    "updated_at": "2026-10-08T04:56:22.573Z"
+    "background_image_landscape": "covers/rawg-41494-landscape.webp",
+    "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coaih8.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1091500",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/e9047d8ec47ae3d94bb8b464fb0fc9e9972b4ac7/header.jpg?t=1784714077",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 1877,
+    "igdb_game_name": "Cyberpunk 2077",
+    "updated_at": "2026-10-08T20:48:38.624Z"
   },
   "rawg:518596": {
     "background_image": "covers/rawg-518596.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Nioh 2 – The Complete Edition",
     "stores": [
       {
@@ -1267,20 +1276,20 @@
         "url": "https://www.epicgames.com/store/ru/p/nioh-2-the-complete-edition"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/50502027c1db52caa91b31b7a7349c1a.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5271063,
-    "steamgriddb_grid_id": 616586,
-    "updated_at": "2026-10-08T04:56:22.864Z",
     "background_image_landscape": "covers/rawg-518596-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 199148,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/e92824e0db0f47216811676a151cff1d.jpg",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2kh2.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1325200",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325200/header.jpg?t=1775540023",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 140972,
+    "igdb_game_name": "Nioh 2: The Complete Edition",
+    "updated_at": "2026-10-08T20:48:37.384Z"
   },
   "rawg:371831": {
     "background_image": "covers/rawg-371831.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Xenoblade Chronicles: Definitive Edition",
     "stores": [
       {
@@ -1288,20 +1297,20 @@
         "url": "https://www.nintendo.com/us/store/products/xenoblade-chronicles-definitive-edition-switch/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/9374ef3d53a00c33de62be93467ec04d.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5275887,
-    "steamgriddb_grid_id": 124831,
-    "updated_at": "2026-10-08T04:56:22.943Z",
     "background_image_landscape": "covers/rawg-371831-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cob8r4.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 124830,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/a73c688c296d650701287fa39ea3e853.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 122238,
+    "igdb_game_name": "Xenoblade Chronicles: Definitive Edition",
+    "updated_at": "2026-10-08T20:48:37.825Z"
   },
   "rawg:419297": {
     "background_image": "covers/rawg-419297.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Horizon Zero Dawn Complete Edition",
     "stores": [
       {
@@ -1321,20 +1330,20 @@
         "url": "https://www.gog.com/game/horizon_zero_dawn_complete_edition"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/eb607421d94ea054d3cf191ae493867a.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5260593,
-    "steamgriddb_grid_id": 78516,
-    "updated_at": "2026-10-08T04:56:22.932Z",
     "background_image_landscape": "covers/rawg-419297-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 102605,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/c02269ebdcc57a1849de7bb0bde31e3a.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2tem.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1151640",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1151640/header.jpg?t=1776465788",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 72870,
+    "igdb_game_name": "Horizon Zero Dawn: Complete Edition",
+    "updated_at": "2026-10-08T20:48:38.971Z"
   },
   "rawg:165": {
     "background_image": "covers/rawg-165.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Crashlands",
     "stores": [
       {
@@ -1366,20 +1375,20 @@
         "url": "https://play.google.com/store/apps/details?id=com.bscotch.crashlands&hl=en&gl=us"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/ef7b228b3dfc4e01f67d467eac74e441.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 8655,
-    "steamgriddb_grid_id": 85020,
-    "updated_at": "2026-10-08T04:56:23.008Z",
     "background_image_landscape": "covers/rawg-165-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 344518,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/2c48fe42044eeb22f51f0d030723ebf0.jpg",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co22xx.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "391730",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391730/a3b21cf10ad950e25aaf459bc04e0f38fc1f115e/header.jpg?t=1776364539",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 15389,
+    "igdb_game_name": "Crashlands",
+    "updated_at": "2026-10-08T20:48:40.077Z"
   },
   "rawg:718135": {
     "background_image": "covers/rawg-718135.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Palworld",
     "stores": [
       {
@@ -1387,20 +1396,20 @@
         "url": "https://store.steampowered.com/app/1623730/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/d0c2b1e87b18968832aec662ff2889dd.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5286879,
-    "steamgriddb_grid_id": 405863,
-    "updated_at": "2026-10-08T04:56:23.313Z",
     "background_image_landscape": "covers/rawg-718135-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 811275,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/23cc251974178fc6f47ee60a57114924.jpg",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7n02.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1623730",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/6912f19c43a95ff5fe514eedd35e68bf12335459/header.jpg?t=1790336367",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 151665,
+    "igdb_game_name": "Palworld",
+    "updated_at": "2026-10-08T20:48:40.578Z"
   },
   "rawg:22509": {
     "background_image": "covers/rawg-22509.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Minecraft",
     "stores": [
       {
@@ -1424,20 +1433,20 @@
         "url": "https://www.microsoft.com/en-us/p/minecraft-for-windows-10/9nblggh2jhxj"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/a73027901f88055aaa0fd1a9e25d36c7.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 38365,
-    "steamgriddb_grid_id": 36537,
-    "updated_at": "2026-10-08T04:56:23.845Z",
     "background_image_landscape": "covers/rawg-22509-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8fu7.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 106652,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/6a482b51565ccaf7fdf9d0c9293d06a1.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 135400,
+    "igdb_game_name": "Minecraft",
+    "updated_at": "2026-10-08T20:48:40.733Z"
   },
   "rawg:422": {
     "background_image": "covers/rawg-422.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Terraria",
     "stores": [
       {
@@ -1469,20 +1478,20 @@
         "url": "https://store.playstation.com/en-us/product/UP4040-CUSA00740_00-TERRARIA00000001"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/9ef7f9b81c2532880cfe5cf53f0c906d.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 1226,
-    "steamgriddb_grid_id": 225608,
-    "updated_at": "2026-10-08T04:56:23.669Z",
     "background_image_landscape": "covers/rawg-422-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 1937,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/136f951362dab62e64eb8e841183c2a9.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coaamg.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "105600",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1769844435",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 1879,
+    "igdb_game_name": "Terraria",
+    "updated_at": "2026-10-08T20:48:40.805Z"
   },
   "rawg:9882": {
     "background_image": "covers/rawg-9882.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Don't Starve Together",
     "stores": [
       {
@@ -1490,20 +1499,20 @@
         "url": "http://store.steampowered.com/app/322330/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/357b62cd0528880c7f02f3e4174013c7.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5432,
-    "steamgriddb_grid_id": 160914,
-    "updated_at": "2026-10-08T04:56:23.513Z",
     "background_image_landscape": "covers/rawg-9882-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 10011,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/a2369958a9645eac52b58a8134e2ef5a.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coaaqp.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "322330",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/51e5f44e4e38ce02a985687df4fdc8feb678219b/header.jpg?t=1790287771",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 17832,
+    "igdb_game_name": "Don't Starve Together",
+    "updated_at": "2026-10-08T20:48:41.103Z"
   },
   "rawg:22121": {
     "background_image": "covers/rawg-22121.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Celeste",
     "stores": [
       {
@@ -1531,20 +1540,20 @@
         "url": "https://mattmakesgames.itch.io/celeste"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/074aed57c243ae7020971ca7c9fe0f29.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 13136,
-    "steamgriddb_grid_id": 122565,
-    "updated_at": "2026-10-08T04:56:24.285Z",
     "background_image_landscape": "covers/rawg-22121-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 146317,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/6ab08dc077e86baa9a62d05ec66a9026.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cob9dh.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "504230",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/header.jpg?t=1714089525",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 26226,
+    "igdb_game_name": "Celeste",
+    "updated_at": "2026-10-08T20:48:41.621Z"
   },
   "rawg:516122": {
     "background_image": "covers/rawg-516122.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Needy Girl Overdose",
     "stores": [
       {
@@ -1556,20 +1565,20 @@
         "url": "https://store.steampowered.com/app/1451940/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/7bd222eef752d0c47fc55f139b40d9f2.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5270618,
-    "steamgriddb_grid_id": 266601,
-    "updated_at": "2026-10-08T04:56:24.502Z",
     "background_image_landscape": "covers/rawg-516122-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 310887,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/0db91ddf843ce48691c0d65952c573a9.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co57rh.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1451940",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1451940/header.jpg?t=1762834234",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 146564,
+    "igdb_game_name": "Needy Streamer Overload",
+    "updated_at": "2026-10-08T20:48:41.902Z"
   },
   "rawg:9551": {
     "background_image": "covers/rawg-9551.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Deep Rock Galactic",
     "stores": [
       {
@@ -1577,20 +1586,20 @@
         "url": "http://store.steampowered.com/app/548430/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/9c8d8b6698dd0dc195d35179f7e27543.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 14939,
-    "steamgriddb_grid_id": 148730,
-    "updated_at": "2026-10-08T04:56:24.633Z",
     "background_image_landscape": "covers/rawg-9551-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 154468,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/e5520e0a26c349b166bb72c155a54d21.jpg",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coaat4.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "548430",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/37b58a6c4816ee60b0ca97cb6724d6e904c58c41/header.jpg?t=1790248272",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 27134,
+    "igdb_game_name": "Deep Rock Galactic",
+    "updated_at": "2026-10-08T20:48:41.424Z"
   },
   "rawg:3498": {
     "background_image": "covers/rawg-3498.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Grand Theft Auto V",
     "stores": [
       {
@@ -1614,34 +1623,34 @@
         "url": "https://www.microsoft.com/en-us/store/p/grand-theft-auto-v/bpj686w6s0nh?cid=msft_web_chart"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/af0a25e27510f77d97634a6bbe653b13.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 3674,
-    "steamgriddb_grid_id": 195053,
-    "updated_at": "2026-10-08T04:56:25.134Z",
     "background_image_landscape": "covers/rawg-3498-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 697152,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/b955184660f6c017452092680006fc6c.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9751.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "3240220",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg?t=1781187782",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 239064,
+    "igdb_game_name": "Grand Theft Auto V",
+    "updated_at": "2026-10-08T20:48:41.969Z"
   },
   "rawg:743535": {
     "background_image": "covers/rawg-743535.webp",
     "image_aspect": 0.694643,
     "provider_title": "Bishoujo Mangekyou: A Girl's Cursed Legend",
     "stores": [],
-    "cover_source_url": "https://t.vndb.org/cv/38/89138.jpg",
-    "cover_source": "vndb",
-    "updated_at": "2026-10-08T20:21:01.788Z",
     "background_image_landscape": "covers/rawg-743535-landscape.webp",
     "landscape_image_aspect": 1.777778,
+    "cover_source_url": "https://t.vndb.org/cv/38/89138.jpg",
+    "cover_source": "vndb",
     "landscape_source_url": "https://t.vndb.org/sf/66/25666.jpg",
     "landscape_source": "vndb",
-    "cover_override_signature": "f5ce58b74b3fe792"
+    "cover_override_signature": "f5ce58b74b3fe792",
+    "updated_at": "2026-10-08T20:48:42.831Z"
   },
   "rawg:51325": {
     "background_image": "covers/rawg-51325.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "The Last of Us Part II",
     "stores": [
       {
@@ -1649,37 +1658,37 @@
         "url": "https://store.playstation.com/en-us/product/UP9000-CUSA07820_00-THELASTOFUSPART2"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/c2992f3d573c2be68b0ebdc8d813589e.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5257232,
-    "steamgriddb_grid_id": 550232,
-    "updated_at": "2026-10-08T04:56:25.500Z",
     "background_image_landscape": "covers/rawg-51325-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5ziw.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 87547,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/b0ffbf9e93cb765812850318df4add4f.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 26192,
+    "igdb_game_name": "The Last of Us Part II",
+    "updated_at": "2026-10-08T20:48:42.301Z"
   },
   "rawg:327998": {
     "background_image": "covers/rawg-327998.webp",
     "image_aspect": 0.666667,
     "provider_title": "Life With A Slave - Teaching Feeling",
     "stores": [],
+    "background_image_landscape": "covers/rawg-327998-landscape.webp",
+    "landscape_image_aspect": 2.139535,
     "cover_source_url": "https://cdn2.steamgriddb.com/grid/4819ca5b1d51425d9a402443bdcd89d8.png",
     "cover_source": "steamgriddb",
     "steamgriddb_game_id": 5264358,
     "steamgriddb_grid_id": 100978,
-    "updated_at": "2026-10-08T04:57:18.505Z",
-    "cover_override_signature": "4b45e264b97ca700",
-    "background_image_landscape": "covers/rawg-327998-landscape.webp",
-    "landscape_image_aspect": 2.139535,
     "steamgriddb_landscape_grid_id": 101078,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/9fb4a5c69070f9786c284d447c845cc0.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "cover_override_signature": "4b45e264b97ca700",
+    "updated_at": "2026-10-08T20:48:42.539Z"
   },
   "rawg:1757": {
     "background_image": "covers/rawg-1757.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Reigns",
     "stores": [
       {
@@ -1699,15 +1708,20 @@
         "url": "https://play.google.com/store/apps/details?id=com.devolver.reigns&hl=en&gl=us"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/a44a73203f3431f8172d0aa950e3db71.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 12006,
-    "steamgriddb_grid_id": 62033,
-    "updated_at": "2026-10-08T04:56:25.769Z"
+    "background_image_landscape": "covers/rawg-1757-landscape.webp",
+    "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1r8j.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "474750",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/474750/00288ce3ce4d617f7d67933f1981997b93c80855/header_alt_assets_0.jpg?t=1786473450",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 22436,
+    "igdb_game_name": "Reigns",
+    "updated_at": "2026-10-08T20:48:42.588Z"
   },
   "rawg:5876": {
     "background_image": "covers/rawg-5876.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Chameleon Run",
     "stores": [
       {
@@ -1719,20 +1733,20 @@
         "url": "https://play.google.com/store/apps/details?id=com.noodlecake.chameleonrun&hl=en&gl=us"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/0796c2c61b3514f256a4861eb8c4680d.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5245911,
-    "steamgriddb_grid_id": 272544,
-    "updated_at": "2026-10-08T04:56:25.919Z",
     "background_image_landscape": "covers/rawg-5876-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2shu.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 426367,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/be339215dc116b0bc5790d3fe45881b0.jpg",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 58656,
+    "cover_override_signature": "25578916a8e31299",
+    "updated_at": "2026-10-08T20:48:43.098Z"
   },
   "rawg:16970": {
     "background_image": "covers/rawg-16970.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.667112,
     "provider_title": "Duet",
     "stores": [
       {
@@ -1748,16 +1762,16 @@
         "url": "http://store.steampowered.com/app/292600/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/8e4e619504f3e75cf30e5f0d87f4e37b.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 4287,
-    "steamgriddb_grid_id": 38307,
-    "updated_at": "2026-10-08T04:56:26.154Z",
     "background_image_landscape": "covers/rawg-16970-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 4219,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/d4b40e6113d6268363e7a93d4cbe6875.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9s6h.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "292600",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292600/header.jpg?t=1697670314",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 342987,
+    "igdb_game_name": "Duet",
+    "updated_at": "2026-10-08T20:48:43.632Z"
   },
   "rawg:8821": {
     "background_image": "covers/rawg-8821.webp",
@@ -1779,13 +1793,13 @@
     ],
     "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7jdj.jpg",
     "cover_source": "igdb",
-    "updated_at": "2026-10-08T04:57:17.690Z",
     "igdb_game_id": 56270,
-    "cover_override_signature": "3978f6ed72507141"
+    "cover_override_signature": "3978f6ed72507141",
+    "updated_at": "2026-10-08T20:48:43.598Z"
   },
   "rawg:5978": {
     "background_image": "covers/rawg-5978.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Human Resource Machine",
     "stores": [
       {
@@ -1813,36 +1827,36 @@
         "url": "https://play.google.com/store/apps/details?id=com.tomorrowcorporation.humanresourcemachine&hl=en&gl=us"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/54757e2ad11fdf870e3f138c1b11c84f.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 7943,
-    "steamgriddb_grid_id": 787391,
-    "updated_at": "2026-10-08T04:56:26.197Z",
     "background_image_landscape": "covers/rawg-5978-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 396569,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/690eaaef2e8f629a621982db91ba90ef.jpg",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1u3r.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "375820",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/375820/header.jpg?t=1692721273",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 14545,
+    "igdb_game_name": "Human Resource Machine",
+    "updated_at": "2026-10-08T20:48:43.852Z"
   },
   "rawg:36807": {
     "background_image": "covers/rawg-36807.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Dynasty Warriors 4",
     "stores": [],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/32d6c16ba950941dc6795f519f5d031e.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5326181,
-    "steamgriddb_grid_id": 280507,
-    "updated_at": "2026-10-08T04:56:26.381Z",
     "background_image_landscape": "covers/rawg-36807-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1ouk.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 197250,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/cceb923b3b96ebc159c7e24adac48eb6.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 3007,
+    "igdb_game_name": "Dynasty Warriors 4",
+    "updated_at": "2026-10-08T20:48:44.041Z"
   },
   "rawg:3835": {
     "background_image": "covers/rawg-3835.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Dynasty Warriors 6",
     "stores": [
       {
@@ -1850,52 +1864,52 @@
         "url": "https://store.playstation.com/en-us/product/UP4108-NPUB30844_00-SM5DLNA000000000"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/68cab6074ff02c00379c6636e727082c.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5253995,
-    "steamgriddb_grid_id": 77270,
-    "updated_at": "2026-10-08T04:56:26.584Z",
     "background_image_landscape": "covers/rawg-3835-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2ni8.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 280504,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/832e305ffb3cbccb4ec2e270db0b340c.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 6975,
+    "igdb_game_name": "Dynasty Warriors 6",
+    "updated_at": "2026-10-08T20:48:44.437Z"
   },
   "rawg:34744": {
     "background_image": "covers/rawg-34744.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Warcraft 3: The Frozen Throne",
     "stores": [],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/ae934d990bb6f14c6df3c2c2ab9f5448.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 35373,
-    "steamgriddb_grid_id": 93468,
-    "updated_at": "2026-10-08T04:56:26.646Z",
     "background_image_landscape": "covers/rawg-34744-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1xxv.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 8548,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/832688ff5af6c6dfef974773740ef2b5.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 133,
+    "igdb_game_name": "Warcraft III: The Frozen Throne",
+    "updated_at": "2026-10-08T20:48:44.798Z"
   },
   "rawg:38067": {
     "background_image": "covers/rawg-38067.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "StarCraft II: Wings of Liberty",
     "stores": [],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/6b858b47b1a454fbeed28048602926c3.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 38695,
-    "steamgriddb_grid_id": 594833,
-    "updated_at": "2026-10-08T04:56:26.783Z",
     "background_image_landscape": "covers/rawg-38067-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1tnn.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 8632,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/5c8cb735a1ce65dac514233cbd5576d6.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 239,
+    "igdb_game_name": "StarCraft II: Wings of Liberty",
+    "updated_at": "2026-10-08T20:48:44.758Z"
   },
   "rawg:14948": {
     "background_image": "covers/rawg-14948.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "METAL SLUG",
     "stores": [
       {
@@ -1919,20 +1933,20 @@
         "url": "https://play.google.com/store/apps/details?id=com.dotemu.neogeo.mslug&hl=en&gl=us"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/2eb8302605d2cacb6457d1f4af221875.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 7487,
-    "steamgriddb_grid_id": 38111,
-    "updated_at": "2026-10-08T04:56:26.862Z",
     "background_image_landscape": "covers/rawg-14948-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 81419,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/9527bf7a5ce77883e08ee9ca60c9dd2e.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co20gf.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "366250",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/366250/header.jpg?t=1727156570",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 1404,
+    "igdb_game_name": "Metal Slug",
+    "updated_at": "2026-10-08T20:48:44.789Z"
   },
   "rawg:242": {
     "background_image": "covers/rawg-242.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Asphalt 8: Airborne",
     "stores": [
       {
@@ -1948,16 +1962,16 @@
         "url": "https://play.google.com/store/apps/details?id=com.gameloft.android.ANMP.GloftA8HM&hl=en&gl=us"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/1872e4656907fd944d624bc033901842.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5250235,
-    "steamgriddb_grid_id": 184582,
-    "updated_at": "2026-10-08T04:56:27.129Z",
     "background_image_landscape": "covers/rawg-242-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1v06.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 78636,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/cca54d23dfd46f45534f6de13e07f4d4.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 23306,
+    "igdb_game_name": "Asphalt 8: Airborne",
+    "updated_at": "2026-10-08T20:48:45.792Z"
   },
   "rawg:600": {
     "background_image": "covers/rawg-600.webp",
@@ -1971,13 +1985,13 @@
     ],
     "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2qcd.jpg",
     "cover_source": "igdb",
-    "updated_at": "2026-10-08T04:57:17.726Z",
     "igdb_game_id": 39181,
-    "cover_override_signature": "25d5afc086d3cb21"
+    "cover_override_signature": "25d5afc086d3cb21",
+    "updated_at": "2026-10-08T20:48:45.341Z"
   },
   "rawg:415": {
     "background_image": "covers/rawg-415.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Clash Royale",
     "stores": [
       {
@@ -1989,36 +2003,36 @@
         "url": "https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=en&gl=us"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/68dba3982c7cec03e1b15f8e5786cf4e.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5286902,
-    "steamgriddb_grid_id": 688641,
-    "updated_at": "2026-10-08T04:56:27.513Z",
     "background_image_landscape": "covers/rawg-415-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cobb48.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 441014,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/b28f23cc5c222fa13e8c051dbf145d7a.jpg",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 15707,
+    "igdb_game_name": "Clash Royale",
+    "updated_at": "2026-10-08T20:48:45.676Z"
   },
   "rawg:983717": {
     "background_image": "covers/rawg-983717.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "The Legend of Zelda: Echoes of Wisdom",
     "stores": [],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/e488d6f4064e1584c115f2cd7bed74f0.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5455462,
-    "steamgriddb_grid_id": 479061,
-    "updated_at": "2026-10-08T04:56:27.461Z",
     "background_image_landscape": "covers/rawg-983717-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8d9b.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 455141,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/5234961518733b0b06f49c49fde2113f.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 306149,
+    "igdb_game_name": "The Legend of Zelda: Echoes of Wisdom",
+    "updated_at": "2026-10-08T20:48:45.892Z"
   },
   "rawg:994603": {
     "background_image": "covers/rawg-994603.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Split Fiction",
     "stores": [
       {
@@ -2034,20 +2048,20 @@
         "url": "https://store.playstation.com/en-us/concept/10005449/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/ab0a754f102512c25cd0004830ff133c.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5473464,
-    "steamgriddb_grid_id": 685343,
-    "updated_at": "2026-10-08T04:56:27.646Z",
     "background_image_landscape": "covers/rawg-994603-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 546941,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/7d8e700b3e1679a93a99ae50cfe85eab.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co95gf.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "2001120",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001120/header.jpg?t=1763484567",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 325594,
+    "igdb_game_name": "Split Fiction",
+    "updated_at": "2026-10-08T20:48:46.015Z"
   },
   "rawg:195": {
     "background_image": "covers/rawg-195.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Infinity Blade",
     "stores": [
       {
@@ -2055,16 +2069,16 @@
         "url": "https://apps.apple.com/us/app/infinity-blade/id387428400?mt=8&uo=4"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/0e5d8047bae2b9304eeb87e9c5dbfbe7.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5319953,
-    "steamgriddb_grid_id": 419550,
-    "updated_at": "2026-10-08T04:56:27.870Z",
     "background_image_landscape": "covers/rawg-195-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2qes.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 419530,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/1a67047999297e5add4b0da33ea597b4.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 10029,
+    "igdb_game_name": "Infinity Blade",
+    "updated_at": "2026-10-08T20:48:46.727Z"
   },
   "rawg:9398": {
     "background_image": "covers/rawg-9398.webp",
@@ -2084,11 +2098,11 @@
     "cover_source": "igdb",
     "igdb_game_id": 39223,
     "igdb_game_name": "Frontline Commando: D-Day",
-    "updated_at": "2026-10-08T04:56:28.211Z"
+    "updated_at": "2026-10-08T20:48:46.494Z"
   },
   "rawg:292844": {
     "background_image": "covers/rawg-292844.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Hollow Knight: Silksong",
     "stores": [
       {
@@ -2100,20 +2114,20 @@
         "url": "http://www.gog.com/game/hollow_knight_silksong"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/352b19056ce934568b956d68cbcde3b5.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 1043,
-    "steamgriddb_grid_id": 623087,
-    "updated_at": "2026-10-08T04:56:28.278Z",
     "background_image_landscape": "covers/rawg-292844-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 623042,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/a08413d9407ad65ba0f96e569fc0666c.jpg",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coaob9.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1030300",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/7983574d464e6559ac7e24275727f73a8bcca1f3/header.jpg?t=1776125736",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 372563,
+    "igdb_game_name": "Hollow Knight Silksong",
+    "updated_at": "2026-10-08T20:48:46.978Z"
   },
   "rawg:428767": {
     "background_image": "covers/rawg-428767.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Senren＊Banka",
     "stores": [
       {
@@ -2125,16 +2139,16 @@
         "url": "https://store.steampowered.com/app/1144400/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/c8e74bde8423dc63e67cdc19f9034ca0.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5254564,
-    "steamgriddb_grid_id": 390103,
-    "updated_at": "2026-10-08T04:56:28.103Z",
     "background_image_landscape": "covers/rawg-428767-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 410779,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/5989cb25c231e119564ad3e3678ff402.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1xec.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1144400",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1144400/header.jpg?t=1752128014",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 128513,
+    "igdb_game_name": "Senren Banka",
+    "updated_at": "2026-10-08T20:48:47.285Z"
   },
   "rawg:1007107": {
     "background_image": "covers/rawg-1007107.webp",
@@ -2146,20 +2160,20 @@
         "url": "https://store.steampowered.com/app/3101040/"
       }
     ],
+    "background_image_landscape": "covers/rawg-1007107-landscape.webp",
+    "landscape_image_aspect": 2.139535,
     "cover_source_url": "https://cdn2.steamgriddb.com/grid/30afbabbcd57b8255d840489ca1dc17e.png",
     "cover_source": "steamgriddb",
     "steamgriddb_game_id": 5472785,
     "steamgriddb_grid_id": 751935,
-    "updated_at": "2026-10-08T04:56:28.318Z",
-    "background_image_landscape": "covers/rawg-1007107-landscape.webp",
-    "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 642858,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/7d1ae7c481739a67b3b4022500d80c9d.png",
-    "landscape_source": "steamgriddb"
+    "steam_app_id": "3101040",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3101040/header.jpg?t=1789891545",
+    "landscape_source": "steam-header",
+    "updated_at": "2026-10-08T20:48:48.061Z"
   },
   "rawg:58764": {
     "background_image": "covers/rawg-58764.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Outer Wilds",
     "stores": [
       {
@@ -2183,20 +2197,20 @@
         "url": "https://www.microsoft.com/en-us/p/outer-wilds/c596fkdkmqn7?cid=msft_web_chart"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/eb14cccbec050d8e6b6d21116d5a3dd9.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 23535,
-    "steamgriddb_grid_id": 538139,
-    "updated_at": "2026-10-08T04:56:28.615Z",
     "background_image_landscape": "covers/rawg-58764-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 165857,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/bcebd9388f877e0425a12703e9f89934.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co65ac.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "753640",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/753640/079ae4a7ff4b5875adc5c63c4c0b84e5a3e6966b/header.jpg?t=1785424341",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 11737,
+    "igdb_game_name": "Outer Wilds",
+    "updated_at": "2026-10-08T20:48:47.385Z"
   },
   "rawg:476122": {
     "background_image": "covers/rawg-476122.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Stellar Blade",
     "stores": [
       {
@@ -2208,15 +2222,20 @@
         "url": "https://store.playstation.com/en-us/product/UP9000-PPSA13196_00-STELLARBLADE0000"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/f22df27d9bd4489d4f54c852bbdb21fa.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5443884,
-    "steamgriddb_grid_id": 629457,
-    "updated_at": "2026-10-08T04:56:28.638Z"
+    "background_image_landscape": "covers/rawg-476122-landscape.webp",
+    "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9s0t.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "3489700",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3489700/header.jpg?t=1776466244",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 117170,
+    "igdb_game_name": "Stellar Blade",
+    "updated_at": "2026-10-08T20:48:47.748Z"
   },
   "rawg:1012146": {
     "background_image": "covers/rawg-1012146.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Escape From Duckov",
     "stores": [
       {
@@ -2224,36 +2243,36 @@
         "url": "https://store.steampowered.com/app/3167020/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/a03bd93d63498edc22e19bb56c6e7698.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5473352,
-    "steamgriddb_grid_id": 682295,
-    "updated_at": "2026-10-08T04:56:28.701Z",
     "background_image_landscape": "covers/rawg-1012146-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 728424,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/5903a41038c8d1938a05616bb6b76ccb.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coajul.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "3167020",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3167020/header.jpg?t=1788419722",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 329309,
+    "igdb_game_name": "Escape from Duckov",
+    "updated_at": "2026-10-08T20:48:47.872Z"
   },
   "rawg:1010940": {
     "background_image": "covers/rawg-1010940.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Nioh 3",
     "stores": [],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/ff780b55451f6516ccb007d9fe237e02.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5491305,
-    "steamgriddb_grid_id": 738752,
-    "updated_at": "2026-10-08T04:56:28.714Z",
     "background_image_landscape": "covers/rawg-1010940-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cobf3x.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 580631,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/2776c067895690d08f28dd8f881f049c.jpg",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 347123,
+    "igdb_game_name": "Nioh 3",
+    "updated_at": "2026-10-08T20:48:48.256Z"
   },
   "rawg:58827": {
     "background_image": "covers/rawg-58827.webp",
-    "image_aspect": 0.709544,
+    "image_aspect": 0.75,
     "provider_title": "Overcooked! 2",
     "stores": [
       {
@@ -2281,20 +2300,20 @@
         "url": "https://www.epicgames.com/store/en-US/p/overcooked-2"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/74db7c6e7c2b43e307ba6bc4818e74d7.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 22508,
-    "steamgriddb_grid_id": 66773,
-    "updated_at": "2026-10-08T04:56:29.392Z",
     "background_image_landscape": "covers/rawg-58827-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 113937,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/09599eca6365482e35b4c94bbb26ce82.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coasbb.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "728880",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/9305414f49b2f7aee7f7198dc507d6b66383fdd6/header.jpg?t=1789548883",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 103341,
+    "igdb_game_name": "Overcooked! 2",
+    "updated_at": "2026-10-08T20:48:50.784Z"
   },
   "rawg:59637": {
     "background_image": "covers/rawg-59637.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Untitled Goose Game",
     "stores": [
       {
@@ -2318,20 +2337,20 @@
         "url": "https://www.epicgames.com/store/en-US/product/untitled-goose-game/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/df22702ab8f59eac4fa981a5ae651a6b.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 27146,
-    "steamgriddb_grid_id": 48616,
-    "updated_at": "2026-10-08T04:56:29.437Z",
     "background_image_landscape": "covers/rawg-59637-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 35679,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/2ee54ad04e0c4ccddb42bd52efcf27e8.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1vqc.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "837470",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/837470/header.jpg?t=1699052664",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 72813,
+    "igdb_game_name": "Untitled Goose Game",
+    "updated_at": "2026-10-08T20:48:48.700Z"
   },
   "rawg:994601": {
     "background_image": "covers/rawg-994601.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Slay the Spire 2",
     "stores": [
       {
@@ -2339,20 +2358,20 @@
         "url": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/3b8a2395c9d71ba8fd80df1c4e02d4d4.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5448946,
-    "steamgriddb_grid_id": 734148,
-    "updated_at": "2026-10-08T04:56:29.525Z",
     "background_image_landscape": "covers/rawg-994601-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 433101,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/35dfc40216b225156d1f26f2836260f0.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cocle0.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "2868840",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/b0958d387dc366211e0f353443710cfcf9fdb020/header.jpg?t=1787169309",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 296831,
+    "igdb_game_name": "Slay the Spire II",
+    "updated_at": "2026-10-08T20:48:49.012Z"
   },
   "rawg:891532": {
     "background_image": "covers/rawg-891532.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Death Stranding 2: On The Beach",
     "stores": [
       {
@@ -2364,20 +2383,20 @@
         "url": "https://store.playstation.com/en-us/concept/10001538"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/67f798cfaafbe1e92daca478934c1ee4.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5442930,
-    "steamgriddb_grid_id": 597333,
-    "updated_at": "2026-10-08T04:56:29.547Z",
     "background_image_landscape": "covers/rawg-891532-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 588205,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/d263fa56bd50ed7e0e8ab8c8fe028aec.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9ipx.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "3280350",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3280350/6270c77b0729e2df0a17d660286eeddfd9169386/header.jpg?t=1774022345",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 228530,
+    "igdb_game_name": "Death Stranding 2: On the Beach",
+    "updated_at": "2026-10-08T20:48:49.236Z"
   },
   "rawg:13627": {
     "background_image": "covers/rawg-13627.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Undertale",
     "stores": [
       {
@@ -2401,20 +2420,20 @@
         "url": "https://www.microsoft.com/en-us/p/undertale/9pjggx9xjxpb?cid=msft_web_chart"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/aba1e5182d973f43f2b3fd755f8e2314.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 8643,
-    "steamgriddb_grid_id": 72660,
-    "updated_at": "2026-10-08T04:56:29.934Z",
     "background_image_landscape": "covers/rawg-13627-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 26557,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/06f867ad5a8dd38502b33ec03d5abc47.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cob1t2.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "391540",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/header.jpg?t=1757349115",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 12517,
+    "igdb_game_name": "Undertale",
+    "updated_at": "2026-10-08T20:48:49.600Z"
   },
   "rawg:545015": {
     "background_image": "covers/rawg-545015.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Disco Elysium: Final Cut",
     "stores": [
       {
@@ -2442,20 +2461,20 @@
         "url": "https://www.microsoft.com/en-us/p/disco-elysium-the-final-cut/9ntrs771l8hl?cid=msft_web_chart"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/e17233dc1c4e3457d5a259c06c7eb502.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 18262,
-    "steamgriddb_grid_id": 132675,
-    "updated_at": "2026-10-08T04:56:30.114Z",
     "background_image_landscape": "covers/rawg-545015-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 121366,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/50afa6cfab4cec1d828eedbb4e83ba45.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2ve1.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "632470",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/816ea59d6d8ac525f79a07c3a7afa94eddb3437c/header.jpg?t=1780913406",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 141540,
+    "cover_override_signature": "38ffb3ea7fe1d1b7",
+    "updated_at": "2026-10-08T20:48:49.772Z"
   },
   "rawg:2156": {
     "background_image": "covers/rawg-2156.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Bad Piggies",
     "stores": [
       {
@@ -2467,20 +2486,20 @@
         "url": "https://play.google.com/store/apps/details?id=com.rovio.BadPiggies&hl=en&gl=us"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/4687a3fcf9bd18c0e2cc3e83ea58a410.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5265668,
-    "steamgriddb_grid_id": 114571,
-    "updated_at": "2026-10-08T04:56:30.350Z",
     "background_image_landscape": "covers/rawg-2156-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co49p4.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 106287,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/08aa5119003986e63bb7d2ed13b7b1cf.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 19902,
+    "igdb_game_name": "Bad Piggies",
+    "updated_at": "2026-10-08T20:48:49.952Z"
   },
   "rawg:144": {
     "background_image": "covers/rawg-144.webp",
-    "image_aspect": 0.709677,
+    "image_aspect": 0.75,
     "provider_title": "Angry Birds",
     "stores": [
       {
@@ -2492,20 +2511,20 @@
         "url": "https://play.google.com/store/apps/details?id=com.rovio.angrybirds&hl=en&gl=us"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/f28f9ee41ab19badef1ebf0e3ca129fe.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5256824,
-    "steamgriddb_grid_id": 406261,
-    "updated_at": "2026-10-08T04:56:30.305Z",
     "background_image_landscape": "covers/rawg-144-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co6fhb.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 515668,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/2f4b9c475540c98ed6f9405e91e18c60.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 247343,
+    "igdb_game_name": "Angry Birds",
+    "updated_at": "2026-10-08T20:48:51.503Z"
   },
   "rawg:1235": {
     "background_image": "covers/rawg-1235.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Temple Run",
     "stores": [
       {
@@ -2517,15 +2536,15 @@
         "url": "https://play.google.com/store/apps/details?id=com.imangi.templerun&hl=en&gl=us"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/d25014f44f82167e181b2720e14abdd2.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5341073,
-    "steamgriddb_grid_id": 229534,
-    "updated_at": "2026-10-08T04:56:30.557Z"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2rk3.jpg",
+    "cover_source": "igdb",
+    "igdb_game_id": 2475,
+    "igdb_game_name": "Temple Run",
+    "updated_at": "2026-10-08T20:48:50.505Z"
   },
   "rawg:102": {
     "background_image": "covers/rawg-102.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Subway Surfers",
     "stores": [
       {
@@ -2537,20 +2556,20 @@
         "url": "https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf&hl=en&gl=us"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/fffbaa156b026dfc0e11dbd799bf7344.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5283916,
-    "steamgriddb_grid_id": 178271,
-    "updated_at": "2026-10-08T04:56:30.858Z",
     "background_image_landscape": "covers/rawg-102-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co6koc.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 178199,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/185f36296976bb8947cb7e6411cb7cd6.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 251589,
+    "igdb_game_name": "Subway Surfers",
+    "updated_at": "2026-10-08T20:48:50.848Z"
   },
   "rawg:427": {
     "background_image": "covers/rawg-427.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Plants vs. Zombies",
     "stores": [
       {
@@ -2574,20 +2593,20 @@
         "url": "https://apps.apple.com/us/app/plants-vs-zombies/id893677096?uo=4"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/3203535afc65b43bb6a05ffd462e58ff.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5331605,
-    "steamgriddb_grid_id": 836362,
-    "updated_at": "2026-10-08T04:56:30.951Z",
     "background_image_landscape": "covers/rawg-427-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co6ot3.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 353821,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/9e956448b1ff047f3c225a236d1d54de.jpg",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 163213,
+    "igdb_game_name": "Plants vs. Zombies",
+    "updated_at": "2026-10-08T20:48:51.450Z"
   },
   "rawg:1388": {
     "background_image": "covers/rawg-1388.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Where's My Water?",
     "stores": [
       {
@@ -2599,20 +2618,20 @@
         "url": "https://apps.apple.com/us/app/wheres-my-water/id449735650?uo=4"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/713ca5c6f657ae51cc15f4508c18fd4a.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5350946,
-    "steamgriddb_grid_id": 247668,
-    "updated_at": "2026-10-08T04:56:30.932Z",
     "background_image_landscape": "covers/rawg-1388-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4v8c.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 247663,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/6ac07f10dd69c5b9d286ae9281afc3e7.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 13460,
+    "igdb_game_name": "Where's My Water?",
+    "updated_at": "2026-10-08T20:48:51.781Z"
   },
   "rawg:949": {
     "background_image": "covers/rawg-949.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Cut the Rope",
     "stores": [
       {
@@ -2632,20 +2651,20 @@
         "url": "https://apps.apple.com/us/app/cut-the-rope/id1024506959?uo=4"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/0384e59d348a9248f08a2627cdf43741.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 2330,
-    "steamgriddb_grid_id": 111825,
-    "updated_at": "2026-10-08T04:56:30.950Z",
     "background_image_landscape": "covers/rawg-949-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 247665,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/059171bfb1bceadac4be20f783516274.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co49nr.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "223280",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223280/header.jpg?t=1736470379",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 9761,
+    "igdb_game_name": "Cut the Rope",
+    "updated_at": "2026-10-08T20:48:51.805Z"
   },
   "rawg:193": {
     "background_image": "covers/rawg-193.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Fruit Ninja Classic",
     "stores": [
       {
@@ -2661,16 +2680,16 @@
         "url": "https://play.google.com/store/apps/details?id=com.halfbrick.fruitninja&hl=en&gl=us"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/882760d95d14d3ca2fb9c73adcc209e1.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5311537,
-    "steamgriddb_grid_id": 179210,
-    "updated_at": "2026-10-08T04:56:31.262Z",
     "background_image_landscape": "covers/rawg-193-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co554v.jpg",
+    "cover_source": "igdb",
     "steamgriddb_landscape_grid_id": 174082,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/7cb3d9dc4b4a5c4416d6a5ffd94e4abe.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "igdb_game_id": 1684,
+    "cover_override_signature": "f14f1b07ae17f858",
+    "updated_at": "2026-10-08T20:48:52.252Z"
   },
   "rawg:879559": {
     "background_image": "covers/rawg-879559.webp",
@@ -2686,11 +2705,11 @@
     "cover_source": "igdb",
     "igdb_game_id": 279200,
     "igdb_game_name": "Carrot Fantasy",
-    "updated_at": "2026-10-08T04:56:31.602Z"
+    "updated_at": "2026-10-08T20:48:52.107Z"
   },
   "rawg:871264": {
     "background_image": "covers/rawg-871264.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Dave the Diver",
     "stores": [
       {
@@ -2698,16 +2717,16 @@
         "url": "https://store.steampowered.com/app/1868140/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/1d50a96e0e3d7b721de8aafbb246067d.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5325005,
-    "steamgriddb_grid_id": 391195,
-    "updated_at": "2026-10-08T04:56:31.408Z",
     "background_image_landscape": "covers/rawg-871264-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 402709,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/73a89dc861c97b2f3fad2e47ed4e78a2.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cocdlv.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1868140",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/81bdb3bce15d27ca1b4554a642d91096e89be229/header.jpg?t=1791478061",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 203722,
+    "igdb_game_name": "Dave the Diver",
+    "updated_at": "2026-10-08T20:48:52.584Z"
   },
   "rawg:963930": {
     "background_image": "covers/rawg-963930.webp",
@@ -2719,16 +2738,20 @@
         "url": "https://store.steampowered.com/app/1109570/"
       }
     ],
+    "background_image_landscape": "covers/rawg-963930-landscape.webp",
+    "landscape_image_aspect": 2.139535,
     "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co46q9.jpg",
     "cover_source": "igdb",
+    "steam_app_id": "1109570",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1109570/9aa9b91bcc1f680f3de72ff1723722118cbec5e5/header.jpg?t=1775638262",
+    "landscape_source": "steam-header",
     "igdb_game_id": 161224,
-    "igdb_game_name": "Word Game: Episode 0",
-    "updated_at": "2026-10-08T04:57:17.876Z",
-    "cover_override_signature": "7c7d8556169ec280"
+    "cover_override_signature": "7c7d8556169ec280",
+    "updated_at": "2026-10-08T20:48:52.531Z"
   },
   "rawg:28154": {
     "background_image": "covers/rawg-28154.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Cuphead",
     "stores": [
       {
@@ -2752,20 +2775,20 @@
         "url": "https://www.nintendo.com/games/detail/cuphead-switch"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/25dcf1554f13c36b512dfe907acc77d3.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 3583,
-    "steamgriddb_grid_id": 37575,
-    "updated_at": "2026-10-08T04:56:31.693Z",
     "background_image_landscape": "covers/rawg-28154-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 130952,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/2f51c2752425afd8ede9b4456729251b.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co62ao.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "268910",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/header.jpg?t=1709068852",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 9061,
+    "igdb_game_name": "Cuphead",
+    "updated_at": "2026-10-08T20:48:52.811Z"
   },
   "rawg:274755": {
     "background_image": "covers/rawg-274755.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Hades",
     "stores": [
       {
@@ -2789,16 +2812,16 @@
         "url": "https://www.microsoft.com/en-us/p/hades/9p8dl6w0jbb8?cid=msft_web_chart"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/ce8a253393a1bbbb3d72cd2093b81ede.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 4997889,
-    "steamgriddb_grid_id": 165984,
-    "updated_at": "2026-10-08T04:56:32.062Z",
     "background_image_landscape": "covers/rawg-274755-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 119203,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/9ea6a76568f749f117172eaf365d7b21.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cob9kr.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "1145360",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/header.jpg?t=1758127023",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 113112,
+    "igdb_game_name": "Hades",
+    "updated_at": "2026-10-08T20:48:53.105Z"
   },
   "vndb:v19182": {
     "background_image": "covers/vndb-v19182.webp",
@@ -2834,18 +2857,18 @@
         "url": "https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=1468apc15052/"
       }
     ],
-    "cover_source_url": "https://t.vndb.org/cv/46/94546.jpg",
-    "cover_source": "vndb",
-    "updated_at": "2026-10-08T04:56:33.292Z",
     "background_image_landscape": "covers/vndb-v19182-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://t.vndb.org/cv/46/94546.jpg",
+    "cover_source": "vndb",
     "steamgriddb_landscape_grid_id": 238705,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/3ed7a0127018f394dab031cc36c32b43.jpg",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "updated_at": "2026-10-08T20:48:54.225Z"
   },
   "vndb:v14365": {
     "background_image": "covers/vndb-v14365.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.706991,
     "provider_title": "Bishoujo Mangekyou -Kami ga Tsukuritamouta Shoujo-tachi-",
     "stores": [
       {
@@ -2877,20 +2900,18 @@
         "url": "https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=1468apc15052/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/5190a9dd151d0c788f4ebae5d0551b48.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5313239,
-    "steamgriddb_grid_id": 238704,
-    "updated_at": "2026-10-08T04:56:32.239Z",
     "background_image_landscape": "covers/vndb-v14365-landscape.webp",
     "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://t.vndb.org/cv/47/94547.jpg",
+    "cover_source": "vndb",
     "steamgriddb_landscape_grid_id": 302215,
     "landscape_source_url": "https://cdn2.steamgriddb.com/grid/083decd2c5e1daeba39e3873c5b0d8b4.png",
-    "landscape_source": "steamgriddb"
+    "landscape_source": "steamgriddb",
+    "updated_at": "2026-10-08T20:48:54.305Z"
   },
   "rawg:19899": {
     "background_image": "covers/rawg-19899.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "PICO PARK",
     "stores": [
       {
@@ -2902,20 +2923,20 @@
         "url": "http://store.steampowered.com/app/461040/"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/0f70b293d0b50ccd8cd5a292ee4c6c4e.png",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 5282730,
-    "steamgriddb_grid_id": 320780,
-    "updated_at": "2026-10-08T04:56:32.069Z",
     "background_image_landscape": "covers/rawg-19899-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 577323,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/29c268c89f328fe3746695bd3c5fab57.png",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8yks.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "461040",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/461040/6f1570451e61751e3995d42fa7d7f31f90756db0/header.jpg?t=1781624101",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 33027,
+    "igdb_game_name": "Pico Park",
+    "updated_at": "2026-10-08T20:48:53.624Z"
   },
   "rawg:17959": {
     "background_image": "covers/rawg-17959.webp",
-    "image_aspect": 0.666667,
+    "image_aspect": 0.75,
     "provider_title": "Ori and the Blind Forest: Definitive Edition",
     "stores": [
       {
@@ -2931,15 +2952,15 @@
         "url": "https://www.microsoft.com/en-us/p/ori-and-the-blind-forest-definitive-edition/bw85kqb8q31m"
       }
     ],
-    "cover_source_url": "https://cdn2.steamgriddb.com/grid/dfe12e78a966e3c32ffc9feb2d7ad3b3.jpg",
-    "cover_source": "steamgriddb",
-    "steamgriddb_game_id": 8459,
-    "steamgriddb_grid_id": 124521,
-    "updated_at": "2026-10-08T04:56:32.532Z",
     "background_image_landscape": "covers/rawg-17959-landscape.webp",
     "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 850009,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/6c36481d5c0aadade29f35bb255c5ca8.jpg",
-    "landscape_source": "steamgriddb"
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1y41.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "387290",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/387290/header.jpg?t=1701967651",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 7344,
+    "igdb_game_name": "Ori and the Blind Forest",
+    "updated_at": "2026-10-08T20:48:53.959Z"
   }
 }
