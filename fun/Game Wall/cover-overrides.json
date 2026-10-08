@@ -23,5 +23,11 @@
   "rawg:963930": {
     "provider": "igdb",
     "igdb_id": 161224
+  },
+  "rawg:743535": {
+    "provider": "vndb",
+    "url": "https://t.vndb.org/cv/38/89138.jpg",
+    "landscape_url": "https://t.vndb.org/sf/66/25666.jpg",
+    "landscape_provider": "vndb"
   }
 }

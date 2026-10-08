@@ -1627,17 +1627,17 @@
   },
   "rawg:743535": {
     "background_image": "covers/rawg-743535.webp",
-    "image_aspect": 1.777778,
+    "image_aspect": 0.694643,
     "provider_title": "Bishoujo Mangekyou: A Girl's Cursed Legend",
     "stores": [],
-    "cover_source_url": "https://media.rawg.io/media/screenshots/e51/e51f8925aba25076507b6bce85dd1680.jpg",
-    "cover_source": "rawg",
-    "updated_at": "2026-10-08T04:56:25.605Z",
+    "cover_source_url": "https://t.vndb.org/cv/38/89138.jpg",
+    "cover_source": "vndb",
+    "updated_at": "2026-10-08T20:21:01.788Z",
     "background_image_landscape": "covers/rawg-743535-landscape.webp",
-    "landscape_image_aspect": 2.139535,
-    "steamgriddb_landscape_grid_id": 238699,
-    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/69e7d7d7adfeb765581a4d3a15ebc680.jpg",
-    "landscape_source": "steamgriddb"
+    "landscape_image_aspect": 1.777778,
+    "landscape_source_url": "https://t.vndb.org/sf/66/25666.jpg",
+    "landscape_source": "vndb",
+    "cover_override_signature": "f5ce58b74b3fe792"
   },
   "rawg:51325": {
     "background_image": "covers/rawg-51325.webp",
