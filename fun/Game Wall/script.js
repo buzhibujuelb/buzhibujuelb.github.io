@@ -1,23 +1,9 @@
-const storeIdMapping = {
-  1: "Steam",
-  2: "Xbox Store",
-  3: "PlayStation Store",
-  4: "App Store",
-  5: "GOG",
-  6: "Nintendo Store",
-  7: "Xbox 360 Store",
-  8: "Google Play",
-  9: "itch.io",
-  11: "Epic Games",
-};
-
-const apiKey = "4d79f0d629c741e1be8ae8bf14818815";
 const jsonUrl = "games.json";
+const metadataUrl = "game-meta.json";
 let gamesData = [];
 let gameRenderVersion = 0;
 let coverLoadGeneration = 0;
 let pendingCoverLoads = 0;
-const gameDetailsCache = new Map();
 let photoWallLayoutCache = null;
 
 // ---------------------------
@@ -25,6 +11,10 @@ let photoWallLayoutCache = null;
 // ---------------------------
 function isPhotoWallMode() {
   return document.body.classList.contains("photo-wall");
+}
+
+function isLandscapeCoverMode() {
+  return document.body.classList.contains("landscape-covers");
 }
 
 function getGameDateValue(date) {
@@ -85,15 +75,119 @@ if (photoWallBtn) {
 }
 updatePhotoWallControls();
 
+// Cover orientation toggle
+const coverOrientationBtn = document.getElementById("toggleCoverOrientation");
+
+function updateCoverOrientationControl() {
+  if (!coverOrientationBtn) return;
+  const landscapeMode = isLandscapeCoverMode();
+  const label = landscapeMode ? "切换到竖版封面" : "切换到横版封面";
+  const icon = coverOrientationBtn.querySelector("i");
+  if (icon) {
+    icon.className = landscapeMode
+      ? "fas fa-compress-alt"
+      : "fas fa-expand-alt";
+  }
+  coverOrientationBtn.title = label;
+  coverOrientationBtn.setAttribute("aria-label", label);
+  coverOrientationBtn.setAttribute("aria-pressed", String(landscapeMode));
+}
+
+function applyCoverOrientation() {
+  const landscapeMode = isLandscapeCoverMode();
+  document.querySelectorAll(".game-card").forEach((card) => {
+    const img = card.querySelector("img");
+    if (!img) return;
+
+    const nextSource = landscapeMode
+      ? img.dataset.landscapeSrc || img.dataset.portraitSrc
+      : img.dataset.portraitSrc;
+    card.dataset.aspect = landscapeMode
+      ? card.dataset.landscapeAspect || String(16 / 9)
+      : card.dataset.portraitAspect || String(2 / 3);
+    if (nextSource && img.getAttribute("src") !== nextSource) {
+      img.src = nextSource;
+    }
+  });
+  photoWallLayoutCache = null;
+  queueMasonryLayout(true);
+}
+
+function initializeCoverOrientation() {
+  try {
+    if (localStorage.getItem("game-wall-cover-orientation") === "landscape") {
+      document.body.classList.add("landscape-covers");
+    }
+  } catch (error) {
+    // 隐私模式等环境可能禁用 localStorage，不影响本次切换。
+  }
+  updateCoverOrientationControl();
+}
+
+if (coverOrientationBtn) {
+  coverOrientationBtn.addEventListener("click", () => {
+    document.body.classList.toggle("landscape-covers");
+    try {
+      localStorage.setItem(
+        "game-wall-cover-orientation",
+        isLandscapeCoverMode() ? "landscape" : "portrait"
+      );
+    } catch (error) {
+      // 保存偏好失败时仍保留当前页面状态。
+    }
+    updateCoverOrientationControl();
+    applyCoverOrientation();
+  });
+}
+
 // ---------------------------
 // Load Games
 // ---------------------------
 async function loadGames() {
-  const response = await fetch(jsonUrl);
-  gamesData = await response.json();
+  const [gamesResponse, metadataResponse] = await Promise.all([
+    fetch(jsonUrl),
+    fetch(metadataUrl),
+  ]);
+  if (!gamesResponse.ok) throw new Error(`无法加载 ${jsonUrl}`);
+  if (!metadataResponse.ok) throw new Error(`无法加载 ${metadataUrl}`);
+
+  const games = await gamesResponse.json();
+  const metadata = await metadataResponse.json();
+  const metadataKeys = getGameMetadataKeys(games);
+  gamesData = games.map((game, index) => {
+    const metadataKey = metadataKeys[index];
+    return {
+      ...(metadataKey ? metadata[metadataKey] : {}),
+      ...game,
+    };
+  });
 
   gamesData.sort((a, b) => getGameDateValue(b.date) - getGameDateValue(a.date));
   renderGames(gamesData);
+}
+
+function getGameMetadataKey(game) {
+  if (game.id !== undefined && game.id !== null && game.id !== "") {
+    return `rawg:${game.id}`;
+  }
+  if (game.vndb_id) return `vndb:${game.vndb_id}`;
+  return null;
+}
+
+function getGameMetadataKeys(games) {
+  const baseKeys = games.map(getGameMetadataKey);
+  const totals = new Map();
+  baseKeys.forEach((key) => {
+    if (key) totals.set(key, (totals.get(key) || 0) + 1);
+  });
+
+  const occurrences = new Map();
+  return baseKeys.map((key) => {
+    if (!key || totals.get(key) === 1) return key;
+    const occurrence = (occurrences.get(key) || 0) + 1;
+    occurrences.set(key, occurrence);
+    return `${key}#${occurrence}`;
+  });
 }
 
 // ---------------------------
@@ -108,9 +202,7 @@ function renderGames(games) {
   const photoLayoutNeedsFinalAspectRefresh = games.some(
     (game) => !Number.isFinite(Number(game.image_aspect))
   );
-  pendingCoverLoads = games.filter(
-    (game) => game.background_image || game.id
-  ).length;
+  pendingCoverLoads = games.filter((game) => game.background_image).length;
 
   const finishCoverLoad = () => {
     if (currentCoverGeneration !== coverLoadGeneration) return;
@@ -129,9 +221,13 @@ function renderGames(games) {
     const card = document.createElement("div");
     card.classList.add("game-card");
     card.dataset.rating = game.rating ?? 0;
-    if (Number.isFinite(Number(game.image_aspect))) {
-      card.dataset.aspect = Number(game.image_aspect);
-    }
+    const portraitAspect = Number(game.image_aspect) || 2 / 3;
+    const landscapeAspect = Number(game.landscape_image_aspect) || 16 / 9;
+    card.dataset.portraitAspect = portraitAspect;
+    card.dataset.landscapeAspect = landscapeAspect;
+    card.dataset.aspect = isLandscapeCoverMode()
+      ? landscapeAspect
+      : portraitAspect;
 
     const img = document.createElement("img");
     const placeholder = `
@@ -140,6 +236,8 @@ function renderGames(games) {
       </svg>`;
     img.src = `data:image/svg+xml;base64,${btoa(placeholder)}`;
     img.alt = game.name;
+    img.dataset.portraitSrc = game.background_image || "";
+    img.dataset.landscapeSrc = game.background_image_landscape || "";
     card.appendChild(img);
 
     const info = document.createElement("div");
@@ -169,13 +267,10 @@ function renderGames(games) {
       img.src = coverUrl;
     };
 
-    if (game.background_image) {
-      loadCover(game.background_image);
-    } else if (game.id) {
-      fetchGameDetails(game.id)
-        .then((details) => loadCover(details.background_image))
-        .catch(finishCoverLoad);
-    }
+    const initialCover = isLandscapeCoverMode()
+      ? game.background_image_landscape || game.background_image
+      : game.background_image;
+    if (initialCover) loadCover(initialCover);
   });
 
   // 占位图阶段先做一次布局
@@ -192,39 +287,6 @@ function computeImageAspect(card, img) {
       : 16 / 9;
 
   card.dataset.aspect = aspect;
-}
-
-// ---------------------------
-// RAWG details
-// ---------------------------
-async function fetchGameDetails(id) {
-  if (gameDetailsCache.has(id)) return gameDetailsCache.get(id);
-
-  const url = `https://api.rawg.io/api/games/${id}?key=${apiKey}`;
-  const request = (async () => {
-    try {
-      const res = await fetch(url);
-      const result = await res.json();
-      return result;
-    } catch (err) {
-      console.error("RAWG detail error for id", id, err);
-      return {};
-    }
-  })();
-  gameDetailsCache.set(id, request);
-  return request;
-}
-
-async function fetchStoreLinks(gameId) {
-  const url = `https://api.rawg.io/api/games/${gameId}/stores?key=${apiKey}`;
-  try {
-    const res = await fetch(url);
-    const d = await res.json();
-    return d.results || [];
-  } catch (err) {
-    console.error("Store links error:", err);
-    return [];
-  }
 }
 
 // ---------------------------
@@ -249,8 +311,17 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-async function showModal(game, imageUrl) {
+function showModal(game, imageUrl) {
   const content = document.getElementById("modalContent");
+  const stores = Array.isArray(game.stores) ? game.stores : [];
+  const storeLinks = stores.length
+    ? stores
+        .map(
+          (store) =>
+            `<a href="${store.url}" target="_blank" rel="noopener noreferrer">${store.name}</a>`
+        )
+        .join(" ")
+    : "暂无信息";
 
   content.innerHTML = `
     <img src="${imageUrl}">
@@ -258,7 +329,7 @@ async function showModal(game, imageUrl) {
     <p>评分: ${game.rating}/10</p>
     <p>最后游玩时间: ${game.date}</p>
     <p>${game.description.replace(/\n/g, "<br>")}</p>
-    <div id="storeLinks"><strong>商店链接:</strong> 加载中...</div>
+    <div id="storeLinks"><strong>商店链接:</strong> ${storeLinks}</div>
   `;
 
   gameModal.classList.add("active");
@@ -267,25 +338,6 @@ async function showModal(game, imageUrl) {
   content.scrollTop = 0;
   modalCloseButton.focus();
 
-  if (game.id) {
-    const stores = await fetchStoreLinks(game.id);
-    const box = content.querySelector("#storeLinks");
-    if (!box) return;
-    if (stores.length > 0) {
-      box.innerHTML =
-        "<strong>商店链接:</strong> " +
-        stores
-          .map(
-            (s) =>
-              `<a href="${s.url}" target="_blank">${
-                storeIdMapping[s.store_id] || "商店"
-              }</a>`
-          )
-          .join(" ");
-    } else {
-      box.innerHTML = "<strong>商店链接:</strong> 暂无信息";
-    }
-  }
 }
 
 // ---------------------------
@@ -325,7 +377,9 @@ function applyDefaultMasonryLayout() {
     const img = card.querySelector("img");
     if (img) {
       img.style.width = "100%";
-      img.style.height = "auto";
+      img.style.height = isLandscapeCoverMode()
+        ? `${(colW * 9) / 16}px`
+        : "auto";
       img.style.objectFit = "cover";
     }
 
@@ -982,4 +1036,5 @@ document.getElementById("sortByDate").addEventListener("click", () => {
 // Init
 // ---------------------------
 initializeDarkMode();
+initializeCoverOrientation();
 loadGames();

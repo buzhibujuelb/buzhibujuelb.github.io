@@ -122,6 +122,11 @@ body {
   padding: 10px;
 }
 
+.landscape-covers:not(.photo-wall) .game-card img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .game-info h3 {
   margin: 10px 0;
   font-size: 18px;

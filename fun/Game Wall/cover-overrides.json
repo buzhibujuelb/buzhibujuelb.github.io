@@ -1,0 +1,27 @@
+{
+  "rawg:10142": {
+    "provider": "igdb",
+    "igdb_id": 27789,
+    "landscape_search": "PUBG: Battlegrounds"
+  },
+  "rawg:736257#1": {
+    "provider": "igdb",
+    "igdb_id": 236669
+  },
+  "rawg:327998": {
+    "provider": "steamgriddb",
+    "steamgriddb_game_id": 5264358
+  },
+  "rawg:8821": {
+    "provider": "igdb",
+    "igdb_id": 56270
+  },
+  "rawg:600": {
+    "provider": "igdb",
+    "igdb_id": 39181
+  },
+  "rawg:963930": {
+    "provider": "igdb",
+    "igdb_id": 161224
+  }
+}

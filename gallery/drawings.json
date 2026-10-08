@@ -1,5 +1,20 @@
 [
   {
+    "id": "drawing-4d2ce732223d",
+    "source": "paintings",
+    "collections": [
+      "drawings"
+    ],
+    "work": "美少女万华镜 -罪与罚的少女-",
+    "character": "觋夕莉",
+    "date": "2026-10-06",
+    "caption": "觋夕莉",
+    "src": "media/drawings/full/drawing-4d2ce732223d.jpg",
+    "thumb": "media/drawings/thumb/drawing-4d2ce732223d.jpg",
+    "width": 1024,
+    "height": 768
+  },
+  {
     "id": "drawing-948d45efa0fa",
     "source": "paintings",
     "collections": [
