@@ -55,6 +55,15 @@ body {
   background-color: var(--button-hover-bg);
 }
 
+#toggleCoverOrientation .cover-orientation-icon {
+  transform: rotate(0deg);
+  transition: transform 0.22s ease;
+}
+
+#toggleCoverOrientation.is-landscape .cover-orientation-icon {
+  transform: rotate(90deg);
+}
+
 .top-bar .icon-button[hidden] {
   display: none;
 }
@@ -211,11 +220,91 @@ body.modal-open {
   overflow: hidden;
 }
 
-.modal img {
+.modal-layout {
+  display: grid;
+  grid-template-columns: minmax(190px, 250px) minmax(0, 1fr);
+  gap: 22px 26px;
+  align-items: start;
+}
+
+.modal-cover {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  position: sticky;
+  top: 0;
+  margin: 0;
+}
+
+.modal-cover img {
+  display: block;
   width: 100%;
+  height: auto;
+  max-height: calc(80dvh - 72px);
+  margin: 0;
+  border-radius: 10px;
+  object-fit: contain;
+  background: rgba(127, 127, 127, 0.08);
+}
+
+.modal-summary {
+  min-width: 0;
+  padding-right: 34px;
+}
+
+.modal-summary h3 {
+  margin: 2px 0 16px;
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+}
+
+.modal-facts {
+  display: block;
+}
+
+.modal-facts p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.modal-description {
+  font-size: 15px;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.modal-stores {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 5px 8px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(127, 127, 127, 0.2);
+}
+
+.modal-store-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-layout--landscape {
+  grid-template-columns: 1fr;
+}
+
+.modal-layout--landscape .modal-cover,
+.modal-layout--landscape .modal-summary,
+.modal-layout--landscape .modal-description,
+.modal-layout--landscape .modal-stores {
+  grid-column: 1;
+  grid-row: auto;
+  position: static;
+}
+
+.modal-layout--landscape .modal-cover img {
+  width: 100%;
+  max-height: min(42dvh, 360px);
+  aspect-ratio: 16 / 9;
   object-fit: cover;
-  margin-bottom: 20px;
-  border-radius: 8px;
 }
 
 .modal a {
@@ -234,17 +323,121 @@ body.modal-open {
 }
 
 @media (max-width: 600px) {
+  .top-bar {
+    top: max(8px, env(safe-area-inset-top));
+    left: max(8px, env(safe-area-inset-left));
+    gap: 7px;
+  }
+
+  .top-bar .icon-button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .game-card {
+    margin-bottom: 10px;
+    border-radius: 7px;
+  }
+
+  .game-card img {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+
+  .game-info {
+    padding: 7px 6px 9px;
+  }
+
+  .game-info h3 {
+    margin: 5px 0 7px;
+    font-size: 14px;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  .game-info p {
+    margin: 3px 0;
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
   .modal {
-    padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+    padding: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
   }
 
   .modal-dialog {
     width: 100%;
-    max-height: calc(100dvh - 24px);
+    max-height: calc(100dvh - 16px);
+    border-radius: 12px;
   }
 
   .modal-content {
-    padding: 16px;
+    padding: 14px;
+  }
+
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .modal-layout--portrait {
+    grid-template-columns: minmax(96px, 34vw) minmax(0, 1fr);
+    gap: 16px 14px;
+  }
+
+  .modal-layout--portrait .modal-cover {
+    grid-column: 1;
+    grid-row: 1;
+    position: static;
+  }
+
+  .modal-layout--portrait .modal-cover img {
+    max-height: 220px;
+  }
+
+  .modal-layout--portrait .modal-summary {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+  }
+
+  .modal-layout--portrait .modal-description,
+  .modal-layout--portrait .modal-stores {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .modal-summary {
+    padding-right: 28px;
+  }
+
+  .modal-summary h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+  }
+
+  .modal-facts p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .modal-description {
+    font-size: 14px;
+    line-height: 1.68;
+  }
+
+  .modal-stores {
+    padding-top: 12px;
+  }
+
+  .modal-layout--landscape {
+    gap: 14px;
+  }
+
+  .modal-layout--landscape .modal-cover img {
+    max-height: 32dvh;
   }
 }
 .photo-wall .game-card {

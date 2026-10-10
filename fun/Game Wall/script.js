@@ -84,10 +84,9 @@ function updateCoverOrientationControl() {
   const label = landscapeMode ? "切换到竖版封面" : "切换到横版封面";
   const icon = coverOrientationBtn.querySelector("i");
   if (icon) {
-    icon.className = landscapeMode
-      ? "fas fa-compress-alt"
-      : "fas fa-expand-alt";
+    icon.className = "fas fa-mobile-alt cover-orientation-icon";
   }
+  coverOrientationBtn.classList.toggle("is-landscape", landscapeMode);
   coverOrientationBtn.title = label;
   coverOrientationBtn.setAttribute("aria-label", label);
   coverOrientationBtn.setAttribute("aria-pressed", String(landscapeMode));
@@ -322,14 +321,29 @@ function showModal(game, imageUrl) {
         )
         .join(" ")
     : "暂无信息";
+  const modalLayoutClass = isLandscapeCoverMode()
+    ? "modal-layout--landscape"
+    : "modal-layout--portrait";
+  const description = String(game.description || "").replace(/\n/g, "<br>");
 
   content.innerHTML = `
-    <img src="${imageUrl}">
-    <h3>${game.name}</h3>
-    <p>评分: ${game.rating}/10</p>
-    <p>最后游玩时间: ${game.date}</p>
-    <p>${game.description.replace(/\n/g, "<br>")}</p>
-    <div id="storeLinks"><strong>商店链接:</strong> ${storeLinks}</div>
+    <article class="modal-layout ${modalLayoutClass}">
+      <figure class="modal-cover">
+        <img src="${imageUrl}" alt="${game.name} 封面">
+      </figure>
+      <header class="modal-summary">
+        <h3>${game.name}</h3>
+        <div class="modal-facts">
+          <p>评分: ${game.rating}/10</p>
+          <p>最后游玩时间: ${game.date}</p>
+        </div>
+      </header>
+      <div class="modal-description">${description || "暂无游戏记录"}</div>
+      <div class="modal-stores" id="storeLinks">
+        <strong>商店</strong>
+        <div class="modal-store-links">${storeLinks}</div>
+      </div>
+    </article>
   `;
 
   gameModal.classList.add("active");
@@ -347,16 +361,24 @@ function showModal(game, imageUrl) {
 function applyDefaultMasonryLayout() {
   const grid = document.getElementById("gameGrid");
   const cards = Array.from(grid.children);
-  const colW = 250;
-  const gap = 20;
 
   const GW = grid.clientWidth;
   if (!GW) return;
 
-  const cols = Math.max(1, Math.floor((GW + gap) / (colW + gap)));
+  const compactLayout = GW <= 600;
+  const gap = compactLayout ? 10 : 20;
+  const sidePadding = compactLayout ? 10 : 0;
+  const cols = compactLayout
+    ? 2
+    : Math.max(1, Math.floor((GW + gap) / (250 + gap)));
+  const colW = compactLayout
+    ? Math.max(0, (GW - sidePadding * 2 - gap) / cols)
+    : 250;
   const layoutWidth = cols * (colW + gap) - gap;
-  const centerOffset = Math.max(0, (GW - layoutWidth) / 2);
-  const columnHeights = new Array(cols).fill(20);
+  const centerOffset = compactLayout
+    ? sidePadding
+    : Math.max(0, (GW - layoutWidth) / 2);
+  const columnHeights = new Array(cols).fill(compactLayout ? 66 : 20);
 
   grid.style.display = "block";
   grid.style.gridTemplateColumns = "";
