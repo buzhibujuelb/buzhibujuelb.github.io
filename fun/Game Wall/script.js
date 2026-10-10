@@ -82,11 +82,6 @@ function updateCoverOrientationControl() {
   if (!coverOrientationBtn) return;
   const landscapeMode = isLandscapeCoverMode();
   const label = landscapeMode ? "切换到竖版封面" : "切换到横版封面";
-  const icon = coverOrientationBtn.querySelector("i");
-  if (icon) {
-    icon.className = "fas fa-mobile-alt cover-orientation-icon";
-  }
-  coverOrientationBtn.classList.toggle("is-landscape", landscapeMode);
   coverOrientationBtn.title = label;
   coverOrientationBtn.setAttribute("aria-label", label);
   coverOrientationBtn.setAttribute("aria-pressed", String(landscapeMode));
