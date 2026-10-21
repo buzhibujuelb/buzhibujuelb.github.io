@@ -94,22 +94,36 @@
       <button class="music-dock-toggle" id="musicDockToggle" type="button" aria-expanded="true" aria-controls="musicDockBody" aria-label="收起播放器">−</button>
     </div>
     <div class="music-dock-body" id="musicDockBody">
-      <nmp-player
-        id="galleryPlayer"
-        playlist-id="2293020797"
-        theme="light"
-        layout="compact"
-        position="static"
-        volume="0.65"
-        autoplay="true"
-        lyric="true"
-        playlist="true"
-        remember="true"
-        storage-key="gallery-field-records"
-        hotkeys="true"
-        auto-pause-on-hidden="false"
-      ></nmp-player>
-      <a class="music-source" href="https://music.163.com/#/playlist?id=2293020797" target="_blank" rel="noopener">NETEASE PLAYLIST 2293020797 ↗</a>
+      <div class="hybrid-player" id="galleryPlayer">
+        <div class="music-video-wrap" id="musicVideoWrap" hidden>
+          <div id="youtubePlayer"></div>
+        </div>
+        <div class="music-main">
+          <img class="music-cover" id="musicCover" alt="" src="">
+          <div class="music-copy">
+            <strong id="musicTitle">载入歌单中</strong>
+            <span id="musicArtist">NETEASE + YOUTUBE</span>
+            <small id="musicAlbum"></small>
+          </div>
+          <div class="music-controls">
+            <button id="musicPrevious" type="button" aria-label="上一首"></button>
+            <button class="music-play" id="musicPlay" type="button" aria-label="播放"></button>
+            <button id="musicNext" type="button" aria-label="下一首"></button>
+          </div>
+        </div>
+        <div class="music-progress-row">
+          <span id="musicCurrentTime">0:00</span>
+          <input id="musicProgress" type="range" min="0" max="1" step="0.1" value="0" aria-label="播放进度">
+          <span id="musicTotalTime">0:00</span>
+        </div>
+        <div class="music-tools">
+          <label>VOL <input id="musicVolume" type="range" min="0" max="100" step="1" value="65" aria-label="音量"></label>
+          <button id="musicMode" type="button">LIST</button>
+          <button id="musicPlaylistToggle" type="button" aria-expanded="false" aria-controls="musicPlaylist">TRACKS</button>
+        </div>
+        <div class="music-playlist" id="musicPlaylist" hidden></div>
+      </div>
+      <a class="music-source" id="musicSource" href="https://music.163.com/#/playlist?id=2293020797" target="_blank" rel="noopener">NETEASE PLAYLIST 2293020797 ↗</a>
     </div>
   </aside>
 
@@ -129,7 +143,6 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script type="module" src="app-20260823-lightbox.js"></script>
-  <script src="vendor/netease-mini-player-v3/nmpv3.min.js"></script>
   <script src="music-player.js" defer></script>
 </body>
 </html>

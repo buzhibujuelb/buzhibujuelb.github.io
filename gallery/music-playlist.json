@@ -1,0 +1,2779 @@
+{
+  "playlistId": "2293020797",
+  "source": "https://music.163.com/#/playlist?id=2293020797",
+  "playbackProvider": "YouTube IFrame Player API",
+  "generatedAt": "2026-10-21T05:17:29.937Z",
+  "tracks": [
+    {
+      "neteaseId": "31010759",
+      "name": "Restoring the Light, Facing the Dark",
+      "artists": "Gareth Coker",
+      "album": "Ori and the Blind Forest (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/AnovD9sKn0RmUR6Ya4MPDQ==/109951163509831033.jpg",
+      "duration": 148,
+      "neteaseFee": 1,
+      "youtubeVideoId": "DcuEVjS6urk",
+      "match": {
+        "name": "Restoring the Light, Facing the Dark",
+        "artist": "Gareth Coker",
+        "duration": 149,
+        "score": 160.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "31010743",
+      "name": "Ori, Lost In the Storm (feat. Aeralie Brighton)",
+      "artists": "Gareth Coker, Aeralie Brighton",
+      "album": "Ori and the Blind Forest (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/AnovD9sKn0RmUR6Ya4MPDQ==/109951163509831033.jpg",
+      "duration": 68,
+      "neteaseFee": 1,
+      "youtubeVideoId": "U-tWqEod9Ig",
+      "match": {
+        "name": "Ori, Lost In the Storm (feat. Aeralie Brighton)",
+        "artist": "Gareth Coker",
+        "duration": 69,
+        "score": 151.1,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "31010776",
+      "name": "Light of Nibel (feat. Aeralie Brighton)",
+      "artists": "Gareth Coker, Aeralie Brighton",
+      "album": "Ori and the Blind Forest (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/AnovD9sKn0RmUR6Ya4MPDQ==/109951163509831033.jpg",
+      "duration": 259,
+      "neteaseFee": 1,
+      "youtubeVideoId": "t6vWDz5NzOY",
+      "match": {
+        "name": "Light of Nibel (feat. Aeralie Brighton)",
+        "artist": "Gareth Coker",
+        "duration": 260,
+        "score": 151.1,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1498591659",
+      "name": "God of the Dead",
+      "artists": "Darren Korb",
+      "album": "Hades: Original Soundtrack",
+      "cover": "https://p1.music.126.net/626V-q7WCFkS5geVa9dkNg==/109951165500947952.jpg",
+      "duration": 541,
+      "neteaseFee": 0,
+      "youtubeVideoId": "sfEypGvnTQg",
+      "match": {
+        "name": "God Of The Dead (From \"Hades\")",
+        "artist": "Farlyn",
+        "duration": 542,
+        "score": 93.9,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1498591559",
+      "name": "Good Riddance",
+      "artists": "Darren Korb, Ashley Barrett",
+      "album": "Hades: Original Soundtrack",
+      "cover": "https://p1.music.126.net/626V-q7WCFkS5geVa9dkNg==/109951165500947952.jpg",
+      "duration": 179,
+      "neteaseFee": 0,
+      "youtubeVideoId": "DrkTe3Tc7Jg",
+      "match": {
+        "name": "Good Riddance (Eurydice Solo)",
+        "artist": "Darren Korb",
+        "duration": 178,
+        "score": 113.9,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1498591510",
+      "name": "No Escape",
+      "artists": "Darren Korb",
+      "album": "Hades: Original Soundtrack",
+      "cover": "https://p1.music.126.net/626V-q7WCFkS5geVa9dkNg==/109951165500947952.jpg",
+      "duration": 145,
+      "neteaseFee": 0,
+      "youtubeVideoId": "UhmfG_eMQkk",
+      "match": {
+        "name": "No Escape",
+        "artist": "The Marcus Hedges Trend Orchestra",
+        "duration": 146,
+        "score": 142.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "2680839254",
+      "name": "To the Wilder",
+      "artists": "Woodkid",
+      "album": "To the Wilder (from \"DEATH STRANDING 2 : ON THE BEACH\" Soundtrack)",
+      "cover": "https://p1.music.126.net/I-mnT__nNc1vQox_VK1sFw==/109951170538687152.jpg",
+      "duration": 279,
+      "neteaseFee": 1,
+      "youtubeVideoId": "JKDPPIlk_HM",
+      "match": {
+        "name": "To the Wilder",
+        "artist": "Woodkid",
+        "duration": 279,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "2711292891",
+      "name": "To the Wilder",
+      "artists": "Woodkid",
+      "album": "WOODKID FOR DEATH STRANDING 2: ON THE BEACH",
+      "cover": "https://p1.music.126.net/Rds6ItVPpaqlWSnk2x8hAg==/109951171248201097.jpg",
+      "duration": 278,
+      "neteaseFee": 1,
+      "youtubeVideoId": "JKDPPIlk_HM",
+      "match": {
+        "name": "To the Wilder",
+        "artist": "Woodkid",
+        "duration": 279,
+        "score": 160.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "2711291901",
+      "name": "Minus Sixty One",
+      "artists": "Woodkid",
+      "album": "WOODKID FOR DEATH STRANDING 2: ON THE BEACH",
+      "cover": "https://p1.music.126.net/Rds6ItVPpaqlWSnk2x8hAg==/109951171248201097.jpg",
+      "duration": 315,
+      "neteaseFee": 1,
+      "youtubeVideoId": "uHcJepz3QW0",
+      "match": {
+        "name": "Minus Sixty One",
+        "artist": "Woodkid",
+        "duration": 317,
+        "score": 159.2,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "565841126",
+      "name": "廃墟",
+      "artists": "清田愛未",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 216,
+      "neteaseFee": 0,
+      "youtubeVideoId": "hRKLS4_tZUg",
+      "match": {
+        "name": "廃墟",
+        "artist": "LAST CLOUDIA Original Soundtrack Vol.4",
+        "duration": 214,
+        "score": 117.2,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1448241713",
+      "name": "Bonebottom",
+      "artists": "Christopher Larkin",
+      "album": "Hollow Knight: Silksong (OST Sample)",
+      "cover": "https://p1.music.126.net/jkQA6CFF2R61_BLShD-2cA==/109951164988274374.jpg",
+      "duration": 191,
+      "neteaseFee": 0,
+      "youtubeVideoId": "wJLBp02_TSE",
+      "match": {
+        "name": "Bone Bottom",
+        "artist": "Chewie Melodies",
+        "duration": 186,
+        "score": 121.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1448242718",
+      "name": "Lace",
+      "artists": "Christopher Larkin",
+      "album": "Hollow Knight: Silksong (OST Sample)",
+      "cover": "https://p1.music.126.net/jkQA6CFF2R61_BLShD-2cA==/109951164988274374.jpg",
+      "duration": 167,
+      "neteaseFee": 0,
+      "youtubeVideoId": "ziPRG06shYs",
+      "match": {
+        "name": "Lace",
+        "artist": "Rys",
+        "duration": 167,
+        "score": 133.2,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "473403158",
+      "name": "とおりゃんせ～甘美風来 <Instrument Version>",
+      "artists": "Angel Note, ゆずひこ",
+      "album": "千恋＊万花 オリジナル・サウンドトラック",
+      "cover": "https://p1.music.126.net/UtBzZyeeHb84vRQXWoH48A==/19019352137357551.jpg",
+      "duration": 156,
+      "neteaseFee": 0,
+      "youtubeVideoId": "FB0SV0Za4o4",
+      "match": {
+        "name": "Senren Banka OST - Tooryanse ~ Sweet Spontaneity Instrument Version",
+        "artist": "Ange Time (Ange)",
+        "duration": 157,
+        "score": 90.2,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "1333368238",
+      "name": "王都アウルリウム",
+      "artists": "清田愛未",
+      "album": "Xenoblade 2 黄金の国イーラ Original Soundtrack",
+      "cover": "https://p1.music.126.net/m8H-wal8irmxNguSmUtVtA==/109951163725207085.jpg",
+      "duration": 176,
+      "neteaseFee": 0,
+      "youtubeVideoId": "dwWKKRkFm7A",
+      "match": {
+        "name": "Xenoblade Chronicles 2: Torna ~ The Golden Country - OST - 王都アウルリウム",
+        "artist": "LJPLM- ACG",
+        "duration": 176,
+        "score": 73.5,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "1431304761",
+      "name": "-{EDGE OF THE FUTURE}",
+      "artists": "崎元仁",
+      "album": "十三機兵防衛圏　オリジナル・サウンドトラック",
+      "cover": "https://p1.music.126.net/HobOecuXUlvH4qUntbJWow==/109951171162770847.jpg",
+      "duration": 368,
+      "neteaseFee": 8,
+      "youtubeVideoId": "WPBBocIkvJk",
+      "match": {
+        "name": "-{EDGE OF THE FUTURE}",
+        "artist": "Hitoshi Sakimoto",
+        "duration": 369,
+        "score": 136.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "31284176",
+      "name": "The First Hunter",
+      "artists": "齋藤司",
+      "album": "Bloodborne (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/JwfkKggx9mfvtmeVkAIUxg==/7854911069468664.jpg",
+      "duration": 312,
+      "neteaseFee": 0,
+      "youtubeVideoId": "fYeatUew9yk",
+      "match": {
+        "name": "The First Hunter",
+        "artist": "SIE Sound Team",
+        "duration": 312,
+        "score": 138,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "39436851",
+      "name": "Ludwig, the Holy Blade",
+      "artists": "鈴木伸嘉",
+      "album": "『Bloodborne The Old Hunters』 オリジナルサウンドトラック",
+      "cover": "https://p1.music.126.net/STFCXSBUmNLXrf4SNQmKYA==/109951169927439913.jpg",
+      "duration": 248,
+      "neteaseFee": 8,
+      "youtubeVideoId": "XCLE0x5jXM4",
+      "match": {
+        "name": "Ludwig, the Holy Blade",
+        "artist": "SIE Sound Team",
+        "duration": 248,
+        "score": 138,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "31284156",
+      "name": "Hunter's Dream",
+      "artists": "Ryan Amon",
+      "album": "Bloodborne (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/JwfkKggx9mfvtmeVkAIUxg==/7854911069468664.jpg",
+      "duration": 215,
+      "neteaseFee": 0,
+      "youtubeVideoId": "B4zcJwpc_9c",
+      "match": {
+        "name": "Hunter's Dream",
+        "artist": "SIE Sound Team",
+        "duration": 215,
+        "score": 140.7,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "31284167",
+      "name": "Moonlit Melody",
+      "artists": "Ryan Amon",
+      "album": "Bloodborne (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/JwfkKggx9mfvtmeVkAIUxg==/7854911069468664.jpg",
+      "duration": 210,
+      "neteaseFee": 0,
+      "youtubeVideoId": "5UvJcItZujI",
+      "match": {
+        "name": "Moonlit Melody",
+        "artist": "SIE Sound Team",
+        "duration": 210,
+        "score": 140.7,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "31284157",
+      "name": "The Hunter",
+      "artists": "Ryan Amon",
+      "album": "Bloodborne (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/JwfkKggx9mfvtmeVkAIUxg==/7854911069468664.jpg",
+      "duration": 205,
+      "neteaseFee": 0,
+      "youtubeVideoId": "I0--Q6hKl_o",
+      "match": {
+        "name": "The Hunter",
+        "artist": "SIE Sound Team",
+        "duration": 206,
+        "score": 139.3,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "31284158",
+      "name": "Cleric Beast",
+      "artists": "齋藤司",
+      "album": "Bloodborne (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/JwfkKggx9mfvtmeVkAIUxg==/7854911069468664.jpg",
+      "duration": 185,
+      "neteaseFee": 0,
+      "youtubeVideoId": "8LOR9JXK1Og",
+      "match": {
+        "name": "Cleric Beast",
+        "artist": "SIE Sound Team",
+        "duration": 185,
+        "score": 136.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1915701025",
+      "name": "INTERNET OVERDOSE (feat. Aiobahn +81) [8bit]",
+      "artists": "NEEDY GIRL OVERDOSE, Aiobahn +81",
+      "album": "「NEEDY GIRL OVERDOSE」 Soundtrack",
+      "cover": "https://p1.music.126.net/ZcG60a6ARA4ZPSL-TP6FRw==/109951170436854263.jpg",
+      "duration": 122,
+      "neteaseFee": 8,
+      "youtubeVideoId": "Jez98FWmiZY",
+      "match": {
+        "name": "Internet Overdose [8bit] (feat. Aiobahn +81)",
+        "artist": "NEEDY GIRL OVERDOSE",
+        "duration": 123,
+        "score": 155.3,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1487344240",
+      "name": "光放て！",
+      "artists": "柳麻美",
+      "album": "ATRI -My Dear Moments- (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg",
+      "duration": 232,
+      "neteaseFee": 1,
+      "youtubeVideoId": "ihaE_4246ig",
+      "match": {
+        "name": "光放て！ - Light Across the Seas",
+        "artist": "Fuminori Matsumoto",
+        "duration": 232,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "1487339803",
+      "name": "Dear Moments",
+      "artists": "赤尾ひかる",
+      "album": "ATRI -My Dear Moments- (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg",
+      "duration": 387,
+      "neteaseFee": 1,
+      "youtubeVideoId": "l3PAVZ1vSkk",
+      "match": {
+        "name": "Dear Moments",
+        "artist": "Fuminori Matsumoto",
+        "duration": 387,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "1487339789",
+      "name": "海中都市",
+      "artists": "松本文紀",
+      "album": "ATRI -My Dear Moments- (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg",
+      "duration": 118,
+      "neteaseFee": 1,
+      "youtubeVideoId": "r6UqYWZb60s",
+      "match": {
+        "name": "海中都市 - The Sunken City",
+        "artist": "Fuminori Matsumoto",
+        "duration": 119,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "1487339791",
+      "name": "目眩",
+      "artists": "松本文紀",
+      "album": "ATRI -My Dear Moments- (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg",
+      "duration": 121,
+      "neteaseFee": 1,
+      "youtubeVideoId": "ceuUFs89JQg",
+      "match": {
+        "name": "目眩 - Vertigo",
+        "artist": "Fuminori Matsumoto",
+        "duration": 122,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "1487339792",
+      "name": "おぼろげな輪郭",
+      "artists": "松本文紀",
+      "album": "ATRI -My Dear Moments- (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg",
+      "duration": 131,
+      "neteaseFee": 1,
+      "youtubeVideoId": "rwfs75uXSTE",
+      "match": {
+        "name": "おぼろげな輪郭 - The Face I See When I Close My Eyes",
+        "artist": "Fuminori Matsumoto",
+        "duration": 132,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "1487344233",
+      "name": "こんにちは太陽",
+      "artists": "松本文紀",
+      "album": "ATRI -My Dear Moments- (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg",
+      "duration": 114,
+      "neteaseFee": 1,
+      "youtubeVideoId": "kmYga88wYdE",
+      "match": {
+        "name": "こんにちは太陽 - Good Morning, Sunshine",
+        "artist": "Fuminori Matsumoto",
+        "duration": 114,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "1487339795",
+      "name": "黄昏期の風景",
+      "artists": "松本文紀",
+      "album": "ATRI -My Dear Moments- (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg",
+      "duration": 122,
+      "neteaseFee": 1,
+      "youtubeVideoId": "zaBNbBJr6lE",
+      "match": {
+        "name": "黄昏期の風景 - Walking In The Twilight",
+        "artist": "Fuminori Matsumoto",
+        "duration": 123,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "1487344234",
+      "name": "澄み渡る風",
+      "artists": "松本文紀",
+      "album": "ATRI -My Dear Moments- (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg",
+      "duration": 120,
+      "neteaseFee": 1,
+      "youtubeVideoId": "AaPmS9j-4ko",
+      "match": {
+        "name": "澄み渡る風 - A Soothing Breeze",
+        "artist": "Fuminori Matsumoto",
+        "duration": 120,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "1487344236",
+      "name": "凪",
+      "artists": "松本文紀",
+      "album": "ATRI -My Dear Moments- (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg",
+      "duration": 108,
+      "neteaseFee": 1,
+      "youtubeVideoId": "p6foEDK-mTs",
+      "match": {
+        "name": "凪 - A Lull In The Sea",
+        "artist": "Fuminori Matsumoto",
+        "duration": 109,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "1487344238",
+      "name": "When I See The Sparkle Of Your Tears",
+      "artists": "松本文紀",
+      "album": "ATRI -My Dear Moments- (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg",
+      "duration": 149,
+      "neteaseFee": 1,
+      "youtubeVideoId": "05Bu8T-V-rc",
+      "match": {
+        "name": "涙が輝く瞬間 - When I See The Sparkle Of Your Tears",
+        "artist": "Fuminori Matsumoto",
+        "duration": 149,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "1487344239",
+      "name": "親愛なるあの日々へ",
+      "artists": "松本文紀",
+      "album": "ATRI -My Dear Moments- (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg",
+      "duration": 122,
+      "neteaseFee": 1,
+      "youtubeVideoId": "rOFomuiZpW4",
+      "match": {
+        "name": "親愛なるあの日々へ - Days Of Love",
+        "artist": "Fuminori Matsumoto",
+        "duration": 122,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "1487339790",
+      "name": "暖かな時間",
+      "artists": "松本文紀",
+      "album": "ATRI -My Dear Moments- (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg",
+      "duration": 117,
+      "neteaseFee": 1,
+      "youtubeVideoId": "wEwP3pZUflA",
+      "match": {
+        "name": "暖かな時間 - Tranquil Moments",
+        "artist": "Fuminori Matsumoto",
+        "duration": 117,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "2068401809",
+      "name": "Ticking Away",
+      "artists": "VALORANT, Grabbitz, bbno$",
+      "album": "Ticking Away",
+      "cover": "https://p1.music.126.net/guUwNMPmS5TJ9vq6_HAQhw==/109951171811264263.jpg",
+      "duration": 205,
+      "neteaseFee": 1,
+      "youtubeVideoId": "cPO2ZEDczis",
+      "match": {
+        "name": "Ticking Away",
+        "artist": "VALORANT",
+        "duration": 206,
+        "score": 150.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "485775114",
+      "name": "The Good News (Part 1 - Motherland)",
+      "artists": "Joris de Man, Julie Elven",
+      "album": "Horizon Zero Dawn (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/-NMa5kAxdaU8u7WmEGw7Fg==/109951168489590515.jpg",
+      "duration": 227,
+      "neteaseFee": 1,
+      "youtubeVideoId": "hSaHjqrSz8c",
+      "match": {
+        "name": "The Good News (Part 1 - Motherland) (feat. Julie Elven)",
+        "artist": "Joris de Man",
+        "duration": 227,
+        "score": 153.4,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "485775103",
+      "name": "Years of Training (Part 1 - Motherland)",
+      "artists": "The Flight",
+      "album": "Horizon Zero Dawn (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/-NMa5kAxdaU8u7WmEGw7Fg==/109951168489590515.jpg",
+      "duration": 143,
+      "neteaseFee": 1,
+      "youtubeVideoId": "XcyolkaaPq0",
+      "match": {
+        "name": "Years of Training (Part 1 - Motherland)",
+        "artist": "The Flight",
+        "duration": 143,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "2103412350",
+      "name": "届かぬ言葉",
+      "artists": "平松建治",
+      "album": "ゼノブレイド3 オリジナル・サウンドトラック [完全生産限定盤]",
+      "cover": "https://p1.music.126.net/ggonVwLSfPUcEgdiaXD_0w==/109951169157122785.jpg",
+      "duration": 193,
+      "neteaseFee": 0,
+      "youtubeVideoId": "AXA2FcauORM",
+      "match": {
+        "name": "Words That Never Reached You (Xenoblade Chronicles 3) Piano Sheet Music - 届かぬ言葉(ゼノブレイド3)ピアノ",
+        "artist": "慶",
+        "duration": 215,
+        "score": -11.2,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "2103414297",
+      "name": "Moebius Battle/M",
+      "artists": "工藤ともり, 山中裕代",
+      "album": "ゼノブレイド3 オリジナル・サウンドトラック [完全生産限定盤]",
+      "cover": "https://p1.music.126.net/ggonVwLSfPUcEgdiaXD_0w==/109951169157122785.jpg",
+      "duration": 511,
+      "neteaseFee": 0,
+      "youtubeVideoId": "5RWJkHDazE8",
+      "match": {
+        "name": "OMG....Opening & Showing Off The Xenoblade Chronicles 3 Soundtrack Limited Edition!!",
+        "artist": "TriDeltaForcer",
+        "duration": 514,
+        "score": 50.8,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "2103412308",
+      "name": "Moebius Battle",
+      "artists": "工藤ともり, 山中裕代",
+      "album": "ゼノブレイド3 オリジナル・サウンドトラック [完全生産限定盤]",
+      "cover": "https://p1.music.126.net/ggonVwLSfPUcEgdiaXD_0w==/109951169157122785.jpg",
+      "duration": 511,
+      "neteaseFee": 0,
+      "youtubeVideoId": "5RWJkHDazE8",
+      "match": {
+        "name": "OMG....Opening & Showing Off The Xenoblade Chronicles 3 Soundtrack Limited Edition!!",
+        "artist": "TriDeltaForcer",
+        "duration": 514,
+        "score": 53.2,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "1433533636",
+      "name": "The Interim",
+      "artists": "眞鍋昭大",
+      "album": "仁王2 オリジナル・サウンドトラック",
+      "cover": "https://p1.music.126.net/NKMVtQoTtdtYKqkuaooGiQ==/109951164834327948.jpg",
+      "duration": 189,
+      "neteaseFee": 0,
+      "youtubeVideoId": "S0ImDdxxRhM",
+      "match": {
+        "name": "新しい朝",
+        "artist": "眞鍋昭大",
+        "duration": 199,
+        "score": 48.4,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1433533596",
+      "name": "Shadow",
+      "artists": "眞鍋昭大",
+      "album": "仁王2 オリジナル・サウンドトラック",
+      "cover": "https://p1.music.126.net/NKMVtQoTtdtYKqkuaooGiQ==/109951164834327948.jpg",
+      "duration": 114,
+      "neteaseFee": 0,
+      "youtubeVideoId": "cdMdfFXfGTc",
+      "match": {
+        "name": "Double Dragon 2 - Shadow Boss",
+        "artist": "Arcade Games Online Project",
+        "duration": 113,
+        "score": 57.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1333368243",
+      "name": "A Moment of Eternity",
+      "artists": "Jen Bird",
+      "album": "Xenoblade 2 黄金の国イーラ Original Soundtrack",
+      "cover": "https://p1.music.126.net/m8H-wal8irmxNguSmUtVtA==/109951163725207085.jpg",
+      "duration": 294,
+      "neteaseFee": 0,
+      "youtubeVideoId": "54FoK2QJcLU",
+      "match": {
+        "name": "A Moment in Eternity",
+        "artist": "Jeanne Donovan",
+        "duration": 300,
+        "score": 88.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "565841123",
+      "name": "ルクスリア王国",
+      "artists": "工藤ともり, 山中裕代",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 205,
+      "neteaseFee": 0,
+      "youtubeVideoId": "Ze6AktJwdXE",
+      "match": {
+        "name": "Xenoblade Chronicles 2 -  OST「ルクスリア王国」",
+        "artist": "LJPLM- ACG",
+        "duration": 205,
+        "score": 79.3,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565975066",
+      "name": "帝都アルバ・マーゲン/夜",
+      "artists": "工藤ともり, 山中裕代",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 198,
+      "neteaseFee": 0,
+      "youtubeVideoId": "uoJSJjBN1lY",
+      "match": {
+        "name": "Xenoblade Chronicles 2 -  OST「帝都アルバ・マーゲン 夜」",
+        "artist": "LJPLM- ACG",
+        "duration": 198,
+        "score": 85.2,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "521493522",
+      "name": "古代船",
+      "artists": "清田愛未",
+      "album": "Xenoblade 2 SOUND SELECTION",
+      "cover": "https://p1.music.126.net/CuC6Qf6vYql_gj9-trkb0A==/109951165628471875.jpg",
+      "duration": 180,
+      "neteaseFee": 0,
+      "youtubeVideoId": "ZCVBiiVE32I",
+      "match": {
+        "name": "7 古代船【Xenoblade2 OST DISC1】",
+        "artist": "アギエス",
+        "duration": 180,
+        "score": 68.8,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "462612699",
+      "name": "希望Searching",
+      "artists": "高田雅史",
+      "album": "ニューダンガンロンパＶ３ みんなのコロシアイ新学期 オリジナルサウンドトラック クロ",
+      "cover": "https://p1.music.126.net/kIY5lKmhnY5jFXNkRAbRCg==/109951168094324890.jpg",
+      "duration": 502,
+      "neteaseFee": 8,
+      "youtubeVideoId": "KoK6O3kh_8A",
+      "match": {
+        "name": "Hope Searching",
+        "artist": "Masafumi Takada",
+        "duration": 502,
+        "score": 103.1,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "462612691",
+      "name": "ニューワールドオーダーV3",
+      "artists": "高田雅史",
+      "album": "ニューダンガンロンパＶ３ みんなのコロシアイ新学期 オリジナルサウンドトラック クロ",
+      "cover": "https://p1.music.126.net/kIY5lKmhnY5jFXNkRAbRCg==/109951168094324890.jpg",
+      "duration": 255,
+      "neteaseFee": 8,
+      "youtubeVideoId": "M9koCo2NpzA",
+      "match": {
+        "name": "ニューワールドオーダーV3 - New World Order V3",
+        "artist": "Masafumi Takada",
+        "duration": 256,
+        "score": 96.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "462612678",
+      "name": "学級裁判宇宙編",
+      "artists": "高田雅史",
+      "album": "ニューダンガンロンパＶ３ みんなのコロシアイ新学期 オリジナルサウンドトラック クロ",
+      "cover": "https://p1.music.126.net/kIY5lKmhnY5jFXNkRAbRCg==/109951168094324890.jpg",
+      "duration": 365,
+      "neteaseFee": 8,
+      "youtubeVideoId": "8XyzqLjbnNs",
+      "match": {
+        "name": "学級裁判宇宙編 - Class Trial: Space Edition",
+        "artist": "Masafumi Takada",
+        "duration": 366,
+        "score": 78.5,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "507192493",
+      "name": "Clair de Lune from Suite bergamasque C.Debussy",
+      "artists": "高田雅史",
+      "album": "ニューダンガンロンパV3 みんなのコロシアイ新学期 オリジナルサウンドトラック シロ",
+      "cover": "https://p1.music.126.net/-PEOIgkkLqqJFEa1XFTIYw==/109951168094242966.jpg",
+      "duration": 136,
+      "neteaseFee": 8,
+      "youtubeVideoId": "WYPAZCv3KkI",
+      "match": {
+        "name": "Clair de Lune from Suite bergamasque C.Debussy",
+        "artist": "Kaede Akamatsu",
+        "duration": 137,
+        "score": 124.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "462612683",
+      "name": "V3議論 -HEAT UP-",
+      "artists": "高田雅史",
+      "album": "ニューダンガンロンパＶ３ みんなのコロシアイ新学期 オリジナルサウンドトラック クロ",
+      "cover": "https://p1.music.126.net/kIY5lKmhnY5jFXNkRAbRCg==/109951168094324890.jpg",
+      "duration": 302,
+      "neteaseFee": 8,
+      "youtubeVideoId": "qsb_D7YW4uU",
+      "match": {
+        "name": "V3 Discussion -HEAT UP-",
+        "artist": "Masafumi Takada",
+        "duration": 302,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "462612687",
+      "name": "V3反論 -CROSS SWORD-",
+      "artists": "高田雅史",
+      "album": "ニューダンガンロンパＶ３ みんなのコロシアイ新学期 オリジナルサウンドトラック クロ",
+      "cover": "https://p1.music.126.net/kIY5lKmhnY5jFXNkRAbRCg==/109951168094324890.jpg",
+      "duration": 282,
+      "neteaseFee": 8,
+      "youtubeVideoId": "s11EYYzJL5A",
+      "match": {
+        "name": "V3 Rebuttal -CROSS SWORD-",
+        "artist": "Masafumi Takada",
+        "duration": 281,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "507192471",
+      "name": "だんがんろんぱ！ぶいすりー！",
+      "artists": "高田雅史",
+      "album": "ニューダンガンロンパV3 みんなのコロシアイ新学期 オリジナルサウンドトラック シロ",
+      "cover": "https://p1.music.126.net/-PEOIgkkLqqJFEa1XFTIYw==/109951168094242966.jpg",
+      "duration": 97,
+      "neteaseFee": 8,
+      "youtubeVideoId": "IuG9Rb7IZXY",
+      "match": {
+        "name": "だんがんろんぱ！ぶいすりー！ - DANGANRONPA! V3!",
+        "artist": "Masafumi Takada",
+        "duration": 97,
+        "score": 98.1,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "462612681",
+      "name": "V3議論 -SCRUM-",
+      "artists": "高田雅史",
+      "album": "ニューダンガンロンパＶ３ みんなのコロシアイ新学期 オリジナルサウンドトラック クロ",
+      "cover": "https://p1.music.126.net/kIY5lKmhnY5jFXNkRAbRCg==/109951168094324890.jpg",
+      "duration": 298,
+      "neteaseFee": 8,
+      "youtubeVideoId": "AQZONitFs9g",
+      "match": {
+        "name": "V3 Discussion -SCRUM-",
+        "artist": "Masafumi Takada",
+        "duration": 298,
+        "score": 999,
+        "source": "manual-override"
+      }
+    },
+    {
+      "neteaseId": "2072851599",
+      "name": "Future Awaits",
+      "artists": "NewPiano",
+      "album": "ゼノブレイド3 オリジナル・サウンドトラック",
+      "cover": "https://p1.music.126.net/8aoK_SsSsSOozxH8jUR59Q==/109951168839936311.jpg",
+      "duration": 283,
+      "neteaseFee": 8,
+      "youtubeVideoId": "PGytRVJ1cw4",
+      "match": {
+        "name": "Future Awaits",
+        "artist": "Sanim Sheikh",
+        "duration": 280,
+        "score": 136.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "472045266",
+      "name": "Don't Be So Serious",
+      "artists": "Low Roar",
+      "album": "Once in a Long, Long While...",
+      "cover": "https://p1.music.126.net/FgbzYlUsSUkCduUGusveZg==/109951163563588207.jpg",
+      "duration": 373,
+      "neteaseFee": 1,
+      "youtubeVideoId": "_EztSOVvMnM",
+      "match": {
+        "name": "Don't Be So Serious",
+        "artist": "Low Roar",
+        "duration": 373,
+        "score": 160.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1968746292",
+      "name": "Where We Belong",
+      "artists": "光田康典, Anúna",
+      "album": "Xenoblade 3 Music Selection (Gamerip)",
+      "cover": "https://p1.music.126.net/uz6z15QyBmrnsC-pSmJMWA==/109951167736550226.jpg",
+      "duration": 337,
+      "neteaseFee": 0,
+      "youtubeVideoId": "hhAYFt6vZ2U",
+      "match": {
+        "name": "【和訳】Xenoblade 3 - Where We Belong",
+        "artist": "あおいくん",
+        "duration": 334,
+        "score": 93.9,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "1970848134",
+      "name": "The Weight of Life",
+      "artists": "光田康典, 清田愛未, Mariam Abounnasr, 工藤ともり, 山中裕代",
+      "album": "Xenoblade 3 Music Selection (Gamerip)",
+      "cover": "https://p1.music.126.net/uz6z15QyBmrnsC-pSmJMWA==/109951167736550226.jpg",
+      "duration": 256,
+      "neteaseFee": 0,
+      "youtubeVideoId": "WtyNj0btmG4",
+      "match": {
+        "name": "Carrying The Weight of Life - Xenoblade Chronicles 3",
+        "artist": "SiIvaGunner's Son",
+        "duration": 268,
+        "score": 56,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "1431299562",
+      "name": "Seaside Vacation",
+      "artists": "伊藤フウ",
+      "album": "十三機兵防衛圏　オリジナル・サウンドトラック",
+      "cover": "https://p1.music.126.net/HobOecuXUlvH4qUntbJWow==/109951171162770847.jpg",
+      "duration": 285,
+      "neteaseFee": 8,
+      "youtubeVideoId": "NsE0RT_vEhU",
+      "match": {
+        "name": "Seaside Vacation",
+        "artist": "Hitoshi Sakimoto",
+        "duration": 285,
+        "score": 135.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "472045275",
+      "name": "Poznań",
+      "artists": "Low Roar",
+      "album": "Once in a Long, Long While...",
+      "cover": "https://p1.music.126.net/FgbzYlUsSUkCduUGusveZg==/109951163563588207.jpg",
+      "duration": 123,
+      "neteaseFee": 1,
+      "youtubeVideoId": "BapphtTVqts",
+      "match": {
+        "name": "Poznań",
+        "artist": "Low Roar",
+        "duration": 124,
+        "score": 160.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1400013102",
+      "name": "BB's Theme",
+      "artists": "Ludvig Forssell, Jenny Plant",
+      "album": "Death Stranding (Original Score)",
+      "cover": "https://p1.music.126.net/FFsdLDVyNNUvcyfS1B-Kzg==/109951168959883131.jpg",
+      "duration": 317,
+      "neteaseFee": 1,
+      "youtubeVideoId": "bVavFG7xJ88",
+      "match": {
+        "name": "BB's Theme (From \"Death Stranding\" Score)",
+        "artist": "Ludvig Forssell",
+        "duration": 317,
+        "score": 100.1,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1693689",
+      "name": "Patience",
+      "artists": "Low Roar",
+      "album": "Low Roar",
+      "cover": "https://p1.music.126.net/x4GGhM68yDmE-TYR_-G8cA==/109951163315431923.jpg",
+      "duration": 345,
+      "neteaseFee": 1,
+      "youtubeVideoId": "JJOaIKV70L8",
+      "match": {
+        "name": "Patience",
+        "artist": "Low Roar",
+        "duration": 345,
+        "score": 160.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1410931158",
+      "name": "The Machine",
+      "artists": "Low Roar",
+      "album": "ross.",
+      "cover": "https://p1.music.126.net/F2c5JbbTE50tMeeAUbPZog==/109951164570254961.jpg",
+      "duration": 338,
+      "neteaseFee": 1,
+      "youtubeVideoId": "Zlq5vunnPy4",
+      "match": {
+        "name": "The Machine",
+        "artist": "Low Roar",
+        "duration": 338,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1693709",
+      "name": "Rolling Over",
+      "artists": "Low Roar",
+      "album": "Low Roar",
+      "cover": "https://p1.music.126.net/x4GGhM68yDmE-TYR_-G8cA==/109951163315431923.jpg",
+      "duration": 308,
+      "neteaseFee": 1,
+      "youtubeVideoId": "fh_JRECRmRU",
+      "match": {
+        "name": "Rolling Over",
+        "artist": "Low Roar",
+        "duration": 308,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "472045267",
+      "name": "Bones",
+      "artists": "Low Roar, Jofridur Akadottir",
+      "album": "Once in a Long, Long While...",
+      "cover": "https://p1.music.126.net/FgbzYlUsSUkCduUGusveZg==/109951163563588207.jpg",
+      "duration": 170,
+      "neteaseFee": 1,
+      "youtubeVideoId": "o9wSw7KHHkU",
+      "match": {
+        "name": "Bones (feat. Jófríõur Ákadóttir)",
+        "artist": "Low Roar",
+        "duration": 170,
+        "score": 147.9,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "27785452",
+      "name": "メインテーマ",
+      "artists": "下村陽子",
+      "album": "Xenoblade Original Soundtrack",
+      "cover": "https://p1.music.126.net/WJdYsdTWMhu-0mEFnbLzmw==/1408474395874477.jpg",
+      "duration": 220,
+      "neteaseFee": 0,
+      "youtubeVideoId": "8Pz5i6UM5Yg",
+      "match": {
+        "name": "ゼノブレイド Definitive Edition BGM  メインテーマ",
+        "artist": "やぱんのゲーム部屋",
+        "duration": 227,
+        "score": 54.8,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "1333368258",
+      "name": "戦闘！！/イーラ",
+      "artists": "平松建治",
+      "album": "Xenoblade 2 黄金の国イーラ Original Soundtrack",
+      "cover": "https://p1.music.126.net/m8H-wal8irmxNguSmUtVtA==/109951163725207085.jpg",
+      "duration": 403,
+      "neteaseFee": 0,
+      "youtubeVideoId": "tL8ZC5YzpHA",
+      "match": {
+        "name": "戦闘‼︎/イーラ",
+        "artist": "MASAHISA TAKAHASHI",
+        "duration": 404,
+        "score": 93.1,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565966082",
+      "name": "君との未来",
+      "artists": "光田康典, Mariam Abounnasr",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 260,
+      "neteaseFee": 0,
+      "youtubeVideoId": "fBSmxHGmKfI",
+      "match": {
+        "name": "君と未来",
+        "artist": " 宗谷いちか / Ichika Channel【ななしいんく】",
+        "duration": 252,
+        "score": 67.1,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565966075",
+      "name": "それでも、前へ進め!",
+      "artists": "平松建治",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 216,
+      "neteaseFee": 0,
+      "youtubeVideoId": "39c27CO0mzU",
+      "match": {
+        "name": "それでも前へ進め",
+        "artist": "Naoko Namba",
+        "duration": 207,
+        "score": 108.2,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "565970076",
+      "name": "朝陽に跳ぶ",
+      "artists": "平松建治",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 143,
+      "neteaseFee": 0,
+      "youtubeVideoId": "PhmJ_HGzO_4",
+      "match": {
+        "name": "Xenoblade Chronicles 2 -  OST「朝陽に跳ぶ」",
+        "artist": "LJPLM- ACG",
+        "duration": 143,
+        "score": 74,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565970075",
+      "name": "最強サクラの歌",
+      "artists": "平松建治",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 113,
+      "neteaseFee": 0,
+      "youtubeVideoId": "5xLDVm6gy_w",
+      "match": {
+        "name": "Xenoblade Chronicles 2 -  OST「最強サクラの歌」",
+        "artist": "LJPLM- ACG",
+        "duration": 113,
+        "score": 79.3,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565966069",
+      "name": "雷轟!アルティメット",
+      "artists": "工藤ともり, 山中裕代",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 205,
+      "neteaseFee": 0,
+      "youtubeVideoId": "xoRIpSNzBSI",
+      "match": {
+        "name": "Xenoblade Chronicles 2 -  OST「雷轟!アルティメット」",
+        "artist": "LJPLM- ACG",
+        "duration": 206,
+        "score": 82,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565841118",
+      "name": "ドライバー VS",
+      "artists": "工藤ともり, 山中裕代",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 169,
+      "neteaseFee": 0,
+      "youtubeVideoId": "-U91KI7kSBQ",
+      "match": {
+        "name": "ドライバー - Driver",
+        "artist": "Tamio Okuda",
+        "duration": 184,
+        "score": 30.4,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "565966067",
+      "name": "さらに名を冠する者たち",
+      "artists": "平松建治",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 217,
+      "neteaseFee": 0,
+      "youtubeVideoId": "xvbS0VWhwJ8",
+      "match": {
+        "name": "【DTXMania】さらに名を冠する者たち / 平松建治",
+        "artist": "Blazwings",
+        "duration": 220,
+        "score": 92.6,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565975064",
+      "name": "行く手を阻む者たち",
+      "artists": "平松建治",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 220,
+      "neteaseFee": 0,
+      "youtubeVideoId": "_DcjLkF7PWQ",
+      "match": {
+        "name": "14 行く手を阻む者たち【Xenoblade2 OST DISC2】",
+        "artist": "アギエス",
+        "duration": 220,
+        "score": 84.4,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565841113",
+      "name": "死闘イーラ",
+      "artists": "平松建治",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 203,
+      "neteaseFee": 0,
+      "youtubeVideoId": "YbeCfrkkJJU",
+      "match": {
+        "name": "11 死闘イーラ【Xenoblade2 OST DISC2】",
+        "artist": "アギエス",
+        "duration": 204,
+        "score": 74.3,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565970060",
+      "name": "交わる剣",
+      "artists": "平松建治",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 217,
+      "neteaseFee": 0,
+      "youtubeVideoId": "huVF21TQjT0",
+      "match": {
+        "name": "12 交わる剣【Xenoblade2 OST DISC1】",
+        "artist": "アギエス",
+        "duration": 218,
+        "score": 70.9,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "1452668023",
+      "name": "Engage the Enemy",
+      "artists": "工藤ともり, 山中裕代, 平松建治",
+      "album": "Xenoblade Definitive Edition SOUND SELECTION",
+      "cover": "https://p1.music.126.net/BvMO_03QSXHVqIcpYG2omg==/109951165033766321.jpg",
+      "duration": 232,
+      "neteaseFee": 0,
+      "youtubeVideoId": "ueoM4GZfA0U",
+      "match": {
+        "name": "Engage the Enemy (Xenoblade Chronicles)",
+        "artist": "FamilyJules",
+        "duration": 229,
+        "score": 82,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "565975077",
+      "name": "君と歩く道",
+      "artists": "Mariam Abounnasr, 山中裕代",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 224,
+      "neteaseFee": 0,
+      "youtubeVideoId": "0rMCfH8_nAc",
+      "match": {
+        "name": "Xenoblade Chronicles 2 -  OST「君と歩く道」",
+        "artist": "LJPLM- ACG",
+        "duration": 225,
+        "score": 74.6,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "1353163404",
+      "name": "Devil Trigger",
+      "artists": "Ali Edwards",
+      "album": "DEVIL MAY CRY 5 Original SoundTrack",
+      "cover": "https://p1.music.126.net/yv37strm19CrEvAm7BkWmA==/109951169414778859.jpg",
+      "duration": 405,
+      "neteaseFee": 8,
+      "youtubeVideoId": "LM_Hd9_02oA",
+      "match": {
+        "name": "Devil Trigger (feat. SixteenInMono)",
+        "artist": "Jonathan Young",
+        "duration": 403,
+        "score": 126.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1818064296",
+      "name": "Bury the Light",
+      "artists": "Victor Borba",
+      "album": "DEVIL MAY CRY 5 SPECIAL EDITION VERGIL SOUND SELECTION",
+      "cover": "https://p1.music.126.net/1yMEfakS6S6wOU0ypvXg9g==/109951165698662473.jpg",
+      "duration": 582,
+      "neteaseFee": 0,
+      "youtubeVideoId": "jbPCzAIcP9Y",
+      "match": {
+        "name": "Bury the Light",
+        "artist": "FamilyJules",
+        "duration": 583,
+        "score": 128.2,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "521493517",
+      "name": "Incoming!",
+      "artists": "工藤ともり, 山中裕代, 平松建治",
+      "album": "Xenoblade 2 SOUND SELECTION",
+      "cover": "https://p1.music.126.net/CuC6Qf6vYql_gj9-trkb0A==/109951165628471875.jpg",
+      "duration": 245,
+      "neteaseFee": 0,
+      "youtubeVideoId": "e2zuIwWIHV4",
+      "match": {
+        "name": "Xenoblade Chronicles 2 - Incoming (Soundtrack OST)",
+        "artist": "PraisedMusicOST",
+        "duration": 245,
+        "score": 74.5,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565970066",
+      "name": "Monster Surprised You",
+      "artists": "平松建治",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 194,
+      "neteaseFee": 0,
+      "youtubeVideoId": "95Fab5G24tY",
+      "match": {
+        "name": "Monster Surprised You (From \"Xenoblade Chronicles 2\")",
+        "artist": "gabocarina96",
+        "duration": 191,
+        "score": 92.3,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "565966061",
+      "name": "Incoming!",
+      "artists": "工藤ともり, 山中裕代",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 245,
+      "neteaseFee": 0,
+      "youtubeVideoId": "5oyWWdVSvqE",
+      "match": {
+        "name": "13 Incoming!【Xenoblade2 OST DISC1】",
+        "artist": "アギエス",
+        "duration": 246,
+        "score": 78.6,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565966070",
+      "name": "We Are the Chosen Ones",
+      "artists": "Anúna",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 204,
+      "neteaseFee": 0,
+      "youtubeVideoId": "ZyWqc52Mljc",
+      "match": {
+        "name": "We are the Chosen Ones (feat. Þórhallur Auður Helgason & Yasunori Mitsuda)",
+        "artist": "ANÚNA",
+        "duration": 197,
+        "score": 144.2,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "565970072",
+      "name": "Drifting Soul",
+      "artists": "Jen Bird",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 337,
+      "neteaseFee": 0,
+      "youtubeVideoId": "Hvm4xH1jZT0",
+      "match": {
+        "name": "Drifting Soul",
+        "artist": "Jame5",
+        "duration": 330,
+        "score": 110.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "565966062",
+      "name": "戦闘!!",
+      "artists": "平松建治",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 215,
+      "neteaseFee": 0,
+      "youtubeVideoId": "lvJuxbbw2ik",
+      "match": {
+        "name": "17 戦闘!!【Xenoblade2 OST DISC1】",
+        "artist": "アギエス",
+        "duration": 216,
+        "score": 62.2,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565975059",
+      "name": "トリゴの街",
+      "artists": "工藤ともり, 山中裕代",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 214,
+      "neteaseFee": 0,
+      "youtubeVideoId": "18iT50emLtI",
+      "match": {
+        "name": "18 トリゴの街【Xenoblade2 OST DISC1】",
+        "artist": "アギエス",
+        "duration": 214,
+        "score": 75.7,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565970061",
+      "name": "グーラ領",
+      "artists": "工藤ともり, 山中裕代",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 316,
+      "neteaseFee": 0,
+      "youtubeVideoId": "vWBtXXJDJ8M",
+      "match": {
+        "name": "15 グーラ領【Xenoblade2 OST DISC1】",
+        "artist": "アギエス",
+        "duration": 317,
+        "score": 70.9,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565970058",
+      "name": "Exploration",
+      "artists": "工藤ともり, 山中裕代",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 170,
+      "neteaseFee": 0,
+      "youtubeVideoId": "ennttpDGmu8",
+      "match": {
+        "name": "Xenoblade Chronicles 2 -  OST「Exploration」",
+        "artist": "LJPLM- ACG",
+        "duration": 170,
+        "score": 87.5,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "565841116",
+      "name": "Counterattack",
+      "artists": "平松建治",
+      "album": "Xenoblade 2 Original Soundtrack",
+      "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
+      "duration": 273,
+      "neteaseFee": 0,
+      "youtubeVideoId": "cTHOBsipf-s",
+      "match": {
+        "name": "Counterattack",
+        "artist": "gabocarina96",
+        "duration": 270,
+        "score": 130.2,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1968746284",
+      "name": "A Life Sent On (Remix 1)",
+      "artists": "光田康典, 工藤ともり, 山中裕代, 平松建治, 清田愛未, Mariam Abounnasr",
+      "album": "Xenoblade 3 Music Selection (Gamerip)",
+      "cover": "https://p1.music.126.net/uz6z15QyBmrnsC-pSmJMWA==/109951167736550226.jpg",
+      "duration": 199,
+      "neteaseFee": 0,
+      "youtubeVideoId": "eOXfMz0On1Q",
+      "match": {
+        "name": "A Life",
+        "artist": "Kan Sawada",
+        "duration": 210,
+        "score": 28.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1968746285",
+      "name": "A Life Sent On (Remix 4)",
+      "artists": "光田康典, 工藤ともり, 山中裕代, 平松建治, 清田愛未, Mariam Abounnasr",
+      "album": "Xenoblade 3 Music Selection (Gamerip)",
+      "cover": "https://p1.music.126.net/uz6z15QyBmrnsC-pSmJMWA==/109951167736550226.jpg",
+      "duration": 207,
+      "neteaseFee": 0,
+      "youtubeVideoId": "eOXfMz0On1Q",
+      "match": {
+        "name": "A Life",
+        "artist": "Kan Sawada",
+        "duration": 210,
+        "score": 61.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1968743529",
+      "name": "A Step Away",
+      "artists": "光田康典, Anúna",
+      "album": "Xenoblade 3 Music Selection (Gamerip)",
+      "cover": "https://p1.music.126.net/uz6z15QyBmrnsC-pSmJMWA==/109951167736550226.jpg",
+      "duration": 295,
+      "neteaseFee": 0,
+      "youtubeVideoId": "OPJHjDxG6hg",
+      "match": {
+        "name": "One Step Away (feat. V.B.Kühl)",
+        "artist": "Deutsches Symphonie-Orchester Berlin",
+        "duration": 294,
+        "score": 104.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1309394510",
+      "name": "Sealed Vessel",
+      "artists": "Christopher Larkin",
+      "album": "Hollow Knight (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/a806-d9dPYrFmUt5-rKwZA==/109951164331645970.jpg",
+      "duration": 345,
+      "neteaseFee": 1,
+      "youtubeVideoId": "VYAXxITNhBs",
+      "match": {
+        "name": "Sealed Vessel",
+        "artist": "Christopher Larkin",
+        "duration": 349,
+        "score": 148.4,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1309394509",
+      "name": "White Palace",
+      "artists": "Christopher Larkin",
+      "album": "Hollow Knight (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/a806-d9dPYrFmUt5-rKwZA==/109951164331645970.jpg",
+      "duration": 259,
+      "neteaseFee": 8,
+      "youtubeVideoId": "BZKvtZqRihw",
+      "match": {
+        "name": "White Palace",
+        "artist": "Christopher Larkin",
+        "duration": 272,
+        "score": 127.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1309394501",
+      "name": "Resting Grounds",
+      "artists": "Christopher Larkin",
+      "album": "Hollow Knight (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/a806-d9dPYrFmUt5-rKwZA==/109951164331645970.jpg",
+      "duration": 132,
+      "neteaseFee": 1,
+      "youtubeVideoId": "SZk6tHKqlDc",
+      "match": {
+        "name": "Resting Grounds",
+        "artist": "Sheet Music Boss",
+        "duration": 137,
+        "score": 123.5,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1309394495",
+      "name": "City of Tears",
+      "artists": "Christopher Larkin",
+      "album": "Hollow Knight (Original Soundtrack)",
+      "cover": "https://p1.music.126.net/a806-d9dPYrFmUt5-rKwZA==/109951164331645970.jpg",
+      "duration": 179,
+      "neteaseFee": 1,
+      "youtubeVideoId": "T239cxw_I0c",
+      "match": {
+        "name": "City of Tears (from \"Hollow Knight\")",
+        "artist": "Anime Arcade Piano",
+        "duration": 178,
+        "score": 89,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1817410059",
+      "name": "尘世闲游 Rex Incognito",
+      "artists": "陈致逸, HOYO-MiX",
+      "album": "原神-闪耀的群星 The Stellar Moments",
+      "cover": "https://p1.music.126.net/hwxZS2Bv9Dht_8chjLLR-Q==/109951165690591384.jpg",
+      "duration": 109,
+      "neteaseFee": 0,
+      "youtubeVideoId": "SBfoWTB-T_U",
+      "match": {
+        "name": "Rex Incognito",
+        "artist": "Yu-Peng Chen",
+        "duration": 109,
+        "score": 110.5,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1804321245",
+      "name": "Never Fade Away (SAMURAI Cover) - feat. Olga Jankowska",
+      "artists": "P.T. Adamczyk, Olga Jankowska",
+      "album": "Cyberpunk 2077 Soundtrack",
+      "cover": "https://p1.music.126.net/zTLpwoo0P3tE6qDqfrG9JQ==/109951165541351291.jpg",
+      "duration": 286,
+      "neteaseFee": 0,
+      "youtubeVideoId": "VM81QKfmAGw",
+      "match": {
+        "name": "Never Fade Away (SAMURAI Cover) (feat. Olga Jankowska)",
+        "artist": "P.T. Adamczyk",
+        "duration": 287,
+        "score": 151,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "434550310",
+      "name": "星之守护者：熠",
+      "artists": "群星",
+      "album": "热门华语233",
+      "cover": "https://p1.music.126.net/cpoUinrExafBHL5Nv5iDHQ==/109951166361218466.jpg",
+      "duration": 188,
+      "neteaseFee": 0,
+      "youtubeVideoId": "bmfa4cTEcR0",
+      "match": {
+        "name": "薛凱琪 Fiona Sit《不灭星光》Official Music Video (英雄联盟星之守护者2022年主题曲中文特别版）",
+        "artist": "Warner Music China华纳音乐中国",
+        "duration": 185,
+        "score": 62.7,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "414979145",
+      "name": "China Anthem",
+      "artists": "英雄联盟",
+      "album": "2016 Mid-Season Invitational",
+      "cover": "https://p1.music.126.net/btqm2Lha79PD5sKoTzNL9w==/1424967080752697.jpg",
+      "duration": 171,
+      "neteaseFee": 0,
+      "youtubeVideoId": "m2Hz4Vh-CD0",
+      "match": {
+        "name": "2016 Mid-Season Invitational - China Anthem",
+        "artist": "LoL Esports",
+        "duration": 172,
+        "score": 86.1,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "34923639",
+      "name": "Summoner's Call",
+      "artists": "英雄联盟, Moisés Nieto",
+      "album": "Dominion Piano Call (from \"League of Legends\")",
+      "cover": "https://p1.music.126.net/kr721FON3KPGBzZCyWOInQ==/3312828535403650.jpg",
+      "duration": 304,
+      "neteaseFee": 0,
+      "youtubeVideoId": "2aZnvnfKpm8",
+      "match": {
+        "name": "Summoner's Call (From League of Legends: Season 2)",
+        "artist": "League of Legends",
+        "duration": 305,
+        "score": 88.3,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "24300493",
+      "name": "DJ Got Us Fallin' In Love",
+      "artists": "Usher, Pitbull",
+      "album": "Now That's What I Call Music! 77",
+      "cover": "https://p1.music.126.net/8qmK2mISMOmqJIhSrQsK3w==/885106860389338.jpg",
+      "duration": 222,
+      "neteaseFee": 8,
+      "youtubeVideoId": "yqsJsO8H-oA",
+      "match": {
+        "name": "DJ Got Us Fallin' In Love (feat. Pitbull)",
+        "artist": "Usher",
+        "duration": 221,
+        "score": 149.4,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "26550268",
+      "name": "What I Believe",
+      "artists": "Skillet",
+      "album": "Rise (Deluxe Edition)",
+      "cover": "https://p1.music.126.net/7EOXrxI8NIGr_yL52aXoDA==/4415638697155426.jpg",
+      "duration": 199,
+      "neteaseFee": 8,
+      "youtubeVideoId": "vVCHcgYQFVs",
+      "match": {
+        "name": "What I Believe",
+        "artist": "Skillet",
+        "duration": 200,
+        "score": 160.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1396151812",
+      "name": "Phoenix",
+      "artists": "英雄联盟, Cailin Russo, Chrissy Costanza",
+      "album": "Phoenix",
+      "cover": "https://p1.music.126.net/RQGcPa-M0yPhsBFdlezkXQ==/109951170930155943.jpg",
+      "duration": 198,
+      "neteaseFee": 8,
+      "youtubeVideoId": "B19WHq_UVmY",
+      "match": {
+        "name": "Phoenix",
+        "artist": "League of Legends",
+        "duration": 198,
+        "score": 138,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "33361114",
+      "name": "Ekko,the Boy Who Shattered Time",
+      "artists": "Sebastien Najand, 英雄联盟",
+      "album": "the Boy Who Shattered Time",
+      "cover": "https://p1.music.126.net/kvmNWJLmRh5HA1yXIdT1Iw==/7771348186205573.jpg",
+      "duration": 185,
+      "neteaseFee": 0,
+      "youtubeVideoId": "vTN2AbtQ24w",
+      "match": {
+        "name": "Ekko The Boy Who Shattered Time",
+        "artist": "AiVortex",
+        "duration": 192,
+        "score": 114.2,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "4064279",
+      "name": "Mélancolie",
+      "artists": "Endless Melancholy",
+      "album": "Music for Quiet Mornings",
+      "cover": "https://p1.music.126.net/h0P7l2e8BKunyiB3RhAlXA==/109951164546524803.jpg",
+      "duration": 256,
+      "neteaseFee": 1,
+      "youtubeVideoId": "hLhv5R1kI80",
+      "match": {
+        "name": "Mélancolie",
+        "artist": "Endless Melancholy",
+        "duration": 257,
+        "score": 160.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "5027380",
+      "name": "Magic Waltz",
+      "artists": "Amedeo Tommasi",
+      "album": "La Leggenda del Pianista Sull'oceano",
+      "cover": "https://p1.music.126.net/CvdLk3M_exT2WZUveKqwIQ==/1799900534682279.jpg",
+      "duration": 154,
+      "neteaseFee": 0,
+      "youtubeVideoId": "tmxAU7pac-g",
+      "match": {
+        "name": "Magic Waltz",
+        "artist": "Jacob Koller",
+        "duration": 153,
+        "score": 135.4,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1309896289",
+      "name": "In the End",
+      "artists": "Tommee Profitt, Jung Youth, Fleurie",
+      "album": "IN THE END (Cinematic Cover)",
+      "cover": "https://p1.music.126.net/8etCjFT5yDnjQgciQApBNg==/109951163555229213.jpg",
+      "duration": 235,
+      "neteaseFee": 8,
+      "youtubeVideoId": "Qp6j7MroZtE",
+      "match": {
+        "name": "In The End",
+        "artist": "Tommee Profitt",
+        "duration": 235,
+        "score": 152.4,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "17241449",
+      "name": "Opus No. 11",
+      "artists": "Dustin O'Halloran",
+      "album": "Piano Solos",
+      "cover": "https://p1.music.126.net/IdUudJ-BUPETGm5-5kXgDg==/109951169870832726.jpg",
+      "duration": 136,
+      "neteaseFee": 1,
+      "youtubeVideoId": "5Hkf9MNeOQA",
+      "match": {
+        "name": "Opus No. 11",
+        "artist": "Dustin O'Halloran",
+        "duration": 136,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "38019092",
+      "name": "Lifeline",
+      "artists": "Zeraphym 六翼使徒",
+      "album": "生命线",
+      "cover": "https://p1.music.126.net/rukrV8tgLCltzzT7ZJJ6Yw==/109951163861234431.jpg",
+      "duration": 313,
+      "neteaseFee": 8,
+      "youtubeVideoId": "VYSoDzqvySQ",
+      "match": {
+        "name": "Lifeline",
+        "artist": "Zeraphym 六翼使徒",
+        "duration": 314,
+        "score": 160.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "27701988",
+      "name": "5 Lieder, Op. 49 (arr. A. Spalding for violin and piano): 5 Lieder, Op. 49: No. 4. Wiegenlied (arr. A. Spalding)",
+      "artists": "Rachel Barton Pine",
+      "album": "VIOLIN LULLABIES",
+      "cover": "https://p1.music.126.net/IGZAbP9xtu76g3DXKwaD8Q==/109951164170895178.jpg",
+      "duration": 143,
+      "neteaseFee": 8,
+      "youtubeVideoId": "Sx43y-lrLdQ",
+      "match": {
+        "name": "Fünf Lieder für eine Singstimme und Klavier Op. 49, Nº 4: \"Wiegenlied\"",
+        "artist": "Victoria de los Ángeles",
+        "duration": 147,
+        "score": 76.1,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "475072054",
+      "name": "Coming Home",
+      "artists": "Dash Berlin, Bo Bruce",
+      "album": "We Are (Part 2)",
+      "cover": "https://p1.music.126.net/26LmHGBc_ZQAOXk9W13QMQ==/109951167211468183.jpg",
+      "duration": 194,
+      "neteaseFee": 8,
+      "youtubeVideoId": "w2fu_Lz3PoM",
+      "match": {
+        "name": "Coming Home (feat. Bo Bruce)",
+        "artist": "Dash Berlin",
+        "duration": 195,
+        "score": 153.9,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "27560017",
+      "name": "I Knew You Were Trouble",
+      "artists": "MADILYN",
+      "album": "The Covers, Vol. 4",
+      "cover": "https://p1.music.126.net/_I9OTTqETYpEy3Dt9gwhKQ==/109951163936621504.jpg",
+      "duration": 232,
+      "neteaseFee": 8,
+      "youtubeVideoId": "CQS8hBVzjUI",
+      "match": {
+        "name": "I Knew You Were Trouble",
+        "artist": "Madilyn Bailey",
+        "duration": 233,
+        "score": 153.5,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "4946902",
+      "name": "pure heart",
+      "artists": "松田彬人",
+      "album": "TVアニメ『初恋限定.』オリジナルサウンドトラック",
+      "cover": "https://p1.music.126.net/YXsYpSjxSBcjQn-ufhLGnw==/109951166141477578.jpg",
+      "duration": 151,
+      "neteaseFee": 0,
+      "youtubeVideoId": "XcLEjUdjcks",
+      "match": {
+        "name": "Pure Heart",
+        "artist": "SAYAKA AOKI",
+        "duration": 149,
+        "score": 132.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "424477211",
+      "name": "Hello Summer (Radio Edit)",
+      "artists": "Rameez",
+      "album": "Hello Summer (Radio Edit)",
+      "cover": "https://p1.music.126.net/kMBTtbLYb8wC9pJhUPDcXg==/109951163626239177.jpg",
+      "duration": 153,
+      "neteaseFee": 8,
+      "youtubeVideoId": "J4wt_Rhz2GI",
+      "match": {
+        "name": "RAMEEZ - Hello Summer (Original Radio Edit) HQ",
+        "artist": "Loren Vidican",
+        "duration": 152,
+        "score": 98.8,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "2112308",
+      "name": "See What I've Become",
+      "artists": "Zack Hemsey",
+      "album": "The Way",
+      "cover": "https://p1.music.126.net/m5T7LPFnGEZIGJ0kZHfz-Q==/109951167955545359.jpg",
+      "duration": 234,
+      "neteaseFee": 8,
+      "youtubeVideoId": "a7cAc2lEpZ4",
+      "match": {
+        "name": "See What I’ve Become",
+        "artist": "Zack Hemsey",
+        "duration": 235,
+        "score": 160.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "4278298",
+      "name": "Song from a Secret Garden",
+      "artists": "Secret Garden",
+      "album": "The Ultimate Secret Garden",
+      "cover": "https://p1.music.126.net/j0I5wdUsYFBw1NMBF_kfuw==/1792203953287469.jpg",
+      "duration": 215,
+      "neteaseFee": 1,
+      "youtubeVideoId": "jR1gerSNTYk",
+      "match": {
+        "name": "Song From A Secret Garden",
+        "artist": "Secret Garden",
+        "duration": 215,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "5142101",
+      "name": "Better in Time",
+      "artists": "Leona Lewis",
+      "album": "Now That's What I Call Music! 29",
+      "cover": "https://p1.music.126.net/4DRm5E8ahUJu5r1c4cNNbQ==/2450811418334469.jpg",
+      "duration": 235,
+      "neteaseFee": 8,
+      "youtubeVideoId": "dHkvg_5S-xQ",
+      "match": {
+        "name": "Better in Time",
+        "artist": "Leona Lewis",
+        "duration": 235,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1338275480",
+      "name": "Deepside Deejays-Never Be Alone（音浪 remix）",
+      "artists": "音浪",
+      "album": "无名之辈",
+      "cover": "https://p1.music.126.net/-ial3GTbQH4klFN91ln3xg==/109951163816221128.jpg",
+      "duration": 190,
+      "neteaseFee": 8,
+      "youtubeVideoId": "Na81Q_GtGu4",
+      "match": {
+        "name": "So Real (Deepside Deejays Remix)",
+        "artist": "Andreea D.",
+        "duration": 193,
+        "score": 90,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "34341349",
+      "name": "秋日私语",
+      "artists": "Richard Clayderman",
+      "album": "Richard Clayderman",
+      "cover": "https://p1.music.126.net/dMUS79TnNOnzd4p6MV_CGw==/7993449536056577.jpg",
+      "duration": 202,
+      "neteaseFee": 1,
+      "youtubeVideoId": "KKKqdRpe4ME",
+      "match": {
+        "name": "A comme amour (Piano et orchestre)",
+        "artist": "Richard Clayderman",
+        "duration": 200,
+        "score": 79.2,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "451703096",
+      "name": "Shape of You",
+      "artists": "Ed Sheeran",
+      "album": "Shape of You",
+      "cover": "https://p1.music.126.net/ZAbThPRnV0wVu2er0PIlvA==/109951168805157389.jpg",
+      "duration": 234,
+      "neteaseFee": 1,
+      "youtubeVideoId": "xTvyyoF_LZY",
+      "match": {
+        "name": "Shape of You",
+        "artist": "Ed Sheeran",
+        "duration": 234,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "17538867",
+      "name": "The Mass",
+      "artists": "Era",
+      "album": "The Mass",
+      "cover": "https://p1.music.126.net/Jqlh75auQyrKdKeDT5y5sw==/732274744107448.jpg",
+      "duration": 221,
+      "neteaseFee": 1,
+      "youtubeVideoId": "qMa1kTobETc",
+      "match": {
+        "name": "The Mass",
+        "artist": "ERA",
+        "duration": 221,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "37653063",
+      "name": "Please Don't Go",
+      "artists": "Joel Adams",
+      "album": "Please Don't Go",
+      "cover": "https://p1.music.126.net/1NxeKsBq72tlxd8MYW0A-A==/109951168290934449.jpg",
+      "duration": 211,
+      "neteaseFee": 1,
+      "youtubeVideoId": "7advDxwP9A0",
+      "match": {
+        "name": "Please Don't Go",
+        "artist": "Morganisation",
+        "duration": 208,
+        "score": 121.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "407007703",
+      "name": "Geisha",
+      "artists": "Dino Sor",
+      "album": "Geisha",
+      "cover": "https://p1.music.126.net/8KmfqF09qlElr2uvnWZ3VQ==/109951173094300974.jpg",
+      "duration": 394,
+      "neteaseFee": 8,
+      "youtubeVideoId": "L-KvT9_hcmM",
+      "match": {
+        "name": "Geisha",
+        "artist": "Dino Sor",
+        "duration": 394,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "35331692",
+      "name": "Heist",
+      "artists": "Noisestorm",
+      "album": "Heist",
+      "cover": "https://p1.music.126.net/yyaEioqbZqq2gZMtSHrgbg==/109951163311323380.jpg",
+      "duration": 182,
+      "neteaseFee": 1,
+      "youtubeVideoId": "xdgovwNXd8Q",
+      "match": {
+        "name": "Heist",
+        "artist": "Noisestorm",
+        "duration": 183,
+        "score": 160.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "409916250",
+      "name": "The Ocean (Radio Edit)",
+      "artists": "Mike Perry, SHY Martin",
+      "album": "The Ocean",
+      "cover": "https://p1.music.126.net/5sPUycjuzur98eLFOEirhw==/109951165975333597.jpg",
+      "duration": 182,
+      "neteaseFee": 1,
+      "youtubeVideoId": "OFiBWFtbH-w",
+      "match": {
+        "name": "The Ocean (feat. Shy Martin)",
+        "artist": "Mike Perry",
+        "duration": 184,
+        "score": 110,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "455653437",
+      "name": "Skin",
+      "artists": "Rag’n’Bone Man",
+      "album": "Skin",
+      "cover": "https://p1.music.126.net/72J7eAp7fOD4MbtpZ0Ccwg==/109951165975969497.jpg",
+      "duration": 240,
+      "neteaseFee": 1,
+      "youtubeVideoId": "GB33bhXS3RU",
+      "match": {
+        "name": "Skin",
+        "artist": "Rag'n'Bone Man",
+        "duration": 240,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "29803676",
+      "name": "Lone Ranger",
+      "artists": "Rachel Platten",
+      "album": "Fight Song",
+      "cover": "https://p1.music.126.net/XUHjsGtSC63UTiKEWbtvmQ==/109951165972029591.jpg",
+      "duration": 190,
+      "neteaseFee": 1,
+      "youtubeVideoId": "FlGng-k0W3o",
+      "match": {
+        "name": "Lone Ranger",
+        "artist": "Rachel Platten",
+        "duration": 191,
+        "score": 160.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "25862797",
+      "name": "CE FRUMOASA E IUBIREA",
+      "artists": "Giulia",
+      "album": "苏荷酒吧",
+      "cover": "https://p1.music.126.net/bDNd-r-7vVwFIqdE0cb02Q==/2454109953255262.jpg",
+      "duration": 192,
+      "neteaseFee": 8,
+      "youtubeVideoId": "U3b6fFSSYwU",
+      "match": {
+        "name": "Ce frumosa e iubirea",
+        "artist": "Giulia",
+        "duration": 193,
+        "score": 137,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "26382105",
+      "name": "Under Paris Skies (Sous Le Ciel De Paris)",
+      "artists": "Mantovani & His Orchestra",
+      "album": "The King Of Light Orchestra Music  CD2",
+      "cover": "https://p1.music.126.net/YPZ-NpxrXyEkMckJ1--7pg==/2464005557900607.jpg",
+      "duration": 154,
+      "neteaseFee": 0,
+      "youtubeVideoId": "ylo-ccFzQ54",
+      "match": {
+        "name": "Sous le ciel de Paris",
+        "artist": "Zantalino and his Orchestra",
+        "duration": 154,
+        "score": 122.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "17793698",
+      "name": "Whistle",
+      "artists": "Flo Rida",
+      "album": "Whistle",
+      "cover": "https://p1.music.126.net/hZZYMj3r8IQOFM4HAChKRg==/109951173145184379.jpg",
+      "duration": 225,
+      "neteaseFee": 1,
+      "youtubeVideoId": "MOIwxOYdhrk",
+      "match": {
+        "name": "Whistle",
+        "artist": "Flo Rida",
+        "duration": 225,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "28679464",
+      "name": "ki",
+      "artists": "hideyuki hashimoto",
+      "album": "home",
+      "cover": "https://p1.music.126.net/EkQVJPKHc9AdZMAAXp2MUQ==/109951168047742764.jpg",
+      "duration": 118,
+      "neteaseFee": 1,
+      "youtubeVideoId": "Ru1bNxZIFiI",
+      "match": {
+        "name": "ki",
+        "artist": "Hideyuki Hashimoto",
+        "duration": 118,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1341733740",
+      "name": "Awaken",
+      "artists": "Valerie Broussard, 陈锐",
+      "album": "Awaken",
+      "cover": "https://p1.music.126.net/vg2UUGAS69U8szAaOk8kbA==/109951163817963892.jpg",
+      "duration": 198,
+      "neteaseFee": 8,
+      "youtubeVideoId": "v-evqKyMu_k",
+      "match": {
+        "name": "Awaken",
+        "artist": "League of Legends",
+        "duration": 199,
+        "score": 138.2,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "4010213",
+      "name": "Wet Hands",
+      "artists": "C418",
+      "album": "Minecraft - Volume Alpha",
+      "cover": "https://p1.music.126.net/fL4ULWzldqG8tT2BB7Vucg==/109951172564006364.jpg",
+      "duration": 90,
+      "neteaseFee": 1,
+      "youtubeVideoId": "lq1vZxM-Iic",
+      "match": {
+        "name": "Wet Hands",
+        "artist": "C418",
+        "duration": 90,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "29401226",
+      "name": "Warriors",
+      "artists": "Imagine Dragons",
+      "album": "Warriors (Official Anthem of League of Legends 2014 World Championship)",
+      "cover": "https://p1.music.126.net/70OuBx8PQfW6ie8UIes8dw==/2536573325307180.jpg",
+      "duration": 171,
+      "neteaseFee": 1,
+      "youtubeVideoId": "1uBPOu3si5w",
+      "match": {
+        "name": "Warriors",
+        "artist": "Imagine Dragons",
+        "duration": 171,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "808983",
+      "name": "成都攻略戦・晋 The Last Battle",
+      "artists": "山田玄紀",
+      "album": "真・三國無双6 ORIGINAL SOUND TRACK COMPLETE",
+      "cover": "https://p1.music.126.net/W3n_gUhFw7Wj8tSU4n0yLw==/890604418542718.jpg",
+      "duration": 381,
+      "neteaseFee": 0,
+      "youtubeVideoId": "UptKdhWGM8w",
+      "match": {
+        "name": "The Last Battle <成都攻略戦・晋>",
+        "artist": "山田 玄紀",
+        "duration": 382,
+        "score": 139.2,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "28802241",
+      "name": "GENIUSES' SANCTUARIES -五丈原の戦い-",
+      "artists": "稲毛謙介",
+      "album": "真・三国無双5 オリジナル・サウンドトラック",
+      "cover": "https://p1.music.126.net/WfjMRuiaZVPkFOjlylu9_A==/5953855464785858.jpg",
+      "duration": 166,
+      "neteaseFee": 0,
+      "youtubeVideoId": "7HsnTeZyVnM",
+      "match": {
+        "name": "Shin Sangokumusou 5 OST - 117 - The Two Heroes",
+        "artist": "OgreOfMontana",
+        "duration": 161,
+        "score": 49.5,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "400161906",
+      "name": "The Boy Who Shattered Time",
+      "artists": "英雄联盟, MitiS",
+      "album": "Warsongs",
+      "cover": "https://p1.music.126.net/ZMYJdTrfFDT4pIVNCX2y5w==/109951171798154866.jpg",
+      "duration": 294,
+      "neteaseFee": 1,
+      "youtubeVideoId": "-hYnQUs6RHo",
+      "match": {
+        "name": "The Boy Who Shattered Time (feat. MitiS)",
+        "artist": "League of Legends",
+        "duration": 294,
+        "score": 138,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1313107065",
+      "name": "RISE",
+      "artists": "英雄联盟, Mako, The Word Alive, The Glitch Mob",
+      "album": "RISE",
+      "cover": "https://p1.music.126.net/I9y4Arpr2Dx7EQ1QS4DqBA==/109951171797238435.jpg",
+      "duration": 193,
+      "neteaseFee": 1,
+      "youtubeVideoId": "JCJDdN_ohxY",
+      "match": {
+        "name": "RISE (feat. The Glitch Mob)",
+        "artist": "League of Legends",
+        "duration": 193,
+        "score": 138,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "527835613",
+      "name": "英雄联盟召唤师峡谷 Mid_Game",
+      "artists": "英雄联盟",
+      "album": "《英雄联盟》游戏模式主题曲合辑",
+      "cover": "https://p1.music.126.net/SElpcxafD_OQ7Kknvy4pLg==/109951163098224844.jpg",
+      "duration": 327,
+      "neteaseFee": 0,
+      "youtubeVideoId": "CRrDzGSxjF8",
+      "match": {
+        "name": "Summoner's Rift - Mid Game (From League of Legends: Season 4)",
+        "artist": "League of Legends",
+        "duration": 328,
+        "score": 68.5,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1301760232",
+      "name": "千珏（翻自 英雄联盟）",
+      "artists": "AvEtaDeltaV",
+      "album": "永猎双子",
+      "cover": "https://p1.music.126.net/-eVEHZR9SJpQ9h8LXALeSA==/109951163459616684.jpg",
+      "duration": 161,
+      "neteaseFee": 0,
+      "youtubeVideoId": "KbMGZVweJXY",
+      "match": {
+        "name": "破敗之咒",
+        "artist": "acsnotluvly24",
+        "duration": 163,
+        "score": 49.2,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1303019138",
+      "name": "Pool Party 2018",
+      "artists": "Jason Willey, 英雄联盟",
+      "album": "Pool Party 2018",
+      "cover": "https://p1.music.126.net/WU2Hm6dKuk5uXcfuxDt6dQ==/109951163471510932.jpg",
+      "duration": 150,
+      "neteaseFee": 0,
+      "youtubeVideoId": "ga2aatAtYaE",
+      "match": {
+        "name": "Pool Party - 2018 (From League of Legends: Season 8)",
+        "artist": "League of Legends",
+        "duration": 150,
+        "score": 90.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1306508003",
+      "name": "Nexus Blitz",
+      "artists": "英雄联盟",
+      "album": "Nexus Blitz",
+      "cover": "https://p1.music.126.net/TfjDK-u_FsVkWz-OVzX9WQ==/109951163543222393.jpg",
+      "duration": 206,
+      "neteaseFee": 0,
+      "youtubeVideoId": "SLFEcxq-2ZE",
+      "match": {
+        "name": "Nexus Blitz Main Song",
+        "artist": "MasterAxGaming",
+        "duration": 206,
+        "score": 99.7,
+        "source": "youtube-search"
+      }
+    },
+    {
+      "neteaseId": "527838685",
+      "name": "英雄联盟源计划过载模式PROJECT Overcharge - Matchmaking",
+      "artists": "英雄联盟",
+      "album": "《英雄联盟》游戏模式主题曲合辑",
+      "cover": "https://p1.music.126.net/SElpcxafD_OQ7Kknvy4pLg==/109951163098224844.jpg",
+      "duration": 62,
+      "neteaseFee": 0,
+      "youtubeVideoId": "_PrUkCfbDww",
+      "match": {
+        "name": "PROJECT: Overcharge - Matchmaking (From League of Legends: Season 7)",
+        "artist": "League of Legends",
+        "duration": 63,
+        "score": 93.9,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "527766765",
+      "name": "星之守护者2017登录界面音乐",
+      "artists": "英雄联盟",
+      "album": "《英雄联盟》皮肤主题曲合辑",
+      "cover": "https://p1.music.126.net/MF_Dfz5gTY27cQPi7WtT9w==/109951163097845658.jpg",
+      "duration": 177,
+      "neteaseFee": 0,
+      "youtubeVideoId": "yU8mmLORepM",
+      "match": {
+        "name": "Star Guardian - 2017 (From League of Legends: Season 7)",
+        "artist": "League of Legends",
+        "duration": 177,
+        "score": 65.3,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "527764348",
+      "name": "大元素使拉克丝Elementalist Lux-登录界面音乐",
+      "artists": "英雄联盟",
+      "album": "《英雄联盟》皮肤主题曲合辑",
+      "cover": "https://p1.music.126.net/MF_Dfz5gTY27cQPi7WtT9w==/109951163097845658.jpg",
+      "duration": 228,
+      "neteaseFee": 0,
+      "youtubeVideoId": "cA6yhCzywu4",
+      "match": {
+        "name": "Elementalist Lux (From League of Legends: Season 6)",
+        "artist": "League of Legends",
+        "duration": 228,
+        "score": 85.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "431811484",
+      "name": "Ignite",
+      "artists": "Zedd",
+      "album": "Ignite (2016 League Of Legends World Championship)",
+      "cover": "https://p1.music.126.net/w2fTGYbtWaso00rSG_1bZg==/3439272383157636.jpg",
+      "duration": 195,
+      "neteaseFee": 1,
+      "youtubeVideoId": "KmQts3wty_U",
+      "match": {
+        "name": "Ignite (feat. Haley Maze)",
+        "artist": "MitiS",
+        "duration": 208,
+        "score": 99,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "30431023",
+      "name": "Challengers",
+      "artists": "英雄联盟",
+      "album": "The Music of League of Legends Vol. 1",
+      "cover": "https://p2.music.126.net/0NLtfU0yyKS_IkZ7bbnUCg==/109951170930220320.jpg",
+      "duration": 176,
+      "neteaseFee": 8,
+      "youtubeVideoId": "QEYHo5vHi-M",
+      "match": {
+        "name": "Challengers",
+        "artist": "League of Legends",
+        "duration": 176,
+        "score": 138,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "31311706",
+      "name": "Welcome to Planet Urf",
+      "artists": "英雄联盟",
+      "album": "Welcome to Planet Urf",
+      "cover": "https://p2.music.126.net/hg6q4fyCnpT6OehvjUWIEA==/109951171912438051.jpg",
+      "duration": 135,
+      "neteaseFee": 1,
+      "youtubeVideoId": "zUec8iFqOEE",
+      "match": {
+        "name": "Welcome to Planet Urf",
+        "artist": "League of Legends",
+        "duration": 135,
+        "score": 138,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "27946894",
+      "name": "Silver Scrapes",
+      "artists": "英雄联盟, Danny McCarthy",
+      "album": "最新热歌慢摇16",
+      "cover": "https://p2.music.126.net/FZX7XAjsmEPGyVOqm4H7aQ==/109951166361039007.jpg",
+      "duration": 199,
+      "neteaseFee": 0,
+      "youtubeVideoId": "Z6uzkYqkrBo",
+      "match": {
+        "name": "Silver Scrapes (Orchestral Remix)",
+        "artist": "Patrick Cunningham",
+        "duration": 213,
+        "score": 60.5,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "1999180",
+      "name": "Overworld Day",
+      "artists": "Scott Lloyd Shelly",
+      "album": "Terraria Soundtrack",
+      "cover": "https://p2.music.126.net/vKHOfuNXHqGVj0h-xc_XGA==/856519558090970.jpg",
+      "duration": 138,
+      "neteaseFee": 0,
+      "youtubeVideoId": "3-PA9bexwrA",
+      "match": {
+        "name": "Overworld Day",
+        "artist": "Re-Logic",
+        "duration": 138,
+        "score": 142.8,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "3019676",
+      "name": "Grasswalk",
+      "artists": "Laura Shigihara",
+      "album": "Plants Vs. Zombies (Original Video Game Soundtrack)",
+      "cover": "https://p2.music.126.net/8ZScS5RBR1ibMCYDr-YYdw==/109951167480957763.jpg",
+      "duration": 148,
+      "neteaseFee": 8,
+      "youtubeVideoId": "vtAxGidDY7o",
+      "match": {
+        "name": "Grasswalk",
+        "artist": "Laura Shigihara",
+        "duration": 149,
+        "score": 159.4,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "33789445",
+      "name": "长安",
+      "artists": "群星",
+      "album": "三国杀 原声音乐集",
+      "cover": "https://p2.music.126.net/ha8VMt0hPiuidPxPImbBWQ==/7982454419372972.jpg",
+      "duration": 154,
+      "neteaseFee": 0,
+      "youtubeVideoId": "s3M0Ov6cReA",
+      "match": {
+        "name": "长安街",
+        "artist": "射手别乱来",
+        "duration": 158,
+        "score": 66.5,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "26427672",
+      "name": "Danger",
+      "artists": "Vince de Vera, Jason Garner",
+      "album": "Don't Starve (Original Soundtrack)",
+      "cover": "https://p2.music.126.net/ZjI6LtsZ1BuT1qaZnk3_gg==/2489294325343724.jpg",
+      "duration": 66,
+      "neteaseFee": 0,
+      "youtubeVideoId": "99ZWfX74KsQ",
+      "match": {
+        "name": "Danger",
+        "artist": "Vince De Vera & Jason Garner",
+        "duration": 67,
+        "score": 160.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "26427669",
+      "name": "Main",
+      "artists": "Vince de Vera, Jason Garner",
+      "album": "Don't Starve (Original Soundtrack)",
+      "cover": "https://p2.music.126.net/ZjI6LtsZ1BuT1qaZnk3_gg==/2489294325343724.jpg",
+      "duration": 88,
+      "neteaseFee": 0,
+      "youtubeVideoId": "SWSETfh5KAs",
+      "match": {
+        "name": "Main",
+        "artist": "Vince De Vera & Jason Garner",
+        "duration": 89,
+        "score": 160.6,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "4010201",
+      "name": "Minecraft",
+      "artists": "C418",
+      "album": "Minecraft - Volume Alpha",
+      "cover": "https://p2.music.126.net/fL4ULWzldqG8tT2BB7Vucg==/109951172564006364.jpg",
+      "duration": 254,
+      "neteaseFee": 1,
+      "youtubeVideoId": "2S54N2mFV_A",
+      "match": {
+        "name": "Minecraft",
+        "artist": "C418",
+        "duration": 254,
+        "score": 157.2,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "28802235",
+      "name": "BATTLE WITHOUT JUSTICE－夷陵の戦い－",
+      "artists": "佐々木優嘉",
+      "album": "真・三国無双5 オリジナル・サウンドトラック",
+      "cover": "https://p2.music.126.net/WfjMRuiaZVPkFOjlylu9_A==/5953855464785858.jpg",
+      "duration": 221,
+      "neteaseFee": 0,
+      "youtubeVideoId": "zTlwSPjRZrI",
+      "match": {
+        "name": "THE BATTLE WITHOUT JUSTICE <夷陵の戦い>",
+        "artist": "MASA",
+        "duration": 224,
+        "score": 112.1,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "27790408",
+      "name": "Alternate Day",
+      "artists": "Scott Lloyd Shelly",
+      "album": "Terraria Soundtrack Volume 2",
+      "cover": "https://p2.music.126.net/ocCWxVZCO1E5fuavxW9S1A==/1356797348724311.jpg",
+      "duration": 100,
+      "neteaseFee": 0,
+      "youtubeVideoId": "9jItCJU5inM",
+      "match": {
+        "name": "Alternate Day (from \"Terraria\")",
+        "artist": "Re-Logic",
+        "duration": 101,
+        "score": 102.7,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "4010243",
+      "name": "Danny",
+      "artists": "C418",
+      "album": "Minecraft - Volume Alpha",
+      "cover": "https://p2.music.126.net/fL4ULWzldqG8tT2BB7Vucg==/109951172564006364.jpg",
+      "duration": 255,
+      "neteaseFee": 1,
+      "youtubeVideoId": "Hm7QRNlcD9Y",
+      "match": {
+        "name": "Danny",
+        "artist": "C418",
+        "duration": 255,
+        "score": 162,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "414670176",
+      "name": "The March (New champ select draft)",
+      "artists": "Sebastien Najand, 英雄联盟",
+      "album": "The March (NewChamp Select Draft)",
+      "cover": "https://p2.music.126.net/8GW-XjbePJn1uTkVvUwXRA==/1367792474145428.jpg",
+      "duration": 335,
+      "neteaseFee": 0,
+      "youtubeVideoId": "1_sgt3t3M8M",
+      "match": {
+        "name": "Summoner's Rift: The March - Draft Pick (From League of Legends: Season 6)",
+        "artist": "League of Legends",
+        "duration": 336,
+        "score": 82.5,
+        "source": "youtube-music"
+      }
+    },
+    {
+      "neteaseId": "28152199",
+      "name": "三国杀背景音乐",
+      "artists": "小田叔",
+      "album": "热门华语201",
+      "cover": "https://p2.music.126.net/cpoUinrExafBHL5Nv5iDHQ==/109951166361218466.jpg",
+      "duration": 221,
+      "neteaseFee": 0,
+      "youtubeVideoId": "uULmWsOXofc",
+      "match": {
+        "name": "阿YueYue&戾格&小田音乐社 - 沈园外「人长大后，太难学从容。」♪ KarenDaidai",
+        "artist": "KarenDaidai Music Channel",
+        "duration": 224,
+        "score": 53.5,
+        "source": "youtube-search"
+      }
+    }
+  ]
+}

@@ -18,13 +18,44 @@ function isLandscapeCoverMode() {
 }
 
 function getGameDateValue(date) {
-  const [year, month = "1"] = String(date)
+  const [year, month, explicitDay] = String(date)
     .trim()
     .split(/[.\/-]/)
     .map(Number);
 
   if (!Number.isFinite(year) || !Number.isFinite(month)) return 0;
-  return year * 12 + month;
+  const day = Number.isFinite(explicitDay) ? explicitDay : 15;
+  const value = Date.UTC(year, month - 1, day);
+  const parsed = new Date(value);
+  if (
+    parsed.getUTCFullYear() !== year ||
+    parsed.getUTCMonth() !== month - 1 ||
+    parsed.getUTCDate() !== day
+  ) {
+    return 0;
+  }
+  return value;
+}
+
+function formatGameDate(date) {
+  const [year, month] = String(date).trim().split(/[.\/-]/);
+  return year && month ? `${year}.${month}` : String(date || "");
+}
+
+function compareGamesByDate(a, b) {
+  return (
+    getGameDateValue(b.date) - getGameDateValue(a.date) ||
+    Number(b.rating || 0) - Number(a.rating || 0) ||
+    a.name.localeCompare(b.name)
+  );
+}
+
+function compareGamesByRating(a, b) {
+  return (
+    Number(b.rating || 0) - Number(a.rating || 0) ||
+    getGameDateValue(b.date) - getGameDateValue(a.date) ||
+    a.name.localeCompare(b.name)
+  );
 }
 
 // ---------------------------
@@ -156,7 +187,7 @@ async function loadGames() {
     };
   });
 
-  gamesData.sort((a, b) => getGameDateValue(b.date) - getGameDateValue(a.date));
+  gamesData.sort(compareGamesByDate);
   renderGames(gamesData);
 }
 
@@ -175,12 +206,9 @@ function getGameMetadataKeys(games) {
     if (key) totals.set(key, (totals.get(key) || 0) + 1);
   });
 
-  const occurrences = new Map();
-  return baseKeys.map((key) => {
+  return baseKeys.map((key, index) => {
     if (!key || totals.get(key) === 1) return key;
-    const occurrence = (occurrences.get(key) || 0) + 1;
-    occurrences.set(key, occurrence);
-    return `${key}#${occurrence}`;
+    return `${key}::${games[index].name}`;
   });
 }
 
@@ -239,7 +267,7 @@ function renderGames(games) {
     info.innerHTML = `
       <h3>${game.name}</h3>
       <p>评分: ${game.rating}/10</p>
-      <p>最后游玩时间: ${game.date}</p>
+      <p>最后游玩时间: ${formatGameDate(game.date)}</p>
     `;
     card.appendChild(info);
 
@@ -330,7 +358,7 @@ function showModal(game, imageUrl) {
         <h3>${game.name}</h3>
         <div class="modal-facts">
           <p>评分: ${game.rating}/10</p>
-          <p>最后游玩时间: ${game.date}</p>
+          <p>最后游玩时间: ${formatGameDate(game.date)}</p>
         </div>
       </header>
       <div class="modal-description">${description || "暂无游戏记录"}</div>
@@ -1036,16 +1064,12 @@ document.getElementById("sortByName").addEventListener("click", () => {
 });
 
 document.getElementById("sortByRating").addEventListener("click", () => {
-  renderGames([...gamesData].sort((a, b) => b.rating - a.rating));
+  renderGames([...gamesData].sort(compareGamesByRating));
   sortMenu.style.display = "none";
 });
 
 document.getElementById("sortByDate").addEventListener("click", () => {
-  renderGames(
-    [...gamesData].sort(
-      (a, b) => getGameDateValue(b.date) - getGameDateValue(a.date)
-    )
-  );
+  renderGames([...gamesData].sort(compareGamesByDate));
   sortMenu.style.display = "none";
 });
 

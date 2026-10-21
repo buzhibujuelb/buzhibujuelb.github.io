@@ -416,7 +416,12 @@
     "cover_source": "igdb",
     "igdb_game_id": 26758,
     "igdb_game_name": "Super Mario Odyssey",
-    "updated_at": "2026-10-08T20:48:22.075Z"
+    "updated_at": "2026-10-08T20:48:22.075Z",
+    "background_image_landscape": "covers/rawg-28026-landscape.webp",
+    "landscape_image_aspect": 2.139535,
+    "steamgriddb_landscape_grid_id": 422150,
+    "landscape_source_url": "https://cdn2.steamgriddb.com/grid/aef88b80e43bcf2c08c344f03f813787.png",
+    "landscape_source": "steamgriddb"
   },
   "rawg:11726": {
     "background_image": "covers/rawg-11726.webp",
@@ -662,8 +667,8 @@
     "igdb_game_name": "Splatoon 3",
     "updated_at": "2026-10-08T20:48:23.850Z"
   },
-  "rawg:736257#1": {
-    "background_image": "covers/rawg-736257-1.webp",
+  "rawg:736257::异度神剑3 DLC 崭新的未来": {
+    "background_image": "covers/rawg-736257-3-DLC-9f2acb4c.webp",
     "image_aspect": 0.75,
     "provider_title": "Xenoblade Chronicles 3",
     "stores": [
@@ -676,10 +681,10 @@
     "cover_source": "igdb",
     "igdb_game_id": 236669,
     "cover_override_signature": "f64e3601fbbb5ff1",
-    "updated_at": "2026-10-08T20:48:23.437Z"
+    "updated_at": "2026-10-21T03:17:41.521Z"
   },
-  "rawg:736257#2": {
-    "background_image": "covers/rawg-736257-2.webp",
+  "rawg:736257::异度神剑3": {
+    "background_image": "covers/rawg-736257-34da203e6.webp",
     "image_aspect": 0.75,
     "provider_title": "Xenoblade Chronicles 3",
     "stores": [
@@ -688,7 +693,7 @@
         "url": "https://www.nintendo.com/games/detail/xenoblade-chronicles-3-switch/"
       }
     ],
-    "background_image_landscape": "covers/rawg-736257-2-landscape.webp",
+    "background_image_landscape": "covers/rawg-736257-34da203e6-landscape.webp",
     "landscape_image_aspect": 2.139535,
     "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4ocq.jpg",
     "cover_source": "igdb",
@@ -697,7 +702,7 @@
     "landscape_source": "steamgriddb",
     "igdb_game_id": 191411,
     "igdb_game_name": "Xenoblade Chronicles 3",
-    "updated_at": "2026-10-08T20:48:24.134Z"
+    "updated_at": "2026-10-21T03:17:38.374Z"
   },
   "rawg:58812": {
     "background_image": "covers/rawg-58812.webp",
@@ -2962,5 +2967,108 @@
     "igdb_game_id": 7344,
     "igdb_game_name": "Ori and the Blind Forest",
     "updated_at": "2026-10-08T20:48:53.959Z"
+  },
+  "rawg:11950": {
+    "background_image": "covers/rawg-11950.webp",
+    "image_aspect": 0.75,
+    "provider_title": "ICEY",
+    "stores": [
+      {
+        "name": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/product/UP1519-CUSA08085_00-ICEYPS4VER000001"
+      },
+      {
+        "name": "Steam",
+        "url": "http://store.steampowered.com/app/553640/"
+      },
+      {
+        "name": "Nintendo Store",
+        "url": "https://www.nintendo.com/games/detail/icey-switch"
+      },
+      {
+        "name": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.fantablade.icey&hl=en&gl=us"
+      },
+      {
+        "name": "App Store",
+        "url": "https://apps.apple.com/us/app/icey/id1271620263?uo=4"
+      }
+    ],
+    "background_image_landscape": "covers/rawg-11950-landscape.webp",
+    "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co24w8.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "553640",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553640/header.jpg?t=1726730514",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 25964,
+    "igdb_game_name": "Icey",
+    "updated_at": "2026-10-21T05:03:53.637Z"
+  },
+  "rawg:850683": {
+    "background_image": "covers/rawg-850683.webp",
+    "image_aspect": 0.666667,
+    "provider_title": "Octopath Traveler 2",
+    "stores": [
+      {
+        "name": "PlayStation Store",
+        "url": "https://store.playstation.com/es-es/product/EP0082-PPSA09809_00-OCTOPATH2PS5E000"
+      },
+      {
+        "name": "Steam",
+        "url": "https://store.steampowered.com/app/1971650/OCTOPATH_TRAVELER_II/"
+      },
+      {
+        "name": "Nintendo Store",
+        "url": "https://www.nintendo.com/store/products/octopath-traveler-ii-switch/"
+      }
+    ],
+    "background_image_landscape": "covers/rawg-850683-landscape.webp",
+    "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://cdn2.steamgriddb.com/grid/9faa9aa28cb471c7207d3087c28176b3.png",
+    "cover_source": "steamgriddb",
+    "steamgriddb_game_id": 5352228,
+    "steamgriddb_grid_id": 609829,
+    "steam_app_id": "1971650",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1971650/header.jpg?t=1788247720",
+    "landscape_source": "steam-header",
+    "updated_at": "2026-10-21T05:07:29.002Z"
+  },
+  "rawg:45821": {
+    "background_image": "covers/rawg-45821.webp",
+    "image_aspect": 0.75,
+    "provider_title": "Frostpunk",
+    "stores": [
+      {
+        "name": "Epic Games",
+        "url": "https://store.epicgames.com/en-US/p/frostpunk"
+      },
+      {
+        "name": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/product/UP4361-CUSA15716_00-FROSTPUNKGAME000"
+      },
+      {
+        "name": "Xbox Store",
+        "url": "https://www.microsoft.com/en-us/p/frostpunk-console-edition/9np539lhjd8s?activetab=pivot:overviewtab"
+      },
+      {
+        "name": "GOG",
+        "url": "http://www.gog.com/game/frostpunk"
+      },
+      {
+        "name": "Steam",
+        "url": "http://store.steampowered.com/app/323190/"
+      }
+    ],
+    "background_image_landscape": "covers/rawg-45821-landscape.webp",
+    "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coar27.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "323190",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323190/abcd2bf3c275092d637d7dd98e0061dbdd2fd2da/header.jpg?t=1792058205",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 23248,
+    "igdb_game_name": "Frostpunk",
+    "updated_at": "2026-10-21T05:10:58.168Z"
   }
 }
