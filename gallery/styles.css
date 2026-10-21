@@ -707,13 +707,15 @@ footer a { color: var(--blue); }
 }
 .hybrid-player { padding-top: 11px; }
 .music-video-wrap {
+  position: fixed;
+  top: -10000px;
+  left: -10000px;
+  width: 200px;
   height: 200px;
   overflow: hidden;
-  border: 1px solid var(--line);
-  margin-bottom: 11px;
-  background: #050607;
+  pointer-events: none;
 }
-.music-video-wrap iframe { display: block; width: 100%; height: 200px; border: 0; }
+.music-video-wrap iframe { display: block; width: 200px; height: 200px; border: 0; }
 .music-main {
   display: grid;
   grid-template-columns: 58px minmax(0, 1fr);

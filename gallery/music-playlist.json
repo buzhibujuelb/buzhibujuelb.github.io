@@ -2,8 +2,26 @@
   "playlistId": "2293020797",
   "source": "https://music.163.com/#/playlist?id=2293020797",
   "playbackProvider": "YouTube IFrame Player API",
-  "generatedAt": "2026-10-21T06:42:07.655Z",
+  "generatedAt": "2026-10-21T21:05:22.791Z",
   "tracks": [
+    {
+      "neteaseId": "2095481656",
+      "name": "ノーマルバトル2",
+      "artists": "西木康智, 塚越廉",
+      "album": "OCTOPATH TRAVELER Arrangements Break & Boost Vol.2",
+      "cover": "https://p1.music.126.net/4St21zYNQY8iKjiY0fYijw==/109951169021541722.jpg",
+      "duration": 247,
+      "neteaseFee": 0,
+      "youtubeVideoId": "CDf3wcaU3Qc",
+      "match": {
+        "name": "OCTOPATH TRAVELER Break & Boost Vol.2 - Boost - Normal Battle II (ノーマルバトル2)",
+        "artist": "Renz",
+        "duration": 247,
+        "score": 73.2,
+        "source": "youtube-search",
+        "accepted": true
+      }
+    },
     {
       "neteaseId": "31010759",
       "name": "Restoring the Light, Facing the Dark",
@@ -392,7 +410,8 @@
         "artist": "Fuminori Matsumoto",
         "duration": 232,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -409,7 +428,8 @@
         "artist": "Fuminori Matsumoto",
         "duration": 387,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -426,7 +446,8 @@
         "artist": "Fuminori Matsumoto",
         "duration": 119,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -443,7 +464,8 @@
         "artist": "Fuminori Matsumoto",
         "duration": 122,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -460,7 +482,8 @@
         "artist": "Fuminori Matsumoto",
         "duration": 132,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -477,7 +500,8 @@
         "artist": "Fuminori Matsumoto",
         "duration": 114,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -494,7 +518,8 @@
         "artist": "Fuminori Matsumoto",
         "duration": 123,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -511,7 +536,8 @@
         "artist": "Fuminori Matsumoto",
         "duration": 120,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -528,7 +554,8 @@
         "artist": "Fuminori Matsumoto",
         "duration": 109,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -545,7 +572,8 @@
         "artist": "Fuminori Matsumoto",
         "duration": 149,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -562,7 +590,8 @@
         "artist": "Fuminori Matsumoto",
         "duration": 122,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -579,7 +608,8 @@
         "artist": "Fuminori Matsumoto",
         "duration": 117,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -641,13 +671,14 @@
       "cover": "https://p1.music.126.net/ggonVwLSfPUcEgdiaXD_0w==/109951169157122785.jpg",
       "duration": 193,
       "neteaseFee": 0,
-      "youtubeVideoId": "AXA2FcauORM",
+      "youtubeVideoId": "faUb-i-a9Js",
       "match": {
-        "name": "Words That Never Reached You (Xenoblade Chronicles 3) Piano Sheet Music - 届かぬ言葉(ゼノブレイド3)ピアノ",
-        "artist": "慶",
-        "duration": 215,
-        "score": -11.2,
-        "source": "youtube-search"
+        "name": "Words That Never Reached You - Xenoblade Chronicles 3 OST",
+        "artist": "Kenji Hiramatsu",
+        "duration": 193,
+        "score": 999,
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -658,13 +689,14 @@
       "cover": "https://p1.music.126.net/ggonVwLSfPUcEgdiaXD_0w==/109951169157122785.jpg",
       "duration": 511,
       "neteaseFee": 0,
-      "youtubeVideoId": "5RWJkHDazE8",
+      "youtubeVideoId": "c4jm7bGsC8k",
       "match": {
-        "name": "OMG....Opening & Showing Off The Xenoblade Chronicles 3 Soundtrack Limited Edition!!",
-        "artist": "TriDeltaForcer",
-        "duration": 514,
-        "score": 50.8,
-        "source": "youtube-search"
+        "name": "Moebius Battle/M - Xenoblade Chronicles 3 OST",
+        "artist": "ACE",
+        "duration": 511,
+        "score": 999,
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -675,13 +707,14 @@
       "cover": "https://p1.music.126.net/ggonVwLSfPUcEgdiaXD_0w==/109951169157122785.jpg",
       "duration": 511,
       "neteaseFee": 0,
-      "youtubeVideoId": "5RWJkHDazE8",
+      "youtubeVideoId": "q8Y-37ybYiM",
       "match": {
-        "name": "OMG....Opening & Showing Off The Xenoblade Chronicles 3 Soundtrack Limited Edition!!",
-        "artist": "TriDeltaForcer",
-        "duration": 514,
-        "score": 53.2,
-        "source": "youtube-search"
+        "name": "Moebius Battle - Xenoblade Chronicles 3 OST",
+        "artist": "ACE",
+        "duration": 511,
+        "score": 999,
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -692,13 +725,14 @@
       "cover": "https://p1.music.126.net/NKMVtQoTtdtYKqkuaooGiQ==/109951164834327948.jpg",
       "duration": 189,
       "neteaseFee": 0,
-      "youtubeVideoId": "S0ImDdxxRhM",
+      "youtubeVideoId": "EMz_OgK9A1o",
       "match": {
-        "name": "新しい朝",
-        "artist": "眞鍋昭大",
-        "duration": 199,
-        "score": 48.4,
-        "source": "youtube-music"
+        "name": "Nioh 2 - Soundtrack - The Interim",
+        "artist": "Akihiro Manabe",
+        "duration": 189,
+        "score": 999,
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -868,7 +902,8 @@
         "artist": "Masafumi Takada",
         "duration": 302,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -885,7 +920,8 @@
         "artist": "Masafumi Takada",
         "duration": 281,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -919,7 +955,8 @@
         "artist": "Masafumi Takada",
         "duration": 298,
         "score": 999,
-        "source": "manual-override"
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -1117,13 +1154,14 @@
       "cover": "https://p1.music.126.net/WJdYsdTWMhu-0mEFnbLzmw==/1408474395874477.jpg",
       "duration": 220,
       "neteaseFee": 0,
-      "youtubeVideoId": "8Pz5i6UM5Yg",
+      "youtubeVideoId": "erKkWGfEW9U",
       "match": {
-        "name": "ゼノブレイド Definitive Edition BGM  メインテーマ",
-        "artist": "やぱんのゲーム部屋",
-        "duration": 227,
-        "score": 54.8,
-        "source": "youtube-search"
+        "name": "Xenoblade Chronicles OST - Main Theme",
+        "artist": "Yoko Shimomura",
+        "duration": 223,
+        "score": 999,
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -1236,13 +1274,14 @@
       "cover": "https://p1.music.126.net/Y8uzZx4RMSHuyKIUVXm6Lg==/109951163312431204.jpg",
       "duration": 169,
       "neteaseFee": 0,
-      "youtubeVideoId": "-U91KI7kSBQ",
+      "youtubeVideoId": "xLmAvUtNe6Y",
       "match": {
-        "name": "ドライバー - Driver",
-        "artist": "Tamio Okuda",
-        "duration": 184,
-        "score": 30.4,
-        "source": "youtube-music"
+        "name": "Xenoblade Chronicles 2 -  OST「ドライバー VS」",
+        "artist": "LJPLM- ACG",
+        "duration": 170,
+        "score": 76.7,
+        "source": "youtube-search",
+        "accepted": true
       }
     },
     {
@@ -1559,13 +1598,14 @@
       "cover": "https://p1.music.126.net/uz6z15QyBmrnsC-pSmJMWA==/109951167736550226.jpg",
       "duration": 199,
       "neteaseFee": 0,
-      "youtubeVideoId": "eOXfMz0On1Q",
+      "youtubeVideoId": null,
       "match": {
         "name": "A Life",
         "artist": "Kan Sawada",
         "duration": 210,
-        "score": 28.6,
-        "source": "youtube-music"
+        "score": 35.8,
+        "source": "youtube-music",
+        "accepted": false
       }
     },
     {
@@ -2358,13 +2398,14 @@
       "cover": "https://p1.music.126.net/WfjMRuiaZVPkFOjlylu9_A==/5953855464785858.jpg",
       "duration": 166,
       "neteaseFee": 0,
-      "youtubeVideoId": "7HsnTeZyVnM",
+      "youtubeVideoId": "ajziVcVK14E",
       "match": {
-        "name": "Shin Sangokumusou 5 OST - 117 - The Two Heroes",
-        "artist": "OgreOfMontana",
-        "duration": 161,
-        "score": 49.5,
-        "source": "youtube-search"
+        "name": "GENIUSES' SANCTUARIES <五丈原の戦い>",
+        "artist": "Kensuke Inage",
+        "duration": 168,
+        "score": 999,
+        "source": "manual-override",
+        "accepted": true
       }
     },
     {
@@ -2426,13 +2467,14 @@
       "cover": "https://p1.music.126.net/-eVEHZR9SJpQ9h8LXALeSA==/109951163459616684.jpg",
       "duration": 161,
       "neteaseFee": 0,
-      "youtubeVideoId": "KbMGZVweJXY",
+      "youtubeVideoId": null,
       "match": {
         "name": "破敗之咒",
         "artist": "acsnotluvly24",
         "duration": 163,
-        "score": 49.2,
-        "source": "youtube-music"
+        "score": 51.6,
+        "source": "youtube-music",
+        "accepted": false
       }
     },
     {
@@ -2610,7 +2652,7 @@
       "name": "Grasswalk",
       "artists": "Laura Shigihara",
       "album": "Plants Vs. Zombies (Original Video Game Soundtrack)",
-      "cover": "https://p1.music.126.net/8ZScS5RBR1ibMCYDr-YYdw==/109951167480957763.jpg",
+      "cover": "https://p2.music.126.net/8ZScS5RBR1ibMCYDr-YYdw==/109951167480957763.jpg",
       "duration": 148,
       "neteaseFee": 8,
       "youtubeVideoId": "vtAxGidDY7o",
@@ -2627,7 +2669,7 @@
       "name": "长安",
       "artists": "群星",
       "album": "三国杀 原声音乐集",
-      "cover": "https://p1.music.126.net/ha8VMt0hPiuidPxPImbBWQ==/7982454419372972.jpg",
+      "cover": "https://p2.music.126.net/ha8VMt0hPiuidPxPImbBWQ==/7982454419372972.jpg",
       "duration": 154,
       "neteaseFee": 0,
       "youtubeVideoId": "s3M0Ov6cReA",
@@ -2644,7 +2686,7 @@
       "name": "Danger",
       "artists": "Vince de Vera, Jason Garner",
       "album": "Don't Starve (Original Soundtrack)",
-      "cover": "https://p1.music.126.net/ZjI6LtsZ1BuT1qaZnk3_gg==/2489294325343724.jpg",
+      "cover": "https://p2.music.126.net/ZjI6LtsZ1BuT1qaZnk3_gg==/2489294325343724.jpg",
       "duration": 66,
       "neteaseFee": 0,
       "youtubeVideoId": "99ZWfX74KsQ",
@@ -2661,7 +2703,7 @@
       "name": "Main",
       "artists": "Vince de Vera, Jason Garner",
       "album": "Don't Starve (Original Soundtrack)",
-      "cover": "https://p1.music.126.net/ZjI6LtsZ1BuT1qaZnk3_gg==/2489294325343724.jpg",
+      "cover": "https://p2.music.126.net/ZjI6LtsZ1BuT1qaZnk3_gg==/2489294325343724.jpg",
       "duration": 88,
       "neteaseFee": 0,
       "youtubeVideoId": "SWSETfh5KAs",
@@ -2678,7 +2720,7 @@
       "name": "Minecraft",
       "artists": "C418",
       "album": "Minecraft - Volume Alpha",
-      "cover": "https://p1.music.126.net/fL4ULWzldqG8tT2BB7Vucg==/109951172564006364.jpg",
+      "cover": "https://p2.music.126.net/fL4ULWzldqG8tT2BB7Vucg==/109951172564006364.jpg",
       "duration": 254,
       "neteaseFee": 1,
       "youtubeVideoId": "2S54N2mFV_A",
@@ -2695,7 +2737,7 @@
       "name": "BATTLE WITHOUT JUSTICE－夷陵の戦い－",
       "artists": "佐々木優嘉",
       "album": "真・三国無双5 オリジナル・サウンドトラック",
-      "cover": "https://p1.music.126.net/WfjMRuiaZVPkFOjlylu9_A==/5953855464785858.jpg",
+      "cover": "https://p2.music.126.net/WfjMRuiaZVPkFOjlylu9_A==/5953855464785858.jpg",
       "duration": 221,
       "neteaseFee": 0,
       "youtubeVideoId": "zTlwSPjRZrI",
@@ -2712,7 +2754,7 @@
       "name": "Alternate Day",
       "artists": "Scott Lloyd Shelly",
       "album": "Terraria Soundtrack Volume 2",
-      "cover": "https://p1.music.126.net/ocCWxVZCO1E5fuavxW9S1A==/1356797348724311.jpg",
+      "cover": "https://p2.music.126.net/ocCWxVZCO1E5fuavxW9S1A==/1356797348724311.jpg",
       "duration": 100,
       "neteaseFee": 0,
       "youtubeVideoId": "9jItCJU5inM",
@@ -2729,7 +2771,7 @@
       "name": "Danny",
       "artists": "C418",
       "album": "Minecraft - Volume Alpha",
-      "cover": "https://p1.music.126.net/fL4ULWzldqG8tT2BB7Vucg==/109951172564006364.jpg",
+      "cover": "https://p2.music.126.net/fL4ULWzldqG8tT2BB7Vucg==/109951172564006364.jpg",
       "duration": 255,
       "neteaseFee": 1,
       "youtubeVideoId": "Hm7QRNlcD9Y",
@@ -2746,7 +2788,7 @@
       "name": "The March (New champ select draft)",
       "artists": "Sebastien Najand, 英雄联盟",
       "album": "The March (NewChamp Select Draft)",
-      "cover": "https://p1.music.126.net/8GW-XjbePJn1uTkVvUwXRA==/1367792474145428.jpg",
+      "cover": "https://p2.music.126.net/8GW-XjbePJn1uTkVvUwXRA==/1367792474145428.jpg",
       "duration": 335,
       "neteaseFee": 0,
       "youtubeVideoId": "1_sgt3t3M8M",
@@ -2763,16 +2805,17 @@
       "name": "三国杀背景音乐",
       "artists": "小田叔",
       "album": "热门华语201",
-      "cover": "https://p1.music.126.net/cpoUinrExafBHL5Nv5iDHQ==/109951166361218466.jpg",
+      "cover": "https://p2.music.126.net/cpoUinrExafBHL5Nv5iDHQ==/109951166361218466.jpg",
       "duration": 221,
       "neteaseFee": 0,
-      "youtubeVideoId": "uULmWsOXofc",
+      "youtubeVideoId": null,
       "match": {
-        "name": "阿YueYue&戾格&小田音乐社 - 沈园外「人长大后，太难学从容。」♪ KarenDaidai",
-        "artist": "KarenDaidai Music Channel",
-        "duration": 224,
-        "score": 53.5,
-        "source": "youtube-search"
+        "name": "同名结果不是小田叔的原曲",
+        "artist": "",
+        "duration": 0,
+        "score": 0,
+        "source": "manual-rejection",
+        "accepted": false
       }
     }
   ]
