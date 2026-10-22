@@ -716,6 +716,8 @@ footer a { color: var(--blue); }
   pointer-events: none;
 }
 .music-video-wrap iframe { display: block; width: 200px; height: 200px; border: 0; }
+#bilibiliPlayer:empty,
+#youtubePlayer:empty { display: none; }
 .music-main {
   display: grid;
   grid-template-columns: 58px minmax(0, 1fr);

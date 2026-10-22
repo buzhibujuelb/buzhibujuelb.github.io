@@ -1,6 +1,7 @@
 (() => {
   const API_BASE = "https://api.hypcvgm.top/NeteaseMiniPlayer/nmp.php";
   const PLAYLIST_URL = "music-playlist.json";
+  const CURATED_PLAYLIST_URL = "music-curated.json";
   const PLAYER_STATE_KEY = "gallery-player-state-v1";
   const restrictedFees = new Set([1, 4, 8]);
 
@@ -12,6 +13,7 @@
   const album = document.querySelector("#musicAlbum");
   const cover = document.querySelector("#musicCover");
   const videoWrap = document.querySelector("#musicVideoWrap");
+  const bilibiliContainer = document.querySelector("#bilibiliPlayer");
   const playButton = document.querySelector("#musicPlay");
   const previousButton = document.querySelector("#musicPrevious");
   const nextButton = document.querySelector("#musicNext");
@@ -41,6 +43,10 @@
   let currentProvider = "netease";
   let youtubePlayer = null;
   let youtubeReady = false;
+  let bilibiliFrame = null;
+  let bilibiliElapsed = 0;
+  let bilibiliStartedAt = 0;
+  let bilibiliPlaying = false;
   let sourceGeneration = 0;
   let playbackRequested = false;
   let pendingStartTime = null;
@@ -64,13 +70,19 @@
   };
 
   const currentTrack = () => tracks[index] || null;
-  const isPlaying = () => currentProvider === "youtube"
-    ? youtubePlayer?.getPlayerState?.() === window.YT?.PlayerState?.PLAYING
-    : !audio.paused;
+  const trackKey = (track) => String(track?.neteaseId || track?.id || track?.youtubeVideoId || "");
+  const isPlaying = () => {
+    if (currentProvider === "youtube") return youtubePlayer?.getPlayerState?.() === window.YT?.PlayerState?.PLAYING;
+    if (currentProvider === "bilibili") return bilibiliPlaying;
+    return !audio.paused;
+  };
 
   const playbackTime = () => {
     if (pendingStartTime !== null) return pendingStartTime;
     if (currentProvider === "youtube" && youtubeReady) return youtubePlayer.getCurrentTime?.() || 0;
+    if (currentProvider === "bilibili") {
+      return bilibiliElapsed + (bilibiliPlaying ? (Date.now() - bilibiliStartedAt) / 1_000 : 0);
+    }
     return audio.currentTime || 0;
   };
 
@@ -80,11 +92,11 @@
     if (!force && now - lastStateSave < 5000) return;
     lastStateSave = now;
     localStorage.setItem(PLAYER_STATE_KEY, JSON.stringify({
-      trackId: String(currentTrack().neteaseId),
+      trackId: trackKey(currentTrack()),
       time: Math.max(0, Math.round(time * 10) / 10),
       mode,
       shouldResume: playbackRequested,
-      shuffleOrder: shuffleOrder.map((trackIndex) => String(tracks[trackIndex]?.neteaseId || "")).filter(Boolean),
+      shuffleOrder: shuffleOrder.map((trackIndex) => trackKey(tracks[trackIndex])).filter(Boolean),
       shufflePosition,
     }));
   };
@@ -100,7 +112,7 @@
   };
 
   const restoreShuffleOrder = () => {
-    const byId = new Map(tracks.map((track, trackIndex) => [String(track.neteaseId), trackIndex]));
+    const byId = new Map(tracks.map((track, trackIndex) => [trackKey(track), trackIndex]));
     const restored = (savedPlayback?.shuffleOrder || []).map((id) => byId.get(String(id)));
     if (restored.length === tracks.length && restored.every((trackIndex) => trackIndex !== undefined)) {
       shuffleOrder = restored;
@@ -160,6 +172,11 @@
     if (currentProvider === "youtube" && youtubeReady) {
       duration = youtubePlayer.getDuration?.() || currentTrack()?.duration || 0;
     }
+    if (currentProvider === "bilibili" && bilibiliPlaying && elapsed >= duration && duration > 0) {
+      bilibiliPlaying = false;
+      window.queueMicrotask(advance);
+      return;
+    }
     progress.max = String(Math.max(1, duration));
     if (!progress.matches(":active")) progress.value = String(Math.min(elapsed, duration));
     currentTime.textContent = formatTime(elapsed);
@@ -186,7 +203,9 @@
     progress.max = String(Math.max(1, track.duration));
     progress.value = String(startAt);
     currentTime.textContent = formatTime(startAt);
-    sourceLink.href = `https://music.163.com/#/song?id=${track.neteaseId}`;
+    sourceLink.href = track.bilibiliBvid
+      ? `https://www.bilibili.com/video/${track.bilibiliBvid}?p=${track.bilibiliPage}`
+      : `https://music.163.com/#/song?id=${track.neteaseId}`;
     sourceLink.textContent = `原曲 · ${index + 1}/${tracks.length} ↗`;
     for (const item of playlist.querySelectorAll("button")) {
       item.classList.toggle("is-active", Number(item.dataset.index) === index);
@@ -262,6 +281,42 @@
     return youtubePlayer;
   };
 
+  const prefersBilibili = () => ["Asia/Shanghai", "Asia/Urumqi"]
+    .includes(Intl.DateTimeFormat().resolvedOptions().timeZone);
+
+  const stopBilibili = (rememberTime = true) => {
+    if (rememberTime && bilibiliPlaying) bilibiliElapsed = playbackTime();
+    bilibiliPlaying = false;
+    bilibiliFrame?.remove();
+    bilibiliFrame = null;
+  };
+
+  const mountBilibili = (track, startAt, autoplay) => {
+    stopBilibili(false);
+    bilibiliElapsed = Math.max(0, Number(startAt) || 0);
+    bilibiliStartedAt = Date.now();
+    bilibiliPlaying = autoplay;
+    pendingStartTime = null;
+    const url = new URL("https://player.bilibili.com/player.html");
+    url.searchParams.set("bvid", track.bilibiliBvid);
+    url.searchParams.set("p", track.bilibiliPage);
+    url.searchParams.set("autoplay", autoplay ? "1" : "0");
+    url.searchParams.set("muted", "0");
+    url.searchParams.set("danmaku", "false");
+    url.searchParams.set("poster", "false");
+    url.searchParams.set("t", Math.floor(bilibiliElapsed));
+    const frame = document.createElement("iframe");
+    frame.src = url;
+    frame.title = track.name;
+    frame.allow = "autoplay; fullscreen";
+    frame.referrerPolicy = "strict-origin-when-cross-origin";
+    bilibiliContainer.replaceChildren(frame);
+    bilibiliFrame = frame;
+    setPlayingUi(autoplay);
+    setStatus(`${autoplay ? "正在播放" : "准备播放"} · ${track.name}`, autoplay ? "playing" : "paused");
+    savePlayback(true, bilibiliElapsed);
+  };
+
   const fetchNeteaseUrl = async (track) => {
     for (const level of ["exhigh", "standard"]) {
       const url = new URL(`${API_BASE}/song/url/v1`);
@@ -281,6 +336,8 @@
     if (currentProvider === "youtube") {
       const player = await ensureYouTubePlayer();
       player.playVideo();
+    } else if (currentProvider === "bilibili") {
+      mountBilibili(currentTrack(), playbackTime(), true);
     } else {
       await audio.play();
     }
@@ -290,6 +347,10 @@
   const pauseCurrent = () => {
     playbackRequested = false;
     if (currentProvider === "youtube") youtubePlayer?.pauseVideo?.();
+    else if (currentProvider === "bilibili") {
+      stopBilibili();
+      setPlayingUi(false);
+    }
     else audio.pause();
     savePlayback(true);
   };
@@ -307,13 +368,19 @@
     playbackRequested = autoplay;
     audio.pause();
     youtubePlayer?.pauseVideo?.();
+    stopBilibili(false);
     setPlayingUi(false);
     renderTrack(track, resumeAt);
     savePlayback(true, resumeAt);
-    const useYouTube = restrictedFees.has(track.neteaseFee);
+    const useBilibili = Boolean(track.bilibiliBvid) && prefersBilibili();
+    const useYouTube = !useBilibili && (!track.neteaseId || restrictedFees.has(track.neteaseFee));
 
     try {
-      if (useYouTube) {
+      if (useBilibili) {
+        currentProvider = "bilibili";
+        videoWrap.hidden = false;
+        mountBilibili(track, resumeAt, autoplay);
+      } else if (useYouTube) {
         currentProvider = "youtube";
         videoWrap.hidden = false;
         setStatus(`正在载入 · ${track.name}`, "paused");
@@ -345,7 +412,7 @@
       }
     } catch (error) {
       if (generation !== sourceGeneration) return;
-      if (!useYouTube && track.youtubeVideoId) {
+      if (!useYouTube && !useBilibili && track.youtubeVideoId) {
         currentProvider = "youtube";
         videoWrap.hidden = false;
         const player = await ensureYouTubePlayer();
@@ -428,6 +495,13 @@
     const nextTime = Number(progress.value);
     pendingStartTime = nextTime;
     if (currentProvider === "youtube") youtubePlayer?.seekTo?.(nextTime, true);
+    else if (currentProvider === "bilibili") {
+      bilibiliElapsed = nextTime;
+      bilibiliStartedAt = Date.now();
+      if (bilibiliPlaying) mountBilibili(currentTrack(), nextTime, true);
+      else stopBilibili(false);
+      pendingStartTime = null;
+    }
     else {
       audio.currentTime = nextTime;
       pendingStartTime = null;
@@ -439,6 +513,7 @@
     const nextVolume = Number(volume.value);
     audio.volume = nextVolume / 100;
     youtubePlayer?.setVolume?.(nextVolume);
+    bilibiliFrame?.contentWindow?.postMessage?.(`setPlayer-${JSON.stringify({ type: "changeVolume", value: { volume: nextVolume } })}`, "*");
     localStorage.setItem("gallery-player-volume", String(nextVolume));
   });
   modeButton.addEventListener("click", () => setMode(mode === "list" ? "single" : mode === "single" ? "shuffle" : "list"));
@@ -470,15 +545,14 @@
     window.clearInterval(progressTimer);
   }, { once: true });
 
-  fetch(PLAYLIST_URL)
-    .then((response) => {
-      if (!response.ok) throw new Error(`Playlist HTTP ${response.status}`);
-      return response.json();
-    })
-    .then((payload) => {
-      tracks = payload.tracks || [];
+  Promise.all([PLAYLIST_URL, CURATED_PLAYLIST_URL].map((url) => fetch(url).then((response) => {
+    if (!response.ok) throw new Error(`Playlist HTTP ${response.status}: ${url}`);
+    return response.json();
+  })))
+    .then(([playlistPayload, curatedPayload]) => {
+      tracks = [...(playlistPayload.tracks || []), ...(curatedPayload.tracks || [])];
       if (!tracks.length) throw new Error("Playlist is empty");
-      const restoredIndex = tracks.findIndex((track) => String(track.neteaseId) === String(savedPlayback?.trackId));
+      const restoredIndex = tracks.findIndex((track) => trackKey(track) === String(savedPlayback?.trackId));
       const hasHistory = restoredIndex >= 0;
       index = hasHistory ? restoredIndex : Math.floor(Math.random() * tracks.length);
       if (mode === "shuffle") restoreShuffleOrder();
