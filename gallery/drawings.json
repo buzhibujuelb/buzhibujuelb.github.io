@@ -1,5 +1,20 @@
 [
   {
+    "id": "drawing-dc48a5264c7d",
+    "source": "paintings",
+    "collections": [
+      "drawings"
+    ],
+    "work": "八方旅人2",
+    "character": "卡斯蒂",
+    "date": "2026-10-24",
+    "caption": "卡斯蒂",
+    "src": "media/drawings/full/drawing-dc48a5264c7d.jpg",
+    "thumb": "media/drawings/thumb/drawing-dc48a5264c7d.jpg",
+    "width": 1024,
+    "height": 768
+  },
+  {
     "id": "drawing-4d2ce732223d",
     "source": "paintings",
     "collections": [
