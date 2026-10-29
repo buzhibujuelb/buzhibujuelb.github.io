@@ -169,9 +169,13 @@ if (coverOrientationBtn) {
 // Load Games
 // ---------------------------
 async function loadGames() {
+  // games.json 和 game-meta.json 会随部署更新，但文件名保持不变。
+  // 使用同一个页面级版本参数，避免浏览器或 CDN 把新游戏和旧元数据混在一起。
+  const dataVersion = Date.now();
+  const freshJsonUrl = (url) => `${url}?v=${dataVersion}`;
   const [gamesResponse, metadataResponse] = await Promise.all([
-    fetch(jsonUrl),
-    fetch(metadataUrl),
+    fetch(freshJsonUrl(jsonUrl), { cache: "no-store" }),
+    fetch(freshJsonUrl(metadataUrl), { cache: "no-store" }),
   ]);
   if (!gamesResponse.ok) throw new Error(`无法加载 ${jsonUrl}`);
   if (!metadataResponse.ok) throw new Error(`无法加载 ${metadataUrl}`);
