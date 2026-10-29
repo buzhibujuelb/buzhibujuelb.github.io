@@ -3070,5 +3070,26 @@
     "igdb_game_id": 23248,
     "igdb_game_name": "Frostpunk",
     "updated_at": "2026-10-21T05:10:58.168Z"
+  },
+  "rawg:1015409": {
+    "background_image": "covers/rawg-1015409.webp",
+    "image_aspect": 0.75321,
+    "provider_title": "Control Resonant",
+    "stores": [
+      {
+        "name": "Steam",
+        "url": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/"
+      }
+    ],
+    "background_image_landscape": "covers/rawg-1015409-landscape.webp",
+    "landscape_image_aspect": 2.139535,
+    "cover_source_url": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coc64f.jpg",
+    "cover_source": "igdb",
+    "steam_app_id": "3669870",
+    "landscape_source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/1e0c76e4253d347bb1304c3f213570251d924edf/header.jpg?t=1791013569",
+    "landscape_source": "steam-header",
+    "igdb_game_id": 225582,
+    "igdb_game_name": "Control Resonant",
+    "updated_at": "2026-10-29T03:50:11.644Z"
   }
 }
